@@ -15,7 +15,7 @@ Make sure the Interferenz.exe and make sure the **glut32.dll** is in the same di
 
 You can just write me an e-mail to roth-a@gmx.de  
 
-![](/media/alexander/hdd/Daten/Programmieren/meine/Interferenz/screenshot.jpg)
+![](screenshot.jpg)
 
 
 # Development  Info
