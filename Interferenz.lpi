@@ -74,6 +74,7 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="Unit1"/>
+        <IsVisibleTab Value="True"/>
         <TopLine Value="1617"/>
         <CursorPos X="37" Y="1640"/>
         <UsageCount Value="200"/>
@@ -913,12 +914,10 @@
       <Unit125>
         <Filename Value="/home/alexander/programs/lazarus/components/opengl/openglcontext.pas"/>
         <UnitName Value="OpenGLContext"/>
-        <IsVisibleTab Value="True"/>
-        <EditorIndex Value="1"/>
+        <EditorIndex Value="-1"/>
         <TopLine Value="60"/>
         <CursorPos X="4" Y="71"/>
         <UsageCount Value="10"/>
-        <Loaded Value="True"/>
       </Unit125>
     </Units>
     <JumpHistory Count="5" HistoryIndex="4">
