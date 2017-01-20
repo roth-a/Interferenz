@@ -67,27 +67,15 @@ sudo apt-get install fp-compiler fp-units-base fp-units-fcl fp-units-gtk fp-unit
 ##### Lazarus
 
 install the latest Lazarus version with the following commands:
-	- Create the directory ~/home/Programs/Lazarus
-	- console command: cd ~/home/Programs/Lazarus
-	- console command: svn co http://svn.freepascal.org/svn/lazarus/trunk ./
-	- console command: make all
-	- Now you can start lazarus
-	- you have to install some of my own components (in Lazarus it is called Packages):
-	- go to all of this links and download the components (download Button is in the right bottom corner):
-http://www.lazarusforum.de/downloads.php?view=detail&df_id=17
-http://www.lazarusforum.de/downloads.php?view=detail&df_id=21
-http://www.lazarusforum.de/downloads.php?view=detail&df_id=20
-http://www.lazarusforum.de/downloads.php?view=detail&df_id=18
-	- extract the downloaded files
-	- Now you have to install the Packages in Lazarus with these steps:
-	- in the Lazarus menu --> Open Package File --> select the .lpk file and open it
-	- now a window opens. You should hit the install button and then click NO. (This will mark this package for installation but it doesn't recompile Lazarus)
-	- Repeat the last step with all the 4 packages.
-	- Now go to Tools --> Build Lazarus
-	- When Lazarus has restart you can open my Project Interferenz and compile it by pressing F9
 
-If you want to have a nicer theme, and not the old grey Windows89 like one, you can compile Lazarus with the new gtk2 widgetset:
-	- go to Tools --> Build Lazarus Settings --> Select Build IDE with Packages and select gtk2 on the right side
-	- Hit ok. After the restart you can recompile Interferenz and there you go. It should be everything looking nice.
+* Create the directory ~/home/Programs/Lazarus
+* console command: cd ~/home/Programs/Lazarus
+* console command: svn co http://svn.freepascal.org/svn/lazarus/trunk ./
+* console command: make all
+* Now you can start lazarus
+* you have to install some of my own components (in Lazarus it is called Packages):
+* go to all of this links and download the components above 
+* Now go to Tools --> Build Lazarus --> Select Build IDE with Packages and select gtk2 
+* When Lazarus has restart you can open my Project Interferenz and compile it by pressing F9
 
 	
