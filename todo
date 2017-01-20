@@ -1,3 +1,7 @@
+- remove glut dependency
+
+
+
 - erkennung worüber der Mauszeiger ist und Infoboxen zu anzeigen (z.B. genaue Koordinaten von Maxima....)
 - Axchsenselexion und manuelle verschiebeung mit der Maus
 - lambdaauswahl druch klick auf den dazugehährigen Graphen
