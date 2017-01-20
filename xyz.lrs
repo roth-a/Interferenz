@@ -1,0 +1,1412 @@
+LazarusResources.Add('Donate','HTML',[
+  '<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHT'
+  +'ML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">'#10
+  +'<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="content-'
+  +'type" content="text/html; charset=utf-8" /><title /><meta name="generator" '
+  +'content="StarOffice/OpenOffice.org XSLT (http://xml.openoffice.org/sx2ml)" '
+  +'/><base href="." /><style type="text/css">'#10#9'@page { size: 21.59cm 27.9'
+  +'4cm; margin-top: 2.499cm; margin-bottom: 2cm; margin-left: 2.499cm; margin-'
+  +'right: 2.499cm }'#10#9'table { border-collapse:collapse; border-spacing:0; '
+  +'empty-cells:show }'#10#9'td, th { vertical-align:top; }'#10#9'h1, h2, h3, h'
+  +'4, h5, h6 { clear:both }'#10#9'ol, ul { padding:0; }'#10#9'* { margin:0; }'
+  +#10#9'*.Frame { font-size:12pt; vertical-align:top; text-align:center; }'#10
+  +#9'*.Graphics { font-size:12pt; vertical-align:top; text-align:center; }'#10
+  +#9'*.OLE { font-size:12pt; vertical-align:top; text-align:center; }'#10#9'*.'
+  +'Caption { font-family:Times; font-size:12pt; margin-left:0cm; margin-right:'
+  +'0cm; text-align:left ! important; text-indent:0cm; margin-top:0.212cm; marg'
+  +'in-bottom:0.212cm; font-style:italic; }'#10#9'*.Heading { font-family:Helve'
+  +'tica; font-size:14pt; margin-left:0cm; margin-right:0cm; text-align:left ! '
+  +'important; text-indent:0cm; margin-top:0.423cm; margin-bottom:0.212cm; }'#10
+  +#9'*.Index { font-family:Times; font-size:12pt; margin-left:0cm; margin-righ'
+  +'t:0cm; text-align:left ! important; text-indent:0cm; }'#10#9'*.List { font-'
+  +'family:Times; font-size:12pt; margin-left:0cm; margin-right:0cm; text-align'
+  +':left ! important; text-indent:0cm; margin-top:0cm; margin-bottom:0.212cm; '
+  +'}'#10#9'*.P1 { font-family:''Times New Roman''; font-size:14pt; margin-left'
+  +':0cm; margin-right:0cm; text-align:left ! important; text-indent:0cm; }'#10
+  +#9'*.P10 { font-family:''Times New Roman''; font-size:14pt; margin-left:0cm;'
+  +' margin-right:0cm; text-align:left ! important; text-indent:0cm; }'#10#9'*.'
+  +'P2 { font-family:''Times New Roman''; font-size:14pt; margin-left:0cm; marg'
+  +'in-right:0cm; text-align:left ! important; text-indent:0cm; }'#10#9'*.P3 { '
+  +'font-family:''Times New Roman''; font-size:14pt; margin-left:0cm; margin-ri'
+  +'ght:0cm; text-align:left ! important; text-indent:0cm; }'#10#9'*.P4 { font-'
+  +'family:''Times New Roman''; font-size:14pt; margin-left:0cm; margin-right:0'
+  +'cm; text-align:left ! important; text-indent:0cm; }'#10#9'*.P5 { font-famil'
+  +'y:''Times New Roman''; font-size:14pt; margin-left:0cm; margin-right:0cm; t'
+  +'ext-align:left ! important; text-indent:0cm; text-decoration:underline; }'
+  +#10#9'*.P6 { font-family:''Times New Roman''; font-size:12pt; margin-left:0c'
+  +'m; margin-right:0cm; text-align:left ! important; text-indent:0cm; }'#10#9
+  +'*.P7 { font-family:''Times New Roman''; font-size:12pt; margin-left:0cm; ma'
+  +'rgin-right:0cm; text-align:left ! important; text-indent:0cm; }'#10#9'*.P8 '
+  +'{ font-family:''Times New Roman''; font-size:12pt; margin-left:0cm; margin-'
+  +'right:0cm; text-align:left ! important; text-indent:0cm; }'#10#9'*.P9 { fon'
+  +'t-family:''Times New Roman''; font-size:18pt; margin-left:0cm; margin-right'
+  +':0cm; text-align:left ! important; text-indent:1.249cm; color:#0000ff; font'
+  +'-weight:bold; }'#10#9'*.Standard { font-family:''Times New Roman''; font-si'
+  +'ze:12pt; margin-left:0cm; margin-right:0cm; text-align:left ! important; te'
+  +'xt-indent:0cm; }'#10#9'*.Textbody { font-family:''Times New Roman''; font-s'
+  +'ize:12pt; margin-left:0cm; margin-right:0cm; text-align:left ! important; t'
+  +'ext-indent:0cm; margin-top:0cm; margin-bottom:0.212cm; }'#10#9'*.DefaultPar'
+  +'agraphFont { }'#10#9'*.Internetlink { color:#0000ff; text-decoration:underl'
+  +'ine; }'#10#9'*.T1 { font-size:14pt; }'#10#9'*.T2 { font-size:9pt; }'#10#9'<'
+  +'/style></head><body dir="ltr"><p class="P10">Hi,'#194#160'</p><p class="P1"'
+  +'>'#194#160'</p><p class="P6"><span class="T1">ich habe an dem Programm echt'
+  +' lange und hart gearbeitet, bis alles geklappt und die letzten Details verb'
+  +'essert waren.</span></p><p class="P1">'#194#160'</p><p class="P6"><span cla'
+  +'ss="T1">Und ich wollte kein Geld nehmen, da wenn ich selbst ein Programm be'
+  +'nutzte es mich echt nervt, wenn dann so Sharewaremeldungen kommen und ich d'
+  +'ann nur noch die H'#195#164'lfte mit machen kann.</span></p><p class="P1">'
+  +#194#160'</p><p class="P1">Deswegen w'#195#164're es echt korrekt, wenn Sie '
+  +'das Programm l'#195#164'nger benutzen, mir eine kleine Spende zukommen lass'
+  +'en.'#194#160'</p><p class="P5">'#194#160'</p><p class="P6"><span class="T1"'
+  +'>Da ich hier nicht meine Bankdaten angeben will </span><span class="T2">(we'
+  +'r weis was jemand im Netz damit alles machen kann)</span><span class="T1"> '
+  +'schreiben Sie mir doch bitte eine Mail:</span></p><p class="P9">roth-a@gmx.'
+  +'de'#194#160'</p></body></html>'
+]);
+LazarusResources.Add('HelpAllgemein','HTML',[
+  '<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">'#10'<HTML>'#10
+  +'<HEAD>'#10#9'<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=ut'
+  +'f-8">'#10#9'<TITLE></TITLE>'#10#9'<META NAME="GENERATOR" CONTENT="OpenOffic'
+  +'e.org 2.4  (Unix)">'#10#9'<META NAME="CREATED" CONTENT="0;0">'#10#9'<META N'
+  +'AME="CHANGEDBY" CONTENT="alexander">'#10#9'<META NAME="CHANGED" CONTENT="20'
+  +'080805;16065700">'#10#9'<META NAME="CHANGEDBY" CONTENT="alexander">'#10#9'<'
+  +'STYLE TYPE="text/css">'#10#9'<!--'#10#9#9'@page { size: 21.59cm 27.94cm; ma'
+  +'rgin-left: 2.5cm; margin-right: 2.5cm; margin-top: 2.5cm; margin-bottom: 2c'
+  +'m }'#10#9'-->'#10#9'</STYLE>'#10'</HEAD>'#10'<BODY LANG="de-DE" DIR="LTR">'
+  +#10'<P><FONT SIZE=2>Hallo,</FONT></P>'#10'<P><FONT SIZE=2>kommst du nicht ga'
+  +'nz zurecht? Kein Problem, lies'#10'einfach ein bisschen in der Hilfe, dann '
+  +'klappt das schon.</FONT></P>'#10'<P><FONT SIZE=2>Das gezeigte Diagramm, ste'
+  +'llt die Intensit'#195#164't '#195#188'ber'#10'dem Zylinderschirm dar. Du si'
+  +'ehst in der '#226#128#158'Mitte'#226#128#156' beim Winkel 0'#194#176','#10
+  +'ist das Maximum 0. Ordnung und die Intensit'#195#164't ist maximal. Daneben'
+  +#10'gibt es Minima (alle Wellen l'#195#182'schen sich aus) und weitere Neben'
+  +'-'#10'bzw. Hauptmaxima.</FONT></P>'#10'<P><FONT SIZE=2>Dr'#195#188'cke F1 u'
+  +'nd ein Hilfefenster erscheint. Die'#10'Hilfefelder kann man ausklappen und '
+  +'du erh'#195#164'lst Hilfe zu dem'#10'jeweiligen Gebiet.</FONT></P>'#10'<P><'
+  +'FONT SIZE=2>Probiere bei vielen Optionen ein bisschen herum. </FONT>'#10'</'
+  +'P>'#10'<P><FONT SIZE=2>Falls du den Ausgangszustand haben willst, kannst du'
+  +#10'einfach STRG+R dr'#195#188'cken. Und alles ist in seiner Ausgangslage.</'
+  +'FONT></P>'#10'<P><FONT SIZE=2>Somit sind der Experimentierfreude keine Gren'
+  +'zen'#10'gesetzt. Nur los, es kann nichts kaputt gehen!</FONT></P>'#10'<P><F'
+  +'ONT SIZE=2>Viel Spa'#195#159' mit dem Programm w'#195#188'nsche ich</FONT><'
+  +'/P>'#10'<P><FONT SIZE=2>Alexander Roth</FONT></P>'#10'</BODY>'#10'</HTML>'
+]);
+LazarusResources.Add('HelpDiagramm','HTML',[
+  '<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">'#10'<HTML>'#10
+  +'<HEAD>'#10#9'<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=ut'
+  +'f-8">'#10#9'<TITLE></TITLE>'#10#9'<META NAME="GENERATOR" CONTENT="OpenOffic'
+  +'e.org 2.4  (Unix)">'#10#9'<META NAME="CREATED" CONTENT="0;0">'#10#9'<META N'
+  +'AME="CHANGEDBY" CONTENT="alexander">'#10#9'<META NAME="CHANGED" CONTENT="20'
+  +'080809;22115600">'#10#9'<META NAME="CHANGEDBY" CONTENT="alexander">'#10#9'<'
+  +'META NAME="CHANGEDBY" CONTENT="alexander">'#10#9'<META NAME="CHANGEDBY" CON'
+  +'TENT="alexander">'#10#9'<STYLE TYPE="text/css">'#10#9'<!--'#10#9#9'@page { '
+  +'size: 21.59cm 27.94cm; margin-left: 2.5cm; margin-right: 2.5cm; margin-top:'
+  +' 2.5cm; margin-bottom: 2cm }'#10#9'-->'#10#9'</STYLE>'#10'</HEAD>'#10'<BODY'
+  +' LANG="de-DE" DIR="LTR">'#10'<P STYLE="margin-left: 0.25cm"><FONT SIZE=2>Da'
+  +'s Diagramm hat viele'#10'M'#195#182'glichkeiten um Ausschnitte zu vergr'#195
+  +#182#195#159'ern, uvm.:<BR>Du musst erst'#10'auf das Diagramm klicken, damit'
+  +' du zoomen kannst.<BR>Folgende'#10'Funktionen stehen zur Verf'#195#188'gung'
+  +':</FONT></P>'#10'<P STYLE="margin-left: 0.25cm"><FONT SIZE=2>Hineinzoomen&n'
+  +'bsp; &nbsp;'#10'&nbsp; &nbsp; (Mausrad drehen oder STRG + Ausschnitt ziehen'
+  +')</FONT></P>'#10'<UL>'#10#9'<LI><P><FONT SIZE=2>Verschieben&nbsp; &nbsp; &n'
+  +'bsp; &nbsp; &nbsp; &nbsp;'#10#9'&nbsp; &nbsp; (Maus geklickt halten und bew'
+  +'egen)</FONT></P>'#10#9'<LI><P><FONT SIZE=2>Herauszoomen&nbsp; &nbsp; &nbsp;'
+  +' &nbsp; &nbsp; &nbsp;'#10#9'&nbsp; &nbsp; (Mausrad andersherum drehen)</FON'
+  +'T></P>'#10#9'<LI><P><FONT SIZE=2>Maximale Ansicht&nbsp; &nbsp; &nbsp; &nbsp'
+  +';'#10#9'(Klick auf das Mausrad)</FONT></P>'#10#9'<LI><P><FONT SIZE=2>Die Y-'
+  +'Achse Zoomen&nbsp; &nbsp; &nbsp; &nbsp;'#10#9'(STRG und Mausrad drehen)</FO'
+  +'NT></P>'#10'</UL>'#10'<P><FONT SIZE=2>Das Hineinzoomen funktioniert so, das'
+  +'s die Stelle'#10'vergr'#195#182#195#159'ert wird, auf die der Mauszeiger ze'
+  +'igt.&nbsp;</FONT></P>'#10'<P><FONT SIZE=2>Ganz rechts vom Diagramm siehst d'
+  +'u einen hellblauen'#10'Streifen. Klicke auf ihn.&nbsp;<BR>Das ist die M'#195
+  +#182'glichkeit die'#10'erweiterten Optionen des Diagramms zu bearbeiten. Dor'
+  +'t kannst du:</FONT></P>'#10'<UL>'#10#9'<LI><P><FONT SIZE=2>X/Y-Hilfslinien '
+  +'ein-/ausblenden&nbsp;</FONT></P>'#10#9'<LI><P><FONT SIZE=2>Die Farben aller'
+  +' Kurven und Schirmbilder'#10#9'ver'#195#164'ndern&nbsp;</FONT></P>'#10#9'<L'
+  +'I><P><FONT SIZE=2>Die Minima und Maxima extra markieren&nbsp;</FONT></P>'#10
+  +#9'<LI><P><FONT SIZE=2>Die Qualit'#195#164't der Anzeige und damit auch die'
+  +#10#9'Berechnungsgeschwindigkeit k'#195#182'nnen ver'#195#164'ndert werden&n'
+  +'bsp;</FONT></P>'#10#9'<LI><P><FONT SIZE=2>uvm...&nbsp;</FONT></P>'#10'</UL>'
+  +#10'</BODY>'#10'</HTML>'
+]);
+LazarusResources.Add('HelpExport','HTML',[
+  '<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">'#10'<HTML>'#10
+  +'<HEAD>'#10#9'<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=ut'
+  +'f-8">'#10#9'<TITLE></TITLE>'#10#9'<META NAME="GENERATOR" CONTENT="OpenOffic'
+  +'e.org 2.4  (Unix)">'#10#9'<META NAME="CREATED" CONTENT="0;0">'#10#9'<META N'
+  +'AME="CHANGEDBY" CONTENT="alexander">'#10#9'<META NAME="CHANGED" CONTENT="20'
+  +'080805;16073000">'#10#9'<META NAME="CHANGEDBY" CONTENT="alexander">'#10#9'<'
+  +'META NAME="CHANGEDBY" CONTENT="alexander">'#10#9'<STYLE TYPE="text/css">'#10
+  +#9'<!--'#10#9#9'@page { size: 21.59cm 27.94cm; margin-left: 2.5cm; margin-ri'
+  +'ght: 2.5cm; margin-top: 2.5cm; margin-bottom: 2cm }'#10#9'-->'#10#9'</STYLE'
+  +'>'#10'</HEAD>'#10'<BODY LANG="de-DE" DIR="LTR">'#10'<P><FONT SIZE=2>Du kann'
+  +'st mit einem mal alle Werte die das Programm'#10'benutzt in eine csv Datei '
+  +'exportieren lassen. <BR>Gehe dazu einfach'#10'in das Men'#195#188': <U>Diag'
+  +'ramm '#226#134#146' Exportiere alle Werte</U> , w'#195#164'hle'#10'einen Or'
+  +'t aus wo Sie es gespeichert haben wollen und schon ist alles'#10'exportiert'
+  +'.</FONT></P>'#10'<P><FONT SIZE=2>CSV ist ein extrem einfaches Tabellen-Form'
+  +'at. Excel'#10'oder OpenOffice k'#195#182'nnen es nat'#195#188'rlich '#195
+  +#182'ffnen.</FONT></P>'#10'<P><FONT SIZE=2>In Excel geht man auf Datei '#226
+  +#134#146' Importieren </FONT>'#10'</P>'#10'<P><FONT SIZE=2>In OpenOffice '
+  +#195#182'ffnet man auf eine beliebige Art die'#10'csv Datei (z.B. durch zieh'
+  +'en der Datei auf ein offenes OpenOffice'#10'Dokument) und gibt als Trennzei'
+  +'chen Semikolon, anstatt dem Komma an.'#10'Schon kann man auf '#226#128#158
+  +'Fertig'#226#128#156' klicken und man hat die gesamten'#10'Daten.</FONT></P>'
+  +#10'<P><BR><BR>'#10'</P>'#10'</BODY>'#10'</HTML>'
+]);
+LazarusResources.Add('HelplinkeEinstellungen','HTML',[
+  '<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">'#10'<HTML>'#10
+  +'<HEAD>'#10#9'<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=ut'
+  +'f-8">'#10#9'<TITLE></TITLE>'#10#9'<META NAME="GENERATOR" CONTENT="OpenOffic'
+  +'e.org 2.4  (Unix)">'#10#9'<META NAME="CREATED" CONTENT="0;0">'#10#9'<META N'
+  +'AME="CHANGEDBY" CONTENT="alexander">'#10#9'<META NAME="CHANGED" CONTENT="20'
+  +'080805;16075100">'#10#9'<META NAME="CHANGEDBY" CONTENT="alexander">'#10#9'<'
+  +'STYLE TYPE="text/css">'#10#9'<!--'#10#9#9'@page { size: 21.59cm 27.94cm; ma'
+  +'rgin-left: 2.5cm; margin-right: 2.5cm; margin-top: 2.5cm; margin-bottom: 2c'
+  +'m }'#10#9'-->'#10#9'</STYLE>'#10'</HEAD>'#10'<BODY LANG="de-DE" DIR="LTR">'
+  +#10'<P><FONT SIZE=2>Links sind die Einstellungen die unabh'#195#164'ngig sin'
+  +'d von'#10'den einzelnen Wellenl'#195#164'ngen und somit f'#195#188'r die Ge'
+  +'samte Apparatur'#10'gelten. </FONT>'#10'</P>'#10'<P><FONT SIZE=2>Schirm-Ein'
+  +'stellungen:</FONT></P>'#10'<P><FONT SIZE=2>Bei der '#226#128#158'Art des Gr'
+  +'aphen'#226#128#156' kann man alternativ die'#10'Amplitude oder die Intensit'
+  +#195#164't w'#195#164'hlen.</FONT></P>'#10'<P><FONT SIZE=2>Die x-Achse kann '
+  +'man verschieden einteilen lassen:&nbsp;</FONT></P>'#10'<UL>'#10#9'<LI><P><F'
+  +'ONT SIZE=2>Flacher Schirm&nbsp; &nbsp; &nbsp; &nbsp; (als'#10#9'w'#195#164
+  +'re der Schirm eine flache Wand)</FONT></P>'#10#9'<LI><P><FONT SIZE=2>Zylind'
+  +'erschirm&nbsp; &nbsp; &nbsp; &nbsp;'#10#9'(Winkeldarstellung zur optischen '
+  +'Achse)</FONT></P>'#10#9'<LI><P><FONT SIZE=2>Gangunterschied&nbsp; &nbsp; &n'
+  +'bsp; &nbsp;'#10#9'(Einzelspalt-Gangunterschied bzw. Gitter-Gangunterschied)'
+  +'</FONT></P>'#10'</UL>'#10'<P><FONT SIZE=2>Spalt- und Gitter-Einstellungen:<'
+  +'/FONT></P>'#10'<P><FONT SIZE=2>Interessant ist auch die Gitterkonstante ode'
+  +'r die'#10'Spaltbreite mit den Schiebereglern zu ver'#195#164'ndern, wodurch'
+  +' sehr klar'#10'wird, wie diese Faktoren das Interferenzbild ver'#195#164'nd'
+  +'ern.&nbsp;<BR>Man'#10'kann alle Einstellungen mit Schiebereglern konfigurie'
+  +'ren, sodass man'#10'die Ver'#195#164'nderungen in Echtzeit sieht.&nbsp;</FO'
+  +'NT></P>'#10'<P>&nbsp;</P>'#10'<P><FONT SIZE=2>Erweiterte Einstellungen:</FO'
+  +'NT></P>'#10'<P><FONT SIZE=2>Sehr interessant ist auch das Gitter gegen'#195
+  +#188'ber der'#10'optischen Achse zu drehen. 0'#194#176' ist senkrecht; 90'
+  +#194#176' ist genau parallel'#10'zum Laserstrahl.</FONT></P>'#10'<P><FONT SI'
+  +'ZE=2>Bei der Genauen Formel kann man beobachten, was'#10'wirklich passiert '
+  +'wenn sich das Gitter dem Schirm sehr weit ann'#195#164'hert.'#10'</FONT>'#10
+  +'</P>'#10'<P><FONT SIZE=2>Dann beginnt das normale Interferenzmuster sich'#10
+  +'umzuformen in ein Fresnelmuster. Da nun nicht mehr die Vereinfachung'#10'&n'
+  +'bsp; '#226#128#158'Abstand Schirm-Gitter'#226#128#156' &gt;&gt; g &nbsp; ge'
+  +'troffen werden'#10'kann, muss aufw'#195#164'ndig f'#195#188'r jeden Spalt d'
+  +'ie Elongation und die'#10'Maximale Amplitude berechnet werden, und diese f'
+  +#195#188'r einen bestimmten'#10'Diagrammpunkt mithilfe von Vektoren addiert '
+  +'werden.<BR>Du wirst auch'#10'merken, dass die Intensit'#195#164't des Muste'
+  +'rs mit steigender Spaltanzahl,'#10'oder gr'#195#182#195#159'erer N'#195#164
+  +'he sinken wird, da die Muster breiter und somit'#10'auch schw'#195#164'cher'
+  +' werden.&nbsp;</FONT></P>'#10'<P>&nbsp;</P>'#10'</BODY>'#10'</HTML>'
+]);
+LazarusResources.Add('HelpLittle','HTML',[
+  '<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">'#10'<HTML>'#10
+  +'<HEAD>'#10#9'<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=ut'
+  +'f-8">'#10#9'<TITLE></TITLE>'#10#9'<META NAME="GENERATOR" CONTENT="OpenOffic'
+  +'e.org 3.0  (Unix)">'#10#9'<META NAME="CREATED" CONTENT="0;0">'#10#9'<META N'
+  +'AME="CHANGEDBY" CONTENT="alexander">'#10#9'<META NAME="CHANGED" CONTENT="20'
+  +'081230;10344900">'#10#9'<META NAME="CHANGEDBY" CONTENT="alexander">'#10#9'<'
+  +'META NAME="CHANGEDBY" CONTENT="alexander">'#10#9'<META NAME="CHANGEDBY" CON'
+  +'TENT="alexander">'#10#9'<META NAME="CHANGEDBY" CONTENT="alexander">'#10#9'<'
+  +'META NAME="CHANGEDBY" CONTENT="alexander">'#10#9'<META NAME="CHANGEDBY" CON'
+  +'TENT="alexander">'#10#9'<META NAME="CHANGEDBY" CONTENT="alexander">'#10#9'<'
+  +'STYLE TYPE="text/css">'#10#9'<!--'#10#9#9'@page { size: 21.59cm 27.94cm; ma'
+  +'rgin-left: 2.5cm; margin-right: 2.5cm; margin-top: 2.5cm; margin-bottom: 2c'
+  +'m }'#10#9'-->'#10#9'</STYLE>'#10'</HEAD>'#10'<BODY LANG="de-DE" DIR="LTR">'
+  +#10'<P STYLE="margin-bottom: 0cm"><FONT SIZE=2>Teste folgende'#10'Funktionen'
+  +':<BR>- <B>Hineinzoomen (x-Achse)</B> (Mausrad drehen)<BR>-'#10'<B>Hineinzoo'
+  +'men (y-Achse) </B>(STRG + Mausrad drehen)<BR>-'#10'<B>Verschieben</B> (Maus'
+  +' geklickt halten und ziehen)</FONT></P>'#10'<P STYLE="margin-bottom: 0cm"><'
+  +'FONT SIZE=2>- <B>Vollbild</B> (Taste'#10#226#128#158'F11'#226#128#156' dr'
+  +#195#188'cken, nochmal f'#195#188'r Normalbild)<BR><BR>Die Fenster'#10#195
+  +#182'ffnet man durch einen Klick auf die '#195#156'berschrift (z.B. <I>Spalt'
+  +'-'#10'und Gitter Einstellungen</I>).<BR>F'#195#188'r Hilfe <B>F1</B> dr'#195
+  +#188'cken!</FONT></P>'#10'<P STYLE="margin-bottom: 0cm"><FONT SIZE=2>Um alle'
+  +' Einstellungen auf'#10'Standard zu setzten, einfach <B>STRG+R</B> dr'#195
+  +#188'cken.</FONT></P>'#10'</BODY>'#10'</HTML>'
+]);
+LazarusResources.Add('HelpMehrereWellenlaengen','HTML',[
+  '<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">'#10'<HTML>'#10
+  +'<HEAD>'#10#9'<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=ut'
+  +'f-8">'#10#9'<TITLE></TITLE>'#10#9'<META NAME="GENERATOR" CONTENT="OpenOffic'
+  +'e.org 2.4  (Unix)">'#10#9'<META NAME="CREATED" CONTENT="0;0">'#10#9'<META N'
+  +'AME="CHANGEDBY" CONTENT="alexander">'#10#9'<META NAME="CHANGED" CONTENT="20'
+  +'080807;10152200">'#10#9'<META NAME="CHANGEDBY" CONTENT="alexander">'#10#9'<'
+  +'STYLE TYPE="text/css">'#10#9'<!--'#10#9#9'@page { size: 21.59cm 27.94cm; ma'
+  +'rgin-left: 2.5cm; margin-right: 2.5cm; margin-top: 2.5cm; margin-bottom: 2c'
+  +'m }'#10#9'-->'#10#9'</STYLE>'#10'</HEAD>'#10'<BODY LANG="de-DE" DIR="LTR">'
+  +#10'<P><FONT SIZE=2>Mehrere Wellenl'#195#164'ngen:&nbsp;<BR>Hast du dich ein'
+  +#10'bisschen vertraut gemacht mit dem Programm? &nbsp; Gut. Das ist jetzt'#10
+  +'auch wichtig.</FONT></P>'#10'<P><FONT SIZE=2>Also mit Mehrere Wellenl'#195
+  +#164'ngen meine ich, dass man'#10'mehrere Wellenl'#195#164'ngen gleichzeitig'
+  +' durch den Spalt bzw. das Gitter'#10'schicken kann. </FONT>'#10'</P>'#10'<P'
+  +'><FONT SIZE=2>Klicke auf Erstelle neue Wellenl'#195#164'nge im rechten'#10
+  +'unteren K'#195#164'stchen.<BR>Nun kann man in der Liste zwischen Wellenl'
+  +#195#164'nge'#10'0 und Wellenl'#195#164'nge 1 hin und her wechseln.<BR>Sobal'
+  +'d du eine'#10'Wellenl'#195#164'nge ausw'#195#164'hlst, siehst du, dass die '
+  +'Anzeigen unter dem'#10'Diagramm nur f'#195#188'r die jeweils ausgew'#195#164
+  +'hlte Wellenl'#195#164'nge gilt und nur'#10'f'#195#188'r diese ver'#195#164
+  +'nderbar sind.&nbsp;&nbsp;</FONT></P>'#10'<P><FONT SIZE=2>Falls du f'#195#188
+  +'r alle Wellenl'#195#164'ngen gleichzeitig das'#10'Schirmbild zur Anzeige hi'
+  +'nzuf'#195#188'gen willst, kannst du STRG dr'#195#188'cken'#10'und dann auf '
+  +'die gew'#195#188'nschte Option klicken.&nbsp;&nbsp;</FONT></P>'#10'<P><FONT'
+  +' SIZE=2>Du kannst beliebig viele Wellenl'#195#164'ngen gleichzeitig'#10'dur'
+  +'ch den Spalt schicken und sich alle '#195#188'berlagern lassen.&nbsp;<BR>Be'
+  +'sonders'#10'sch'#195#182'n wird dies bei dem Schirmbild, wo sich die Farben'
+  +' additiv (ganz'#10'wie im wirklichen Leben) mischen.</FONT></P>'#10'</BODY>'
+  +#10'</HTML>'
+]);
+LazarusResources.Add('HelpWellenlaenge','HTML',[
+  '<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">'#10'<HTML>'#10
+  +'<HEAD>'#10#9'<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=ut'
+  +'f-8">'#10#9'<TITLE></TITLE>'#10#9'<META NAME="GENERATOR" CONTENT="OpenOffic'
+  +'e.org 2.4  (Unix)">'#10#9'<META NAME="CREATED" CONTENT="0;0">'#10#9'<META N'
+  +'AME="CHANGEDBY" CONTENT="alexander">'#10#9'<META NAME="CHANGED" CONTENT="20'
+  +'080805;16081100">'#10#9'<META NAME="CHANGEDBY" CONTENT="alexander">'#10#9'<'
+  +'STYLE TYPE="text/css">'#10#9'<!--'#10#9#9'@page { size: 21.59cm 27.94cm; ma'
+  +'rgin-left: 2.5cm; margin-right: 2.5cm; margin-top: 2.5cm; margin-bottom: 2c'
+  +'m }'#10#9'-->'#10#9'</STYLE>'#10'</HEAD>'#10'<BODY LANG="de-DE" DIR="LTR">'
+  +#10'<P><FONT SIZE=2>Unter dem Diagramm sind die Einstellungen, die die'#10'g'
+  +'ezeigte Wellenl'#195#164'nge ver'#195#164'ndern und die Graphen ein-/ausble'
+  +'nden.</FONT></P>'#10'<P><FONT SIZE=2>So kann man:</FONT></P>'#10'<UL>'#10#9
+  +'<LI><P><FONT SIZE=2>Wellenl'#195#164'nge bzw. auch die Frequenz ver'#195#164
+  +'ndern</FONT></P>'#10#9'<LI><P><FONT SIZE=2>Graphen, die angezeigt werden so'
+  +'llen'#10#9'ein-/ausblenden&nbsp;</FONT></P>'#10'</UL>'#10'<P>&nbsp;</P>'#10
+  +'<P><FONT SIZE=2>Bsp.:&nbsp;</FONT></P>'#10'<P><FONT SIZE=2>----------------'
+  +'- Anzeigeart ----------------------'#10'&nbsp;(links unten im Programm)</FO'
+  +'NT></P>'#10'<P><FONT SIZE=2>Aktiviert&nbsp; &nbsp; &nbsp; &nbsp;'#10'Einfac'
+  +'hspalt<BR>Deaktiviert&nbsp; &nbsp; &nbsp; &nbsp; (n-Spalten'#10'ohne Einzel'
+  +'spaltmuster)<BR>Aktiviert&nbsp; &nbsp; &nbsp; &nbsp;'#10'n-Spalten real<BR>'
+  +'Deaktiviert&nbsp; &nbsp; &nbsp; &nbsp; Schirmbild</FONT></P>'#10'</BODY>'#10
+  +'</HTML>'
+]);
+LazarusResources.Add('Icon','ICO',[
+  #0#0#1#0#1#0'E5'#0#0#1#0#8#0#140#21#0#0#22#0#0#0'('#0#0#0'E'#0#0#0'j'#0#0#0#1
+  +#0#8#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#1#1#1#0#2#2#2
+  +#0#3#3#3#0#4#4#4#0#5#5#5#0#7#7#7#0#8#8#8#0#10#10#10#0#11#11#11#0#12#12#12#0
+  +#13#13#13#0#15#15#15#0#18#18#18#0#255#0#0#0#31#31#31#0'$$$'#0'...'#0#0#0#255
+  +#0'888'#0';;;'#0'???'#0'AAA'#0'LLL'#0'UUU'#0'XXX'#0'[[['#0'___'#0'lll'#0'ooo'
+  +#0#128#128#128#0#132#132#132#0#147#147#147#0#201#201#201#0#213#213#213#0#246
+  +#246#246#0#251#251#251#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0
+  +#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0
+  +#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0
+  +#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0
+  +#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0
+  +#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0
+  +#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0
+  +#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0
+  +#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0
+  +#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0
+  +#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0
+  +#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0
+  +#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0
+  +#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0
+  +#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0
+  +#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0
+  +#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0
+  +#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0
+  +#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0
+  +#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0
+  +#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0
+  +#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0
+  +#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0
+  +#0#0#0#0#0#0#0#0#0#0#0#0#0#0#2#4#7#8#10#8#7#4#1#0#0#1#1#0#0#30#2#3#1#0#2#9#15
+  +#20#25#29#26#19#13#0#11#21#31'!#$" '#30#0#10#17#24#28#29#27#22#16#12#3#0#1#2
+  +#1#0#0#1#1#1#1#0#1#30#6#8#10#9#5#2#0#0#0#2#4#7#8#10#8#7#4#1#0#0#1#1#0#0#30#2
+  +#3#1#0#2#9#15#20#25#29#26#19#13#0#11#21#31'!#$" '#30#0#10#17#24#28#29#27#22
+  +#16#12#3#0#1#2#1#0#0#1#1#1#1#0#1#30#6#8#10#9#5#2#0#0#0#2#4#7#8#30#8#7#4#1#30
+  +#0#1#1#0#0#30#2#3#1#0#2#30#15#20#25#29#26#30#13#0#11#21#31#30'#$" '#30#0#10
+  +#17#24#28#30#27#22#16#12#3#30#1#2#1#0#0#30#1#1#1#0#1#30#6#8#10#9#30#2#0#0#0
+  +#14#14#14#14#30#14#14#14#14#30#14#14#14#14#14#14#14#14#14#14#14#30#14#14#14
+  +#14#14#30#14#14#14#14#14#30#14#14#14#14#14#14#14#14#14#14#30#14#14#14#14#14
+  +#30#14#14#14#14#14#30#14#14#14#14#14#14#14#14#14#14#30#14#0#0#0#18#18#18#18
+  +#14#14#14#14#14#14#18#18#18#18#14#14#14#18#18#14#14#14#14#14#14#14#14#14#14
+  +#14#14#14#14#14#14#14#14#14#14#14#14#14#14#14#14#14#14#14#14#14#14#14#18#18
+  +#14#14#14#18#18#18#18#14#14#14#14#14#14#14#18#0#0#0#2#4#7#18#18#18#18#18#18
+  +#18#18#1#1#0#0#1#2#3#18#18#2#9#15#20#25#29#26#19#13#0#11#21#31'!#$" '#23#0#10
+  +#17#24#28#29#27#22#16#12#3#0#18#18#1#0#0#1#1#1#1#18#18#18#18#18#18#18#18#2#0
+  +#0#0#2#4#7#8#10#8#7#4#1#0#0#1#1#0#0#1#2#3#1#18#18#9#15#20#25#29#26#19#13#0#11
+  +#21#31'!#$" '#23#0#10#17#24#28#29#27#22#16#12#3#18#18#2#1#0#0#1#1#1#1#0#1#3#6
+  +#8#10#9#5#2#0#0#0#2#4#7#8#10#8#7#4#1#0#0#1#1#0#0#1#2#3#1#0#18#9#15#20#25#29
+  +#26#19#13#0#11#21#31'!#$" '#23#0#10#17#24#28#29#27#22#16#12#3#18#1#2#1#0#0#1
+  +#1#1#1#0#1#3#6#8#10#9#5#2#0#0#0#2#4#7#8#10#8#7#4#1#0#0#1#1#0#0#1#2#3#1#0#2#18
+  +#15#20#25#29#26#19#13#0#11#21#31'!#$" '#23#0#10#17#24#28#29#27#22#16#12#18#18
+  +#1#2#1#0#0#1#1#1#1#0#1#3#6#8#10#9#5#2#0#0#0#2#4#7#8#10#8#7#4#1#0#0#1#1#0#0#1
+  +#2#3#1#0#2#18#15#20#25#29#26#19#13#0#11#21#31'!#$" '#23#0#10#17#24#28#29#27
+  +#22#16#12#18#0#1#2#1#0#0#1#1#1#1#0#1#3#6#8#10#9#5#2#0#0#0#2#4#7#8#10#8#7#4#1
+  +#0#0#1#1#0#0#1#2#3#1#0#2#18#18#20#25#29#26#19#13#0#11#21#31'!#$" '#23#0#10#17
+  +#24#28#29#27#22#16#12#18#0#1#2#1#0#0#1#1#1#1#0#1#3#6#8#10#9#5#2#0#0#0#2#4#7#8
+  +#10#8#7#4#1#0#0#1#1#0#0#1#2#3#1#0#2#9#18#20#25#29#26#19#13#0#11#21#31'!#$" '
+  +#23#0#10#17#24#28#29#27#22#16#18#18#0#1#2#1#0#0#1#1#1#1#0#1#3#6#8#10#9#5#2#0
+  +#0#0#2#4#7#8#10#8#7#4#1#0#0#1#1#0#0#1#2#3#1#0#2#9#18#18#25#29#26#19#13#0#11
+  +#21#31'!#$" '#23#0#10#17#24#28#29#27#22#16#18#3#0#1#2#1#0#0#1#1#1#1#0#1#3#6#8
+  +#10#9#5#2#0#0#0#2#4#7#8#10#8#7#4#1#0#0#1#1#0#0#1#2#3#1#0#2#9#15#18#25#29#26
+  +#19#13#0#11#21#31'!#$" '#23#0#10#17#24#28#29#27#22#16#18#3#0#1#2#1#0#0#1#1#1
+  +#1#0#1#3#6#8#10#9#5#2#0#0#0#2#4#7#8#10#8#7#4#1#0#0#1#1#0#0#1#2#3#1#0#2#9#15
+  +#18#25#29#26#19#13#0#11#21#31'!#$" '#23#0#10#17#24#28#29#27#22#18#12#3#0#1#2
+  +#1#0#0#1#1#1#1#0#1#3#6#8#10#9#5#2#0#0#0#2#4#7#8#10#8#7#4#1#0#0#1#1#0#0#1#2#3
+  ,#1#0#2#9#15#18#18#29#26#19#13#0#11#21#31'!#$" '#23#0#10#17#24#28#29#27#22#18
+  +#12#3#0#1#2#1#0#0#1#1#1#1#0#1#3#6#8#10#9#5#2#0#0#0#2#4#7#8#10#8#7#4#1#0#0#1#1
+  +#0#0#1#2#3#1#0#2#9#15#20#18#29#26#19#13#0#11#21#31'!#$" '#23#0#10#17#24#28#29
+  +#27#22#18#12#3#0#1#2#1#0#0#1#1#1#1#0#1#3#6#8#10#9#5#2#0#0#0#2#4#7#8#10#8#7#4
+  +#1#0#0#1#1#0#0#1#2#3#1#0#2#9#15#20#18#29#26#19#13#0#11#21#31'!#$" '#23#0#10
+  +#17#24#28#29#27#18#16#12#3#0#1#2#1#0#0#1#1#1#1#0#1#3#6#8#10#9#5#2#0#0#0#2#4#7
+  +#8#10#8#7#4#1#0#0#1#1#0#0#1#2#3#1#0#2#9#15#20#18#29#26#19#13#0#11#21#31'!#$"'
+  +' '#23#0#10#17#24#28#29#27#18#16#12#3#0#1#2#1#0#0#1#1#1#1#0#1#3#6#8#10#9#5#2
+  +#0#0#0#2#4#7#8#10#8#7#4#1#0#0#1#1#0#0#1#2#3#1#0#2#9#15#20#18#18#26#19#13#0#11
+  +#21#31'!#$" '#23#0#10#17#24#28#29#27#18#16#12#3#0#1#2#1#0#0#1#1#1#1#0#1#3#6#8
+  +#10#9#5#2#0#0#0#2#4#7#8#10#8#7#4#1#0#0#1#1#0#0#1#2#3#1#0#2#9#15#20#25#18#26
+  +#19#13#0#11#21#31'!#$" '#23#0#10#17#24#28#29#18#18#16#12#3#0#1#2#1#0#0#1#1#1
+  +#1#0#1#3#6#8#10#9#5#2#0#0#0#2#4#7#8#10#8#7#4#1#0#0#1#1#0#0#1#2#3#1#0#2#9#15
+  +#20#25#18#26#19#13#0#11#21#31'!#$" '#23#0#10#17#24#28#29#18#22#16#12#3#0#1#2
+  +#1#0#0#1#1#1#1#0#1#3#6#8#10#9#5#2#0#0#0#2#4#7#8#10#8#7#4#1#0#0#1#1#0#0#1#2#3
+  +#1#0#2#9#15#20#25#18#18#19#13#0#11#21#31'!#$" '#23#0#10#17#24#28#29#18#22#16
+  +#12#3#0#1#2#1#0#0#1#1#1#1#0#1#3#6#8#10#9#5#2#0#0#0#2#4#7#8#10#8#7#4#1#0#0#1#1
+  +#0#0#1#2#3#1#0#2#9#15#20#25#29#18#19#13#0#11#21#31'!#$" '#23#0#10#17#24#28#29
+  +#18#22#16#12#3#0#1#2#1#0#0#1#1#1#1#0#1#3#6#8#10#9#5#2#0#0#0#2#4#7#8#10#8#7#4
+  +#1#0#0#1#1#0#0#1#2#3#1#0#2#9#15#20#25#29#18#19#13#0#11#21#31'!#$" '#23#0#10
+  +#17#24#28#18#18#22#16#12#3#0#1#2#1#0#0#1#1#1#1#0#1#3#6#8#10#9#5#2#0#0#0#2#4#7
+  +#8#10#8#7#4#1#0#0#1#1#0#0#1#2#3#1#0#2#9#15#20#25#29#18#19#13#0#11#21#31'!#$"'
+  +' '#23#0#10#17#24#28#18#27#22#16#12#3#0#1#2#1#0#0#1#1#1#1#0#1#3#6#8#10#9#5#2
+  +#0#0#0#2#4#7#8#10#8#7#4#1#0#0#1#1#0#0#1#2#3#1#0#2#9#15#20#25#29#18#18#13#0#11
+  +#21#31'!#$" '#23#0#10#17#24#28#18#27#22#16#12#3#0#1#2#1#0#0#1#1#1#1#0#1#3#6#8
+  +#10#9#5#2#0#0#0#2#4#7#8#10#8#7#4#1#0#0#1#1#0#0#1#2#3#1#0#2#9#15#20#25#29#26
+  +#18#13#0#11#21#31'!#$" '#23#0#10#17#24#28#18#27#22#16#12#3#0#1#2#1#0#0#1#1#1
+  +#1#0#1#3#6#8#10#9#5#2#0#0#0#2#4#7#8#10#8#7#4#1#0#0#1#1#0#0#1#2#3#1#0#2#9#15
+  +#20#25#29#26#18#13#0#11#21#31'!#$" '#23#0#10#17#24#18#18#27#22#16#12#3#0#1#2
+  +#1#0#0#1#1#1#1#0#1#3#6#8#10#9#5#2#0#0#0#2#4#7#8#10#8#7#4#1#0#0#1#1#0#0#1#2#3
+  +#1#0#2#9#15#20#25#29#26#18#13#0#11#21#31'!#$" '#23#0#10#17#24#18#29#27#22#16
+  +#12#3#0#1#2#1#0#0#1#1#1#1#0#1#3#6#8#10#9#5#2#0#0#0#2#4#7#8#10#8#7#4#1#0#0#1#1
+  +#0#0#1#2#3#1#0#2#9#15#20#25#29#26#18#18#0#11#21#31'!#$" '#23#0#10#17#24#18#29
+  +#27#22#16#12#3#0#1#2#1#0#0#1#1#1#1#0#1#3#6#8#10#9#5#2#0#0#0#2#4#7#8#10#8#7#4
+  +#1#0#0#1#1#0#0#1#2#3#1#0#2#9#15#20#25#29#26#19#18#0#11#21#31'!#$" '#23#0#10
+  +#17#24#18#29#27#22#16#12#3#0#1#2#1#0#0#1#1#1#1#0#1#3#6#8#10#9#5#2#0#0#0#2#4#7
+  +#8#10#8#7#4#1#0#0#1#1#0#0#1#2#3#1#0#2#9#15#20#25#29#26#19#18#0#11#21#31'!#$"'
+  +' '#23#0#10#17#18#28#29#27#22#16#12#3#0#1#2#1#0#0#1#1#1#1#0#1#3#6#8#10#9#5#2
+  +#0#0#0#2#4#7#8#10#8#7#4#1#0#0#1#1#0#0#1#2#3#1#0#2#9#15#20#25#29#26#19#18#0#11
+  +#21#31'!#$" '#23#0#10#17#18#28#29#27#22#16#12#3#0#1#2#1#0#0#1#1#1#1#0#1#3#6#8
+  +#10#9#5#2#0#0#0#2#4#7#8#10#8#7#4#1#0#0#1#1#0#0#1#2#3#1#0#2#9#15#20#25#29#26
+  +#19#18#18#11#21#31'!#$" '#23#0#10#17#18#28#29#27#22#16#12#3#0#1#2#1#0#0#1#1#1
+  +#1#0#1#3#6#8#10#9#5#2#0#0#0#2#4#7#8#10#8#7#4#1#0#0#1#1#0#0#1#2#3#1#0#2#9#15
+  +#20#25#29#26#19#13#18#11#21#31'!#$" '#23#0#10#18#18#28#29#27#22#16#12#3#0#1#2
+  +#1#0#0#1#1#1#1#0#1#3#6#8#10#9#5#2#0#0#0#2#4#7#8#10#8#7#4#1#0#0#1#1#0#0#1#2#3
+  +#1#0#2#9#15#20#25#29#26#19#13#18#11#21#31'!#$" '#23#0#10#18#24#28#29#27#22#16
+  +#12#3#0#1#2#1#0#0#1#1#1#1#0#1#3#6#8#10#9#5#2#0#0#0#2#4#7#8#10#8#7#4#1#0#0#1#1
+  +#0#0#1#2#3#1#0#2#9#15#20#25#29#26#19#13#18#18#21#31'!#$" '#23#0#10#18#24#28
+  +#29#27#22#16#12#3#0#1#2#1#0#0#1#1#1#1#0#1#3#6#8#10#9#5#2#0#0#0#2#4#7#8#10#8#7
+  +#4#1#0#0#1#1#0#0#1#2#3#1#0#2#9#15#20#25#29#26#19#13#0#18#21#31'!#$" '#23#0#10
+  +#18#24#28#29#27#22#16#12#3#0#1#2#1#0#0#1#1#1#1#0#1#3#6#8#10#9#5#2#0#0#0#2#4#7
+  +#8#10#8#7#4#1#0#0#1#1#0#0#1#2#3#1#0#2#9#15#20#25#29#26#19#13#0#18#21#31'!#$"'
+  +' '#23#0#18#18#24#28#29#27#22#16#12#3#0#1#2#1#0#0#1#1#1#1#0#1#3#6#8#10#9#5#2
+  +#0#0#0#2#4#7#8#10#8#7#4#1#0#0#1#1#0#0#1#2#3#1#0#2#9#15#20#25#29#26#19#13#0#18
+  +#21#31'!#$" '#23#0#18#17#24#28#29#27#22#16#12#3#0#1#2#1#0#0#1#1#1#1#0#1#3#6#8
+  +#10#9#5#2#0#0#0#2#4#7#8#10#8#7#4#1#0#0#1#1#0#0#1#2#3#1#0#2#9#15#20#25#29#26
+  +#19#13#0#18#18#31'!#$" '#23#0#18#17#24#28#29#27#22#16#12#3#0#1#2#1#0#0#1#1#1
+  +#1#0#1#3#6#8#10#9#5#2#0#0#0#2#4#7#8#10#8#7#4#1#0#0#1#1#0#0#1#2#3#1#0#2#9#15
+  +#20#25#29#26#19#13#0#11#18#31'!#$" '#23#18#18#17#24#28#29#27#22#16#12#3#0#1#2
+  +#1#0#0#1#1#1#1#0#1#3#6#8#10#9#5#2#0#0#0#2#4#7#8#10#8#7#4#1#0#0#1#1#0#0#1#2#3
+  +#1#0#2#9#15#20#25#29#26#19#13#0#11#18#31'!#$" '#23#18#10#17#24#28#29#27#22#16
+  +#12#3#0#1#2#1#0#0#1#1#1#1#0#1#3#6#8#10#9#5#2#0#0#0#2#4#7#8#10#8#7#4#1#0#0#1#1
+  +#0#0#1#2#3#1#0#2#9#15#20#25#29#26#19#13#0#11#21#18'!#$" '#18#18#10#17#24#28
+  +#29#27#22#16#12#3#0#1#2#1#0#0#1#1#1#1#0#1#3#6#8#10#9#5#2#0#0#0#2#4#7#8#10#8#7
+  ,#4#1#0#0#1#1#0#0#1#2#3#1#0#2#9#15#20#25#29#26#19#13#0#11#21#18'!#$" '#18#0#10
+  +#17#24#28#29#27#22#16#12#3#0#1#2#1#0#0#1#1#1#1#0#1#3#6#8#10#9#5#2#0#0#0#2#4#7
+  +#8#10#8#7#4#1#0#0#1#1#0#0#1#2#3#1#0#2#9#15#20#25#29#26#19#13#0#11#21#18#18'#'
+  +'$" '#18#0#10#17#24#28#29#27#22#16#12#3#0#1#2#1#0#0#1#1#1#1#0#1#3#6#8#10#9#5
+  +#2#0#0#0#2#4#7#8#10#8#7#4#1#0#0#1#1#0#0#1#2#3#1#0#2#9#15#20#25#29#26#19#13#0
+  +#11#21#31#18#18'$"'#18#23#0#10#17#24#28#29#27#22#16#12#3#0#1#2#1#0#0#1#1#1#1
+  +#0#1#3#6#8#10#9#5#2#0#0#0#2#4#7#8#10#8#7#4#1#0#0#1#1#0#0#1#2#3#1#0#2#9#15#20
+  +#25#29#26#19#13#0#11#21#31'!'#18#18#18#18#23#0#10#17#24#28#29#27#22#16#12#3#0
+  +#1#2#1#0#0#1#1#1#1#0#1#3#6#8#10#9#5#2#0#0#0#2#4#7#8#10#8#7#4#1#0#0#1#1#0#0#1
+  +#2#3#1#0#2#9#15#20#25#29#26#19#13#0#11#21#31'!#$" '#23#0#10#17#24#28#29#27#22
+  +#16#12#3#0#1#2#1#0#0#1#1#1#1#0#1#3#6#8#10#9#5#2#0#0#0#2#4#7#8#10#8#7#4#1#0#0
+  +#1#1#0#0#1#2#3#1#0#2#9#15#20#25#29#26#19#13#0#11#21#31'!#$" '#23#0#10#17#24
+  +#28#29#27#22#16#12#3#0#1#2#1#0#0#1#1#1#1#0#1#3#6#8#10#9#5#2#0#0#0#2#4#7#8#10
+  +#8#7#4#1#0#0#1#1#0#0#1#2#3#1#0#2#9#15#20#25#29#26#19#13#0#11#21#31'!#$" '#23
+  +#0#10#17#24#28#29#27#22#16#12#3#0#1#2#1#0#0#1#1#1#1#0#1#3#6#8#10#9#5#2#0#0#0
+  +#2#4#7#8#10#8#7#4#1#0#0#1#1#0#0#1#2#3#1#0#2#9#15#20#25#29#26#19#13#0#11#21#31
+  +'!#$" '#23#0#10#17#24#28#29#27#22#16#12#3#0#1#2#1#0#0#1#1#1#1#0#1#3#6#8#10#9
+  +#5#2#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0
+  +#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0
+  +#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0
+  +#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0
+  +#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0
+  +#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0
+  +#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0
+  +#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0
+  +#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0
+  +#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0
+  +#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0
+  +#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0
+  +#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0
+  +#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0
+  +#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0
+  +#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0
+  +#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0
+]);
+LazarusResources.Add('Info','HTML',[
+  '<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">'#10'<HTML>'#10
+  +'<HEAD>'#10#9'<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=ut'
+  +'f-8">'#10#9'<TITLE></TITLE>'#10#9'<META NAME="GENERATOR" CONTENT="OpenOffic'
+  +'e.org 3.0  (Unix)">'#10#9'<META NAME="CREATED" CONTENT="0;0">'#10#9'<META N'
+  +'AME="CHANGEDBY" CONTENT="alexander">'#10#9'<META NAME="CHANGED" CONTENT="20'
+  +'090101;10182700">'#10#9'<META NAME="CHANGEDBY" CONTENT="alexander">'#10#9'<'
+  +'META NAME="CHANGEDBY" CONTENT="alexander">'#10#9'<META NAME="CHANGEDBY" CON'
+  +'TENT="alexander">'#10#9'<META NAME="CHANGEDBY" CONTENT="alexander">'#10#9'<'
+  +'STYLE TYPE="text/css">'#10#9'<!--'#10#9#9'@page { size: 21.59cm 27.94cm; ma'
+  +'rgin-left: 2.5cm; margin-right: 2.5cm; margin-top: 2.5cm; margin-bottom: 2c'
+  +'m }'#10#9'-->'#10#9'</STYLE>'#10'</HEAD>'#10'<BODY LANG="de-DE" DIR="LTR">'
+  +#10'<P>Dies ist ein Freeware-Programm und wurde von <B>Alexander Roth</B>'#10
+  +'entwickelt.</P>'#10'<P>Ich habe das Programm anfangs f'#195#188'r eine Fach'
+  +'arbeit in Physik'#10'entwickelt, und danach f'#195#188'r Jugend Forscht noc'
+  +'h deutlich erweitert'#10'und verbessert.<BR>Es kann die Interferenzbilder a'
+  +'n den'#10'verschiedensten Spalten und Gittern berechnen und darstellen.<BR>'
+  +'F'#195#188'r'#10'eine Weiterverwendung der Daten k'#195#182'nnen auch alle '
+  +'Werte in eine Excel'#10'Tabelle ausgeben werden.</P>'#10'<P>Kontakt: roth-a'
+  +'@gmx.de</P>'#10'<P>Homepage: <A HREF="http://www.alexanderroth.eu/">www.ale'
+  +'xanderroth.eu</A></P>'#10'<P><BR><BR>'#10'</P>'#10'<P><BR><BR>'#10'</P>'#10
+  +'<P>Ich bedanke mich herzlich bei:</P>'#10'<UL>'#10#9'<LI><P>Bei allen Progr'
+  +'ammieren von Free Pascal, die eine ungeheuren'#10#9'guten plattformunabh'
+  +#195#164'ngigen Compiler geschrieben haben</P>'#10#9'<LI><P>Bei den Programm'
+  +'ieren die LCL und Lazarus geschrieben haben'#10#9'und es weiter verbessern<'
+  +'/P>'#10#9'<LI><P>Bei dem Lazarusforum, dass einem mit Rat zur Seite steht</'
+  +'P>'#10'</UL>'#10'</BODY>'#10'</HTML>'
+]);
+LazarusResources.Add('LizenzGPL','HTML',[
+  '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"'#10'    "http://www'
+  +'.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">'#10'<html xmlns="http://www.w3.or'
+  +'g/1999/xhtml" xml:lang="en" lang="en">'#10#10'<head>'#10'<!-- start of serv'
+  +'er/head-include-1.html -->'#10'<meta http-equiv="content-type" content="tex'
+  +'t/html; charset=utf-8" />'#10'<link rev="made" href="mailto:webmasters@gnu.'
+  +'org" />'#10'<link rel="icon" type="image/png" href="/graphics/gnu-head-mini'
+  +'.png" />'#10'<meta name="ICBM" content="42.355469,-71.058627" />'#10'<meta '
+  +'name="DC.title" content="gnu.org" />'#10'<link rel="stylesheet" href="/comb'
+  +'o.css" media="screen" />'#10'<link rel="stylesheet" href="/mini.css" media='
+  +'"handheld" />'#10'<link rel="stylesheet" href="/layout.min.css" media="scre'
+  +'en" />'#10'<link rel="stylesheet" href="/print.min.css" media="print" />'#10
+  +'<!-- end of server/head-include-1.html -->'#10#10'<!-- end of server/header'
+  +'.html -->'#10#10'<!-- Parent-Version: 1.79 -->'#10'<title>The GNU General P'
+  +'ublic License v3.0'#10'- GNU Project - Free Software Foundation</title>'#10
+  +'<link rel="alternate" type="application/rdf+xml"'#10'      href="/licenses/'
+  +'gpl-3.0.rdf" /> '#10'<!-- begin translist file -->'#10#10'<link rel="altern'
+  +'ate" type="text/html" href="/licenses/gpl-3.0.html" hreflang="x-default" />'
+  +#10'<link rel="alternate" type="text/html" lang="en" hreflang="en" href="/li'
+  +'censes/gpl-3.0.en.html" title="English" />'#10'<link rel="alternate" type="'
+  +'text/html" lang="ar" hreflang="ar" href="/licenses/gpl-3.0.ar.html" title="'
+  +#216#167#217#132#216#185#216#177#216#168#217#138#216#169'" />'#10'<link rel='
+  +'"alternate" type="text/html" lang="ca" hreflang="ca" href="/licenses/gpl-3.'
+  +'0.ca.html" title="catal'#195#160'" />'#10'<link rel="alternate" type="text/'
+  +'html" lang="de" hreflang="de" href="/licenses/gpl-3.0.de.html" title="Deuts'
+  +'ch" />'#10'<link rel="alternate" type="text/html" lang="fr" hreflang="fr" h'
+  +'ref="/licenses/gpl-3.0.fr.html" title="fran'#195#167'ais" />'#10'<link rel='
+  +'"alternate" type="text/html" lang="ja" hreflang="ja" href="/licenses/gpl-3.'
+  +'0.ja.html" title="'#230#151#165#230#156#172#232#170#158'" />'#10'<link rel='
+  +'"alternate" type="text/html" lang="nl" hreflang="nl" href="/licenses/gpl-3.'
+  +'0.nl.html" title="Nederlands" />'#10'<link rel="alternate" type="text/html"'
+  +' lang="ru" hreflang="ru" href="/licenses/gpl-3.0.ru.html" title="'#209#128
+  +#209#131#209#129#209#129#208#186#208#184#208#185'" />'#10'<link rel="alterna'
+  +'te" type="text/html" lang="uk" hreflang="uk" href="/licenses/gpl-3.0.uk.htm'
+  +'l" title="'#209#131#208#186#209#128#208#176#209#151#208#189#209#129#209#140
+  +#208#186#208#176'" />'#10'<!-- end translist file -->'#10#10'<!-- start of s'
+  +'erver/banner.html -->'#10'<!-- start of head-include-2.html -->'#10'<meta n'
+  +'ame="viewport" content="width=device-width, initial-scale=1" />'#10'<!-- en'
+  +'d of head-include-2.html -->'#10#10'</head>'#10'<body>'#10'<div class="inne'
+  +'r">'#10'<!-- start of server/body-include-1.html -->'#10#10#10#10#10#10'<di'
+  +'v id="toplinks">'#10' <a href="#content">Skip to main text</a>'#10' <span c'
+  +'lass="gnun-split"></span>'#10' <a href="/server/select-language.html?callba'
+  +'ck=/licenses/gpl.html" rel="nofollow">'#10' Set language'#10' <span class="'
+  +'gnun-split"></span>'#10' </a>'#10'</div> <!-- /toplinks -->'#10#10'<div id='
+  +'"searcher">'#10' <form method="get" action="//www.gnu.org/cgi-bin/estseek.c'
+  +'gi" class="header">'#10'  <div>'#10'  <input name="phrase" id="phrase" type'
+  +'="text" size="18" accesskey="s"'#10'         value="Why GNU/Linux?" onfocus'
+  +'="this.value=''''" />'#10'  <input type="submit" value="Search" />'#10'  </'
+  +'div>'#10' </form>'#10'</div><!-- /searcher -->'#10#10'<div id="translations'
+  +'">'#10'<p>'#10'<span dir="ltr" class="original"><a lang="en" hreflang="en" '
+  +'href="/licenses/gpl-3.0.en.html">English</a>&nbsp;[en]</span> &nbsp;'#10'<s'
+  +'pan dir="ltr"><a lang="ar" hreflang="ar" href="/licenses/gpl-3.0.ar.html">'
+  +#216#167#217#132#216#185#216#177#216#168#217#138#216#169'</a>&nbsp;[ar]</spa'
+  +'n> &nbsp;'#10'<span dir="ltr"><a lang="ca" hreflang="ca" href="/licenses/gp'
+  +'l-3.0.ca.html">catal'#195#160'</a>&nbsp;[ca]</span> &nbsp;'#10'<span dir="l'
+  +'tr"><a lang="de" hreflang="de" href="/licenses/gpl-3.0.de.html">Deutsch</a>'
+  +'&nbsp;[de]</span> &nbsp;'#10'<span dir="ltr"><a lang="fr" hreflang="fr" hre'
+  +'f="/licenses/gpl-3.0.fr.html">fran'#195#167'ais</a>&nbsp;[fr]</span> &nbsp;'
+  +#10'<span dir="ltr"><a lang="ja" hreflang="ja" href="/licenses/gpl-3.0.ja.ht'
+  +'ml">'#230#151#165#230#156#172#232#170#158'</a>&nbsp;[ja]</span> &nbsp;'#10
+  +'<span dir="ltr"><a lang="nl" hreflang="nl" href="/licenses/gpl-3.0.nl.html"'
+  +'>Nederlands</a>&nbsp;[nl]</span> &nbsp;'#10'<span dir="ltr"><a lang="ru" hr'
+  +'eflang="ru" href="/licenses/gpl-3.0.ru.html">'#209#128#209#131#209#129#209
+  +#129#208#186#208#184#208#185'</a>&nbsp;[ru]</span> &nbsp;'#10'<span dir="ltr'
+  +'"><a lang="uk" hreflang="uk" href="/licenses/gpl-3.0.uk.html">'#209#131#208
+  ,#186#209#128#208#176#209#151#208#189#209#129#209#140#208#186#208#176'</a>&nb'
+  +'sp;[uk]</span> &nbsp;'#10'</p>'#10'</div>'#10#10'<!-- end of server/body-in'
+  +'clude-1.html -->'#10#10'<!-- start of server/body-include-2 -->'#10'<div id'
+  +'="header">'#10'<div id="fsf-frame">'#10'<p id="join-fsf"><a href="https://w'
+  +'ww.fsf.org/associate/support_freedom?referrer=4052">JOIN&nbsp;THE&nbsp;FSF<'
+  +'/a></p>'#10'<div id="fssbox">'#10'<p><a href="http://www.fsf.org/fss">Free '
+  +'Software Supporter</a></p>'#10'<form action="https://my.fsf.org/civicrm/pro'
+  +'file/create?reset=1&amp;gid=31"'#10' method="post" class="header">'#10' <di'
+  +'v>'#10'  <input name="postURL" type="hidden" value="" />'#10'  <input type='
+  +'"hidden" name="group[25]" value="1" />'#10'  <input name="cancelURL" type="'
+  +'hidden" value="https://crm.fsf.org/civicrm/profile?reset=1&amp;gid=31" />'
+  +#10'  <input name="_qf_default" type="hidden" value="Edit:cancel" />'#10' </'
+  +'div>'#10' <p>'#10'  <input type="text" id="frmEmail" name="email-Primary" s'
+  +'ize="18" maxlength="80"'#10'         value="email address" onfocus="this.va'
+  +'lue=''''"/>'#10'  <input type="submit" name="_qf_Edit_next" value="Sign up"'
+  +' />'#10' </p>'#10'</form>'#10'</div><!-- /fssbox -->'#10'</div><!-- /fsf-fr'
+  +'ame -->'#10#10'<div id="gnu-banner">'#10' <a href="/">'#10' <img src="/grap'
+  +'hics/heckert_gnu.small.png" alt=" [A GNU head] " /><strong>GNU</strong> Ope'
+  +'rating System</a>'#10#10'<p id="fsf-support">Sponsored by the <a href="#mis'
+  +'sion-statement">Free Software Foundation</a></p>'#10'</div><!-- /gnu-banner'
+  +' -->'#10'</div><!-- /header -->'#10#10'<div id="navigation">'#10' <ul>'#10
+  +#10#10#10'   <li id="tabAboutGNU"><a href="/gnu/gnu.html">ABOUT&nbsp;GNU</a>'
+  +'</li>'#10#10#10'  <li id="tabPhilosophy"><a href="/philosophy/philosophy.ht'
+  +'ml">PHILOSOPHY</a></li>'#10#10#10'  <li id="tabLicenses" class="active">'#10
+  +'     <span class=''no-display''>=</span> '#10'    <a href="/licenses/licens'
+  +'es.html">LICENSES</a>'#10'    <span class="gnun-split"></span>'#10'     <sp'
+  +'an class=''no-display''>=</span> '#10'  </li>'#10#10#10'  <li id="tabEducat'
+  +'ion"><a href="/education/education.html">EDUCATION</a></li>'#10#10#10'  <li'
+  +' id="tabSoftware"><a href="/software/software.html">SOFTWARE</a></li>'#10#10
+  +#10'  <li id="tabDoc"><a href="/doc/doc.html">DOCUMENTATION</a></li>'#10#10
+  +#10'  <li id="tabHelp"><a href="/help/help.html">HELP&nbsp;GNU</a></li>'#10
+  +#10' </ul>'#10'</div><!--  /navigation -->'#10'<!-- end of server/body-inclu'
+  +'de-2 -->'#10#10'<div id="content">'#10'<!-- end of server/banner.html -->'
+  +#10#10'<h2>GNU General Public License</h2>'#10#10'<img class="imgright" src='
+  +'"/graphics/gplv3-127x51.png" alt=" [GPLv3 Logo] " />'#10#10'<ul>'#10'  <li>'
+  +'<a href="/licenses/quick-guide-gplv3.html">A Quick Guide to GPLv3</a></li>'
+  +#10'  <li><a href="/licenses/rms-why-gplv3.html">Why Upgrade to GPLv3</a></l'
+  +'i>'#10'  <li><a href="/licenses/gpl-faq.html">Frequently Asked Questions ab'
+  +'out'#10'       the GNU licenses</a></li>'#10'  <li><a href="/licenses/gpl-h'
+  +'owto.html">How to use GNU licenses for your'#10'       own software</a></li'
+  +'>'#10'  <li><a href="/licenses/translations.html">Translations'#10'       o'
+  +'f the GPL</a></li>'#10'  <li>The GPL in other formats: '#10'       <a href='
+  +'"/licenses/gpl-3.0.txt">plain text</a>,'#10'       <a href="/licenses/gpl-3'
+  +'.0.texi">Texinfo</a>,'#10'       <a href="/licenses/gpl-3.0.tex">LaTeX</a>,'
+  +#10'       <a href="/licenses/gpl-3.0-standalone.html">standalone HTML</a>,'
+  +#10'       <a href="/licenses/gpl-3.0.odt">ODF</a>,'#10'      Docbook <a hre'
+  +'f="/licenses/gpl-3.0.dbk">v4</a> or'#10'      <a href="/licenses/gpl-3.0.xm'
+  +'l">v5</a>,'#10'       <a href="/licenses/gpl-3.0.md">Markdown</a>, and'#10
+  +'       <a href="/licenses/gpl-3.0.rtf">RTF</a>.'#10'       </li>'#10'  <li>'
+  +'<a href="/graphics/license-logos.html">GPLv3 logos</a> to use'#10'       wi'
+  +'th your project</li>'#10'  <li><a href="/licenses/old-licenses/old-licenses'
+  +'.html#GPL">Old'#10'       versions of the GNU GPL</a></li>'#10'  <li><a hre'
+  +'f="/licenses/gpl-violation.html">What to do if you see a'#10'       possibl'
+  +'e GPL violation</a></li>'#10'</ul>'#10#10'<hr style="clear: both;" />'#10#10
+  +'<!-- The license text is in English and appears broken in RTL as'#10'     A'
+  +'rabic, Farsi, etc.  Explicitly set the direction to override the'#10'     o'
+  +'ne defined in the translation. -->'#10'<div dir="ltr">'#10'<h3 style="text-'
+  +'align: center;">GNU GENERAL PUBLIC LICENSE</h3>'#10'<p style="text-align: c'
+  +'enter;">Version 3, 29 June 2007</p>'#10#10'<p>Copyright &copy; 2007 Free So'
+  +'ftware Foundation, Inc.'#10' &lt;<a href="http://fsf.org/">http://fsf.org/<'
+  +'/a>&gt;</p><p>'#10' Everyone is permitted to copy and distribute verbatim c'
+  +'opies'#10' of this license document, but changing it is not allowed.</p>'#10
+  +#10'<h3><a name="preamble"></a>Preamble</h3>'#10#10'<p>The GNU General Publi'
+  +'c License is a free, copyleft license for'#10'software and other kinds of w'
+  ,'orks.</p>'#10#10'<p>The licenses for most software and other practical work'
+  +'s are designed'#10'to take away your freedom to share and change the works.'
+  +'  By contrast,'#10'the GNU General Public License is intended to guarantee '
+  +'your freedom to'#10'share and change all versions of a program--to make sur'
+  +'e it remains free'#10'software for all its users.  We, the Free Software Fo'
+  +'undation, use the'#10'GNU General Public License for most of our software; '
+  +'it applies also to'#10'any other work released this way by its authors.  Yo'
+  +'u can apply it to'#10'your programs, too.</p>'#10#10'<p>When we speak of fr'
+  +'ee software, we are referring to freedom, not'#10'price.  Our General Publi'
+  +'c Licenses are designed to make sure that you'#10'have the freedom to distr'
+  +'ibute copies of free software (and charge for'#10'them if you wish), that y'
+  +'ou receive source code or can get it if you'#10'want it, that you can chang'
+  +'e the software or use pieces of it in new'#10'free programs, and that you k'
+  +'now you can do these things.</p>'#10#10'<p>To protect your rights, we need '
+  +'to prevent others from denying you'#10'these rights or asking you to surren'
+  +'der the rights.  Therefore, you have'#10'certain responsibilities if you di'
+  +'stribute copies of the software, or if'#10'you modify it: responsibilities '
+  +'to respect the freedom of others.</p>'#10#10'<p>For example, if you distrib'
+  +'ute copies of such a program, whether'#10'gratis or for a fee, you must pas'
+  +'s on to the recipients the same'#10'freedoms that you received.  You must m'
+  +'ake sure that they, too, receive'#10'or can get the source code.  And you m'
+  +'ust show them these terms so they'#10'know their rights.</p>'#10#10'<p>Deve'
+  +'lopers that use the GNU GPL protect your rights with two steps:'#10'(1) ass'
+  +'ert copyright on the software, and (2) offer you this License'#10'giving yo'
+  +'u legal permission to copy, distribute and/or modify it.</p>'#10#10'<p>For '
+  +'the developers'' and authors'' protection, the GPL clearly explains'#10'tha'
+  +'t there is no warranty for this free software.  For both users'' and'#10'au'
+  +'thors'' sake, the GPL requires that modified versions be marked as'#10'chan'
+  +'ged, so that their problems will not be attributed erroneously to'#10'autho'
+  +'rs of previous versions.</p>'#10#10'<p>Some devices are designed to deny us'
+  +'ers access to install or run'#10'modified versions of the software inside t'
+  +'hem, although the manufacturer'#10'can do so.  This is fundamentally incomp'
+  +'atible with the aim of'#10'protecting users'' freedom to change the softwar'
+  +'e.  The systematic'#10'pattern of such abuse occurs in the area of products'
+  +' for individuals to'#10'use, which is precisely where it is most unacceptab'
+  +'le.  Therefore, we'#10'have designed this version of the GPL to prohibit th'
+  +'e practice for those'#10'products.  If such problems arise substantially in'
+  +' other domains, we'#10'stand ready to extend this provision to those domain'
+  +'s in future versions'#10'of the GPL, as needed to protect the freedom of us'
+  +'ers.</p>'#10#10'<p>Finally, every program is threatened constantly by softw'
+  +'are patents.'#10'States should not allow patents to restrict development an'
+  +'d use of'#10'software on general-purpose computers, but in those that do, w'
+  +'e wish to'#10'avoid the special danger that patents applied to a free progr'
+  +'am could'#10'make it effectively proprietary.  To prevent this, the GPL ass'
+  +'ures that'#10'patents cannot be used to render the program non-free.</p>'#10
+  +#10'<p>The precise terms and conditions for copying, distribution and'#10'mo'
+  +'dification follow.</p>'#10#10'<h3><a name="terms"></a>TERMS AND CONDITIONS<'
+  +'/h3>'#10#10'<h4><a name="section0"></a>0. Definitions.</h4>'#10#10'<p>&ldqu'
+  +'o;This License&rdquo; refers to version 3 of the GNU General Public License'
+  +'.</p>'#10#10'<p>&ldquo;Copyright&rdquo; also means copyright-like laws that'
+  +' apply to other kinds of'#10'works, such as semiconductor masks.</p>'#10' '
+  +#10'<p>&ldquo;The Program&rdquo; refers to any copyrightable work licensed u'
+  +'nder this'#10'License.  Each licensee is addressed as &ldquo;you&rdquo;.  &'
+  +'ldquo;Licensees&rdquo; and'#10'&ldquo;recipients&rdquo; may be individuals '
+  +'or organizations.</p>'#10#10'<p>To &ldquo;modify&rdquo; a work means to cop'
+  +'y from or adapt all or part of the work'#10'in a fashion requiring copyrigh'
+  +'t permission, other than the making of an'#10'exact copy.  The resulting wo'
+  +'rk is called a &ldquo;modified version&rdquo; of the'#10'earlier work or a '
+  +'work &ldquo;based on&rdquo; the earlier work.</p>'#10#10'<p>A &ldquo;covere'
+  +'d work&rdquo; means either the unmodified Program or a work based'#10'on th'
+  +'e Program.</p>'#10#10'<p>To &ldquo;propagate&rdquo; a work means to do anyt'
+  +'hing with it that, without'#10'permission, would make you directly or secon'
+  +'darily liable for'#10'infringement under applicable copyright law, except e'
+  +'xecuting it on a'#10'computer or modifying a private copy.  Propagation inc'
+  ,'ludes copying,'#10'distribution (with or without modification), making avai'
+  +'lable to the'#10'public, and in some countries other activities as well.</p'
+  +'>'#10#10'<p>To &ldquo;convey&rdquo; a work means any kind of propagation th'
+  +'at enables other'#10'parties to make or receive copies.  Mere interaction w'
+  +'ith a user through'#10'a computer network, with no transfer of a copy, is n'
+  +'ot conveying.</p>'#10#10'<p>An interactive user interface displays &ldquo;A'
+  +'ppropriate Legal Notices&rdquo;'#10'to the extent that it includes a conven'
+  +'ient and prominently visible'#10'feature that (1) displays an appropriate c'
+  +'opyright notice, and (2)'#10'tells the user that there is no warranty for t'
+  +'he work (except to the'#10'extent that warranties are provided), that licen'
+  +'sees may convey the'#10'work under this License, and how to view a copy of '
+  +'this License.  If'#10'the interface presents a list of user commands or opt'
+  +'ions, such as a'#10'menu, a prominent item in the list meets this criterion'
+  +'.</p>'#10#10'<h4><a name="section1"></a>1. Source Code.</h4>'#10#10'<p>The '
+  +'&ldquo;source code&rdquo; for a work means the preferred form of the work'
+  +#10'for making modifications to it.  &ldquo;Object code&rdquo; means any non'
+  +'-source'#10'form of a work.</p>'#10#10'<p>A &ldquo;Standard Interface&rdquo'
+  +'; means an interface that either is an official'#10'standard defined by a r'
+  +'ecognized standards body, or, in the case of'#10'interfaces specified for a'
+  +' particular programming language, one that'#10'is widely used among develop'
+  +'ers working in that language.</p>'#10#10'<p>The &ldquo;System Libraries&rdq'
+  +'uo; of an executable work include anything, other'#10'than the work as a wh'
+  +'ole, that (a) is included in the normal form of'#10'packaging a Major Compo'
+  +'nent, but which is not part of that Major'#10'Component, and (b) serves onl'
+  +'y to enable use of the work with that'#10'Major Component, or to implement '
+  +'a Standard Interface for which an'#10'implementation is available to the pu'
+  +'blic in source code form.  A'#10'&ldquo;Major Component&rdquo;, in this con'
+  +'text, means a major essential component'#10'(kernel, window system, and so '
+  +'on) of the specific operating system'#10'(if any) on which the executable w'
+  +'ork runs, or a compiler used to'#10'produce the work, or an object code int'
+  +'erpreter used to run it.</p>'#10#10'<p>The &ldquo;Corresponding Source&rdqu'
+  +'o; for a work in object code form means all'#10'the source code needed to g'
+  +'enerate, install, and (for an executable'#10'work) run the object code and '
+  +'to modify the work, including scripts to'#10'control those activities.  How'
+  +'ever, it does not include the work''s'#10'System Libraries, or general-purp'
+  +'ose tools or generally available free'#10'programs which are used unmodifie'
+  +'d in performing those activities but'#10'which are not part of the work.  F'
+  +'or example, Corresponding Source'#10'includes interface definition files as'
+  +'sociated with source files for'#10'the work, and the source code for shared'
+  +' libraries and dynamically'#10'linked subprograms that the work is specific'
+  +'ally designed to require,'#10'such as by intimate data communication or con'
+  +'trol flow between those'#10'subprograms and other parts of the work.</p>'#10
+  +#10'<p>The Corresponding Source need not include anything that users'#10'can'
+  +' regenerate automatically from other parts of the Corresponding'#10'Source.'
+  +'</p>'#10#10'<p>The Corresponding Source for a work in source code form is t'
+  +'hat'#10'same work.</p>'#10#10'<h4><a name="section2"></a>2. Basic Permissio'
+  +'ns.</h4>'#10#10'<p>All rights granted under this License are granted for th'
+  +'e term of'#10'copyright on the Program, and are irrevocable provided the st'
+  +'ated'#10'conditions are met.  This License explicitly affirms your unlimite'
+  +'d'#10'permission to run the unmodified Program.  The output from running a'
+  +#10'covered work is covered by this License only if the output, given its'#10
+  +'content, constitutes a covered work.  This License acknowledges your'#10'ri'
+  +'ghts of fair use or other equivalent, as provided by copyright law.</p>'#10
+  +#10'<p>You may make, run and propagate covered works that you do not'#10'con'
+  +'vey, without conditions so long as your license otherwise remains'#10'in fo'
+  +'rce.  You may convey covered works to others for the sole purpose'#10'of ha'
+  +'ving them make modifications exclusively for you, or provide you'#10'with f'
+  +'acilities for running those works, provided that you comply with'#10'the te'
+  +'rms of this License in conveying all material for which you do'#10'not cont'
+  +'rol copyright.  Those thus making or running the covered works'#10'for you '
+  +'must do so exclusively on your behalf, under your direction'#10'and control'
+  +', on terms that prohibit them from making any copies of'#10'your copyrighte'
+  +'d material outside their relationship with you.</p>'#10#10'<p>Conveying und'
+  +'er any other circumstances is permitted solely under'#10'the conditions sta'
+  ,'ted below.  Sublicensing is not allowed; section 10'#10'makes it unnecessar'
+  +'y.</p>'#10#10'<h4><a name="section3"></a>3. Protecting Users'' Legal Rights'
+  +' From Anti-Circumvention Law.</h4>'#10#10'<p>No covered work shall be deeme'
+  +'d part of an effective technological'#10'measure under any applicable law f'
+  +'ulfilling obligations under article'#10'11 of the WIPO copyright treaty ado'
+  +'pted on 20 December 1996, or'#10'similar laws prohibiting or restricting ci'
+  +'rcumvention of such'#10'measures.</p>'#10#10'<p>When you convey a covered w'
+  +'ork, you waive any legal power to forbid'#10'circumvention of technological'
+  +' measures to the extent such circumvention'#10'is effected by exercising ri'
+  +'ghts under this License with respect to'#10'the covered work, and you discl'
+  +'aim any intention to limit operation or'#10'modification of the work as a m'
+  +'eans of enforcing, against the work''s'#10'users, your or third parties'' l'
+  +'egal rights to forbid circumvention of'#10'technological measures.</p>'#10
+  +#10'<h4><a name="section4"></a>4. Conveying Verbatim Copies.</h4>'#10#10'<p>'
+  +'You may convey verbatim copies of the Program''s source code as you'#10'rec'
+  +'eive it, in any medium, provided that you conspicuously and'#10'appropriate'
+  +'ly publish on each copy an appropriate copyright notice;'#10'keep intact al'
+  +'l notices stating that this License and any'#10'non-permissive terms added '
+  +'in accord with section 7 apply to the code;'#10'keep intact all notices of '
+  +'the absence of any warranty; and give all'#10'recipients a copy of this Lic'
+  +'ense along with the Program.</p>'#10#10'<p>You may charge any price or no p'
+  +'rice for each copy that you convey,'#10'and you may offer support or warran'
+  +'ty protection for a fee.</p>'#10#10'<h4><a name="section5"></a>5. Conveying'
+  +' Modified Source Versions.</h4>'#10#10'<p>You may convey a work based on th'
+  +'e Program, or the modifications to'#10'produce it from the Program, in the '
+  +'form of source code under the'#10'terms of section 4, provided that you als'
+  +'o meet all of these conditions:</p>'#10#10'<ul>'#10'<li>a) The work must ca'
+  +'rry prominent notices stating that you modified'#10'    it, and giving a re'
+  +'levant date.</li>'#10#10'<li>b) The work must carry prominent notices stati'
+  +'ng that it is'#10'    released under this License and any conditions added '
+  +'under section'#10'    7.  This requirement modifies the requirement in sect'
+  +'ion 4 to'#10'    &ldquo;keep intact all notices&rdquo;.</li>'#10#10'<li>c) '
+  +'You must license the entire work, as a whole, under this'#10'    License to'
+  +' anyone who comes into possession of a copy.  This'#10'    License will the'
+  +'refore apply, along with any applicable section 7'#10'    additional terms,'
+  +' to the whole of the work, and all its parts,'#10'    regardless of how the'
+  +'y are packaged.  This License gives no'#10'    permission to license the wo'
+  +'rk in any other way, but it does not'#10'    invalidate such permission if '
+  +'you have separately received it.</li>'#10#10'<li>d) If the work has interac'
+  +'tive user interfaces, each must display'#10'    Appropriate Legal Notices; '
+  +'however, if the Program has interactive'#10'    interfaces that do not disp'
+  +'lay Appropriate Legal Notices, your'#10'    work need not make them do so.<'
+  +'/li>'#10'</ul>'#10#10'<p>A compilation of a covered work with other separat'
+  +'e and independent'#10'works, which are not by their nature extensions of th'
+  +'e covered work,'#10'and which are not combined with it such as to form a la'
+  +'rger program,'#10'in or on a volume of a storage or distribution medium, is'
+  +' called an'#10'&ldquo;aggregate&rdquo; if the compilation and its resulting'
+  +' copyright are not'#10'used to limit the access or legal rights of the comp'
+  +'ilation''s users'#10'beyond what the individual works permit.  Inclusion of'
+  +' a covered work'#10'in an aggregate does not cause this License to apply to'
+  +' the other'#10'parts of the aggregate.</p>'#10#10'<h4><a name="section6"></'
+  +'a>6. Conveying Non-Source Forms.</h4>'#10#10'<p>You may convey a covered wo'
+  +'rk in object code form under the terms'#10'of sections 4 and 5, provided th'
+  +'at you also convey the'#10'machine-readable Corresponding Source under the '
+  +'terms of this License,'#10'in one of these ways:</p>'#10#10'<ul>'#10'<li>a)'
+  +' Convey the object code in, or embodied in, a physical product'#10'    (inc'
+  +'luding a physical distribution medium), accompanied by the'#10'    Correspo'
+  +'nding Source fixed on a durable physical medium'#10'    customarily used fo'
+  +'r software interchange.</li>'#10#10'<li>b) Convey the object code in, or em'
+  +'bodied in, a physical product'#10'    (including a physical distribution me'
+  +'dium), accompanied by a'#10'    written offer, valid for at least three yea'
+  +'rs and valid for as'#10'    long as you offer spare parts or customer suppo'
+  +'rt for that product'#10'    model, to give anyone who possesses the object '
+  +'code either (1) a'#10'    copy of the Corresponding Source for all the soft'
+  ,'ware in the'#10'    product that is covered by this License, on a durable p'
+  +'hysical'#10'    medium customarily used for software interchange, for a pri'
+  +'ce no'#10'    more than your reasonable cost of physically performing this'
+  +#10'    conveying of source, or (2) access to copy the'#10'    Corresponding'
+  +' Source from a network server at no charge.</li>'#10#10'<li>c) Convey indiv'
+  +'idual copies of the object code with a copy of the'#10'    written offer to'
+  +' provide the Corresponding Source.  This'#10'    alternative is allowed onl'
+  +'y occasionally and noncommercially, and'#10'    only if you received the ob'
+  +'ject code with such an offer, in accord'#10'    with subsection 6b.</li>'#10
+  +#10'<li>d) Convey the object code by offering access from a designated'#10' '
+  +'   place (gratis or for a charge), and offer equivalent access to the'#10' '
+  +'   Corresponding Source in the same way through the same place at no'#10'  '
+  +'  further charge.  You need not require recipients to copy the'#10'    Corr'
+  +'esponding Source along with the object code.  If the place to'#10'    copy '
+  +'the object code is a network server, the Corresponding Source'#10'    may b'
+  +'e on a different server (operated by you or a third party)'#10'    that sup'
+  +'ports equivalent copying facilities, provided you maintain'#10'    clear di'
+  +'rections next to the object code saying where to find the'#10'    Correspon'
+  +'ding Source.  Regardless of what server hosts the'#10'    Corresponding Sou'
+  +'rce, you remain obligated to ensure that it is'#10'    available for as lon'
+  +'g as needed to satisfy these requirements.</li>'#10#10'<li>e) Convey the ob'
+  +'ject code using peer-to-peer transmission, provided'#10'    you inform othe'
+  +'r peers where the object code and Corresponding'#10'    Source of the work '
+  +'are being offered to the general public at no'#10'    charge under subsecti'
+  +'on 6d.</li>'#10'</ul>'#10#10'<p>A separable portion of the object code, who'
+  +'se source code is excluded'#10'from the Corresponding Source as a System Li'
+  +'brary, need not be'#10'included in conveying the object code work.</p>'#10
+  +#10'<p>A &ldquo;User Product&rdquo; is either (1) a &ldquo;consumer product&'
+  +'rdquo;, which means any'#10'tangible personal property which is normally us'
+  +'ed for personal, family,'#10'or household purposes, or (2) anything designe'
+  +'d or sold for incorporation'#10'into a dwelling.  In determining whether a '
+  +'product is a consumer product,'#10'doubtful cases shall be resolved in favo'
+  +'r of coverage.  For a particular'#10'product received by a particular user,'
+  +' &ldquo;normally used&rdquo; refers to a'#10'typical or common use of that '
+  +'class of product, regardless of the status'#10'of the particular user or of'
+  +' the way in which the particular user'#10'actually uses, or expects or is e'
+  +'xpected to use, the product.  A product'#10'is a consumer product regardles'
+  +'s of whether the product has substantial'#10'commercial, industrial or non-'
+  +'consumer uses, unless such uses represent'#10'the only significant mode of '
+  +'use of the product.</p>'#10#10'<p>&ldquo;Installation Information&rdquo; fo'
+  +'r a User Product means any methods,'#10'procedures, authorization keys, or '
+  +'other information required to install'#10'and execute modified versions of '
+  +'a covered work in that User Product from'#10'a modified version of its Corr'
+  +'esponding Source.  The information must'#10'suffice to ensure that the cont'
+  +'inued functioning of the modified object'#10'code is in no case prevented o'
+  +'r interfered with solely because'#10'modification has been made.</p>'#10#10
+  +'<p>If you convey an object code work under this section in, or with, or'#10
+  +'specifically for use in, a User Product, and the conveying occurs as'#10'pa'
+  +'rt of a transaction in which the right of possession and use of the'#10'Use'
+  +'r Product is transferred to the recipient in perpetuity or for a'#10'fixed '
+  +'term (regardless of how the transaction is characterized), the'#10'Correspo'
+  +'nding Source conveyed under this section must be accompanied'#10'by the Ins'
+  +'tallation Information.  But this requirement does not apply'#10'if neither '
+  +'you nor any third party retains the ability to install'#10'modified object '
+  +'code on the User Product (for example, the work has'#10'been installed in R'
+  +'OM).</p>'#10#10'<p>The requirement to provide Installation Information does'
+  +' not include a'#10'requirement to continue to provide support service, warr'
+  +'anty, or updates'#10'for a work that has been modified or installed by the '
+  +'recipient, or for'#10'the User Product in which it has been modified or ins'
+  +'talled.  Access to a'#10'network may be denied when the modification itself'
+  +' materially and'#10'adversely affects the operation of the network or viola'
+  +'tes the rules and'#10'protocols for communication across the network.</p>'
+  +#10#10'<p>Corresponding Source conveyed, and Installation Information provid'
+  +'ed,'#10'in accord with this section must be in a format that is publicly'#10
+  ,'documented (and with an implementation available to the public in'#10'sourc'
+  +'e code form), and must require no special password or key for'#10'unpacking'
+  +', reading or copying.</p>'#10#10'<h4><a name="section7"></a>7. Additional T'
+  +'erms.</h4>'#10#10'<p>&ldquo;Additional permissions&rdquo; are terms that su'
+  +'pplement the terms of this'#10'License by making exceptions from one or mor'
+  +'e of its conditions.'#10'Additional permissions that are applicable to the '
+  +'entire Program shall'#10'be treated as though they were included in this Li'
+  +'cense, to the extent'#10'that they are valid under applicable law.  If addi'
+  +'tional permissions'#10'apply only to part of the Program, that part may be '
+  +'used separately'#10'under those permissions, but the entire Program remains'
+  +' governed by'#10'this License without regard to the additional permissions.'
+  +'</p>'#10#10'<p>When you convey a copy of a covered work, you may at your op'
+  +'tion'#10'remove any additional permissions from that copy, or from any part'
+  +' of'#10'it.  (Additional permissions may be written to require their own'#10
+  +'removal in certain cases when you modify the work.)  You may place'#10'addi'
+  +'tional permissions on material, added by you to a covered work,'#10'for whi'
+  +'ch you have or can give appropriate copyright permission.</p>'#10#10'<p>Not'
+  +'withstanding any other provision of this License, for material you'#10'add '
+  +'to a covered work, you may (if authorized by the copyright holders of'#10't'
+  +'hat material) supplement the terms of this License with terms:</p>'#10#10'<'
+  +'ul>'#10'<li>a) Disclaiming warranty or limiting liability differently from '
+  +'the'#10'    terms of sections 15 and 16 of this License; or</li>'#10#10'<li'
+  +'>b) Requiring preservation of specified reasonable legal notices or'#10'   '
+  +' author attributions in that material or in the Appropriate Legal'#10'    N'
+  +'otices displayed by works containing it; or</li>'#10#10'<li>c) Prohibiting '
+  +'misrepresentation of the origin of that material, or'#10'    requiring that'
+  +' modified versions of such material be marked in'#10'    reasonable ways as'
+  +' different from the original version; or</li>'#10#10'<li>d) Limiting the us'
+  +'e for publicity purposes of names of licensors or'#10'    authors of the ma'
+  +'terial; or</li>'#10#10'<li>e) Declining to grant rights under trademark law'
+  +' for use of some'#10'    trade names, trademarks, or service marks; or</li>'
+  +#10#10'<li>f) Requiring indemnification of licensors and authors of that'#10
+  +'    material by anyone who conveys the material (or modified versions of'#10
+  +'    it) with contractual assumptions of liability to the recipient, for'#10
+  +'    any liability that these contractual assumptions directly impose on'#10
+  +'    those licensors and authors.</li>'#10'</ul>'#10#10'<p>All other non-per'
+  +'missive additional terms are considered &ldquo;further'#10'restrictions&rdq'
+  +'uo; within the meaning of section 10.  If the Program as you'#10'received i'
+  +'t, or any part of it, contains a notice stating that it is'#10'governed by '
+  +'this License along with a term that is a further'#10'restriction, you may r'
+  +'emove that term.  If a license document contains'#10'a further restriction '
+  +'but permits relicensing or conveying under this'#10'License, you may add to'
+  +' a covered work material governed by the terms'#10'of that license document'
+  +', provided that the further restriction does'#10'not survive such relicensi'
+  +'ng or conveying.</p>'#10#10'<p>If you add terms to a covered work in accord'
+  +' with this section, you'#10'must place, in the relevant source files, a sta'
+  +'tement of the'#10'additional terms that apply to those files, or a notice i'
+  +'ndicating'#10'where to find the applicable terms.</p>'#10#10'<p>Additional '
+  +'terms, permissive or non-permissive, may be stated in the'#10'form of a sep'
+  +'arately written license, or stated as exceptions;'#10'the above requirement'
+  +'s apply either way.</p>'#10#10'<h4><a name="section8"></a>8. Termination.</'
+  +'h4>'#10#10'<p>You may not propagate or modify a covered work except as expr'
+  +'essly'#10'provided under this License.  Any attempt otherwise to propagate '
+  +'or'#10'modify it is void, and will automatically terminate your rights unde'
+  +'r'#10'this License (including any patent licenses granted under the third'
+  +#10'paragraph of section 11).</p>'#10#10'<p>However, if you cease all violat'
+  +'ion of this License, then your'#10'license from a particular copyright hold'
+  +'er is reinstated (a)'#10'provisionally, unless and until the copyright hold'
+  +'er explicitly and'#10'finally terminates your license, and (b) permanently,'
+  +' if the copyright'#10'holder fails to notify you of the violation by some r'
+  +'easonable means'#10'prior to 60 days after the cessation.</p>'#10#10'<p>Mor'
+  +'eover, your license from a particular copyright holder is'#10'reinstated pe'
+  +'rmanently if the copyright holder notifies you of the'#10'violation by some'
+  +' reasonable means, this is the first time you have'#10'received notice of v'
+  ,'iolation of this License (for any work) from that'#10'copyright holder, and'
+  +' you cure the violation prior to 30 days after'#10'your receipt of the noti'
+  +'ce.</p>'#10#10'<p>Termination of your rights under this section does not te'
+  +'rminate the'#10'licenses of parties who have received copies or rights from'
+  +' you under'#10'this License.  If your rights have been terminated and not p'
+  +'ermanently'#10'reinstated, you do not qualify to receive new licenses for t'
+  +'he same'#10'material under section 10.</p>'#10#10'<h4><a name="section9"></'
+  +'a>9. Acceptance Not Required for Having Copies.</h4>'#10#10'<p>You are not '
+  +'required to accept this License in order to receive or'#10'run a copy of th'
+  +'e Program.  Ancillary propagation of a covered work'#10'occurring solely as'
+  +' a consequence of using peer-to-peer transmission'#10'to receive a copy lik'
+  +'ewise does not require acceptance.  However,'#10'nothing other than this Li'
+  +'cense grants you permission to propagate or'#10'modify any covered work.  T'
+  +'hese actions infringe copyright if you do'#10'not accept this License.  The'
+  +'refore, by modifying or propagating a'#10'covered work, you indicate your a'
+  +'cceptance of this License to do so.</p>'#10#10'<h4><a name="section10"></a>'
+  +'10. Automatic Licensing of Downstream Recipients.</h4>'#10#10'<p>Each time '
+  +'you convey a covered work, the recipient automatically'#10'receives a licen'
+  +'se from the original licensors, to run, modify and'#10'propagate that work,'
+  +' subject to this License.  You are not responsible'#10'for enforcing compli'
+  +'ance by third parties with this License.</p>'#10#10'<p>An &ldquo;entity tra'
+  +'nsaction&rdquo; is a transaction transferring control of an'#10'organizatio'
+  +'n, or substantially all assets of one, or subdividing an'#10'organization, '
+  +'or merging organizations.  If propagation of a covered'#10'work results fro'
+  +'m an entity transaction, each party to that'#10'transaction who receives a '
+  +'copy of the work also receives whatever'#10'licenses to the work the party'
+  +'''s predecessor in interest had or could'#10'give under the previous paragr'
+  +'aph, plus a right to possession of the'#10'Corresponding Source of the work'
+  +' from the predecessor in interest, if'#10'the predecessor has it or can get'
+  +' it with reasonable efforts.</p>'#10#10'<p>You may not impose any further r'
+  +'estrictions on the exercise of the'#10'rights granted or affirmed under thi'
+  +'s License.  For example, you may'#10'not impose a license fee, royalty, or '
+  +'other charge for exercise of'#10'rights granted under this License, and you'
+  +' may not initiate litigation'#10'(including a cross-claim or counterclaim i'
+  +'n a lawsuit) alleging that'#10'any patent claim is infringed by making, usi'
+  +'ng, selling, offering for'#10'sale, or importing the Program or any portion'
+  +' of it.</p>'#10#10'<h4><a name="section11"></a>11. Patents.</h4>'#10#10'<p>'
+  +'A &ldquo;contributor&rdquo; is a copyright holder who authorizes use under '
+  +'this'#10'License of the Program or a work on which the Program is based.  T'
+  +'he'#10'work thus licensed is called the contributor''s &ldquo;contributor v'
+  +'ersion&rdquo;.</p>'#10#10'<p>A contributor''s &ldquo;essential patent claim'
+  +'s&rdquo; are all patent claims'#10'owned or controlled by the contributor, '
+  +'whether already acquired or'#10'hereafter acquired, that would be infringed'
+  +' by some manner, permitted'#10'by this License, of making, using, or sellin'
+  +'g its contributor version,'#10'but do not include claims that would be infr'
+  +'inged only as a'#10'consequence of further modification of the contributor '
+  +'version.  For'#10'purposes of this definition, &ldquo;control&rdquo; includ'
+  +'es the right to grant'#10'patent sublicenses in a manner consistent with th'
+  +'e requirements of'#10'this License.</p>'#10#10'<p>Each contributor grants y'
+  +'ou a non-exclusive, worldwide, royalty-free'#10'patent license under the co'
+  +'ntributor''s essential patent claims, to'#10'make, use, sell, offer for sal'
+  +'e, import and otherwise run, modify and'#10'propagate the contents of its c'
+  +'ontributor version.</p>'#10#10'<p>In the following three paragraphs, a &ldq'
+  +'uo;patent license&rdquo; is any express'#10'agreement or commitment, howeve'
+  +'r denominated, not to enforce a patent'#10'(such as an express permission t'
+  +'o practice a patent or covenant not to'#10'sue for patent infringement).  T'
+  +'o &ldquo;grant&rdquo; such a patent license to a'#10'party means to make su'
+  +'ch an agreement or commitment not to enforce a'#10'patent against the party'
+  +'.</p>'#10#10'<p>If you convey a covered work, knowingly relying on a patent'
+  +' license,'#10'and the Corresponding Source of the work is not available for'
+  +' anyone'#10'to copy, free of charge and under the terms of this License, th'
+  +'rough a'#10'publicly available network server or other readily accessible m'
+  +'eans,'#10'then you must either (1) cause the Corresponding Source to be so'
+  +#10'available, or (2) arrange to deprive yourself of the benefit of the'#10
+  ,'patent license for this particular work, or (3) arrange, in a manner'#10'co'
+  +'nsistent with the requirements of this License, to extend the patent'#10'li'
+  +'cense to downstream recipients.  &ldquo;Knowingly relying&rdquo; means you '
+  +'have'#10'actual knowledge that, but for the patent license, your conveying '
+  +'the'#10'covered work in a country, or your recipient''s use of the covered '
+  +'work'#10'in a country, would infringe one or more identifiable patents in t'
+  +'hat'#10'country that you have reason to believe are valid.</p>'#10'  '#10'<'
+  +'p>If, pursuant to or in connection with a single transaction or'#10'arrange'
+  +'ment, you convey, or propagate by procuring conveyance of, a'#10'covered wo'
+  +'rk, and grant a patent license to some of the parties'#10'receiving the cov'
+  +'ered work authorizing them to use, propagate, modify'#10'or convey a specif'
+  +'ic copy of the covered work, then the patent license'#10'you grant is autom'
+  +'atically extended to all recipients of the covered'#10'work and works based'
+  +' on it.</p>'#10#10'<p>A patent license is &ldquo;discriminatory&rdquo; if i'
+  +'t does not include within'#10'the scope of its coverage, prohibits the exer'
+  +'cise of, or is'#10'conditioned on the non-exercise of one or more of the ri'
+  +'ghts that are'#10'specifically granted under this License.  You may not con'
+  +'vey a covered'#10'work if you are a party to an arrangement with a third pa'
+  +'rty that is'#10'in the business of distributing software, under which you m'
+  +'ake payment'#10'to the third party based on the extent of your activity of '
+  +'conveying'#10'the work, and under which the third party grants, to any of t'
+  +'he'#10'parties who would receive the covered work from you, a discriminator'
+  +'y'#10'patent license (a) in connection with copies of the covered work'#10
+  +'conveyed by you (or copies made from those copies), or (b) primarily'#10'fo'
+  +'r and in connection with specific products or compilations that'#10'contain'
+  +' the covered work, unless you entered into that arrangement,'#10'or that pa'
+  +'tent license was granted, prior to 28 March 2007.</p>'#10#10'<p>Nothing in '
+  +'this License shall be construed as excluding or limiting'#10'any implied li'
+  +'cense or other defenses to infringement that may'#10'otherwise be available'
+  +' to you under applicable patent law.</p>'#10#10'<h4><a name="section12"></a'
+  +'>12. No Surrender of Others'' Freedom.</h4>'#10#10'<p>If conditions are imp'
+  +'osed on you (whether by court order, agreement or'#10'otherwise) that contr'
+  +'adict the conditions of this License, they do not'#10'excuse you from the c'
+  +'onditions of this License.  If you cannot convey a'#10'covered work so as t'
+  +'o satisfy simultaneously your obligations under this'#10'License and any ot'
+  +'her pertinent obligations, then as a consequence you may'#10'not convey it '
+  +'at all.  For example, if you agree to terms that obligate you'#10'to collec'
+  +'t a royalty for further conveying from those to whom you convey'#10'the Pro'
+  +'gram, the only way you could satisfy both those terms and this'#10'License '
+  +'would be to refrain entirely from conveying the Program.</p>'#10#10'<h4><a '
+  +'name="section13"></a>13. Use with the GNU Affero General Public License.</h'
+  +'4>'#10#10'<p>Notwithstanding any other provision of this License, you have'
+  +#10'permission to link or combine any covered work with a work licensed'#10
+  +'under version 3 of the GNU Affero General Public License into a single'#10
+  +'combined work, and to convey the resulting work.  The terms of this'#10'Lic'
+  +'ense will continue to apply to the part which is the covered work,'#10'but '
+  +'the special requirements of the GNU Affero General Public License,'#10'sect'
+  +'ion 13, concerning interaction through a network will apply to the'#10'comb'
+  +'ination as such.</p>'#10#10'<h4><a name="section14"></a>14. Revised Version'
+  +'s of this License.</h4>'#10#10'<p>The Free Software Foundation may publish '
+  +'revised and/or new versions of'#10'the GNU General Public License from time'
+  +' to time.  Such new versions will'#10'be similar in spirit to the present v'
+  +'ersion, but may differ in detail to'#10'address new problems or concerns.</'
+  +'p>'#10#10'<p>Each version is given a distinguishing version number.  If the'
+  +#10'Program specifies that a certain numbered version of the GNU General'#10
+  +'Public License &ldquo;or any later version&rdquo; applies to it, you have t'
+  +'he'#10'option of following the terms and conditions either of that numbered'
+  +#10'version or of any later version published by the Free Software'#10'Found'
+  +'ation.  If the Program does not specify a version number of the'#10'GNU Gen'
+  +'eral Public License, you may choose any version ever published'#10'by the F'
+  +'ree Software Foundation.</p>'#10#10'<p>If the Program specifies that a prox'
+  +'y can decide which future'#10'versions of the GNU General Public License ca'
+  +'n be used, that proxy''s'#10'public statement of acceptance of a version pe'
+  +'rmanently authorizes you'#10'to choose that version for the Program.</p>'#10
+  ,#10'<p>Later license versions may give you additional or different'#10'permi'
+  +'ssions.  However, no additional obligations are imposed on any'#10'author o'
+  +'r copyright holder as a result of your choosing to follow a'#10'later versi'
+  +'on.</p>'#10#10'<h4><a name="section15"></a>15. Disclaimer of Warranty.</h4>'
+  +#10#10'<p>THERE IS NO WARRANTY FOR THE PROGRAM, TO THE EXTENT PERMITTED BY'
+  +#10'APPLICABLE LAW.  EXCEPT WHEN OTHERWISE STATED IN WRITING THE COPYRIGHT'
+  +#10'HOLDERS AND/OR OTHER PARTIES PROVIDE THE PROGRAM &ldquo;AS IS&rdquo; WIT'
+  +'HOUT WARRANTY'#10'OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING, BUT '
+  +'NOT LIMITED TO,'#10'THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS F'
+  +'OR A PARTICULAR'#10'PURPOSE.  THE ENTIRE RISK AS TO THE QUALITY AND PERFORM'
+  +'ANCE OF THE PROGRAM'#10'IS WITH YOU.  SHOULD THE PROGRAM PROVE DEFECTIVE, Y'
+  +'OU ASSUME THE COST OF'#10'ALL NECESSARY SERVICING, REPAIR OR CORRECTION.</p'
+  +'>'#10#10'<h4><a name="section16"></a>16. Limitation of Liability.</h4>'#10
+  +#10'<p>IN NO EVENT UNLESS REQUIRED BY APPLICABLE LAW OR AGREED TO IN WRITING'
+  +#10'WILL ANY COPYRIGHT HOLDER, OR ANY OTHER PARTY WHO MODIFIES AND/OR CONVEY'
+  +'S'#10'THE PROGRAM AS PERMITTED ABOVE, BE LIABLE TO YOU FOR DAMAGES, INCLUDI'
+  +'NG ANY'#10'GENERAL, SPECIAL, INCIDENTAL OR CONSEQUENTIAL DAMAGES ARISING OU'
+  +'T OF THE'#10'USE OR INABILITY TO USE THE PROGRAM (INCLUDING BUT NOT LIMITED'
+  +' TO LOSS OF'#10'DATA OR DATA BEING RENDERED INACCURATE OR LOSSES SUSTAINED '
+  +'BY YOU OR THIRD'#10'PARTIES OR A FAILURE OF THE PROGRAM TO OPERATE WITH ANY'
+  +' OTHER PROGRAMS),'#10'EVEN IF SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED O'
+  +'F THE POSSIBILITY OF'#10'SUCH DAMAGES.</p>'#10#10'<h4><a name="section17"><'
+  +'/a>17. Interpretation of Sections 15 and 16.</h4>'#10#10'<p>If the disclaim'
+  +'er of warranty and limitation of liability provided'#10'above cannot be giv'
+  +'en local legal effect according to their terms,'#10'reviewing courts shall '
+  +'apply local law that most closely approximates'#10'an absolute waiver of al'
+  +'l civil liability in connection with the'#10'Program, unless a warranty or '
+  +'assumption of liability accompanies a'#10'copy of the Program in return for'
+  +' a fee.</p>'#10#10'<p>END OF TERMS AND CONDITIONS</p>'#10#10'<h3><a name="h'
+  +'owto"></a>How to Apply These Terms to Your New Programs</h3>'#10#10'<p>If y'
+  +'ou develop a new program, and you want it to be of the greatest'#10'possibl'
+  +'e use to the public, the best way to achieve this is to make it'#10'free so'
+  +'ftware which everyone can redistribute and change under these terms.</p>'#10
+  +#10'<p>To do so, attach the following notices to the program.  It is safest'
+  +#10'to attach them to the start of each source file to most effectively'#10
+  +'state the exclusion of warranty; and each file should have at least'#10'the'
+  +' &ldquo;copyright&rdquo; line and a pointer to where the full notice is fou'
+  +'nd.</p>'#10#10'<pre>    &lt;one line to give the program''s name and a brie'
+  +'f idea of what it does.&gt;'#10'    Copyright (C) &lt;year&gt;  &lt;name of'
+  +' author&gt;'#10#10'    This program is free software: you can redistribute '
+  +'it and/or modify'#10'    it under the terms of the GNU General Public Licen'
+  +'se as published by'#10'    the Free Software Foundation, either version 3 o'
+  +'f the License, or'#10'    (at your option) any later version.'#10#10'    Th'
+  +'is program is distributed in the hope that it will be useful,'#10'    but W'
+  +'ITHOUT ANY WARRANTY; without even the implied warranty of'#10'    MERCHANTA'
+  +'BILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the'#10'    GNU General Pu'
+  +'blic License for more details.'#10#10'    You should have received a copy o'
+  +'f the GNU General Public License'#10'    along with this program.  If not, '
+  +'see &lt;http://www.gnu.org/licenses/&gt;.'#10'</pre>'#10#10'<p>Also add inf'
+  +'ormation on how to contact you by electronic and paper mail.</p>'#10#10'<p>'
+  +'If the program does terminal interaction, make it output a short'#10'notice'
+  +' like this when it starts in an interactive mode:</p>'#10#10'<pre>    &lt;p'
+  +'rogram&gt;  Copyright (C) &lt;year&gt;  &lt;name of author&gt;'#10'    This'
+  +' program comes with ABSOLUTELY NO WARRANTY; for details type `show w''.'#10
+  +'    This is free software, and you are welcome to redistribute it'#10'    u'
+  +'nder certain conditions; type `show c'' for details.'#10'</pre>'#10#10'<p>T'
+  +'he hypothetical commands `show w'' and `show c'' should show the appropriat'
+  +'e'#10'parts of the General Public License.  Of course, your program''s comm'
+  +'ands'#10'might be different; for a GUI interface, you would use an &ldquo;a'
+  +'bout box&rdquo;.</p>'#10#10'<p>You should also get your employer (if you wo'
+  +'rk as a programmer) or school,'#10'if any, to sign a &ldquo;copyright discl'
+  +'aimer&rdquo; for the program, if necessary.'#10'For more information on thi'
+  +'s, and how to apply and follow the GNU GPL, see'#10'&lt;<a href="http://www'
+  +'.gnu.org/licenses/">http://www.gnu.org/licenses/</a>&gt;.</p>'#10#10'<p>The'
+  ,' GNU General Public License does not permit incorporating your program'#10
+  +'into proprietary programs.  If your program is a subroutine library, you'#10
+  +'may consider it more useful to permit linking proprietary applications with'
+  +#10'the library.  If this is what you want to do, use the GNU Lesser General'
+  +#10'Public License instead of this License.  But first, please read'#10'&lt;'
+  +'<a href="http://www.gnu.org/philosophy/why-not-lgpl.html">http://www.gnu.or'
+  +'g/philosophy/why-not-lgpl.html</a>&gt;.</p>'#10#10'</div>'#10#10'</div><!--'
+  +' for id="content", starts in the include above -->'#10#10'              <!-'
+  +'- begin server/footer-text.html -->'#10'<p id="backtotop"><a href="#header"'
+  +'>BACK TO TOP</a></p>'#10#10'<hr class="no-display" />'#10'<div id="fsf-link'
+  +'s">'#10' <ul>'#10'  <li><a href="http://www.fsf.org/">FSF</a></li>'#10'  <l'
+  +'i><a href="http://directory.fsf.org">FREE&nbsp;SOFTWARE&nbsp;DIRECTORY</a><'
+  +'/li>'#10'  <li><a href="https://h-node.org/">HARDWARE</a></li>'#10'  <li><a'
+  +' href="/graphics/graphics.html">GNU&nbsp;ART</a></li>'#10'  <li><a href="/p'
+  +'eople/people.html">GNU''S&nbsp;WHO?</a></li>'#10'  <li><a href="/server/sit'
+  +'emap.html">SITE&nbsp;MAP</a></li>'#10' </ul>'#10'</div><!-- /fsf-links -->'
+  +#10#10'<div id="mission-statement">'#10#10'<blockquote>'#10'<p><a href="http'
+  +'://www.fsf.org"><img id="fsfbanner"'#10'src="/graphics/fsf-logo-notext-smal'
+  +'l.png" alt=" [FSF logo] "/></a><strong>&ldquo;Our'#10'mission is to preserv'
+  +'e, protect and promote the freedom to use, study,'#10'copy, modify, and red'
+  +'istribute computer software, and to defend the'#10'rights of Free Software '
+  +'users.&rdquo;</strong></p>'#10'</blockquote>'#10#10'<p>The <a href="http://'
+  +'www.fsf.org">Free Software Foundation</a> is'#10'the principal organization'
+  +'al sponsor of the GNU Operating System.'#10'<strong>Support GNU and the FSF'
+  +'</strong> by <a'#10'href="http://shop.fsf.org/">buying manuals and gear</a>'
+  +', <a'#10'href="https://my.fsf.org/associate/support_freedom?referrer=4052">'
+  +#10'<strong>joining the FSF</strong></a> as an associate member, or making'
+  +#10'a <strong>donation</strong>, either <a'#10'href="http://donate.fsf.org/"'
+  +'>directly to the FSF</a> or <a'#10'href="http://flattr.com/thing/313733/gnu'
+  +'project-on-Flattr">via'#10'Flattr</a>.</p>'#10#10'</div><!-- /mission-state'
+  +'ment -->'#10'<!-- end server/footer-text.html -->'#10#10#10'<div id="footer'
+  +'">'#10'<div class="unprintable">'#10#10'<p>Please send general FSF &amp; GN'
+  +'U inquiries to'#10'<a href="mailto:gnu@gnu.org">&lt;gnu@gnu.org&gt;</a>.'#10
+  +'There are also <a href="/contact/">other ways to contact</a>'#10'the FSF.  '
+  +'Broken links and other corrections or suggestions can be sent'#10'to <a hre'
+  +'f="mailto:webmasters@gnu.org">&lt;webmasters@gnu.org&gt;</a>.</p>'#10#10'<p'
+  +'><!-- TRANSLATORS: Ignore the original text in this paragraph,'#10'        '
+  +'replace it with the translation of these two:'#10#10'        We work hard a'
+  +'nd do our best to provide accurate, good quality'#10'        translations. '
+  +' However, we are not exempt from imperfection.'#10'        Please send your'
+  +' comments and general suggestions in this regard'#10'        to <a href="ma'
+  +'ilto:web-translators@gnu.org">'#10'        &lt;web-translators@gnu.org&gt;<'
+  +'/a>.</p>'#10#10'        <p>For information on coordinating and submitting t'
+  +'ranslations of'#10'        our web pages, see <a'#10'        href="/server/'
+  +'standards/README.translations.html">Translations'#10'        README</a>. --'
+  +'>'#10'Please see the <a'#10'href="/server/standards/README.translations.htm'
+  +'l">Translations'#10'README</a> for information on coordinating and submitti'
+  +'ng translations'#10'of this article.</p>'#10'</div>'#10#10'<!-- Regarding c'
+  +'opyright, in general, standalone pages (as opposed to'#10'     files genera'
+  +'ted as part of manuals) on the GNU web server should'#10'     be under CC B'
+  +'Y-ND 4.0.  Please do NOT change or remove this'#10'     without talking wit'
+  +'h the webmasters or licensing team first.'#10'     Please make sure the cop'
+  +'yright date is consistent with the'#10'     document.  For web pages, it is'
+  +' ok to list just the latest year the'#10'     document was modified, or pub'
+  +'lished.'#10'     '#10'     If you wish to list earlier years, that is ok to'
+  +'o.'#10'     Either "2001, 2002, 2003" or "2001-2003" are ok for specifying'
+  +#10'     years, as long as each year in the range is in fact a copyrightable'
+  +#10'     year, i.e., a year in which the document was published (including'
+  +#10'     being publicly visible on the web or in a revision control system).'
+  +#10'     '#10'     There is more detail about copyright years in the GNU Mai'
+  +'ntainers'#10'     Information document, www.gnu.org/prep/maintain. -->'#10
+  +#10'<p>Copyright notice above.</p>'#10#10'<p>'#10'Everyone is permitted to c'
+  +'opy and distribute verbatim copies of this license document, but changing i'
+  +'t is not allowed.'#10'</p>'#10#10'<!-- start of server/bottom-notes.html --'
+  ,'>'#10'<div id="bottom-notes" class="unprintable">'#10'<p><a href="http://ww'
+  +'w.fsf.org/about/dmca-notice">Copyright Infringement Notification</a></p>'#10
+  +'<div id="generic">'#10#10#10'</div>'#10'</div>'#10'<!-- end of server/botto'
+  +'m-notes.html -->'#10#10#10'<p class="unprintable">Updated:'#10'<!-- timesta'
+  +'mp start -->'#10'$Date: 2016/11/18 06:31:41 $'#10'<!-- timestamp end -->'#10
+  +'</p>'#10'</div>'#10'</div>'#10'</body>'#10'</html>'#10
+]);
+LazarusResources.Add('Lizenz','HTML',[
+  '<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">'#10'<HTML>'#10
+  +'<HEAD>'#10#9'<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=ut'
+  +'f-8">'#10#9'<TITLE></TITLE>'#10#9'<META NAME="GENERATOR" CONTENT="OpenOffic'
+  +'e.org 3.0  (Unix)">'#10#9'<META NAME="CREATED" CONTENT="0;0">'#10#9'<META N'
+  +'AME="CHANGEDBY" CONTENT="alexander">'#10#9'<META NAME="CHANGED" CONTENT="20'
+  +'081223;18400900">'#10#9'<STYLE TYPE="text/css">'#10#9'<!--'#10#9#9'@page { '
+  +'size: 21.59cm 27.94cm; margin-left: 2cm; margin-right: 2.5cm; margin-top: 2'
+  +'.5cm; margin-bottom: 2cm }'#10#9#9'P { margin-bottom: 0.21cm; color: #00000'
+  +'0; text-align: left }'#10#9#9'P.western { font-size: 12pt; so-language: de-'
+  +'DE }'#10#9#9'P.cjk { font-size: 12pt; so-language: de-DE }'#10#9#9'P.ctl { '
+  +'font-size: 12pt }'#10#9#9'A:link { color: #0000ff }'#10#9'-->'#10#9'</STYLE'
+  +'>'#10'</HEAD>'#10'<BODY LANG="de-DE" TEXT="#000000" LINK="#0000ff" DIR="LTR'
+  +'" STYLE="border: none; padding: 0cm">'#10'<P CLASS="western">Interferenz '
+  +#226#128#147' Endbenutzer-Lizenzvereinbarungen</P>'#10'<P CLASS="western" AL'
+  +'IGN=LEFT><BR><BR>'#10'</P>'#10'<P CLASS="western">Lesen Sie diese Lizenzver'
+  +'einbarungen sorgf'#195#164'ltig,'#10'bevor Sie das Programm '#10'</P>'#10'<'
+  +'P CLASS="western">Interferenz installieren oder in anderer Form '#10'</P>'
+  +#10'<P CLASS="western">darauf zugreifen. Sie m'#195#188'ssen dieser Lizenz'
+  +#10'zustimmen, wenn Sie Interferenz '#10'</P>'#10'<P CLASS="western">verwend'
+  +'en wollen.</P>'#10'<P CLASS="western"><BR><BR>'#10'</P>'#10'<P CLASS="weste'
+  +'rn">1. Lizenzstatus, Inhaberschaft</P>'#10'<P CLASS="western">Interferenz g'
+  +'eht nicht in Ihren Besitz '#195#188'ber,'#10'sondern wird lizenziert. Inter'
+  +'ferenz ist '#10'</P>'#10'<P CLASS="western">durch das Urheberrecht gesch'
+  +#195#188'tzt. '#10'</P>'#10'<P CLASS="western">Das Eigentum und alle geistig'
+  +'en Schutzrechte an'#10'Interferenz sowie der '#10'</P>'#10'<P CLASS="wester'
+  +'n">m'#195#182'glicherweise enthaltenen Dokumentation und'#10'aller '#10'</P'
+  +'>'#10'<P CLASS="western">ihrer Bestandteile verbleiben bei dem Hersteller'
+  +#10'Alexander Roth. Der Lizenznehmer '#10'</P>'#10'<P CLASS="western">erkenn'
+  +'t diese Eigentums- und Schutzrechte '#10'</P>'#10'<P CLASS="western">an.</P'
+  +'>'#10'<P CLASS="western"><BR><BR>'#10'</P>'#10'<P CLASS="western">2. Lizenz'
+  +'einr'#195#164'umung</P>'#10'<P CLASS="western">Der Hersteller gew'#195#164
+  +'hrt Ihnen unter der'#10'Voraussetzung, dass Sie alle Punkte dieser '#10'</P'
+  +'>'#10'<P CLASS="western">Vereinbarung einhalten, das Recht, '#10'</P>'#10'<'
+  +'P CLASS="western">Interferenz f'#195#188'r ausschlie'#195#159'lich private '
+  +'und nicht'#10'gewerbliche Zwecke frei zu nutzen. '#10'</P>'#10'<P CLASS="we'
+  +'stern">Dieses Recht umfasst die folgende '#10'</P>'#10'<P CLASS="western">R'
+  +'echte und Einschr'#195#164'nkungen:</P>'#10'<P CLASS="western">* Installati'
+  +'on, Verwendung. Sie sind berechtigt,'#10'Interferenz auf einer beliebigen '
+  +#10'</P>'#10'<P CLASS="western">Anzahl Ihrer Computer zu installieren und '
+  +#10'</P>'#10'<P CLASS="western">zu verwenden.</P>'#10'<P CLASS="western">* W'
+  +'eitergabe, Vertrieb. Eine Weitergabe von'#10'Interferenz an Dritte ist zul'
+  +#195#164'ssig, sofern '#10'</P>'#10'<P CLASS="western">sie unter Ber'#195#188
+  +'cksichtigung dieser '#10'</P>'#10'<P CLASS="western">Lizenzvereinbarungen v'
+  +'erl'#195#164'uft und Interferenz in'#10'unver'#195#164'ndertem Zustand '#10
+  +'</P>'#10'<P CLASS="western">weitergegeben wird. Interferenz darf nicht gege'
+  +'n '#10'</P>'#10'<P CLASS="western">Geb'#195#188'hren jeglicher '#10'</P>'#10
+  +'<P CLASS="western">Art vertrieben werden, au'#195#159'er zum'#10'Selbstkost'
+  +'enpreis. Interferenz darf nicht vermietet '#10'</P>'#10'<P CLASS="western">'
+  +'werden. Die Ver'#195#182'ffentlichung von '#10'</P>'#10'<P CLASS="western">'
+  +'Interferenz in einem anderen Medium als dem'#10'Internet bedarf der Genehmi'
+  +'gung des '#10'</P>'#10'<P CLASS="western">Herstellers.</P>'#10'<P CLASS="we'
+  +'stern">* Zur'#195#188'ckentwicklung. Interferenz darf keiner Form'#10'von Z'
+  +'ur'#195#188'ckentwicklung (Reverse '#10'</P>'#10'<P CLASS="western">Enginee'
+  +'ring), Dekompilierung oder '#10'</P>'#10'<P CLASS="western">Disassemblierun'
+  +'g unterzogen werden.</P>'#10'<P CLASS="western">* K'#195#188'ndigung. Diese'
+  +' Lizenz gilt auf unbestimmte'#10'Zeit und ist so lange g'#195#188'ltig bis '
+  +'sie '#10'</P>'#10'<P CLASS="western">widerrufen wird. Sie k'#195#182'nnen d'
+  +'ie Lizenz '#10'</P>'#10'<P CLASS="western">jederzeit beendigen, indem Sie a'
+  +'lle Kopien von'#10'Interferenz vernichten. Diese Lizenz '#10'</P>'#10'<P CL'
+  +'ASS="western">endet unverz'#195#188'glich, ohne dass es einer '#10'</P>'#10
+  +'<P CLASS="western">expliziten K'#195#188'ndigung des Herstellers bedarf, we'
+  +'nn'#10'Sie gegen diese '#10'</P>'#10'<P CLASS="western">Lizenzvereinbarunge'
+  +'n versto'#195#159'en. Bei Beendigung'#10'der Lizenz '#10'</P>'#10'<P CLASS='
+  +'"western">sind Sie verpflichtet alle Kopien von Interferenz'#10'zu vernicht'
+  ,'en.</P>'#10'<P CLASS="western">* Versionen. Diese Lizenz gilt f'#195#188'r '
+  +'alle Versionen'#10'(auch die vorherigen) des Programms '#10'</P>'#10'<P CLA'
+  +'SS="western">Interferenz. '#10'</P>'#10'<P CLASS="western"><BR><BR>'#10'</P'
+  +'>'#10'<P CLASS="western"><BR><BR>'#10'</P>'#10'<P CLASS="western">3. Gew'
+  +#195#164'hrleistungsausschluss</P>'#10'<P CLASS="western">Der Hersteller erh'
+  +'ebt keine Lizenzgeb'#195#188'hr f'#195#188'r'#10'diese Version von Interfer'
+  +'enz. Daher '#10'</P>'#10'<P CLASS="western">wird Ihnen Interferenz ohne jed'
+  +'e '#10'</P>'#10'<P CLASS="western">Gew'#195#164'hrleistung zur Verf'#195#188
+  +'gung gestellt. Keine'#10'Gew'#195#164'hrleistung wird insbesondere f'#195
+  +#188'r '#10'</P>'#10'<P CLASS="western">die Sach- und Rechtsm'#195#164'ngelf'
+  +'reiheit von '#10'</P>'#10'<P CLASS="western">Interferenz '#195#188'bernomme'
+  +'n. Sie benutzen Interferenz'#10'in Hinsicht auf Qualit'#195#164't und '#10
+  +'</P>'#10'<P CLASS="western">Funktion auf eigene Gefahr. Sollten Ihnen '#10
+  +'</P>'#10'<P CLASS="western">durch Interferenz nachweislich Sch'#195#164'den'
+  +#10'irgendwelcher Art entstehen, tr'#195#164'gt der '#10'</P>'#10'<P CLASS="'
+  +'western">Lizenzgeber keine etwaigen Kosten. '#10'</P>'#10'<P CLASS="western'
+  +'">Interferenz ist auf Virenfreiheit '#195#188'berpr'#195#188'ft'#10'worden.'
+  +' Dennoch '#195#188'bernimmt der Hersteller '#10'</P>'#10'<P CLASS="western"'
+  +'>keine Gew'#195#164'hrleistung f'#195#188'r die Freiheit '#10'</P>'#10'<P C'
+  +'LASS="western">von Viren. Sie sind deshalb aufgefordert,'#10'Interferenz se'
+  +'lbst auf Virenfreiheit zu '#10'</P>'#10'<P CLASS="western">'#195#188'berpr'
+  +#195#188'fen, bzw. Interferenz auf eigene '#10'</P>'#10'<P CLASS="western">G'
+  +'efahr zu nutzen. Dieser Ausschluss der'#10'Gew'#195#164'hrleistung stellt e'
+  +'inen wesentlichen Teil '#10'</P>'#10'<P CLASS="western">der Lizenzvereinbar'
+  +'ungen dar. Wenn Sie '#10'</P>'#10'<P CLASS="western">sich mit diesem Gew'
+  +#195#164'hrleistungsausschluss nicht'#10'einverstanden erkl'#195#164'ren, is'
+  +'t Ihnen die '#10'</P>'#10'<P CLASS="western">Nutzung von Interferenz unters'
+  +'agt.</P>'#10'<P CLASS="western"><BR><BR>'#10'</P>'#10'</BODY>'#10'</HTML>'
+]);
+LazarusResources.Add('MitProgrammieren','HTML',[
+  '<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">'#10'<HTML>'#10
+  +'<HEAD>'#10#9'<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=ut'
+  +'f-8">'#10#9'<TITLE></TITLE>'#10#9'<META NAME="GENERATOR" CONTENT="OpenOffic'
+  +'e.org 2.4  (Unix)">'#10#9'<META NAME="CREATED" CONTENT="0;0">'#10#9'<META N'
+  +'AME="CHANGEDBY" CONTENT="alexander">'#10#9'<META NAME="CHANGED" CONTENT="20'
+  +'080807;11151300">'#10#9'<META NAME="CHANGEDBY" CONTENT="alexander">'#10#9'<'
+  +'STYLE TYPE="text/css">'#10#9'<!--'#10#9#9'@page { size: 21.59cm 27.94cm; ma'
+  +'rgin-left: 2.5cm; margin-right: 2.5cm; margin-top: 2.5cm; margin-bottom: 2c'
+  +'m }'#10#9'-->'#10#9'</STYLE>'#10'</HEAD>'#10'<BODY LANG="de-DE" DIR="LTR">'
+  +#10'<P>Falls ein Programmierer Interesse hat das Programm in Lazarus mit'#10
+  +'mir weiterzuentwickeln, k'#195#182'nnen wir mit Subversion auf meinen'#10'W'
+  +'ebspace zugreifen.</P>'#10'<P>Falls Interesse: roth-a@gmx.de</P>'#10'</BODY'
+  +'>'#10'</HTML>'
+]);
+LazarusResources.Add('PfeilAus','BMP',[
+  'BM'#190#2#0#0#0#0#0#0'6'#0#0#0'('#0#0#0#12#0#0#0#18#0#0#0#1#0#24#0#0#0#0#0
+  +#136#2#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#232#235#237#228#232#234#224#228
+  +#231#221#225#228#217#222#225#213#218#222#209#215#219#205#212#216#202#209#213
+  +#198#205#210#194#202#207#190#199#204#232#235#237#228#232#234#224#228#231#221
+  +#225#228#217#222#225#213#218#222#209#215#219#205#212#216#202#209#213#198#205
+  +#210#194#202#207#190#199#204#232#235#237#228#232#234#224#228#231#221#225#228
+  +#217#222#225#213#218#222#209#215#219#205#212#216#202#209#213#198#205#210#194
+  +#202#207#190#199#204#232#235#237#228#232#234#224#228#231#221#225#228#217#222
+  +#225#213#218#222#209#215#219#205#212#216#202#209#213#198#205#210#194#202#207
+  +#190#199#204#232#235#237#228#232#234#224#228#231#221#225#228#217#222#225#213
+  +#218#222#209#215#219#205#212#216#202#209#213#198#205#210#194#202#207#190#199
+  +#204#232#235#237#228#232#234#224#228#231#221#225#228#217#222#225#213#218#222
+  +#209#215#219#205#212#216#202#209#213#198#205#210#194#202#207#190#199#204#232
+  +#235#237#228#232#234#224#228#231#221#225#228#217#222#225#0#0#0#209#215#219
+  +#205#212#216#202#209#213#198#205#210#194#202#207#190#199#204#232#235#237#228
+  +#232#234#224#228#231#221#225#228#217#222#225#0#0#0#0#0#0#205#212#216#202#209
+  +#213#198#205#210#194#202#207#190#199#204#232#235#237#228#232#234#224#228#231
+  +#221#225#228#217#222#225#0#0#0#0#0#0#0#0#0#202#209#213#198#205#210#194#202
+  +#207#190#199#204#232#235#237#228#232#234#224#228#231#221#225#228#217#222#225
+  +#0#0#0#0#0#0#0#0#0#0#0#0#198#205#210#194#202#207#190#199#204#232#235#237#228
+  +#232#234#224#228#231#221#225#228#217#222#225#0#0#0#0#0#0#0#0#0#202#209#213
+  +#198#205#210#194#202#207#190#199#204#232#235#237#228#232#234#224#228#231#221
+  +#225#228#217#222#225#0#0#0#0#0#0#205#212#216#202#209#213#198#205#210#194#202
+  +#207#190#199#204#232#235#237#228#232#234#224#228#231#221#225#228#217#222#225
+  +#0#0#0#209#215#219#205#212#216#202#209#213#198#205#210#194#202#207#190#199
+  +#204#232#235#237#228#232#234#224#228#231#221#225#228#217#222#225#213#218#222
+  +#209#215#219#205#212#216#202#209#213#198#205#210#194#202#207#190#199#204#232
+  +#235#237#228#232#234#224#228#231#221#225#228#217#222#225#213#218#222#209#215
+  +#219#205#212#216#202#209#213#198#205#210#194#202#207#190#199#204#232#235#237
+  +#228#232#234#224#228#231#221#225#228#217#222#225#213#218#222#209#215#219#205
+  +#212#216#202#209#213#198#205#210#194#202#207#190#199#204#232#235#237#228#232
+  +#234#224#228#231#221#225#228#217#222#225#213#218#222#209#215#219#205#212#216
+  +#202#209#213#198#205#210#194#202#207#190#199#204#232#235#237#228#232#234#224
+  +#228#231#221#225#228#217#222#225#213#218#222#209#215#219#205#212#216#202#209
+  +#213#198#205#210#194#202#207#190#199#204
+]);
+LazarusResources.Add('PfeilEin','BMP',[
+  'BM'#190#2#0#0#0#0#0#0'6'#0#0#0'('#0#0#0#12#0#0#0#18#0#0#0#1#0#24#0#0#0#0#0
+  +#136#2#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#190#199#204#194#202#207#198#205
+  +#210#202#209#213#205#212#216#209#215#219#213#218#222#217#222#225#221#225#228
+  +#224#228#231#228#232#234#232#235#237#190#199#204#194#202#207#198#205#210#202
+  +#209#213#205#212#216#209#215#219#213#218#222#217#222#225#221#225#228#224#228
+  +#231#228#232#234#232#235#237#190#199#204#194#202#207#198#205#210#202#209#213
+  +#205#212#216#209#215#219#213#218#222#217#222#225#221#225#228#224#228#231#228
+  +#232#234#232#235#237#190#199#204#194#202#207#198#205#210#202#209#213#205#212
+  +#216#209#215#219#213#218#222#217#222#225#221#225#228#224#228#231#228#232#234
+  +#232#235#237#190#199#204#194#202#207#198#205#210#202#209#213#205#212#216#209
+  +#215#219#213#218#222#217#222#225#221#225#228#224#228#231#228#232#234#232#235
+  +#237#190#199#204#194#202#207#198#205#210#202#209#213#205#212#216#209#215#219
+  +#213#218#222#217#222#225#221#225#228#224#228#231#228#232#234#232#235#237#190
+  +#199#204#194#202#207#198#205#210#202#209#213#205#212#216#209#215#219#0#0#0
+  +#217#222#225#221#225#228#224#228#231#228#232#234#232#235#237#190#199#204#194
+  +#202#207#198#205#210#202#209#213#205#212#216#0#0#0#0#0#0#217#222#225#221#225
+  +#228#224#228#231#228#232#234#232#235#237#190#199#204#194#202#207#198#205#210
+  +#202#209#213#0#0#0#0#0#0#0#0#0#217#222#225#221#225#228#224#228#231#228#232
+  +#234#232#235#237#190#199#204#194#202#207#198#205#210#0#0#0#0#0#0#0#0#0#0#0#0
+  +#217#222#225#221#225#228#224#228#231#228#232#234#232#235#237#190#199#204#194
+  +#202#207#198#205#210#202#209#213#0#0#0#0#0#0#0#0#0#217#222#225#221#225#228
+  +#224#228#231#228#232#234#232#235#237#190#199#204#194#202#207#198#205#210#202
+  +#209#213#205#212#216#0#0#0#0#0#0#217#222#225#221#225#228#224#228#231#228#232
+  +#234#232#235#237#190#199#204#194#202#207#198#205#210#202#209#213#205#212#216
+  +#209#215#219#0#0#0#217#222#225#221#225#228#224#228#231#228#232#234#232#235
+  +#237#190#199#204#194#202#207#198#205#210#202#209#213#205#212#216#209#215#219
+  +#213#218#222#217#222#225#221#225#228#224#228#231#228#232#234#232#235#237#190
+  +#199#204#194#202#207#198#205#210#202#209#213#205#212#216#209#215#219#213#218
+  +#222#217#222#225#221#225#228#224#228#231#228#232#234#232#235#237#190#199#204
+  +#194#202#207#198#205#210#202#209#213#205#212#216#209#215#219#213#218#222#217
+  +#222#225#221#225#228#224#228#231#228#232#234#232#235#237#190#199#204#194#202
+  +#207#198#205#210#202#209#213#205#212#216#209#215#219#213#218#222#217#222#225
+  +#221#225#228#224#228#231#228#232#234#232#235#237#190#199#204#194#202#207#198
+  +#205#210#202#209#213#205#212#216#209#215#219#213#218#222#217#222#225#221#225
+  +#228#224#228#231#228#232#234#232#235#237
+]);
+LazarusResources.Add('StandartEinstellungen','INI',[
+  '[ Form1 TEdit]'#10'EditSlitWidth=1.29'#10'EditDistScreenSlit=100E-2'#10'Edit'
+  +'SlitDistance=3.5'#10'EditVerticalAngle=0'#10'EditHorizontalAngle=0'#10'Edit'
+  +'Lambda_0=689'#10'EditFrequency_0=435E12'#10#10'[ Form1 TColoredListBox]'#10
+  +'ComboSourceItems.count=1'#10'ComboSourceItemIndex=0'#10'ListLogItems.count='
+  +'0'#10'ListLogItemIndex=-1'#10'ListCountPointsItems.count=0'#10'ListCountPoi'
+  +'ntsItemIndex=-1'#10#10'[ Form1 TMyRollOut]'#10'OptioChart=1'#10'OptioChartO'
+  +'ption2=1'#10'OptioChartOption1=0'#10'OptioExtended=1'#10'MyRollOutHelpLittl'
+  +'e=0'#10'OptioAperture=1'#10'PProgrammerInfo=1'#10'MyRollOutLog=0'#10'MyRoll'
+  +'OutCountPoints=0'#10'OptioScreen=1'#10'OptioRotate=1'#10#10'[ Form1 TCheckB'
+  +'ox]'#10'CheckDrawChart=1'#10'CheckViewLittleHelp2=1'#10'CheckShowXGitternet'
+  +'z=0'#10'CheckShowLSGitternetz=0'#10'CheckViewLittleHelp=1'#10'CheckExImageI'
+  +'ntensity=0'#10'CheckExMaximaDraw=0'#10'CheckPixelexpandedImageIntesity=0'#10
+  +'TSingleSlit_Check_0=1'#10'TSingleSlit_CheckMaxMin_0=0'#10'TRSNSlit_Check_0='
+  +'0'#10'TRSNSlit_CheckMaxMin_0=0'#10'TCombiSlit_Check_0=1'#10'TCombiSlit_Chec'
+  +'kMaxMin_0=0'#10'TImageIntensity_Check_0=1'#10'TImageIntensity_CheckMaxMin_0'
+  +'=1'#10'CheckAskConfirmationreflection=1'#10#10'[ Form1 TRadioGroup]'#10'XAx'
+  +'isPosGroup=1'#10'YAxisPosGroup=0'#10'RadioGroupFormel=0'#10'RadioLSAxis=1'
+  +#10'RadioXAxis=1'#10'RadioImageAxis=1'#10'RadioReflection=0'#10#10'[ Form1 T'
+  +'TrackBar]'#10'TrackQuality=5'#10'TrackBarIntensityFactor=1'#10'TrackBarDist'
+  +'ScreenSlit=10000'#10'TrackBarGB=21'#10'TrackBarCountSlit=32'#10'TrackSlitDi'
+  +'stance=35'#10'TrackSlitWidth=37'#10'TrackVerticalAngle=0'#10'TrackHorizonta'
+  +'lAngle=0'#10'TrackLaserHeight=500'#10'TsourceTrackBar_0=689'#10#10'[ Form1 '
+  +'TSpinEdit]'#10'SpinEditIntensityFactor=1'#10'EditSlitCount=10'#10'SpinTrack'
+  +'LaserHeight=500'#10#10'[ Form1 TExpandPanels]'#10'ExpandPanelsMainOption Us'
+  +'eClientHeight=0'#10'ExpandPanelsMainOption=1'#10'ExpandPanelsChartOption Us'
+  +'eClientHeight=1'#10'ExpandPanelsChartOption=2'#10'ExpandPanelsProgrammerInf'
+  +'o UseClientHeight=1'#10'ExpandPanelsProgrammerInfo=1'#10#10'[ Form1 TOGlBox'
+  +']'#10'TheOGLBox.xAxis.Koor.Min=-90'#10'TheOGLBox.xAxis.Koor.Max=90'#10'TheO'
+  +'GLBox.LSAxis.Koor.Min=-0.4'#10'TheOGLBox.LSAxis.Koor.Max=1.2'#10'TheOGLBox.'
+  +'ImageAxis.Koor.Min=-6.0000000000006'#10'TheOGLBox.ImageAxis.Koor.Max=18.000'
+  +'0000000018'#10'TheOGLBox.QuotientLS2Image=0.06666666666666'#10'TheOGLBox.xA'
+  +'xis.DefaultKoor.Min=-90'#10'TheOGLBox.xAxis.DefaultKoor.Max=90'#10'TheOGLBo'
+  +'x.LSAxis.DefaultKoor.Min=-0.4'#10'TheOGLBox.LSAxis.DefaultKoor.Max=1.2'#10
+  +'TheOGLBox.ImageAxis.DefaultKoor.Min=-0.4'#10'TheOGLBox.ImageAxis.DefaultKoo'
+  +'r.Max=1.2'#10#10'[ Form1 TALED]'#10'TSingleSlit_LED_0=255'#10'TRSNSlit_LED_'
+  +'0=255'#10'TCombiSlit_LED_0=255'#10'TImageIntensity_LED_0=255'#10#10'[ FormS'
+  +'iedeBarOptions TRadioGroup]'#10'RadioGroup1=0'#10#10'[Form1]'#10'WindowStat'
+  +'e=2'#10'FormWidth=1280'#10'FormHeight=978'#10
+]);
+LazarusResources.Add('Version','TXT',[
+  '3.0'#10
+]);

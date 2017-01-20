@@ -1,0 +1,1547 @@
+object Form1: TForm1
+  Left = 230
+  Height = 588
+  Top = 119
+  Width = 1128
+  ActiveControl = GroupHeader2
+  Caption = 'Interferenz'
+  ClientHeight = 560
+  ClientWidth = 1128
+  Constraints.MinHeight = 550
+  Constraints.MinWidth = 650
+  Menu = MainMenu1
+  OnActivate = FormActivate
+  OnCloseQuery = FormCloseQuery
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  OnPaint = FormPaint
+  OnResize = FormResize
+  OnShow = FormShow
+  OnWindowStateChange = FormWindowStateChange
+  Position = poDesktopCenter
+  LCLVersion = '1.7'
+  object PSlitWidthExpand: TPanel
+    Left = 281
+    Height = 26
+    Top = 352
+    Width = 111
+    ClientHeight = 26
+    ClientWidth = 111
+    TabOrder = 0
+    object Label8: TLabel
+      Left = 83
+      Height = 18
+      Top = 5
+      Width = 20
+      Caption = 'μm'
+      ParentColor = False
+    end
+    object EditSlitWidth: TEdit
+      Left = 1
+      Height = 24
+      Top = 1
+      Width = 80
+      Align = alLeft
+      OnChange = AllEditChange
+      OnKeyDown = EditSlitWidthKeyDown
+      TabOrder = 0
+      Text = '0,5'
+    end
+  end
+  object PanelLambda: TPanel
+    Left = 0
+    Height = 161
+    Top = 399
+    Width = 1128
+    Align = alBottom
+    BevelOuter = bvNone
+    ClientHeight = 161
+    ClientWidth = 1128
+    TabOrder = 1
+    object LabelPos: TLabel
+      Left = 896
+      Height = 18
+      Top = 40
+      Width = 54
+      Anchors = [akLeft, akBottom]
+      Caption = 'LabelPos'
+      ParentColor = False
+    end
+    object LabelMaxCount: TLabel
+      Left = 896
+      Height = 18
+      Top = 68
+      Width = 95
+      Anchors = [akLeft, akBottom]
+      Caption = 'LabelMaxCount'
+      ParentColor = False
+    end
+    object GroupMultiSource: TGroupBox
+      Left = 576
+      Height = 141
+      Top = 20
+      Width = 312
+      Anchors = [akLeft, akBottom]
+      Caption = 'Mehrere Wellenlängen'
+      ClientHeight = 122
+      ClientWidth = 310
+      TabOrder = 0
+      object BAddLambda: TButton
+        Left = 0
+        Height = 27
+        Top = 69
+        Width = 310
+        Align = alBottom
+        Anchors = [akTop, akLeft, akRight]
+        Caption = 'Erstelle neue Wellenlänge'
+        OnClick = BAddLambdaClick
+        TabOrder = 0
+      end
+      object BDelLambda: TButton
+        Left = 0
+        Height = 26
+        Top = 96
+        Width = 310
+        Align = alBottom
+        Anchors = [akTop, akLeft, akRight]
+        Caption = 'Lösche letzte Wellenlänge'
+        OnClick = BDelLambdaClick
+        TabOrder = 1
+      end
+      object ComboSource: TColoredListBox
+        Left = 0
+        Height = 61
+        Top = 8
+        Width = 310
+        Align = alBottom
+        ItemHeight = 0
+        OnClick = ComboSourceChange
+        ScrollWidth = 308
+        Style = lbOwnerDrawFixed
+        TabOrder = 2
+        TopIndex = -1
+        ItemBackgroundColors.Strings = (
+          'clWhite'
+          'clWhite'
+          'clWhite'
+          'clWhite'
+          'clWhite'
+          'clWhite'
+          'clWhite'
+          'clWhite'
+        )
+        ItemColors.Strings = (
+          'clBlue'
+          'clBlue'
+          'clBlue'
+          'clBlue'
+          'clBlue'
+          'clBlue'
+          'clBlue'
+          'clBlue'
+        )
+        Add2ItemColors = clBlue
+        Add2ItemBackgroundColors = clWhite
+      end
+    end
+    object ProgressDraw: TProgressBar
+      Left = 896
+      Height = 12
+      Top = 146
+      Width = 100
+      Anchors = [akLeft, akBottom]
+      TabOrder = 3
+    end
+    object GroupShowChart: TGroupBox
+      Left = 2
+      Height = 141
+      Top = 17
+      Width = 279
+      Anchors = [akLeft, akBottom]
+      Caption = 'Angezeigt wird:'
+      TabOrder = 1
+    end
+    object GroupHeader1: TGroupHeader
+      Left = 0
+      Height = 13
+      Top = 0
+      Width = 1128
+      Align = alTop
+      Anchors = [akLeft, akRight, akBottom]
+      BorderSpacing.Bottom = 11
+      BevelOuter = bvNone
+      ClientHeight = 13
+      ClientWidth = 1128
+      TabOrder = 2
+      BoundLabel.Left = 481
+      BoundLabel.Height = 18
+      BoundLabel.Top = -2
+      BoundLabel.Width = 165
+      BoundLabel.Caption = 'Jede Wellenlänge einzeln'
+      BoundLabel.ParentColor = False
+      BoundLabel.ParentFont = False
+      BoundLabel.Font.Height = -13
+      BoundLabel.Font.Style = [fsBold]
+      BoundPanelLeft.Left = 0
+      BoundPanelLeft.Height = 5
+      BoundPanelLeft.Top = 4
+      BoundPanelLeft.Width = 471
+      BoundPanelLeft.TabOrder = 0
+      BoundPanelRight.Left = 657
+      BoundPanelRight.Height = 5
+      BoundPanelRight.Top = 4
+      BoundPanelRight.Width = 471
+      BoundPanelRight.TabOrder = 1
+    end
+  end
+  object GroupHeader2: TGroupHeader
+    AnchorSideBottom.Control = OptioScrollBox
+    Left = 0
+    Height = 40
+    Top = -8
+    Width = 264
+    BevelOuter = bvNone
+    ClientHeight = 40
+    ClientWidth = 264
+    TabOrder = 2
+    BoundLabel.Left = 60
+    BoundLabel.Height = 18
+    BoundLabel.Top = 11
+    BoundLabel.Width = 144
+    BoundLabel.Caption = 'Für alle Wellenlängen'
+    BoundLabel.ParentColor = False
+    BoundLabel.ParentFont = False
+    BoundLabel.Font.Height = -13
+    BoundLabel.Font.Style = [fsBold]
+    BoundPanelLeft.Left = 0
+    BoundPanelLeft.Height = 5
+    BoundPanelLeft.Top = 17
+    BoundPanelLeft.Width = 50
+    BoundPanelLeft.TabOrder = 0
+    BoundPanelRight.Left = 214
+    BoundPanelRight.Height = 5
+    BoundPanelRight.Top = 17
+    BoundPanelRight.Width = 50
+    BoundPanelRight.TabOrder = 1
+  end
+  object OptioChart: TMyRollOut
+    Left = 875
+    Height = 399
+    Top = 0
+    Width = 253
+    Anchors = [akTop, akRight, akBottom]
+    ClientHeight = 399
+    ClientWidth = 253
+    Enabled = True
+    TabOrder = 3
+    CollapseKind = akRight
+    ExpandedSize = 253
+    ButtonPosition = akLeft
+    ButtonSize = 27
+    Button.Left = 0
+    Button.Height = 403
+    Button.Top = 0
+    Button.Width = 27
+    Button.Caption = 'Darstellungs-Einstellungen'
+    Button.Color = clSkyBlue
+    Button.ColorExpanded = 16287767
+    Button.TextLayout = tlCenter
+    AnimationSpeed = 20
+    Animated = False
+    OnPreExpand = OptioRotatePreCollapse
+    OnExpand = OptioChartExpand
+    OnCollapse = OptioChartCollapse
+    OnPreCollapse = OptioRotatePreCollapse
+    object ScrollBox1: TScrollBox
+      Left = 28
+      Height = 397
+      Top = 1
+      Width = 224
+      HorzScrollBar.Page = 179
+      HorzScrollBar.Range = 179
+      VertScrollBar.Page = 344
+      VertScrollBar.Position = 400
+      VertScrollBar.Range = 800
+      Align = alClient
+      AutoScroll = False
+      ClientHeight = 395
+      ClientWidth = 202
+      TabOrder = 0
+      object CheckShowLSGitternetz: TCheckBox
+        Left = 0
+        Height = 21
+        Top = 698
+        Width = 202
+        Align = alTop
+        Caption = 'Y-Hilfslinien anzeigen'
+        Checked = True
+        OnChange = CheckShowLSGitternetzChange
+        State = cbChecked
+        TabOrder = 0
+      end
+      object CheckShowXGitternetz: TCheckBox
+        Left = 0
+        Height = 21
+        Top = 656
+        Width = 202
+        Align = alTop
+        Caption = 'X-Hilfslinien anzeigen'
+        Checked = True
+        OnChange = CheckShowXGitternetzChange
+        State = cbChecked
+        TabOrder = 1
+      end
+      object GroupColors: TGroupBox
+        Left = 0
+        Height = 152
+        Top = 295
+        Width = 202
+        Align = alTop
+        Caption = 'Farben einstellen'
+        TabOrder = 2
+      end
+      object GroupShowMaxMin: TGroupBox
+        Left = 0
+        Height = 115
+        Top = 180
+        Width = 202
+        Align = alTop
+        Caption = 'Maxima/Minima  beschriften'
+        ParentFont = False
+        TabOrder = 3
+      end
+      object GroupBoxQuality: TGroupBox
+        Left = 0
+        Height = 84
+        Top = 96
+        Width = 202
+        Align = alTop
+        Caption = 'Qualität der Anzeige'
+        ClientHeight = 65
+        ClientWidth = 200
+        TabOrder = 4
+        object LMinus: TLabel
+          Left = 14
+          Height = 18
+          Top = 31
+          Width = 4
+          Caption = '-'
+          ParentColor = False
+        end
+        object LPlus: TLabel
+          Left = 188
+          Height = 18
+          Top = 32
+          Width = 7
+          Anchors = [akTop, akRight]
+          Caption = '+'
+          ParentColor = False
+        end
+        object TrackQuality: TTrackBar
+          Left = 19
+          Height = 42
+          Top = 13
+          Width = 165
+          Frequency = 5
+          Max = 20
+          Min = 1
+          OnChange = AllTrackChange
+          Position = 5
+          Anchors = [akTop, akLeft, akRight]
+          TabOrder = 0
+        end
+      end
+      object GroupBoxIntensityFactor: TGroupBox
+        Left = 0
+        Height = 96
+        Top = 0
+        Width = 202
+        Align = alTop
+        Caption = 'Intensität der Farben'
+        ClientHeight = 77
+        ClientWidth = 200
+        TabOrder = 5
+        object Label6: TLabel
+          Left = 23
+          Height = 18
+          Top = 10
+          Width = 39
+          Caption = 'Faktor'
+          ParentColor = False
+        end
+        object TrackBarIntensityFactor: TTrackBar
+          Left = 0
+          Height = 42
+          Top = 35
+          Width = 200
+          Max = 500
+          Min = 1
+          OnChange = AllTrackChange
+          Position = 1
+          ScalePos = trBottom
+          TickStyle = tsNone
+          Align = alBottom
+          TabOrder = 0
+        end
+        object SpinEditIntensityFactor: TSpinEdit
+          Left = 84
+          Height = 24
+          Top = 7
+          Width = 90
+          MaxValue = 1000
+          MinValue = 1
+          OnChange = SpinEditIntensityFactorChange
+          TabOrder = 1
+          Value = 1
+        end
+      end
+      object YAxisPosGroup: TRadioGroup
+        Left = 0
+        Height = 94
+        Top = 562
+        Width = 202
+        Align = alTop
+        AutoFill = True
+        Caption = 'Y-Achsen-Ausrichtung'
+        ChildSizing.LeftRightSpacing = 6
+        ChildSizing.TopBottomSpacing = 6
+        ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+        ChildSizing.EnlargeVertical = crsHomogenousChildResize
+        ChildSizing.ShrinkHorizontal = crsScaleChilds
+        ChildSizing.ShrinkVertical = crsScaleChilds
+        ChildSizing.Layout = cclLeftToRightThenTopToBottom
+        ChildSizing.ControlsPerLine = 1
+        ClientHeight = 75
+        ClientWidth = 200
+        ItemIndex = 0
+        Items.Strings = (
+          'Am linken Rand'
+          'Bei 0 von der X-Achse'
+          'Am rechten Rand'
+        )
+        OnClick = YAxisPosGroupClick
+        TabOrder = 6
+      end
+      object CheckDrawChart: TCheckBox
+        Left = 0
+        Height = 21
+        Top = 677
+        Width = 202
+        Align = alTop
+        AutoSize = False
+        Caption = 'Zeichnen Aktivieren'
+        Checked = True
+        OnChange = CheckDrawChartChange
+        State = cbChecked
+        TabOrder = 7
+      end
+      object XAxisPosGroup: TRadioGroup
+        Left = 0
+        Height = 94
+        Top = 447
+        Width = 202
+        Align = alTop
+        AutoFill = True
+        Caption = 'X-Achse-Ausrichtung'
+        ChildSizing.LeftRightSpacing = 6
+        ChildSizing.TopBottomSpacing = 6
+        ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+        ChildSizing.EnlargeVertical = crsHomogenousChildResize
+        ChildSizing.ShrinkHorizontal = crsScaleChilds
+        ChildSizing.ShrinkVertical = crsScaleChilds
+        ChildSizing.Layout = cclLeftToRightThenTopToBottom
+        ChildSizing.ControlsPerLine = 1
+        ClientHeight = 75
+        ClientWidth = 200
+        ItemIndex = 1
+        Items.Strings = (
+          'Am unteren Rand'
+          'Bei 0 von der Y-Achse'
+          'Am oberen Rand'
+        )
+        OnClick = XAxisPosGroupClick
+        TabOrder = 8
+      end
+      object CheckViewLittleHelp2: TCheckBox
+        Left = 0
+        Height = 21
+        Top = 541
+        Width = 202
+        Align = alTop
+        AutoSize = False
+        Caption = '1. Hilfe und Hinweise zeigen'
+        Checked = True
+        OnChange = CheckViewLittleHelp2Change
+        State = cbChecked
+        TabOrder = 9
+      end
+    end
+  end
+  object PBOK: TPanel
+    Left = 112
+    Height = 26
+    Top = 464
+    Width = 74
+    BevelOuter = bvNone
+    ClientHeight = 26
+    ClientWidth = 74
+    TabOrder = 5
+    Visible = False
+    object BOK: TButton
+      Left = 0
+      Height = 26
+      Top = 0
+      Width = 74
+      Align = alClient
+      Anchors = [akRight, akBottom]
+      Caption = 'Ok'
+      OnClick = BOKClick
+      TabOrder = 0
+    end
+  end
+  object OptioScrollBox: TScrollBox
+    Left = 0
+    Height = 369
+    Top = 24
+    Width = 262
+    HorzScrollBar.Page = 1
+    HorzScrollBar.Visible = False
+    VertScrollBar.Page = 367
+    Anchors = [akTop, akLeft, akBottom]
+    ClientHeight = 367
+    ClientWidth = 240
+    TabOrder = 4
+    object OptioRotate: TMyRollOut
+      Left = 0
+      Height = 27
+      Top = 168
+      Width = 250
+      ClientHeight = 27
+      ClientWidth = 250
+      Enabled = True
+      TabOrder = 0
+      CollapseKind = akTop
+      ExpandedSize = 416
+      ButtonPosition = akTop
+      ButtonSize = 27
+      Button.Left = 0
+      Button.Height = 27
+      Button.Top = 0
+      Button.Width = 254
+      Button.Caption = 'Gitterdrehungen'
+      Button.Color = clSkyBlue
+      Button.ColorExpanded = 16287767
+      AnimationSpeed = 20
+      Collapsed = True
+      OnPreExpand = OptioRotatePreCollapse
+      OnCollapse = OptioRotateCollapse
+      OnPreCollapse = OptioRotatePreCollapse
+      object GroupVerticalAngle: TGroupBox
+        Left = 1
+        Height = 97
+        Top = 237
+        Width = 255
+        Caption = 'Drehung um die horizontale Achse'
+        ClientHeight = 78
+        ClientWidth = 253
+        TabOrder = 0
+        object Label14: TLabel
+          AnchorSideLeft.Control = EditVerticalAngle
+          AnchorSideLeft.Side = asrBottom
+          Left = 194
+          Height = 18
+          Top = 16
+          Width = 6
+          Caption = '°'
+          ParentColor = False
+        end
+        object EditVerticalAngle: TEdit
+          Left = 114
+          Height = 24
+          Top = 16
+          Width = 80
+          OnChange = AllEditChange
+          OnKeyDown = EditVerticalAngleKeyDown
+          TabOrder = 0
+          Text = '0'
+        end
+        object TrackVerticalAngle: TTrackBar
+          Left = 0
+          Height = 42
+          Top = 40
+          Width = 246
+          Max = 89
+          Min = -89
+          OnChange = AllTrackChange
+          Position = 2
+          ScalePos = trRight
+          TickStyle = tsNone
+          TabOrder = 1
+        end
+      end
+      object GroupHorizontalAngle: TGroupBox
+        Left = 1
+        Height = 104
+        Top = 133
+        Width = 255
+        Caption = 'Drehung um die vertikale Achse'
+        ClientHeight = 85
+        ClientWidth = 253
+        TabOrder = 1
+        object Label20: TLabel
+          AnchorSideLeft.Control = EditHorizontalAngle
+          AnchorSideLeft.Side = asrBottom
+          Left = 195
+          Height = 18
+          Top = 11
+          Width = 6
+          Caption = '°'
+          ParentColor = False
+        end
+        object EditHorizontalAngle: TEdit
+          Left = 115
+          Height = 24
+          Top = 11
+          Width = 80
+          OnChange = AllEditChange
+          OnKeyDown = EditHorizontalAngleKeyDown
+          TabOrder = 0
+          Text = '0'
+        end
+        object TrackHorizontalAngle: TTrackBar
+          Left = 0
+          Height = 42
+          Top = 39
+          Width = 246
+          Max = 89
+          Min = -89
+          OnChange = AllTrackChange
+          Position = 0
+          ScalePos = trRight
+          TickStyle = tsNone
+          TabOrder = 1
+        end
+      end
+      object GroupLaserHeight: TGroupBox
+        Left = 1
+        Height = 62
+        Top = 71
+        Width = 255
+        Caption = 'vertikale-Ausdehung des Laserstrahls'
+        ClientHeight = 43
+        ClientWidth = 253
+        TabOrder = 2
+        object TrackLaserHeight: TTrackBar
+          Left = 0
+          Height = 42
+          Top = 0
+          Width = 253
+          Max = 500
+          Min = 1
+          OnChange = AllTrackChange
+          Position = 1
+          ScalePos = trRight
+          TickStyle = tsNone
+          Align = alTop
+          TabOrder = 0
+        end
+      end
+      object Panel1: TPanel
+        Left = 1
+        Height = 43
+        Top = 28
+        Width = 255
+        BevelOuter = bvNone
+        ClientHeight = 43
+        ClientWidth = 255
+        TabOrder = 3
+        object BHelpRotate: TSpeedButton
+          Left = 189
+          Height = 22
+          Top = 7
+          Width = 17
+          Glyph.Data = {
+            BE020000424DBE0200000000000036000000280000000C000000120000000100
+            1800000000008802000000000000000000000000000000000000E8EBEDE4E8EA
+            E0E4E7DDE1E4D9DEE1D5DADED1D7DBCDD4D8CAD1D5C6CDD2C2CACFBEC7CCE8EB
+            EDE4E8EAE0E4E7DDE1E4D9DEE1D5DADED1D7DBCDD4D8CAD1D5C6CDD2C2CACFBE
+            C7CCE8EBEDE4E8EAE0E4E7DDE1E4D9DEE1D5DADED1D7DBCDD4D8CAD1D5C6CDD2
+            C2CACFBEC7CCE8EBEDE4E8EAE0E4E7DDE1E4D9DEE1D5DADED1D7DBCDD4D8CAD1
+            D5C6CDD2C2CACFBEC7CCE8EBEDE4E8EAE0E4E7DDE1E4D9DEE1D5DADED1D7DBCD
+            D4D8CAD1D5C6CDD2C2CACFBEC7CCE8EBEDE4E8EAE0E4E7DDE1E4D9DEE1D5DADE
+            D1D7DBCDD4D8CAD1D5C6CDD2C2CACFBEC7CCE8EBEDE4E8EAE0E4E7DDE1E4D9DE
+            E1000000D1D7DBCDD4D8CAD1D5C6CDD2C2CACFBEC7CCE8EBEDE4E8EAE0E4E7DD
+            E1E4D9DEE1000000000000CDD4D8CAD1D5C6CDD2C2CACFBEC7CCE8EBEDE4E8EA
+            E0E4E7DDE1E4D9DEE1000000000000000000CAD1D5C6CDD2C2CACFBEC7CCE8EB
+            EDE4E8EAE0E4E7DDE1E4D9DEE1000000000000000000000000C6CDD2C2CACFBE
+            C7CCE8EBEDE4E8EAE0E4E7DDE1E4D9DEE1000000000000000000CAD1D5C6CDD2
+            C2CACFBEC7CCE8EBEDE4E8EAE0E4E7DDE1E4D9DEE1000000000000CDD4D8CAD1
+            D5C6CDD2C2CACFBEC7CCE8EBEDE4E8EAE0E4E7DDE1E4D9DEE1000000D1D7DBCD
+            D4D8CAD1D5C6CDD2C2CACFBEC7CCE8EBEDE4E8EAE0E4E7DDE1E4D9DEE1D5DADE
+            D1D7DBCDD4D8CAD1D5C6CDD2C2CACFBEC7CCE8EBEDE4E8EAE0E4E7DDE1E4D9DE
+            E1D5DADED1D7DBCDD4D8CAD1D5C6CDD2C2CACFBEC7CCE8EBEDE4E8EAE0E4E7DD
+            E1E4D9DEE1D5DADED1D7DBCDD4D8CAD1D5C6CDD2C2CACFBEC7CCE8EBEDE4E8EA
+            E0E4E7DDE1E4D9DEE1D5DADED1D7DBCDD4D8CAD1D5C6CDD2C2CACFBEC7CCE8EB
+            EDE4E8EAE0E4E7DDE1E4D9DEE1D5DADED1D7DBCDD4D8CAD1D5C6CDD2C2CACFBE
+            C7CC
+          }
+          OnClick = BHelpRotateClick
+        end
+        object Label10: TLabel
+          Left = 69
+          Height = 18
+          Top = 11
+          Width = 108
+          Caption = 'Wie wird gedreht?'
+          ParentColor = False
+          OnClick = Label10Click
+        end
+      end
+    end
+    object OptioExtended: TMyRollOut
+      Left = 0
+      Height = 27
+      Top = 40
+      Width = 250
+      ClientHeight = 27
+      ClientWidth = 250
+      Enabled = True
+      TabOrder = 1
+      CollapseKind = akTop
+      ExpandedSize = 224
+      ButtonPosition = akTop
+      ButtonSize = 27
+      Button.Left = 0
+      Button.Height = 27
+      Button.Top = 0
+      Button.Width = 254
+      Button.Caption = 'Schirm-Abstand'
+      Button.Color = clSkyBlue
+      Button.ColorExpanded = 16287767
+      AnimationSpeed = 20
+      Collapsed = True
+      OnPreExpand = OptioRotatePreCollapse
+      OnPreCollapse = OptioRotatePreCollapse
+      object RadioGroupFormel: TRadioGroup
+        Left = 1
+        Height = 74
+        Top = 27
+        Width = 248
+        Align = alTop
+        AutoFill = True
+        Caption = 'Formel'
+        ChildSizing.LeftRightSpacing = 6
+        ChildSizing.TopBottomSpacing = 6
+        ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+        ChildSizing.EnlargeVertical = crsHomogenousChildResize
+        ChildSizing.ShrinkHorizontal = crsScaleChilds
+        ChildSizing.ShrinkVertical = crsScaleChilds
+        ChildSizing.Layout = cclLeftToRightThenTopToBottom
+        ChildSizing.ControlsPerLine = 1
+        ClientHeight = 60
+        ClientWidth = 246
+        Font.Height = -9
+        ItemIndex = 0
+        Items.Strings = (
+          'Normal:  Abstand (Schirm-Spalt) >>g'
+          'Genau:  Abstand (Schirm-Spalt) >g'
+        )
+        OnClick = RadioGroupFormelClick
+        ParentFont = False
+        TabOrder = 0
+      end
+      object GroupBox2: TGroupBox
+        Left = 1
+        Height = 1
+        Top = 26
+        Width = 248
+        Align = alClient
+        Caption = 'Abstand Schirm-Spalt'
+        ClientHeight = 1
+        ClientWidth = 246
+        TabOrder = 1
+        object Label15: TLabel
+          Left = 181
+          Height = 18
+          Top = 17
+          Width = 12
+          Caption = 'm'
+          ParentColor = False
+        end
+        object EditDistScreenSlit: TEdit
+          Left = 101
+          Height = 24
+          Top = 14
+          Width = 80
+          OnChange = AllEditChange
+          OnKeyDown = EditDistScreenSlitKeyDown
+          TabOrder = 0
+          Text = '6E-6'
+        end
+        object TrackBarDistScreenSlit: TTrackBar
+          Left = -1
+          Height = 42
+          Top = 35
+          Width = 246
+          Max = 120000
+          Min = 2000
+          OnChange = AllTrackChange
+          Position = 20000
+          ScalePos = trRight
+          TickStyle = tsNone
+          Anchors = [akTop, akLeft, akRight]
+          Constraints.MaxHeight = 38
+          TabOrder = 1
+        end
+      end
+    end
+    object OptioScreen: TMyRollOut
+      Left = 0
+      Height = 27
+      Top = 104
+      Width = 250
+      ClientHeight = 27
+      ClientWidth = 250
+      Enabled = True
+      TabOrder = 2
+      CollapseKind = akTop
+      ExpandedSize = 376
+      ButtonPosition = akTop
+      ButtonSize = 27
+      Button.Left = 0
+      Button.Height = 27
+      Button.Top = 0
+      Button.Width = 254
+      Button.Caption = 'Schirm-Einstellungen'
+      Button.Color = clSkyBlue
+      Button.ColorExpanded = 16287767
+      AnimationSpeed = 20
+      Collapsed = True
+      OnPreExpand = OptioRotatePreCollapse
+      OnPreCollapse = OptioRotatePreCollapse
+      object RadioLSAxis: TRadioGroup
+        Left = 1
+        Height = 77
+        Top = 28
+        Width = 258
+        AutoFill = False
+        Caption = 'Art des Graphen'
+        ChildSizing.LeftRightSpacing = 6
+        ChildSizing.TopBottomSpacing = 6
+        ChildSizing.ShrinkHorizontal = crsScaleChilds
+        ChildSizing.ShrinkVertical = crsScaleChilds
+        ChildSizing.Layout = cclLeftToRightThenTopToBottom
+        ChildSizing.ControlsPerLine = 1
+        ClientHeight = 58
+        ClientWidth = 256
+        ItemIndex = 1
+        Items.Strings = (
+          'Amplitude'
+          'Intensität'
+        )
+        OnClick = RadioLSAxisClick
+        TabOrder = 0
+      end
+      object RadioXAxis: TRadioGroup
+        Left = 1
+        Height = 95
+        Top = 177
+        Width = 258
+        AutoFill = False
+        Caption = 'X-Achsen-Einteilung'
+        ChildSizing.LeftRightSpacing = 6
+        ChildSizing.TopBottomSpacing = 6
+        ChildSizing.ShrinkHorizontal = crsScaleChilds
+        ChildSizing.ShrinkVertical = crsScaleChilds
+        ChildSizing.Layout = cclLeftToRightThenTopToBottom
+        ChildSizing.ControlsPerLine = 1
+        ClientHeight = 76
+        ClientWidth = 256
+        ItemIndex = 1
+        Items.Strings = (
+          'Flacher Schirm (in Meter)'
+          'Winkel (in Grad)'
+          'Gangunterschied (in Lambda)'
+        )
+        OnClick = RadioXAxisClick
+        TabOrder = 1
+      end
+      object RadioImageAxis: TRadioGroup
+        Left = 1
+        Height = 72
+        Top = 105
+        Width = 258
+        AutoFill = False
+        Caption = 'Y-Achsen-Einteilung'
+        ChildSizing.LeftRightSpacing = 6
+        ChildSizing.TopBottomSpacing = 6
+        ChildSizing.ShrinkHorizontal = crsScaleChilds
+        ChildSizing.ShrinkVertical = crsScaleChilds
+        ChildSizing.Layout = cclLeftToRightThenTopToBottom
+        ChildSizing.ControlsPerLine = 1
+        ClientHeight = 53
+        ClientWidth = 256
+        ItemIndex = 1
+        Items.Strings = (
+          'Flacher Schirm (in Meter)'
+          'Winkel (in Grad)'
+        )
+        OnClick = RadioImageAxisClick
+        TabOrder = 2
+      end
+      object RadioReflection: TRadioGroup
+        Left = 0
+        Height = 73
+        Top = 280
+        Width = 260
+        AutoFill = False
+        Caption = 'Die Reflexion anzeigen?'
+        ChildSizing.LeftRightSpacing = 6
+        ChildSizing.TopBottomSpacing = 6
+        ChildSizing.ShrinkHorizontal = crsScaleChilds
+        ChildSizing.ShrinkVertical = crsScaleChilds
+        ChildSizing.Layout = cclLeftToRightThenTopToBottom
+        ChildSizing.ControlsPerLine = 1
+        ClientHeight = 54
+        ClientWidth = 258
+        ItemIndex = 0
+        Items.Strings = (
+          'Transmittission (normal)'
+          'Reflexion'
+        )
+        OnClick = RadioReflectionClick
+        TabOrder = 4
+      end
+      object CheckAskConfirmationreflection: TCheckBox
+        Left = 110
+        Height = 21
+        Top = 324
+        Width = 135
+        AutoSize = False
+        Caption = 'Meldung anzeigen'
+        Checked = True
+        State = cbChecked
+        TabOrder = 3
+      end
+    end
+    object PProgrammerInfo: TMyRollOut
+      Left = 0
+      Height = 27
+      Top = 0
+      Width = 250
+      ClientHeight = 27
+      ClientWidth = 250
+      Enabled = True
+      TabOrder = 3
+      Visible = False
+      CollapseKind = akTop
+      ExpandedSize = 392
+      ButtonPosition = akTop
+      ButtonSize = 27
+      Button.Left = 0
+      Button.Height = 27
+      Button.Top = 0
+      Button.Width = 254
+      Button.Caption = 'Programmers Info'
+      Button.Color = clSkyBlue
+      Button.ColorExpanded = 16287767
+      AnimationSpeed = 20
+      Animated = False
+      Collapsed = True
+      OnPreExpand = OptioRotatePreCollapse
+      OnPreCollapse = OptioRotatePreCollapse
+      object GroupBox10: TGroupBox
+        Left = 1
+        Height = 95
+        Top = 27
+        Width = 248
+        Align = alTop
+        Caption = 'Optionen'
+        ClientHeight = 76
+        ClientWidth = 246
+        TabOrder = 0
+        object CheckExImageIntensity: TCheckBox
+          Left = 3
+          Height = 21
+          Top = 4
+          Width = 221
+          Caption = 'Erweiterte ImageIntesity Anzeige'
+          TabOrder = 0
+        end
+        object CheckExMaximaDraw: TCheckBox
+          Left = 3
+          Height = 21
+          Top = 50
+          Width = 348
+          Caption = 'Wo wurden Maxima detektiert und genau gezeichnet?'
+          Font.Height = -8
+          ParentFont = False
+          TabOrder = 1
+        end
+        object CheckPixelexpandedImageIntesity: TCheckBox
+          Left = 3
+          Height = 21
+          Top = 28
+          Width = 348
+          Caption = 'Welche Punkte wurden bei ImageIntresity gezeichnet?'
+          Font.Height = -8
+          ParentFont = False
+          TabOrder = 2
+        end
+      end
+      object MyRollOutLog: TPanel
+        Left = 0
+        Height = 120
+        Top = 127
+        Width = 258
+        ClientHeight = 120
+        ClientWidth = 258
+        TabOrder = 1
+        object ListLog: TColoredListBox
+          Left = 1
+          Height = 118
+          Top = 1
+          Width = 256
+          Align = alClient
+          ItemHeight = 0
+          ScrollWidth = 254
+          Style = lbOwnerDrawFixed
+          TabOrder = 0
+          TopIndex = -1
+          ItemBackgroundColors.Strings = (
+            'clWhite'
+            'clWhite'
+            'clWhite'
+            'clWhite'
+            'clWhite'
+            'clWhite'
+            'clWhite'
+            'clWhite'
+            'clWhite'
+          )
+          ItemColors.Strings = (
+            'clBlue'
+            'clBlue'
+            'clBlue'
+            'clBlue'
+            'clBlue'
+            'clBlue'
+            'clBlue'
+            'clBlue'
+            'clBlue'
+          )
+          Add2ItemColors = clBlue
+          Add2ItemBackgroundColors = clWhite
+        end
+      end
+      object MyRollOutCountPoints: TPanel
+        Left = 1
+        Height = 142
+        Top = 247
+        Width = 256
+        ClientHeight = 142
+        ClientWidth = 256
+        TabOrder = 2
+        object ListCountPoints: TColoredListBox
+          Left = 1
+          Height = 140
+          Top = 1
+          Width = 254
+          Align = alClient
+          ItemHeight = 0
+          ScrollWidth = 252
+          Style = lbOwnerDrawFixed
+          TabOrder = 0
+          TopIndex = -1
+          ItemBackgroundColors.Strings = (
+            'clWhite'
+            'clWhite'
+            'clWhite'
+            'clWhite'
+            'clWhite'
+            'clWhite'
+            'clWhite'
+            'clWhite'
+            'clWhite'
+            'clWhite'
+          )
+          ItemColors.Strings = (
+            'clBlue'
+            'clBlue'
+            'clBlue'
+            'clBlue'
+            'clBlue'
+            'clBlue'
+            'clBlue'
+            'clBlue'
+            'clBlue'
+            'clBlue'
+          )
+          Add2ItemColors = clBlue
+          Add2ItemBackgroundColors = clWhite
+        end
+      end
+    end
+    object OptioAperture: TMyRollOut
+      Left = 0
+      Height = 27
+      Top = 72
+      Width = 250
+      ClientHeight = 27
+      ClientWidth = 250
+      Enabled = True
+      TabOrder = 4
+      CollapseKind = akTop
+      ExpandedSize = 280
+      ButtonPosition = akTop
+      ButtonSize = 27
+      Button.Left = 0
+      Button.Height = 27
+      Button.Top = 0
+      Button.Width = 254
+      Button.Caption = 'Spalt- und Gitter-Einstellungen'
+      Button.Color = clSkyBlue
+      Button.ColorExpanded = 16287767
+      AnimationSpeed = 20
+      Collapsed = True
+      OnPreExpand = OptioRotatePreCollapse
+      OnCollapse = OptioApertureCollapse
+      OnPreCollapse = OptioRotatePreCollapse
+      object Label1: TLabel
+        Left = 6
+        Height = 18
+        Top = 46
+        Width = 150
+        Caption = 'Anzahl der Gitterspalte  n'
+        ParentColor = False
+      end
+      object Label3: TLabel
+        Left = 15
+        Height = 18
+        Top = 129
+        Width = 82
+        Caption = 'Gitterkonst. g'
+        ParentColor = False
+      end
+      object Label4: TLabel
+        Left = 205
+        Height = 18
+        Top = 128
+        Width = 20
+        Caption = 'μm'
+        ParentColor = False
+      end
+      object Label5: TLabel
+        Left = 6
+        Height = 18
+        Top = 201
+        Width = 133
+        Caption = 'relative Spaltbreite b ='
+        ParentColor = False
+      end
+      object LSlitWidth: TLabel
+        Left = 166
+        Height = 18
+        Top = 201
+        Width = 35
+        Caption = '0,24 g'
+        ParentColor = False
+      end
+      object BSlitWidth: TSpeedButton
+        Left = 222
+        Height = 22
+        Top = 197
+        Width = 17
+        Glyph.Data = {
+          BE020000424DBE0200000000000036000000280000000C000000120000000100
+          1800000000008802000000000000000000000000000000000000E8EBEDE4E8EA
+          E0E4E7DDE1E4D9DEE1D5DADED1D7DBCDD4D8CAD1D5C6CDD2C2CACFBEC7CCE8EB
+          EDE4E8EAE0E4E7DDE1E4D9DEE1D5DADED1D7DBCDD4D8CAD1D5C6CDD2C2CACFBE
+          C7CCE8EBEDE4E8EAE0E4E7DDE1E4D9DEE1D5DADED1D7DBCDD4D8CAD1D5C6CDD2
+          C2CACFBEC7CCE8EBEDE4E8EAE0E4E7DDE1E4D9DEE1D5DADED1D7DBCDD4D8CAD1
+          D5C6CDD2C2CACFBEC7CCE8EBEDE4E8EAE0E4E7DDE1E4D9DEE1D5DADED1D7DBCD
+          D4D8CAD1D5C6CDD2C2CACFBEC7CCE8EBEDE4E8EAE0E4E7DDE1E4D9DEE1D5DADE
+          D1D7DBCDD4D8CAD1D5C6CDD2C2CACFBEC7CCE8EBEDE4E8EAE0E4E7DDE1E4D9DE
+          E1000000D1D7DBCDD4D8CAD1D5C6CDD2C2CACFBEC7CCE8EBEDE4E8EAE0E4E7DD
+          E1E4D9DEE1000000000000CDD4D8CAD1D5C6CDD2C2CACFBEC7CCE8EBEDE4E8EA
+          E0E4E7DDE1E4D9DEE1000000000000000000CAD1D5C6CDD2C2CACFBEC7CCE8EB
+          EDE4E8EAE0E4E7DDE1E4D9DEE1000000000000000000000000C6CDD2C2CACFBE
+          C7CCE8EBEDE4E8EAE0E4E7DDE1E4D9DEE1000000000000000000CAD1D5C6CDD2
+          C2CACFBEC7CCE8EBEDE4E8EAE0E4E7DDE1E4D9DEE1000000000000CDD4D8CAD1
+          D5C6CDD2C2CACFBEC7CCE8EBEDE4E8EAE0E4E7DDE1E4D9DEE1000000D1D7DBCD
+          D4D8CAD1D5C6CDD2C2CACFBEC7CCE8EBEDE4E8EAE0E4E7DDE1E4D9DEE1D5DADE
+          D1D7DBCDD4D8CAD1D5C6CDD2C2CACFBEC7CCE8EBEDE4E8EAE0E4E7DDE1E4D9DE
+          E1D5DADED1D7DBCDD4D8CAD1D5C6CDD2C2CACFBEC7CCE8EBEDE4E8EAE0E4E7DD
+          E1E4D9DEE1D5DADED1D7DBCDD4D8CAD1D5C6CDD2C2CACFBEC7CCE8EBEDE4E8EA
+          E0E4E7DDE1E4D9DEE1D5DADED1D7DBCDD4D8CAD1D5C6CDD2C2CACFBEC7CCE8EB
+          EDE4E8EAE0E4E7DDE1E4D9DEE1D5DADED1D7DBCDD4D8CAD1D5C6CDD2C2CACFBE
+          C7CC
+        }
+        OnClick = BSlitWidthClick
+      end
+      object EditSlitCount: TSpinEdit
+        Left = 181
+        Height = 24
+        Top = 41
+        Width = 58
+        MaxValue = 1000
+        OnChange = EditSlitCountChange
+        TabOrder = 0
+        Value = 1
+      end
+      object EditSlitDistance: TEdit
+        Left = 119
+        Height = 24
+        Top = 126
+        Width = 80
+        OnChange = AllEditChange
+        OnKeyDown = EditSlitDistanceKeyDown
+        TabOrder = 1
+        Text = '1.5'
+      end
+      object TrackBarCountSlit: TTrackBar
+        Left = 5
+        Height = 42
+        Top = 70
+        Width = 231
+        Max = 120
+        Min = 10
+        OnChange = AllTrackChange
+        Position = 10
+        ScalePos = trRight
+        TickStyle = tsNone
+        Anchors = [akTop, akLeft, akRight]
+        TabOrder = 2
+      end
+      object TrackSlitDistance: TTrackBar
+        Left = 5
+        Height = 42
+        Top = 151
+        Width = 231
+        Max = 500
+        Min = 1
+        OnChange = AllTrackChange
+        Position = 10
+        ScalePos = trRight
+        TickStyle = tsNone
+        Anchors = [akTop, akLeft, akRight]
+        TabOrder = 4
+      end
+      object TrackSlitWidth: TTrackBar
+        Left = 5
+        Height = 42
+        Hint = 'Geht von 1/100 Gitterkonstante bis zur Gitterkonstante selbst'
+        Top = 221
+        Width = 231
+        Max = 100
+        Min = 1
+        OnChange = AllTrackChange
+        Position = 10
+        ScalePos = trRight
+        TickStyle = tsNone
+        Anchors = [akTop, akLeft, akRight]
+        OnMouseDown = TrackSlitWidthMouseDown
+        OnMouseUp = TrackSlitWidthMouseUp
+        ParentShowHint = False
+        ShowHint = True
+        TabOrder = 3
+      end
+    end
+    object MyRollOutHelpLittle: TMyRollOut
+      Left = 0
+      Height = 240
+      Top = 136
+      Width = 250
+      ClientHeight = 240
+      ClientWidth = 250
+      Enabled = True
+      TabOrder = 5
+      CollapseKind = akTop
+      ExpandedSize = 240
+      ButtonPosition = akTop
+      ButtonSize = 27
+      Button.Left = 0
+      Button.Height = 27
+      Button.Top = 0
+      Button.Width = 254
+      Button.Caption = '1. Hilfe'
+      Button.Color = clSkyBlue
+      Button.ColorExpanded = 16287767
+      AnimationSpeed = 20
+      OnPreExpand = OptioRotatePreCollapse
+      OnPreCollapse = OptioRotatePreCollapse
+      object MyWebViewerHelpLittle: TMyWebViewer
+        Left = 1
+        Height = 190
+        Top = 49
+        Width = 248
+        Align = alClient
+        FixedTypeface = 'Courier New'
+        DefaultTypeFace = 'default'
+        DefaultFontSize = 12
+        FlagErrors = False
+        PrintSettings.MarginLeft = 0.5
+        PrintSettings.MarginTop = 0.5
+        PrintSettings.MarginRight = 0.5
+        PrintSettings.MarginBottom = 0.5
+        PrintSettings.Preview.Left = 341
+        PrintSettings.Preview.Top = 192
+        PrintSettings.Preview.Width = 1024
+        PrintSettings.Preview.Height = 576
+        TabOrder = 0
+      end
+      object CheckViewLittleHelp: TCheckBox
+        Left = 1
+        Height = 21
+        Top = 28
+        Width = 248
+        Align = alTop
+        Caption = 'Dieses Hilfepanel zeigen'
+        Checked = True
+        OnChange = CheckViewLittleHelpChange
+        State = cbChecked
+        TabOrder = 1
+      end
+    end
+  end
+  object PHelpRotateExpand: TPanel
+    Left = 300
+    Height = 240
+    Top = 100
+    Width = 312
+    ClientHeight = 240
+    ClientWidth = 312
+    TabOrder = 6
+    Visible = False
+    object Memo1: TMemo
+      Left = 1
+      Height = 238
+      Top = 1
+      Width = 310
+      Align = alClient
+      Lines.Strings = (
+        'Der Sichtstandpunkt ist vom Laser aus.'
+        ''
+        'Die y-Achse geht von "links" nach "rechts" und die z-Achse von "unten" nach "oben".'
+        ''
+        'Es wird erst um die y-Achse mit dem Winkel β_z (Winkel zwischen gedrehter Z'' und alter Z-Achse) bezeichnet.'
+        ''
+        'Dann wird um die z-Achse mit dem Winkel β_y  (Winkel zwischen gedrehter Y'' und alter Y-Achse) bezeichnet.'
+      )
+      ReadOnly = True
+      TabOrder = 0
+    end
+  end
+  object PanelOGLBox: TPanel
+    Tag = 472
+    AnchorSideLeft.Control = OptioScrollBox
+    AnchorSideLeft.Side = asrBottom
+    AnchorSideRight.Control = OptioChart
+    AnchorSideBottom.Control = PanelLambda
+    Left = 264
+    Height = 392
+    Top = 0
+    Width = 609
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    BorderSpacing.Left = 2
+    BorderSpacing.Right = 2
+    BorderSpacing.Bottom = 7
+    TabOrder = 7
+  end
+  object OpenDialog1: TOpenDialog
+    Title = 'Einstellungen öffnen'
+    FileName = '/media/sda1/Daten/Programmieren/meine/Interferenz/Lazarus/Interferenz/Resource'
+    Filter = 'ini|*.ini'
+    InitialDir = '/media/sda1/Daten/Programmieren/meine/Interferenz/Lazarus/Interferenz/'
+    Left = 448
+    Top = 56
+  end
+  object SaveDialog1: TSaveDialog
+    Title = 'Einstellungen speichern'
+    Filter = 'ini|*.ini'
+    Options = [ofOverwritePrompt, ofEnableSizing, ofViewDetail]
+    Left = 408
+    Top = 56
+  end
+  object MainMenu1: TMainMenu
+    Left = 576
+    Top = 24
+    object MenuItem2: TMenuItem
+      Caption = 'Diagramm'
+      object MenuItem8: TMenuItem
+        Action = ActionResetView
+        OnClick = ActionResetViewExecute
+      end
+      object MenuItem5: TMenuItem
+        Action = ActionCalcAndDraw
+        OnClick = ActionCalcAndDrawExecute
+      end
+      object MenuItem7: TMenuItem
+        Action = ActionExportAllValues
+        OnClick = ActionExportAllValuesExecute
+      end
+      object MenuIChartSettings: TMenuItem
+        Action = ActionChartSettings
+        OnClick = ActionChartSettingsExecute
+      end
+      object MenuItem16: TMenuItem
+        Action = ActionFullscreen
+        OnClick = ActionFullscreenExecute
+      end
+    end
+    object MenuItem3: TMenuItem
+      Caption = 'Einstellungen'
+      object MenuItem6: TMenuItem
+        Action = ActionOpenSettings
+        OnClick = ActionOpenSettingsExecute
+      end
+      object MenuItem9: TMenuItem
+        Action = ActionSaveSettings
+        OnClick = ActionSaveSettingsExecute
+      end
+      object ResetSettings: TMenuItem
+        Action = ActionResetSettings
+        OnClick = ActionResetSettingsExecute
+      end
+      object MenuItem1: TMenuItem
+        Caption = 'Wähle Art der Menüführung aus'
+        OnClick = MenuItem1Click
+      end
+    end
+    object MenuItem4: TMenuItem
+      Caption = 'Info'
+      object MenuItem11: TMenuItem
+        Action = ActionHelp
+        OnClick = ActionHelpExecute
+      end
+      object MenuItem12: TMenuItem
+        Action = ActionAbout
+        OnClick = ActionAboutExecute
+      end
+      object MenuItem13: TMenuItem
+        Action = ActionVersion
+        OnClick = ActionVersionExecute
+      end
+    end
+  end
+  object ExpandPanelsMainOption: TExpandPanels
+    ArrangeKind = akTop
+    OnArrangePanels = ExpandPanelsMainOptionArrangePanels
+    Behaviour = EPMultipanel
+    Left = 408
+    Top = 24
+  end
+  object ActionList1: TActionList
+    Left = 536
+    Top = 24
+    object ActionShowProgrammerInfo: TAction
+      Caption = 'ActionShowProgrammerInfo'
+      OnExecute = ActionShowProgrammerInfoExecute
+      ShortCut = 8315
+    end
+    object ActionOpenSettings: TAction
+      Caption = 'Öffne Einstellungen'
+      OnExecute = ActionOpenSettingsExecute
+      ShortCut = 16463
+    end
+    object ActionCalcAndDraw: TAction
+      Caption = 'Berechne neu'
+      OnExecute = ActionCalcAndDrawExecute
+      ShortCut = 16452
+    end
+    object ActionSaveSettings: TAction
+      Caption = 'Speichere Einstellungen'
+      OnExecute = ActionSaveSettingsExecute
+      ShortCut = 16467
+    end
+    object ActionVersion: TAction
+      Caption = 'Version'
+      OnExecute = ActionVersionExecute
+      ShortCut = 16470
+    end
+    object ActionChartSettings: TAction
+      Caption = 'Diagramm-Einstellungen'
+      OnExecute = ActionChartSettingsExecute
+      ShortCut = 49231
+    end
+    object ActionAbout: TAction
+      Caption = 'Über das Programm'
+      OnExecute = ActionAboutExecute
+      ShortCut = 16449
+    end
+    object ActionHelp: TAction
+      Caption = 'Hilfe'
+      OnExecute = ActionHelpExecute
+      ShortCut = 112
+    end
+    object ActionExportAllValues: TAction
+      Caption = 'Exportiere alle Werte'
+      OnExecute = ActionExportAllValuesExecute
+      ShortCut = 16453
+    end
+    object ActionResetSettings: TAction
+      Caption = 'Einstellungen zurücksetzten'
+      OnExecute = ActionResetSettingsExecute
+      ShortCut = 16466
+    end
+    object ActionMaximize: TAction
+      Caption = 'ActionMaximize'
+      OnExecute = ActionMaximizeExecute
+    end
+    object ActionUpdate: TAction
+      Caption = 'ActionUpdate'
+      OnExecute = ActionUpdateExecute
+    end
+    object ActionResetView: TAction
+      Caption = 'Sichtbereich zurücksetzten    (Mittlere Maustaste)'
+      OnExecute = ActionResetViewExecute
+    end
+    object ActionFullscreen: TAction
+      Caption = 'Vollbild'
+      OnExecute = ActionFullscreenExecute
+      ShortCut = 122
+    end
+    object ActionESC: TAction
+      Caption = 'ActionESC'
+      OnExecute = ActionESCExecute
+    end
+    object ActionAddLambda: TAction
+      Caption = 'ActionAddLambda'
+      OnExecute = ActionAddLambdaExecute
+    end
+    object ActionDelLastLambda: TAction
+      Caption = 'ActionDelLastLambda'
+      OnExecute = ActionDelLastLambdaExecute
+    end
+  end
+  object PopupMenuOGLBox: TPopupMenu
+    Left = 615
+    Top = 27
+    object MenuItem10: TMenuItem
+      Action = ActionCalcAndDraw
+      OnClick = ActionCalcAndDrawExecute
+    end
+    object MenuItem15: TMenuItem
+      Action = ActionResetView
+      OnClick = ActionResetViewExecute
+    end
+    object MenuItem14: TMenuItem
+      Action = ActionFullscreen
+      OnClick = ActionFullscreenExecute
+    end
+  end
+  object DialogExportAllValues: TSaveDialog
+    Width = 790
+    Height = 595
+    Options = [ofOverwritePrompt, ofEnableSizing, ofViewDetail]
+    Left = 544
+    Top = 66
+  end
+  object Timer1: TTimer
+    Enabled = False
+    Interval = 500
+    OnTimer = Timer1Timer
+    Left = 371
+    Top = 35
+  end
+end

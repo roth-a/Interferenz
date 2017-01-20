@@ -1,0 +1,10 @@
+[Desktop Entry]
+Encoding=UTF-8
+
+Name=Interferenz
+Comment=Interferenz
+Exec=/usr/share/Interferenz/project1
+Terminal=false
+Type=Application
+Icon=/usr/share/Interferenz/Icon.png
+Categories=Application;Education;Science

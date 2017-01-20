@@ -1,0 +1,453 @@
+object Form2: TForm2
+  Left = 237
+  Height = 630
+  Top = 77
+  Width = 913
+  ActiveControl = Notebook
+  Caption = 'Form2'
+  ClientHeight = 630
+  ClientWidth = 913
+  OnActivate = FormActivate
+  OnCreate = FormCreate
+  OnShow = FormShow
+  LCLVersion = '1.7'
+  object Notebook: TNotebook
+    Left = 0
+    Height = 630
+    Top = 0
+    Width = 913
+    PageIndex = 0
+    Align = alClient
+    OnChangeBounds = NotebookChangeBounds
+    TabOrder = 0
+    object PageInformation: TPage
+      object MyWebInformation: TMyWebViewer
+        Left = 0
+        Height = 630
+        Top = 0
+        Width = 913
+        Align = alClient
+        FixedTypeface = 'Courier New'
+        DefaultTypeFace = 'default'
+        DefaultFontSize = 12
+        FlagErrors = False
+        PrintSettings.MarginLeft = 0.5
+        PrintSettings.MarginTop = 0.5
+        PrintSettings.MarginRight = 0.5
+        PrintSettings.MarginBottom = 0.5
+        PrintSettings.Preview.Left = 341
+        PrintSettings.Preview.Top = 192
+        PrintSettings.Preview.Width = 1024
+        PrintSettings.Preview.Height = 576
+        TabOrder = 0
+      end
+    end
+    object PageHilfe: TPage
+      object ScrollBox1: TScrollBox
+        Left = 0
+        Height = 599
+        Top = 0
+        Width = 909
+        Align = alClient
+        ClientHeight = 599
+        ClientWidth = 909
+        TabOrder = 0
+        object MyRollOutHelpExport: TMyRollOut
+          Left = 462
+          Height = 440
+          Top = 59
+          Width = 292
+          Anchors = [akTop, akLeft, akRight]
+          BorderStyle = bsSingle
+          ClientHeight = 440
+          ClientWidth = 292
+          Enabled = True
+          TabOrder = 0
+          CollapseKind = akTop
+          ExpandedSize = 200
+          ButtonPosition = akTop
+          ButtonSize = 27
+          Button.Left = 1
+          Button.Height = 27
+          Button.Top = 1
+          Button.Width = 288
+          Button.Caption = 'Hilfe zu dem exportieren von Werten'
+          Button.Color = 16287767
+          Button.ColorExpanded = 16287767
+          AnimationSpeed = 20
+          Animated = False
+          object MyWebViewerHelpExport: TMyWebViewer
+            Left = 1
+            Height = 407
+            Top = 28
+            Width = 286
+            Align = alClient
+            FixedTypeface = 'Courier New'
+            DefaultTypeFace = 'default'
+            DefaultFontSize = 12
+            FlagErrors = False
+            PrintSettings.MarginLeft = 0.5
+            PrintSettings.MarginTop = 0.5
+            PrintSettings.MarginRight = 0.5
+            PrintSettings.MarginBottom = 0.5
+            PrintSettings.Preview.Left = 341
+            PrintSettings.Preview.Top = 192
+            PrintSettings.Preview.Width = 1024
+            PrintSettings.Preview.Height = 576
+            TabOrder = 0
+          end
+        end
+        object MyRollOutHelpMultiLambda: TMyRollOut
+          Left = 470
+          Height = 440
+          Top = 510
+          Width = 292
+          Anchors = [akTop, akLeft, akRight]
+          BorderStyle = bsSingle
+          ClientHeight = 440
+          ClientWidth = 292
+          Enabled = True
+          TabOrder = 1
+          CollapseKind = akTop
+          ExpandedSize = 200
+          ButtonPosition = akTop
+          ButtonSize = 27
+          Button.Left = 1
+          Button.Height = 27
+          Button.Top = 1
+          Button.Width = 288
+          Button.Caption = 'Hilfe zu meheren Wellenlängen'
+          Button.Color = 16287767
+          Button.ColorExpanded = 16287767
+          AnimationSpeed = 20
+          Animated = False
+          object MyWebViewerHelpMultiLambda: TMyWebViewer
+            Left = 1
+            Height = 407
+            Top = 28
+            Width = 286
+            Align = alClient
+            FixedTypeface = 'Courier New'
+            DefaultTypeFace = 'default'
+            DefaultFontSize = 12
+            FlagErrors = False
+            PrintSettings.MarginLeft = 0.5
+            PrintSettings.MarginTop = 0.5
+            PrintSettings.MarginRight = 0.5
+            PrintSettings.MarginBottom = 0.5
+            PrintSettings.Preview.Left = 341
+            PrintSettings.Preview.Top = 192
+            PrintSettings.Preview.Width = 1024
+            PrintSettings.Preview.Height = 576
+            TabOrder = 0
+          end
+        end
+        object MyRollOutHelpAperture: TMyRollOut
+          Left = 422
+          Height = 440
+          Top = 278
+          Width = 292
+          Anchors = [akTop, akLeft, akRight]
+          BorderStyle = bsSingle
+          ClientHeight = 440
+          ClientWidth = 292
+          Enabled = True
+          TabOrder = 2
+          CollapseKind = akTop
+          ExpandedSize = 200
+          ButtonPosition = akTop
+          ButtonSize = 27
+          Button.Left = 1
+          Button.Height = 27
+          Button.Top = 1
+          Button.Width = 288
+          Button.Caption = 'Hilfe zu den Einstellungen für alle Wellenlägnen  (linke Seitenleiste)'
+          Button.Color = 16287767
+          Button.ColorExpanded = 16287767
+          AnimationSpeed = 20
+          Animated = False
+          object MyWebViewerHelpAperture: TMyWebViewer
+            Left = 1
+            Height = 407
+            Top = 28
+            Width = 286
+            Align = alClient
+            FixedTypeface = 'Courier New'
+            DefaultTypeFace = 'default'
+            DefaultFontSize = 12
+            FlagErrors = False
+            PrintSettings.MarginLeft = 0.5
+            PrintSettings.MarginTop = 0.5
+            PrintSettings.MarginRight = 0.5
+            PrintSettings.MarginBottom = 0.5
+            PrintSettings.Preview.Left = 341
+            PrintSettings.Preview.Top = 192
+            PrintSettings.Preview.Width = 1024
+            PrintSettings.Preview.Height = 576
+            TabOrder = 0
+          end
+        end
+        object MyRollOutHelpLambda: TMyRollOut
+          Left = 694
+          Height = 440
+          Top = 486
+          Width = 292
+          Anchors = [akTop, akLeft, akRight]
+          BorderStyle = bsSingle
+          ClientHeight = 440
+          ClientWidth = 292
+          Enabled = True
+          TabOrder = 3
+          CollapseKind = akTop
+          ExpandedSize = 200
+          ButtonPosition = akTop
+          ButtonSize = 27
+          Button.Left = 1
+          Button.Height = 27
+          Button.Top = 1
+          Button.Width = 288
+          Button.Caption = 'Hilfe zu den Einstellungen für einzelne Wellenlängen   (untere Seitenleiste)'
+          Button.Color = 16287767
+          Button.ColorExpanded = 16287767
+          AnimationSpeed = 20
+          Animated = False
+          object MyWebViewerHelpLambda: TMyWebViewer
+            Left = 1
+            Height = 407
+            Top = 28
+            Width = 286
+            Align = alClient
+            FixedTypeface = 'Courier New'
+            DefaultTypeFace = 'default'
+            DefaultFontSize = 12
+            FlagErrors = False
+            PrintSettings.MarginLeft = 0.5
+            PrintSettings.MarginTop = 0.5
+            PrintSettings.MarginRight = 0.5
+            PrintSettings.MarginBottom = 0.5
+            PrintSettings.Preview.Left = 341
+            PrintSettings.Preview.Top = 192
+            PrintSettings.Preview.Width = 1024
+            PrintSettings.Preview.Height = 576
+            TabOrder = 0
+          end
+        end
+        object MyRollOutHelpChart: TMyRollOut
+          Left = 158
+          Height = 440
+          Top = 310
+          Width = 292
+          Anchors = [akTop, akLeft, akRight]
+          BorderStyle = bsSingle
+          ClientHeight = 440
+          ClientWidth = 292
+          Enabled = True
+          TabOrder = 4
+          CollapseKind = akTop
+          ExpandedSize = 200
+          ButtonPosition = akTop
+          ButtonSize = 27
+          Button.Left = 1
+          Button.Height = 27
+          Button.Top = 1
+          Button.Width = 288
+          Button.Caption = 'Hilfe zu den Diagramm Einstellungen'
+          Button.Color = 16287767
+          Button.ColorExpanded = 16287767
+          AnimationSpeed = 20
+          Animated = False
+          object MyWebViewerHelpChart: TMyWebViewer
+            Left = 1
+            Height = 407
+            Top = 28
+            Width = 286
+            Align = alClient
+            FixedTypeface = 'Courier New'
+            DefaultTypeFace = 'default'
+            DefaultFontSize = 12
+            FlagErrors = False
+            PrintSettings.MarginLeft = 0.5
+            PrintSettings.MarginTop = 0.5
+            PrintSettings.MarginRight = 0.5
+            PrintSettings.MarginBottom = 0.5
+            PrintSettings.Preview.Left = 341
+            PrintSettings.Preview.Top = 192
+            PrintSettings.Preview.Width = 1024
+            PrintSettings.Preview.Height = 576
+            TabOrder = 0
+            OnClick = MyWebViewerHelpChartClick
+          end
+        end
+        object MyRollOutHelp: TMyRollOut
+          Left = -2
+          Height = 440
+          Top = -5
+          Width = 292
+          Anchors = [akTop, akLeft, akRight]
+          BorderStyle = bsSingle
+          ClientHeight = 440
+          ClientWidth = 292
+          Enabled = True
+          TabOrder = 5
+          CollapseKind = akTop
+          ExpandedSize = 200
+          ButtonPosition = akTop
+          ButtonSize = 27
+          Button.Left = 1
+          Button.Height = 27
+          Button.Top = 1
+          Button.Width = 288
+          Button.Caption = 'Allgemeine Hilfe'
+          Button.Color = 16287767
+          Button.ColorExpanded = 16287767
+          AnimationSpeed = 20
+          Animated = False
+          object MyWebViewerHelp: TMyWebViewer
+            Left = 1
+            Height = 407
+            Top = 28
+            Width = 286
+            Align = alClient
+            FixedTypeface = 'Courier New'
+            DefaultTypeFace = 'default'
+            DefaultFontSize = 12
+            FlagErrors = False
+            PrintSettings.MarginLeft = 0.5
+            PrintSettings.MarginTop = 0.5
+            PrintSettings.MarginRight = 0.5
+            PrintSettings.MarginBottom = 0.5
+            PrintSettings.Preview.Left = 341
+            PrintSettings.Preview.Top = 192
+            PrintSettings.Preview.Width = 1024
+            PrintSettings.Preview.Height = 576
+            TabOrder = 0
+          end
+        end
+      end
+    end
+    object PageLinks: TPage
+      object MyWebProgrammer: TMyWebViewer
+        Left = 0
+        Height = 599
+        Top = 0
+        Width = 909
+        Align = alClient
+        FixedTypeface = 'Courier New'
+        DefaultTypeFace = 'default'
+        DefaultFontSize = 12
+        FlagErrors = False
+        PrintSettings.MarginLeft = 0.5
+        PrintSettings.MarginTop = 0.5
+        PrintSettings.MarginRight = 0.5
+        PrintSettings.MarginBottom = 0.5
+        PrintSettings.Preview.Left = 341
+        PrintSettings.Preview.Top = 192
+        PrintSettings.Preview.Width = 1024
+        PrintSettings.Preview.Height = 576
+        TabOrder = 0
+      end
+    end
+    object PageLizenzbedingungen: TPage
+      object MyWebLizenzbedingungen: TMyWebViewer
+        Left = 0
+        Height = 599
+        Top = 0
+        Width = 909
+        Align = alClient
+        FixedTypeface = 'Courier New'
+        DefaultTypeFace = 'default'
+        DefaultFontSize = 12
+        FlagErrors = False
+        PrintSettings.MarginLeft = 0.5
+        PrintSettings.MarginTop = 0.5
+        PrintSettings.MarginRight = 0.5
+        PrintSettings.MarginBottom = 0.5
+        PrintSettings.Preview.Left = 341
+        PrintSettings.Preview.Top = 192
+        PrintSettings.Preview.Width = 1024
+        PrintSettings.Preview.Height = 576
+        TabOrder = 0
+      end
+    end
+    object PageUpdates: TPage
+      object LInternetState: TLabel
+        Left = 24
+        Height = 86
+        Top = 112
+        Width = 793
+        AutoSize = False
+        Caption = 'Bitte checke ob ein Update vorhanden ist'
+        Font.Height = -27
+        ParentColor = False
+        ParentFont = False
+        WordWrap = True
+      end
+      object LHomepage: TLabel
+        Cursor = crHandPoint
+        Left = 24
+        Height = 37
+        Top = 200
+        Width = 219
+        Caption = 'www.roth.us.ms'
+        Font.CharSet = ANSI_CHARSET
+        Font.Color = clBlue
+        Font.Height = -32
+        Font.Name = 'Times New Roman'
+        Font.Style = [fsBold]
+        Layout = tlCenter
+        ParentColor = False
+        ParentFont = False
+        Visible = False
+        OnClick = LHomepageClick
+      end
+      object Label4: TLabel
+        Left = 16
+        Height = 72
+        Top = 401
+        Width = 684
+        Anchors = [akLeft, akRight, akBottom]
+        AutoSize = False
+        Caption = 'Du hast einen Fehler entdeckt?  Es wäre sehr freundlich, wenn du mir eine kurze E-Mail schreiben würdest in der mir das Problem beschreibst. Ich versuche dann diesen Fehler so schnell wie möglich zu beheben.'
+        Constraints.MinWidth = 300
+        ParentColor = False
+        WordWrap = True
+      end
+      object Label5: TLabel
+        Cursor = crHandPoint
+        Left = 134
+        Height = 20
+        Top = 445
+        Width = 170
+        Alignment = taCenter
+        Anchors = [akLeft, akRight, akBottom]
+        Caption = 'roth-a@gmx.de'
+        Constraints.MinWidth = 103
+        Font.CharSet = ANSI_CHARSET
+        Font.Color = clBlue
+        Font.Height = -16
+        Font.Name = 'Times New Roman'
+        Font.Style = [fsBold, fsUnderline]
+        Layout = tlCenter
+        ParentColor = False
+        ParentFont = False
+        OnClick = Label5Click
+      end
+      object BCheckUpdate: TButton
+        Left = 16
+        Height = 33
+        Top = 48
+        Width = 273
+        Caption = 'Prüfe ob Update vorhanden'
+        OnClick = BCheckUpdateClick
+        TabOrder = 0
+      end
+    end
+  end
+  object ExpandPanels1: TExpandPanels
+    ArrangeKind = akTop
+    OnArrangePanels = ExpandPanels1ArrangePanels
+    Behaviour = EPSinglePanel
+    Left = 864
+    Top = 32
+  end
+end

@@ -1,0 +1,19 @@
+- erkennung worüber der Mauszeiger ist und Infoboxen zu anzeigen (z.B. genaue Koordinaten von Maxima....)
+- Axchsenselexion und manuelle verschiebeung mit der Maus
+- lambdaauswahl druch klick auf den dazugehährigen Graphen
+-edits durch maskedits ersetzten
+- glp3 in linzen kopieren Und GPL 3 genau erläutern 
+außerdem auch auf creative commons mit der schönen erleuterung verweisen
+//- TRPhy integrieren
+- anordnung von achsen auch bei mehreren links/rechts ok
+- gitternetz mit gestückelter linie, schaue ob man bei opengl linien auch muster gebn kann
+- bei allen trans funktionen exceptions einbauen, wenn man versucht andere Kind-Werte als sinnvoll umzuwandeln.
+
+
+
+- video zur beutzung des Programms schreiben
+
+
+Grafik:
+- scrollen aufhöhren wenn man am ende ist
+- repaint wenn man aktiviert
