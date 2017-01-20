@@ -1,8 +1,10 @@
 {-----------------------------------------------------------------------------
- Unit Name: UMathe
  Author:    Alexander Roth
- This unit is licensed unter the GPL3
- This license note and the original author (Alexander Roth) must not be altered.
+ Date:      04-Nov-2006
+    Dieses Programm ist freie Software. Sie können es unter den Bedingungen
+    der GNU General Public License, wie von der Free Software Foundation
+    veröffentlicht, weitergeben und/oder modifizieren, gemäß Version 2 der Lizenz.
+ Description:
 -----------------------------------------------------------------------------}
 unit UMathe;
 

@@ -472,7 +472,7 @@ LazarusResources.Add('Info','HTML',[
   +'/P>'#10#9'<LI><P>Bei dem Lazarusforum, dass einem mit Rat zur Seite steht</'
   +'P>'#10'</UL>'#10'</BODY>'#10'</HTML>'
 ]);
-LazarusResources.Add('LizenzGPL','HTML',[
+LazarusResources.Add('Lizenz','HTML',[
   '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"'#10'    "http://www'
   +'.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">'#10'<html xmlns="http://www.w3.or'
   +'g/1999/xhtml" xml:lang="en" lang="en">'#10#10'<head>'#10'<!-- start of serv'
@@ -1183,100 +1183,6 @@ LazarusResources.Add('LizenzGPL','HTML',[
   +'m-notes.html -->'#10#10#10'<p class="unprintable">Updated:'#10'<!-- timesta'
   +'mp start -->'#10'$Date: 2016/11/18 06:31:41 $'#10'<!-- timestamp end -->'#10
   +'</p>'#10'</div>'#10'</div>'#10'</body>'#10'</html>'#10
-]);
-LazarusResources.Add('Lizenz','HTML',[
-  '<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">'#10'<HTML>'#10
-  +'<HEAD>'#10#9'<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=ut'
-  +'f-8">'#10#9'<TITLE></TITLE>'#10#9'<META NAME="GENERATOR" CONTENT="OpenOffic'
-  +'e.org 3.0  (Unix)">'#10#9'<META NAME="CREATED" CONTENT="0;0">'#10#9'<META N'
-  +'AME="CHANGEDBY" CONTENT="alexander">'#10#9'<META NAME="CHANGED" CONTENT="20'
-  +'081223;18400900">'#10#9'<STYLE TYPE="text/css">'#10#9'<!--'#10#9#9'@page { '
-  +'size: 21.59cm 27.94cm; margin-left: 2cm; margin-right: 2.5cm; margin-top: 2'
-  +'.5cm; margin-bottom: 2cm }'#10#9#9'P { margin-bottom: 0.21cm; color: #00000'
-  +'0; text-align: left }'#10#9#9'P.western { font-size: 12pt; so-language: de-'
-  +'DE }'#10#9#9'P.cjk { font-size: 12pt; so-language: de-DE }'#10#9#9'P.ctl { '
-  +'font-size: 12pt }'#10#9#9'A:link { color: #0000ff }'#10#9'-->'#10#9'</STYLE'
-  +'>'#10'</HEAD>'#10'<BODY LANG="de-DE" TEXT="#000000" LINK="#0000ff" DIR="LTR'
-  +'" STYLE="border: none; padding: 0cm">'#10'<P CLASS="western">Interferenz '
-  +#226#128#147' Endbenutzer-Lizenzvereinbarungen</P>'#10'<P CLASS="western" AL'
-  +'IGN=LEFT><BR><BR>'#10'</P>'#10'<P CLASS="western">Lesen Sie diese Lizenzver'
-  +'einbarungen sorgf'#195#164'ltig,'#10'bevor Sie das Programm '#10'</P>'#10'<'
-  +'P CLASS="western">Interferenz installieren oder in anderer Form '#10'</P>'
-  +#10'<P CLASS="western">darauf zugreifen. Sie m'#195#188'ssen dieser Lizenz'
-  +#10'zustimmen, wenn Sie Interferenz '#10'</P>'#10'<P CLASS="western">verwend'
-  +'en wollen.</P>'#10'<P CLASS="western"><BR><BR>'#10'</P>'#10'<P CLASS="weste'
-  +'rn">1. Lizenzstatus, Inhaberschaft</P>'#10'<P CLASS="western">Interferenz g'
-  +'eht nicht in Ihren Besitz '#195#188'ber,'#10'sondern wird lizenziert. Inter'
-  +'ferenz ist '#10'</P>'#10'<P CLASS="western">durch das Urheberrecht gesch'
-  +#195#188'tzt. '#10'</P>'#10'<P CLASS="western">Das Eigentum und alle geistig'
-  +'en Schutzrechte an'#10'Interferenz sowie der '#10'</P>'#10'<P CLASS="wester'
-  +'n">m'#195#182'glicherweise enthaltenen Dokumentation und'#10'aller '#10'</P'
-  +'>'#10'<P CLASS="western">ihrer Bestandteile verbleiben bei dem Hersteller'
-  +#10'Alexander Roth. Der Lizenznehmer '#10'</P>'#10'<P CLASS="western">erkenn'
-  +'t diese Eigentums- und Schutzrechte '#10'</P>'#10'<P CLASS="western">an.</P'
-  +'>'#10'<P CLASS="western"><BR><BR>'#10'</P>'#10'<P CLASS="western">2. Lizenz'
-  +'einr'#195#164'umung</P>'#10'<P CLASS="western">Der Hersteller gew'#195#164
-  +'hrt Ihnen unter der'#10'Voraussetzung, dass Sie alle Punkte dieser '#10'</P'
-  +'>'#10'<P CLASS="western">Vereinbarung einhalten, das Recht, '#10'</P>'#10'<'
-  +'P CLASS="western">Interferenz f'#195#188'r ausschlie'#195#159'lich private '
-  +'und nicht'#10'gewerbliche Zwecke frei zu nutzen. '#10'</P>'#10'<P CLASS="we'
-  +'stern">Dieses Recht umfasst die folgende '#10'</P>'#10'<P CLASS="western">R'
-  +'echte und Einschr'#195#164'nkungen:</P>'#10'<P CLASS="western">* Installati'
-  +'on, Verwendung. Sie sind berechtigt,'#10'Interferenz auf einer beliebigen '
-  +#10'</P>'#10'<P CLASS="western">Anzahl Ihrer Computer zu installieren und '
-  +#10'</P>'#10'<P CLASS="western">zu verwenden.</P>'#10'<P CLASS="western">* W'
-  +'eitergabe, Vertrieb. Eine Weitergabe von'#10'Interferenz an Dritte ist zul'
-  +#195#164'ssig, sofern '#10'</P>'#10'<P CLASS="western">sie unter Ber'#195#188
-  +'cksichtigung dieser '#10'</P>'#10'<P CLASS="western">Lizenzvereinbarungen v'
-  +'erl'#195#164'uft und Interferenz in'#10'unver'#195#164'ndertem Zustand '#10
-  +'</P>'#10'<P CLASS="western">weitergegeben wird. Interferenz darf nicht gege'
-  +'n '#10'</P>'#10'<P CLASS="western">Geb'#195#188'hren jeglicher '#10'</P>'#10
-  +'<P CLASS="western">Art vertrieben werden, au'#195#159'er zum'#10'Selbstkost'
-  +'enpreis. Interferenz darf nicht vermietet '#10'</P>'#10'<P CLASS="western">'
-  +'werden. Die Ver'#195#182'ffentlichung von '#10'</P>'#10'<P CLASS="western">'
-  +'Interferenz in einem anderen Medium als dem'#10'Internet bedarf der Genehmi'
-  +'gung des '#10'</P>'#10'<P CLASS="western">Herstellers.</P>'#10'<P CLASS="we'
-  +'stern">* Zur'#195#188'ckentwicklung. Interferenz darf keiner Form'#10'von Z'
-  +'ur'#195#188'ckentwicklung (Reverse '#10'</P>'#10'<P CLASS="western">Enginee'
-  +'ring), Dekompilierung oder '#10'</P>'#10'<P CLASS="western">Disassemblierun'
-  +'g unterzogen werden.</P>'#10'<P CLASS="western">* K'#195#188'ndigung. Diese'
-  +' Lizenz gilt auf unbestimmte'#10'Zeit und ist so lange g'#195#188'ltig bis '
-  +'sie '#10'</P>'#10'<P CLASS="western">widerrufen wird. Sie k'#195#182'nnen d'
-  +'ie Lizenz '#10'</P>'#10'<P CLASS="western">jederzeit beendigen, indem Sie a'
-  +'lle Kopien von'#10'Interferenz vernichten. Diese Lizenz '#10'</P>'#10'<P CL'
-  +'ASS="western">endet unverz'#195#188'glich, ohne dass es einer '#10'</P>'#10
-  +'<P CLASS="western">expliziten K'#195#188'ndigung des Herstellers bedarf, we'
-  +'nn'#10'Sie gegen diese '#10'</P>'#10'<P CLASS="western">Lizenzvereinbarunge'
-  +'n versto'#195#159'en. Bei Beendigung'#10'der Lizenz '#10'</P>'#10'<P CLASS='
-  +'"western">sind Sie verpflichtet alle Kopien von Interferenz'#10'zu vernicht'
-  ,'en.</P>'#10'<P CLASS="western">* Versionen. Diese Lizenz gilt f'#195#188'r '
-  +'alle Versionen'#10'(auch die vorherigen) des Programms '#10'</P>'#10'<P CLA'
-  +'SS="western">Interferenz. '#10'</P>'#10'<P CLASS="western"><BR><BR>'#10'</P'
-  +'>'#10'<P CLASS="western"><BR><BR>'#10'</P>'#10'<P CLASS="western">3. Gew'
-  +#195#164'hrleistungsausschluss</P>'#10'<P CLASS="western">Der Hersteller erh'
-  +'ebt keine Lizenzgeb'#195#188'hr f'#195#188'r'#10'diese Version von Interfer'
-  +'enz. Daher '#10'</P>'#10'<P CLASS="western">wird Ihnen Interferenz ohne jed'
-  +'e '#10'</P>'#10'<P CLASS="western">Gew'#195#164'hrleistung zur Verf'#195#188
-  +'gung gestellt. Keine'#10'Gew'#195#164'hrleistung wird insbesondere f'#195
-  +#188'r '#10'</P>'#10'<P CLASS="western">die Sach- und Rechtsm'#195#164'ngelf'
-  +'reiheit von '#10'</P>'#10'<P CLASS="western">Interferenz '#195#188'bernomme'
-  +'n. Sie benutzen Interferenz'#10'in Hinsicht auf Qualit'#195#164't und '#10
-  +'</P>'#10'<P CLASS="western">Funktion auf eigene Gefahr. Sollten Ihnen '#10
-  +'</P>'#10'<P CLASS="western">durch Interferenz nachweislich Sch'#195#164'den'
-  +#10'irgendwelcher Art entstehen, tr'#195#164'gt der '#10'</P>'#10'<P CLASS="'
-  +'western">Lizenzgeber keine etwaigen Kosten. '#10'</P>'#10'<P CLASS="western'
-  +'">Interferenz ist auf Virenfreiheit '#195#188'berpr'#195#188'ft'#10'worden.'
-  +' Dennoch '#195#188'bernimmt der Hersteller '#10'</P>'#10'<P CLASS="western"'
-  +'>keine Gew'#195#164'hrleistung f'#195#188'r die Freiheit '#10'</P>'#10'<P C'
-  +'LASS="western">von Viren. Sie sind deshalb aufgefordert,'#10'Interferenz se'
-  +'lbst auf Virenfreiheit zu '#10'</P>'#10'<P CLASS="western">'#195#188'berpr'
-  +#195#188'fen, bzw. Interferenz auf eigene '#10'</P>'#10'<P CLASS="western">G'
-  +'efahr zu nutzen. Dieser Ausschluss der'#10'Gew'#195#164'hrleistung stellt e'
-  +'inen wesentlichen Teil '#10'</P>'#10'<P CLASS="western">der Lizenzvereinbar'
-  +'ungen dar. Wenn Sie '#10'</P>'#10'<P CLASS="western">sich mit diesem Gew'
-  +#195#164'hrleistungsausschluss nicht'#10'einverstanden erkl'#195#164'ren, is'
-  +'t Ihnen die '#10'</P>'#10'<P CLASS="western">Nutzung von Interferenz unters'
-  +'agt.</P>'#10'<P CLASS="western"><BR><BR>'#10'</P>'#10'</BODY>'#10'</HTML>'
 ]);
 LazarusResources.Add('MitProgrammieren','HTML',[
   '<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">'#10'<HTML>'#10

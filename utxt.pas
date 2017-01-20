@@ -1,16 +1,11 @@
 {-----------------------------------------------------------------------------
- Unit Name: Utxt
- Belong to the program Interferenz
  Author:    Alexander Roth
  Date:      04-Nov-2006
- Lizenshinweise:  Infos-->Lizensbedingungen
-     Dieses Programm wurde geschrieben von Alexander Roth
-
     Dieses Programm ist freie Software. Sie können es unter den Bedingungen
     der GNU General Public License, wie von der Free Software Foundation
     veröffentlicht, weitergeben und/oder modifizieren, gemäß Version 2 der Lizenz.
-
- Description:  Unit um in eine Txt oder INI Datei zu schreiben
+ Description:
+	Unit um in eine Txt oder INI Datei zu schreiben
               Beispielsweise um daten zu speichern      }
 unit Utxt;
 

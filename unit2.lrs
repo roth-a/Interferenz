@@ -1,170 +1,114 @@
-{ This is an automatically generated lazarus resource file }
-
 LazarusResources.Add('TForm2','FORMDATA',[
-  'TPF0'#6'TForm2'#5'Form2'#4'Left'#3#237#0#6'Height'#3'v'#2#3'Top'#2'M'#5'Widt'
-  +'h'#3#145#3#13'ActiveControl'#7#8'Notebook'#7'Caption'#6#5'Form2'#12'ClientH'
-  +'eight'#3'v'#2#11'ClientWidth'#3#145#3#10'OnActivate'#7#12'FormActivate'#8'O'
-  +'nCreate'#7#10'FormCreate'#6'OnShow'#7#8'FormShow'#10'LCLVersion'#6#3'1.7'#0
-  +#9'TNotebook'#8'Notebook'#4'Left'#2#0#6'Height'#3'v'#2#3'Top'#2#0#5'Width'#3
-  +#145#3#9'PageIndex'#2#0#5'Align'#7#8'alClient'#14'OnChangeBounds'#7#20'Noteb'
-  +'ookChangeBounds'#8'TabOrder'#2#0#0#5'TPage'#15'PageInformation'#0#12'TMyWeb'
-  +'Viewer'#16'MyWebInformation'#4'Left'#2#0#6'Height'#3'v'#2#3'Top'#2#0#5'Widt'
-  +'h'#3#145#3#5'Align'#7#8'alClient'#13'FixedTypeface'#6#11'Courier New'#15'De'
-  +'faultTypeFace'#6#7'default'#15'DefaultFontSize'#2#12#10'FlagErrors'#8#24'Pr'
-  +'intSettings.MarginLeft'#5#0#0#0#0#0#0#0#128#254'?'#23'PrintSettings.MarginT'
-  +'op'#5#0#0#0#0#0#0#0#128#254'?'#25'PrintSettings.MarginRight'#5#0#0#0#0#0#0#0
-  +#128#254'?'#26'PrintSettings.MarginBottom'#5#0#0#0#0#0#0#0#128#254'?'#26'Pri'
-  +'ntSettings.Preview.Left'#3'U'#1#25'PrintSettings.Preview.Top'#3#192#0#27'Pr'
-  +'intSettings.Preview.Width'#3#0#4#28'PrintSettings.Preview.Height'#3'@'#2#8
-  +'TabOrder'#2#0#0#0#0#5'TPage'#9'PageHilfe'#0#10'TScrollBox'#10'ScrollBox1'#4
-  +'Left'#2#0#6'Height'#3'W'#2#3'Top'#2#0#5'Width'#3#141#3#5'Align'#7#8'alClien'
-  +'t'#12'ClientHeight'#3'W'#2#11'ClientWidth'#3#141#3#8'TabOrder'#2#0#0#10'TMy'
-  +'RollOut'#19'MyRollOutHelpExport'#4'Left'#3#206#1#6'Height'#3#184#1#3'Top'#2
-  +';'#5'Width'#3'$'#1#7'Anchors'#11#5'akTop'#6'akLeft'#7'akRight'#0#11'BorderS'
-  +'tyle'#7#8'bsSingle'#12'ClientHeight'#3#184#1#11'ClientWidth'#3'$'#1#7'Enabl'
-  +'ed'#9#8'TabOrder'#2#0#12'CollapseKind'#7#5'akTop'#12'ExpandedSize'#3#200#0
-  +#14'ButtonPosition'#7#5'akTop'#10'ButtonSize'#2#27#11'Button.Left'#2#1#13'Bu'
-  +'tton.Height'#2#27#10'Button.Top'#2#1#12'Button.Width'#3' '#1#14'Button.Capt'
-  +'ion'#6'#Hilfe zu dem exportieren von Werten'#12'Button.Color'#4#23#136#248#0
-  +#20'Button.ColorExpanded'#4#23#136#248#0#14'AnimationSpeed'#5#0#0#0#0#0#0#0
-  +#160#3'@'#8'Animated'#8#0#12'TMyWebViewer'#21'MyWebViewerHelpExport'#4'Left'
-  +#2#1#6'Height'#3#151#1#3'Top'#2#28#5'Width'#3#30#1#5'Align'#7#8'alClient'#13
-  +'FixedTypeface'#6#11'Courier New'#15'DefaultTypeFace'#6#7'default'#15'Defaul'
-  +'tFontSize'#2#12#10'FlagErrors'#8#24'PrintSettings.MarginLeft'#5#0#0#0#0#0#0
-  +#0#128#254'?'#23'PrintSettings.MarginTop'#5#0#0#0#0#0#0#0#128#254'?'#25'Prin'
-  +'tSettings.MarginRight'#5#0#0#0#0#0#0#0#128#254'?'#26'PrintSettings.MarginBo'
-  +'ttom'#5#0#0#0#0#0#0#0#128#254'?'#26'PrintSettings.Preview.Left'#3'U'#1#25'P'
-  +'rintSettings.Preview.Top'#3#192#0#27'PrintSettings.Preview.Width'#3#0#4#28
-  +'PrintSettings.Preview.Height'#3'@'#2#8'TabOrder'#2#0#0#0#0#10'TMyRollOut'#24
-  +'MyRollOutHelpMultiLambda'#4'Left'#3#214#1#6'Height'#3#184#1#3'Top'#3#254#1#5
-  +'Width'#3'$'#1#7'Anchors'#11#5'akTop'#6'akLeft'#7'akRight'#0#11'BorderStyle'
-  +#7#8'bsSingle'#12'ClientHeight'#3#184#1#11'ClientWidth'#3'$'#1#7'Enabled'#9#8
-  +'TabOrder'#2#1#12'CollapseKind'#7#5'akTop'#12'ExpandedSize'#3#200#0#14'Butto'
-  +'nPosition'#7#5'akTop'#10'ButtonSize'#2#27#11'Button.Left'#2#1#13'Button.Hei'
-  +'ght'#2#27#10'Button.Top'#2#1#12'Button.Width'#3' '#1#14'Button.Caption'#6#30
-  +'Hilfe zu meheren Wellenl'#195#164'ngen'#12'Button.Color'#4#23#136#248#0#20
-  +'Button.ColorExpanded'#4#23#136#248#0#14'AnimationSpeed'#5#0#0#0#0#0#0#0#160
-  +#3'@'#8'Animated'#8#0#12'TMyWebViewer'#26'MyWebViewerHelpMultiLambda'#4'Left'
-  +#2#1#6'Height'#3#151#1#3'Top'#2#28#5'Width'#3#30#1#5'Align'#7#8'alClient'#13
-  +'FixedTypeface'#6#11'Courier New'#15'DefaultTypeFace'#6#7'default'#15'Defaul'
-  +'tFontSize'#2#12#10'FlagErrors'#8#24'PrintSettings.MarginLeft'#5#0#0#0#0#0#0
-  +#0#128#254'?'#23'PrintSettings.MarginTop'#5#0#0#0#0#0#0#0#128#254'?'#25'Prin'
-  +'tSettings.MarginRight'#5#0#0#0#0#0#0#0#128#254'?'#26'PrintSettings.MarginBo'
-  +'ttom'#5#0#0#0#0#0#0#0#128#254'?'#26'PrintSettings.Preview.Left'#3'U'#1#25'P'
-  +'rintSettings.Preview.Top'#3#192#0#27'PrintSettings.Preview.Width'#3#0#4#28
-  +'PrintSettings.Preview.Height'#3'@'#2#8'TabOrder'#2#0#0#0#0#10'TMyRollOut'#21
-  +'MyRollOutHelpAperture'#4'Left'#3#166#1#6'Height'#3#184#1#3'Top'#3#22#1#5'Wi'
-  +'dth'#3'$'#1#7'Anchors'#11#5'akTop'#6'akLeft'#7'akRight'#0#11'BorderStyle'#7
-  +#8'bsSingle'#12'ClientHeight'#3#184#1#11'ClientWidth'#3'$'#1#7'Enabled'#9#8
-  +'TabOrder'#2#2#12'CollapseKind'#7#5'akTop'#12'ExpandedSize'#3#200#0#14'Butto'
-  +'nPosition'#7#5'akTop'#10'ButtonSize'#2#27#11'Button.Left'#2#1#13'Button.Hei'
-  +'ght'#2#27#10'Button.Top'#2#1#12'Button.Width'#3' '#1#14'Button.Caption'#6'H'
-  +'Hilfe zu den Einstellungen f'#195#188'r alle Wellenl'#195#164'gnen  (linke '
-  +'Seitenleiste)'#12'Button.Color'#4#23#136#248#0#20'Button.ColorExpanded'#4#23
-  +#136#248#0#14'AnimationSpeed'#5#0#0#0#0#0#0#0#160#3'@'#8'Animated'#8#0#12'TM'
-  +'yWebViewer'#23'MyWebViewerHelpAperture'#4'Left'#2#1#6'Height'#3#151#1#3'Top'
-  +#2#28#5'Width'#3#30#1#5'Align'#7#8'alClient'#13'FixedTypeface'#6#11'Courier '
-  +'New'#15'DefaultTypeFace'#6#7'default'#15'DefaultFontSize'#2#12#10'FlagError'
-  ,'s'#8#24'PrintSettings.MarginLeft'#5#0#0#0#0#0#0#0#128#254'?'#23'PrintSettin'
-  +'gs.MarginTop'#5#0#0#0#0#0#0#0#128#254'?'#25'PrintSettings.MarginRight'#5#0#0
-  +#0#0#0#0#0#128#254'?'#26'PrintSettings.MarginBottom'#5#0#0#0#0#0#0#0#128#254
-  +'?'#26'PrintSettings.Preview.Left'#3'U'#1#25'PrintSettings.Preview.Top'#3#192
-  +#0#27'PrintSettings.Preview.Width'#3#0#4#28'PrintSettings.Preview.Height'#3
-  +'@'#2#8'TabOrder'#2#0#0#0#0#10'TMyRollOut'#19'MyRollOutHelpLambda'#4'Left'#3
-  +#182#2#6'Height'#3#184#1#3'Top'#3#230#1#5'Width'#3'$'#1#7'Anchors'#11#5'akTo'
-  +'p'#6'akLeft'#7'akRight'#0#11'BorderStyle'#7#8'bsSingle'#12'ClientHeight'#3
-  +#184#1#11'ClientWidth'#3'$'#1#7'Enabled'#9#8'TabOrder'#2#3#12'CollapseKind'#7
-  +#5'akTop'#12'ExpandedSize'#3#200#0#14'ButtonPosition'#7#5'akTop'#10'ButtonSi'
-  +'ze'#2#27#11'Button.Left'#2#1#13'Button.Height'#2#27#10'Button.Top'#2#1#12'B'
-  +'utton.Width'#3' '#1#14'Button.Caption'#6'NHilfe zu den Einstellungen f'#195
-  +#188'r einzelne Wellenl'#195#164'ngen   (untere Seitenleiste)'#12'Button.Col'
-  +'or'#4#23#136#248#0#20'Button.ColorExpanded'#4#23#136#248#0#14'AnimationSpee'
-  +'d'#5#0#0#0#0#0#0#0#160#3'@'#8'Animated'#8#0#12'TMyWebViewer'#21'MyWebViewer'
-  +'HelpLambda'#4'Left'#2#1#6'Height'#3#151#1#3'Top'#2#28#5'Width'#3#30#1#5'Ali'
-  +'gn'#7#8'alClient'#13'FixedTypeface'#6#11'Courier New'#15'DefaultTypeFace'#6
-  +#7'default'#15'DefaultFontSize'#2#12#10'FlagErrors'#8#24'PrintSettings.Margi'
-  +'nLeft'#5#0#0#0#0#0#0#0#128#254'?'#23'PrintSettings.MarginTop'#5#0#0#0#0#0#0
-  +#0#128#254'?'#25'PrintSettings.MarginRight'#5#0#0#0#0#0#0#0#128#254'?'#26'Pr'
-  +'intSettings.MarginBottom'#5#0#0#0#0#0#0#0#128#254'?'#26'PrintSettings.Previ'
-  +'ew.Left'#3'U'#1#25'PrintSettings.Preview.Top'#3#192#0#27'PrintSettings.Prev'
-  +'iew.Width'#3#0#4#28'PrintSettings.Preview.Height'#3'@'#2#8'TabOrder'#2#0#0#0
-  +#0#10'TMyRollOut'#18'MyRollOutHelpChart'#4'Left'#3#158#0#6'Height'#3#184#1#3
-  +'Top'#3'6'#1#5'Width'#3'$'#1#7'Anchors'#11#5'akTop'#6'akLeft'#7'akRight'#0#11
-  +'BorderStyle'#7#8'bsSingle'#12'ClientHeight'#3#184#1#11'ClientWidth'#3'$'#1#7
-  +'Enabled'#9#8'TabOrder'#2#4#12'CollapseKind'#7#5'akTop'#12'ExpandedSize'#3
-  +#200#0#14'ButtonPosition'#7#5'akTop'#10'ButtonSize'#2#27#11'Button.Left'#2#1
-  +#13'Button.Height'#2#27#10'Button.Top'#2#1#12'Button.Width'#3' '#1#14'Button'
-  +'.Caption'#6'#Hilfe zu den Diagramm Einstellungen'#12'Button.Color'#4#23#136
-  +#248#0#20'Button.ColorExpanded'#4#23#136#248#0#14'AnimationSpeed'#5#0#0#0#0#0
-  +#0#0#160#3'@'#8'Animated'#8#0#12'TMyWebViewer'#20'MyWebViewerHelpChart'#4'Le'
-  +'ft'#2#1#6'Height'#3#151#1#3'Top'#2#28#5'Width'#3#30#1#5'Align'#7#8'alClient'
+  'TPF0'#6'TForm2'#5'Form2'#4'Left'#3#4#1#6'Height'#3'L'#2#3'Top'#2'P'#5'Width'
+  +#3#145#3#7'Caption'#6#5'Form2'#12'ClientHeight'#3'L'#2#11'ClientWidth'#3#145
+  +#3#10'OnActivate'#7#12'FormActivate'#8'OnCreate'#7#10'FormCreate'#6'OnShow'#7
+  +#8'FormShow'#10'LCLVersion'#6#3'1.7'#0#9'TNotebook'#8'Notebook'#4'Left'#2#0#6
+  +'Height'#3'L'#2#3'Top'#2#0#5'Width'#3#145#3#9'PageIndex'#2#3#5'Align'#7#8'al'
+  +'Client'#14'OnChangeBounds'#7#20'NotebookChangeBounds'#8'TabOrder'#2#0#0#5'T'
+  +'Page'#15'PageInformation'#0#16'TSimpleWebViewer'#16'MyWebInformation'#4'Lef'
+  +'t'#2#0#6'Height'#3'L'#2#3'Top'#2#0#5'Width'#3#145#3#5'Align'#7#8'alClient'
   +#13'FixedTypeface'#6#11'Courier New'#15'DefaultTypeFace'#6#7'default'#15'Def'
   +'aultFontSize'#2#12#10'FlagErrors'#8#24'PrintSettings.MarginLeft'#5#0#0#0#0#0
   +#0#0#128#254'?'#23'PrintSettings.MarginTop'#5#0#0#0#0#0#0#0#128#254'?'#25'Pr'
   +'intSettings.MarginRight'#5#0#0#0#0#0#0#0#128#254'?'#26'PrintSettings.Margin'
   +'Bottom'#5#0#0#0#0#0#0#0#128#254'?'#26'PrintSettings.Preview.Left'#3'U'#1#25
   +'PrintSettings.Preview.Top'#3#192#0#27'PrintSettings.Preview.Width'#3#0#4#28
-  +'PrintSettings.Preview.Height'#3'@'#2#8'TabOrder'#2#0#7'OnClick'#7#25'MyWebV'
-  +'iewerHelpChartClick'#0#0#0#10'TMyRollOut'#13'MyRollOutHelp'#4'Left'#2#254#6
-  +'Height'#3#184#1#3'Top'#2#251#5'Width'#3'$'#1#7'Anchors'#11#5'akTop'#6'akLef'
-  +'t'#7'akRight'#0#11'BorderStyle'#7#8'bsSingle'#12'ClientHeight'#3#184#1#11'C'
-  +'lientWidth'#3'$'#1#7'Enabled'#9#8'TabOrder'#2#5#12'CollapseKind'#7#5'akTop'
-  +#12'ExpandedSize'#3#200#0#14'ButtonPosition'#7#5'akTop'#10'ButtonSize'#2#27
-  +#11'Button.Left'#2#1#13'Button.Height'#2#27#10'Button.Top'#2#1#12'Button.Wid'
-  +'th'#3' '#1#14'Button.Caption'#6#16'Allgemeine Hilfe'#12'Button.Color'#4#23
-  +#136#248#0#20'Button.ColorExpanded'#4#23#136#248#0#14'AnimationSpeed'#5#0#0#0
-  +#0#0#0#0#160#3'@'#8'Animated'#8#0#12'TMyWebViewer'#15'MyWebViewerHelp'#4'Lef'
-  +'t'#2#1#6'Height'#3#151#1#3'Top'#2#28#5'Width'#3#30#1#5'Align'#7#8'alClient'
-  +#13'FixedTypeface'#6#11'Courier New'#15'DefaultTypeFace'#6#7'default'#15'Def'
-  +'aultFontSize'#2#12#10'FlagErrors'#8#24'PrintSettings.MarginLeft'#5#0#0#0#0#0
-  +#0#0#128#254'?'#23'PrintSettings.MarginTop'#5#0#0#0#0#0#0#0#128#254'?'#25'Pr'
-  +'intSettings.MarginRight'#5#0#0#0#0#0#0#0#128#254'?'#26'PrintSettings.Margin'
-  +'Bottom'#5#0#0#0#0#0#0#0#128#254'?'#26'PrintSettings.Preview.Left'#3'U'#1#25
-  +'PrintSettings.Preview.Top'#3#192#0#27'PrintSettings.Preview.Width'#3#0#4#28
-  +'PrintSettings.Preview.Height'#3'@'#2#8'TabOrder'#2#0#0#0#0#0#0#5'TPage'#9'P'
-  +'ageLinks'#0#12'TMyWebViewer'#15'MyWebProgrammer'#4'Left'#2#0#6'Height'#3'W'
-  +#2#3'Top'#2#0#5'Width'#3#141#3#5'Align'#7#8'alClient'#13'FixedTypeface'#6#11
-  +'Courier New'#15'DefaultTypeFace'#6#7'default'#15'DefaultFontSize'#2#12#10'F'
-  +'lagErrors'#8#24'PrintSettings.MarginLeft'#5#0#0#0#0#0#0#0#128#254'?'#23'Pri'
-  +'ntSettings.MarginTop'#5#0#0#0#0#0#0#0#128#254'?'#25'PrintSettings.MarginRig'
-  +'ht'#5#0#0#0#0#0#0#0#128#254'?'#26'PrintSettings.MarginBottom'#5#0#0#0#0#0#0
-  +#0#128#254'?'#26'PrintSettings.Preview.Left'#3'U'#1#25'PrintSettings.Preview'
-  ,'.Top'#3#192#0#27'PrintSettings.Preview.Width'#3#0#4#28'PrintSettings.Previe'
-  +'w.Height'#3'@'#2#8'TabOrder'#2#0#0#0#0#5'TPage'#21'PageLizenzbedingungen'#0
-  +#12'TMyWebViewer'#22'MyWebLizenzbedingungen'#4'Left'#2#0#6'Height'#3'W'#2#3
-  +'Top'#2#0#5'Width'#3#141#3#5'Align'#7#8'alClient'#13'FixedTypeface'#6#11'Cou'
+  +'PrintSettings.Preview.Height'#3'@'#2#8'TabOrder'#2#0#0#0#0#5'TPage'#9'PageH'
+  +'ilfe'#12'OnBeforeShow'#7#19'PageHilfeBeforeShow'#0#12'TPageControl'#12'Page'
+  +'Control1'#4'Left'#2#0#6'Height'#3'L'#2#3'Top'#2#0#5'Width'#3#145#3#10'Activ'
+  +'ePage'#7#9'TabSheet1'#5'Align'#7#8'alClient'#8'TabIndex'#2#0#8'TabOrder'#2#0
+  +#0#9'TTabSheet'#9'TabSheet1'#7'Caption'#6#9'Allgemein'#12'ClientHeight'#3'2'
+  +#2#11'ClientWidth'#3#143#3#0#16'TSimpleWebViewer'#19'SimpleWebViewerHelp'#4
+  +'Left'#2#0#6'Height'#3'2'#2#3'Top'#2#0#5'Width'#3#143#3#5'Align'#7#8'alClien'
+  +'t'#13'FixedTypeface'#6#11'Courier New'#15'DefaultTypeFace'#6#7'default'#15
+  +'DefaultFontSize'#2#12#10'FlagErrors'#8#24'PrintSettings.MarginLeft'#5#0#0#0
+  +#0#0#0#0#128#254'?'#23'PrintSettings.MarginTop'#5#0#0#0#0#0#0#0#128#254'?'#25
+  +'PrintSettings.MarginRight'#5#0#0#0#0#0#0#0#128#254'?'#26'PrintSettings.Marg'
+  +'inBottom'#5#0#0#0#0#0#0#0#128#254'?'#26'PrintSettings.Preview.Left'#3'U'#1
+  +#25'PrintSettings.Preview.Top'#3#192#0#27'PrintSettings.Preview.Width'#3#0#4
+  +#28'PrintSettings.Preview.Height'#3'@'#2#8'TabOrder'#2#0#0#0#0#9'TTabSheet'#9
+  +'TabSheet2'#7'Caption'#6#22'Diagramm Einstellungen'#12'ClientHeight'#3'2'#2
+  +#11'ClientWidth'#3#143#3#0#16'TSimpleWebViewer'#24'SimpleWebViewerHelpChart'
+  +#4'Left'#2#0#6'Height'#3'2'#2#3'Top'#2#0#5'Width'#3#143#3#5'Align'#7#8'alCli'
+  +'ent'#13'FixedTypeface'#6#11'Courier New'#15'DefaultTypeFace'#6#7'default'#15
+  +'DefaultFontSize'#2#12#10'FlagErrors'#8#24'PrintSettings.MarginLeft'#5#0#0#0
+  +#0#0#0#0#128#254'?'#23'PrintSettings.MarginTop'#5#0#0#0#0#0#0#0#128#254'?'#25
+  +'PrintSettings.MarginRight'#5#0#0#0#0#0#0#0#128#254'?'#26'PrintSettings.Marg'
+  +'inBottom'#5#0#0#0#0#0#0#0#128#254'?'#26'PrintSettings.Preview.Left'#3'U'#1
+  +#25'PrintSettings.Preview.Top'#3#192#0#27'PrintSettings.Preview.Width'#3#0#4
+  +#28'PrintSettings.Preview.Height'#3'@'#2#8'TabOrder'#2#0#7'OnClick'#7#29'Sim'
+  +'pleWebViewerHelpChartClick'#0#0#0#9'TTabSheet'#9'TabSheet3'#7'Caption'#6#18
+  +'linke Seitenleiste'#12'ClientHeight'#3'2'#2#11'ClientWidth'#3#143#3#0#16'TS'
+  +'impleWebViewer'#27'SimpleWebViewerHelpAperture'#4'Left'#2#0#6'Height'#3'2'#2
+  +#3'Top'#2#0#5'Width'#3#143#3#5'Align'#7#8'alClient'#13'FixedTypeface'#6#11'C'
+  +'ourier New'#15'DefaultTypeFace'#6#7'default'#15'DefaultFontSize'#2#12#10'Fl'
+  +'agErrors'#8#24'PrintSettings.MarginLeft'#5#0#0#0#0#0#0#0#128#254'?'#23'Prin'
+  +'tSettings.MarginTop'#5#0#0#0#0#0#0#0#128#254'?'#25'PrintSettings.MarginRigh'
+  +'t'#5#0#0#0#0#0#0#0#128#254'?'#26'PrintSettings.MarginBottom'#5#0#0#0#0#0#0#0
+  +#128#254'?'#26'PrintSettings.Preview.Left'#3'U'#1#25'PrintSettings.Preview.T'
+  +'op'#3#192#0#27'PrintSettings.Preview.Width'#3#0#4#28'PrintSettings.Preview.'
+  +'Height'#3'@'#2#8'TabOrder'#2#0#0#0#0#9'TTabSheet'#9'TabSheet4'#7'Caption'#6
+  +#17'Werte exportieren'#12'ClientHeight'#3'2'#2#11'ClientWidth'#3#143#3#0#16
+  +'TSimpleWebViewer'#25'SimpleWebViewerHelpExport'#4'Left'#2#0#6'Height'#3'\'#2
+  +#3'Top'#2#0#5'Width'#3#143#3#5'Align'#7#8'alClient'#13'FixedTypeface'#6#11'C'
+  +'ourier New'#15'DefaultTypeFace'#6#7'default'#15'DefaultFontSize'#2#12#10'Fl'
+  +'agErrors'#8#24'PrintSettings.MarginLeft'#5#0#0#0#0#0#0#0#128#254'?'#23'Prin'
+  +'tSettings.MarginTop'#5#0#0#0#0#0#0#0#128#254'?'#25'PrintSettings.MarginRigh'
+  +'t'#5#0#0#0#0#0#0#0#128#254'?'#26'PrintSettings.MarginBottom'#5#0#0#0#0#0#0#0
+  +#128#254'?'#26'PrintSettings.Preview.Left'#3'U'#1#25'PrintSettings.Preview.T'
+  +'op'#3#192#0#27'PrintSettings.Preview.Width'#3#0#4#28'PrintSettings.Preview.'
+  +'Height'#3'@'#2#8'TabOrder'#2#0#0#0#0#9'TTabSheet'#9'TabSheet5'#7'Caption'#6
+  +#13'Untere Leiste'#12'ClientHeight'#3'2'#2#11'ClientWidth'#3#143#3#0#16'TSim'
+  +'pleWebViewer'#25'SimpleWebViewerHelpLambda'#4'Left'#2#0#6'Height'#3'\'#2#3
+  +'Top'#2#0#5'Width'#3#143#3#5'Align'#7#8'alClient'#13'FixedTypeface'#6#11'Cou'
   +'rier New'#15'DefaultTypeFace'#6#7'default'#15'DefaultFontSize'#2#12#10'Flag'
   +'Errors'#8#24'PrintSettings.MarginLeft'#5#0#0#0#0#0#0#0#128#254'?'#23'PrintS'
-  +'ettings.MarginTop'#5#0#0#0#0#0#0#0#128#254'?'#25'PrintSettings.MarginRight'
+  ,'ettings.MarginTop'#5#0#0#0#0#0#0#0#128#254'?'#25'PrintSettings.MarginRight'
   +#5#0#0#0#0#0#0#0#128#254'?'#26'PrintSettings.MarginBottom'#5#0#0#0#0#0#0#0
   +#128#254'?'#26'PrintSettings.Preview.Left'#3'U'#1#25'PrintSettings.Preview.T'
   +'op'#3#192#0#27'PrintSettings.Preview.Width'#3#0#4#28'PrintSettings.Preview.'
-  +'Height'#3'@'#2#8'TabOrder'#2#0#0#0#0#5'TPage'#11'PageUpdates'#0#6'TLabel'#14
-  +'LInternetState'#4'Left'#2#24#6'Height'#2'V'#3'Top'#2'p'#5'Width'#3#25#3#8'A'
-  +'utoSize'#8#7'Caption'#6'(Bitte checke ob ein Update vorhanden ist'#11'Font.'
-  +'Height'#2#229#11'ParentColor'#8#10'ParentFont'#8#8'WordWrap'#9#0#0#6'TLabel'
-  +#9'LHomepage'#6'Cursor'#7#11'crHandPoint'#4'Left'#2#24#6'Height'#2'%'#3'Top'
-  +#3#200#0#5'Width'#3#219#0#7'Caption'#6#14'www.roth.us.ms'#12'Font.CharSet'#7
-  +#12'ANSI_CHARSET'#10'Font.Color'#7#6'clBlue'#11'Font.Height'#2#224#9'Font.Na'
-  +'me'#6#15'Times New Roman'#10'Font.Style'#11#6'fsBold'#0#6'Layout'#7#8'tlCen'
-  +'ter'#11'ParentColor'#8#10'ParentFont'#8#7'Visible'#8#7'OnClick'#7#14'LHomep'
-  +'ageClick'#0#0#6'TLabel'#6'Label4'#4'Left'#2#16#6'Height'#2'H'#3'Top'#3#145#1
-  +#5'Width'#3#172#2#7'Anchors'#11#6'akLeft'#7'akRight'#8'akBottom'#0#8'AutoSiz'
-  +'e'#8#7'Caption'#6#210'Du hast einen Fehler entdeckt?  Es w'#195#164're sehr'
-  +' freundlich, wenn du mir eine kurze E-Mail schreiben w'#195#188'rdest in de'
-  +'r mir das Problem beschreibst. Ich versuche dann diesen Fehler so schnell w'
-  +'ie m'#195#182'glich zu beheben.'#20'Constraints.MinWidth'#3','#1#11'ParentC'
-  +'olor'#8#8'WordWrap'#9#0#0#6'TLabel'#6'Label5'#6'Cursor'#7#11'crHandPoint'#4
-  +'Left'#3#134#0#6'Height'#2#20#3'Top'#3#189#1#5'Width'#3#170#0#9'Alignment'#7
-  +#8'taCenter'#7'Anchors'#11#6'akLeft'#7'akRight'#8'akBottom'#0#7'Caption'#6#13
-  +'roth-a@gmx.de'#20'Constraints.MinWidth'#2'g'#12'Font.CharSet'#7#12'ANSI_CHA'
-  +'RSET'#10'Font.Color'#7#6'clBlue'#11'Font.Height'#2#240#9'Font.Name'#6#15'Ti'
-  +'mes New Roman'#10'Font.Style'#11#6'fsBold'#11'fsUnderline'#0#6'Layout'#7#8
-  +'tlCenter'#11'ParentColor'#8#10'ParentFont'#8#7'OnClick'#7#11'Label5Click'#0
-  +#0#7'TButton'#12'BCheckUpdate'#4'Left'#2#16#6'Height'#2'!'#3'Top'#2'0'#5'Wid'
-  +'th'#3#17#1#7'Caption'#6#26'Pr'#195#188'fe ob Update vorhanden'#7'OnClick'#7
-  +#17'BCheckUpdateClick'#8'TabOrder'#2#0#0#0#0#0#13'TExpandPanels'#13'ExpandPa'
-  +'nels1'#11'ArrangeKind'#7#5'akTop'#15'OnArrangePanels'#7#26'ExpandPanels1Arr'
-  +'angePanels'#9'Behaviour'#7#13'EPSinglePanel'#4'Left'#3'`'#3#3'Top'#2' '#0#0
-  +#0
+  +'Height'#3'@'#2#8'TabOrder'#2#0#0#0#0#9'TTabSheet'#9'TabSheet6'#7'Caption'#6
+  +#21'meheren Wellenl'#195#164'ngen'#12'ClientHeight'#3'2'#2#11'ClientWidth'#3
+  +#143#3#0#16'TSimpleWebViewer'#30'SimpleWebViewerHelpMultiLambda'#4'Left'#2#0
+  +#6'Height'#3'\'#2#3'Top'#2#0#5'Width'#3#143#3#5'Align'#7#8'alClient'#13'Fixe'
+  +'dTypeface'#6#11'Courier New'#15'DefaultTypeFace'#6#7'default'#15'DefaultFon'
+  +'tSize'#2#12#10'FlagErrors'#8#24'PrintSettings.MarginLeft'#5#0#0#0#0#0#0#0
+  +#128#254'?'#23'PrintSettings.MarginTop'#5#0#0#0#0#0#0#0#128#254'?'#25'PrintS'
+  +'ettings.MarginRight'#5#0#0#0#0#0#0#0#128#254'?'#26'PrintSettings.MarginBott'
+  +'om'#5#0#0#0#0#0#0#0#128#254'?'#26'PrintSettings.Preview.Left'#3'U'#1#25'Pri'
+  +'ntSettings.Preview.Top'#3#192#0#27'PrintSettings.Preview.Width'#3#0#4#28'Pr'
+  +'intSettings.Preview.Height'#3'@'#2#8'TabOrder'#2#0#0#0#0#0#0#5'TPage'#21'Pa'
+  +'geLizenzbedingungen'#0#16'TSimpleWebViewer'#22'MyWebLizenzbedingungen'#4'Le'
+  +'ft'#2#0#6'Height'#3'L'#2#3'Top'#2#0#5'Width'#3#145#3#5'Align'#7#8'alClient'
+  +#13'FixedTypeface'#6#11'Courier New'#15'DefaultTypeFace'#6#7'default'#15'Def'
+  +'aultFontSize'#2#12#10'FlagErrors'#8#24'PrintSettings.MarginLeft'#5#0#0#0#0#0
+  +#0#0#128#254'?'#23'PrintSettings.MarginTop'#5#0#0#0#0#0#0#0#128#254'?'#25'Pr'
+  +'intSettings.MarginRight'#5#0#0#0#0#0#0#0#128#254'?'#26'PrintSettings.Margin'
+  +'Bottom'#5#0#0#0#0#0#0#0#128#254'?'#26'PrintSettings.Preview.Left'#3'U'#1#25
+  +'PrintSettings.Preview.Top'#3#192#0#27'PrintSettings.Preview.Width'#3#0#4#28
+  +'PrintSettings.Preview.Height'#3'@'#2#8'TabOrder'#2#0#0#0#0#5'TPage'#11'Page'
+  +'Updates'#0#6'TLabel'#14'LInternetState'#4'Left'#2#24#6'Height'#2'V'#3'Top'#2
+  +'p'#5'Width'#3#25#3#8'AutoSize'#8#7'Caption'#6'(Bitte checke ob ein Update v'
+  +'orhanden ist'#11'Font.Height'#2#229#11'ParentColor'#8#10'ParentFont'#8#8'Wo'
+  +'rdWrap'#9#0#0#6'TLabel'#9'LHomepage'#6'Cursor'#7#11'crHandPoint'#4'Left'#2
+  +#24#6'Height'#2'$'#3'Top'#3#200#0#5'Width'#3#219#0#7'Caption'#6#14'www.roth.'
+  +'us.ms'#12'Font.CharSet'#7#12'ANSI_CHARSET'#10'Font.Color'#7#6'clBlue'#11'Fo'
+  +'nt.Height'#2#224#9'Font.Name'#6#15'Times New Roman'#10'Font.Style'#11#6'fsB'
+  +'old'#0#6'Layout'#7#8'tlCenter'#11'ParentColor'#8#10'ParentFont'#8#7'Visible'
+  +#8#7'OnClick'#7#14'LHomepageClick'#0#0#6'TLabel'#6'Label4'#4'Left'#2#16#6'He'
+  +'ight'#2'H'#3'Top'#3'D'#2#5'Width'#3'/'#5#7'Anchors'#11#6'akLeft'#7'akRight'
+  +#8'akBottom'#0#8'AutoSize'#8#7'Caption'#6#210'Du hast einen Fehler entdeckt?'
+  +'  Es w'#195#164're sehr freundlich, wenn du mir eine kurze E-Mail schreiben'
+  +' w'#195#188'rdest in der mir das Problem beschreibst. Ich versuche dann die'
+  +'sen Fehler so schnell wie m'#195#182'glich zu beheben.'#20'Constraints.MinW'
+  +'idth'#3','#1#11'ParentColor'#8#8'WordWrap'#9#0#0#6'TLabel'#6'Label5'#6'Curs'
+  +'or'#7#11'crHandPoint'#4'Left'#3#134#0#6'Height'#2#17#3'Top'#3's'#2#5'Width'
+  +#3'-'#3#9'Alignment'#7#8'taCenter'#7'Anchors'#11#6'akLeft'#7'akRight'#8'akBo'
+  +'ttom'#0#7'Caption'#6#13'roth-a@gmx.de'#20'Constraints.MinWidth'#2'g'#12'Fon'
+  +'t.CharSet'#7#12'ANSI_CHARSET'#10'Font.Color'#7#6'clBlue'#11'Font.Height'#2
+  +#240#9'Font.Name'#6#15'Times New Roman'#10'Font.Style'#11#6'fsBold'#11'fsUnd'
+  +'erline'#0#6'Layout'#7#8'tlCenter'#11'ParentColor'#8#10'ParentFont'#8#7'OnCl'
+  +'ick'#7#11'Label5Click'#0#0#7'TButton'#12'BCheckUpdate'#4'Left'#2#16#6'Heigh'
+  +'t'#2'!'#3'Top'#2'0'#5'Width'#3#17#1#7'Caption'#6#26'Pr'#195#188'fe ob Updat'
+  +'e vorhanden'#7'OnClick'#7#17'BCheckUpdateClick'#8'TabOrder'#2#0#0#0#0#0#0
 ]);

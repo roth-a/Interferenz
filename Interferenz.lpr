@@ -10,7 +10,7 @@ uses
   Interfaces, // this includes the LCL widgetset
   Forms
   { you can add units after this }, Unit1, unit2, Unit3, Unit4, UVector,
-  LResources;
+  simplewebviewer, LResources;
 
 
 //{$IFDEF WINDOWS}{$R Interferenz.rc}{$ENDIF}

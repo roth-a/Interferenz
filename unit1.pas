@@ -1,22 +1,11 @@
-{
-    This file is part of the Program Interferenz.
-    Copyright (c) by Alexander Roth
-
-    License is the GLP 3
-    
-    
-    Further information you can find here:
-    http://creativecommons.org/licenses/GPL/3/
-    http://wikipedia.org/GPL3/
-
-    This program is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
-
-
-    Screenshots and more information about Interferenz you can get here:
-    http://www.alexanderroth.eu/MeineProgramme#Interferenz
- **********************************************************************}
+{-----------------------------------------------------------------------------
+ Author:    Alexander Roth
+ Date:      04-Nov-2006
+    Dieses Programm ist freie Software. Sie können es unter den Bedingungen
+    der GNU General Public License, wie von der Free Software Foundation
+    veröffentlicht, weitergeben und/oder modifizieren, gemäß Version 2 der Lizenz.
+ Description:
+-----------------------------------------------------------------------------}
 
 
 unit Unit1;
@@ -29,7 +18,7 @@ uses
   Classes, SysUtils, LResources, Forms, Controls, Graphics, Dialogs,
   OpenGLContext,  Uanderes,UChart, StdCtrls, EditBtn,
   ExtCtrls,LCLIntf, gl,glut,  Menus, ActnList,
-  Arrow, ExpandPanels, Spin, ComCtrls, Buttons,  IpHtml, UMyWebViewer, UGroupHeader, StdActns,UColoredBox, math;
+  Arrow, ExpandPanels, Spin, ComCtrls, Buttons,  IpHtml, USimpleWebViewer, UGroupHeader, StdActns,UColoredBox, math;
 
 type
 
@@ -125,7 +114,7 @@ type
     PanelOGLBox: TPanel;
     PBOK: TPanel;
     PanelLambda: TPanel;
-    MyWebViewerHelpLittle: TMyWebViewer;
+    SimpleWebViewerHelpLittle: TSimpleWebViewer;
     OptioExtended: TMyRollOut;
     PProgrammerInfo: TMyRollOut;
     ProgressDraw: TProgressBar;
@@ -1650,9 +1639,9 @@ end;
 
 procedure TForm1.ActionUpdateExecute(Sender: TObject);
 begin
-  form2.Show;
-  //form2.Notebook.ActivePageComponent := Form2.Notebook.Page[5];
-  form2.BCheckUpdate.Click;
+  //form2.Show;
+  //form2.Notebook.PageIndex := 4;
+  //form2.BCheckUpdate.Click;
 end;
 
 procedure TForm1.ActionVersionExecute(Sender: TObject);
@@ -1704,7 +1693,7 @@ end;
 
 procedure TForm1.ActionChartSettingsExecute(Sender: TObject);
 begin
-  //self.OptioChart.Collapsed:=not self.OptioChart.Collapsed;
+  self.OptioChart.Collapsed:=not self.OptioChart.Collapsed;
 end;
 
 procedure TForm1.ActionDelLastLambdaExecute(Sender: TObject);
@@ -1735,7 +1724,7 @@ end;
 procedure TForm1.ActionHelpExecute(Sender: TObject);
 begin
   Form2.Show;
-  //form2.Notebook.ActivePageComponent:=Form2.PageHilfe;
+  form2.Notebook.PageIndex:=1;
 end;
 
 procedure TForm1.ActionMaximizeExecute(Sender: TObject);
@@ -1987,7 +1976,7 @@ begin
   SaS:=TSaSArray.Create(self);
 
   // HelpLittle
-  form1.MyWebViewerHelpLittle.LoadFromString(LazarusResources.Find('HelpLittle').Value);
+  form1.SimpleWebViewerHelpLittle.LoadFromString(LazarusResources.Find('HelpLittle').Value);
 
   OpenDialog1.InitialDir:=ExtractFilePath(ParamStr(0));
   OpenDialog1.FileName:='MeineEinstellungen.ini';

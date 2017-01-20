@@ -1,3 +1,13 @@
+{-----------------------------------------------------------------------------
+ Author:    Alexander Roth
+ Date:      04-Nov-2006
+    Dieses Programm ist freie Software. Sie können es unter den Bedingungen
+    der GNU General Public License, wie von der Free Software Foundation
+    veröffentlicht, weitergeben und/oder modifizieren, gemäß Version 2 der Lizenz.
+ Description:
+-----------------------------------------------------------------------------}
+
+
 unit UChart;
 
 {$mode objfpc}{$H+}

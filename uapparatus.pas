@@ -1,12 +1,11 @@
 {-----------------------------------------------------------------------------
- Unit Name: Uapparatus
- This file belong to Interferenz
  Author:    Alexander Roth
  Date:      04-Nov-2006
- Lizenshinweise:  Infos-->Lizensbedingungen
+    Dieses Programm ist freie Software. Sie können es unter den Bedingungen
+    der GNU General Public License, wie von der Free Software Foundation
+    veröffentlicht, weitergeben und/oder modifizieren, gemäß Version 2 der Lizenz.
  Description:
- 
- 
+
   alpha is the horizontal angle of the laser light
     alpha= 0° (or 0) means that the laser light has 90° to the screen, where you can see the laser point
     alpha=90° (or pi/2) means that this will never hit a wall. It is parralel to the screen

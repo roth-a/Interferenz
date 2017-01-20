@@ -1,14 +1,11 @@
-{==============================================================================
- Unit Name: Uanderes
- Author:    Alexander
- Date:      18-Mrz-2007
- Lizenshinweise:  Dieses Programm wurde geschrieben von Alexander Roth
-
+{-----------------------------------------------------------------------------
+ Author:    Alexander Roth
+ Date:      04-Nov-2006
     Dieses Programm ist freie Software. Sie können es unter den Bedingungen
     der GNU General Public License, wie von der Free Software Foundation
     veröffentlicht, weitergeben und/oder modifizieren, gemäß Version 2 der Lizenz.
-
- Description:  Beinhaltet viele Allgemein nützlich Procedures und Klassen
+ Description:
+	Beinhaltet viele Allgemein nützlich Procedures und Klassen
 ==============================================================================}
 
 unit Uanderes;

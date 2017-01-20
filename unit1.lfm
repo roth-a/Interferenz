@@ -129,8 +129,10 @@ object Form1: TForm1
           'clWhite'
           'clWhite'
           'clWhite'
+          'clWhite'
         )
         ItemColors.Strings = (
+          'clBlue'
           'clBlue'
           'clBlue'
           'clBlue'
@@ -1018,8 +1020,10 @@ object Form1: TForm1
             'clWhite'
             'clWhite'
             'clWhite'
+            'clWhite'
           )
           ItemColors.Strings = (
+            'clBlue'
             'clBlue'
             'clBlue'
             'clBlue'
@@ -1064,8 +1068,10 @@ object Form1: TForm1
             'clWhite'
             'clWhite'
             'clWhite'
+            'clWhite'
           )
           ItemColors.Strings = (
+            'clBlue'
             'clBlue'
             'clBlue'
             'clBlue'
@@ -1270,7 +1276,7 @@ object Form1: TForm1
       AnimationSpeed = 20
       OnPreExpand = OptioRotatePreCollapse
       OnPreCollapse = OptioRotatePreCollapse
-      object MyWebViewerHelpLittle: TMyWebViewer
+      object SimpleWebViewerHelpLittle: TSimpleWebViewer
         Left = 1
         Height = 190
         Top = 49

@@ -1,5 +1,5 @@
 #!/bin/bash
 #cd /media/sda1/Daten/Programmieren/meine/Interferenz/Lazarus/Interferenz/Resource
-~/programs/lazarus/tools/lazres xyz.lrs Donate.html HelpAllgemein.html HelpDiagramm.html HelpExport.html HelplinkeEinstellungen.html HelpLittle.html HelpMehrereWellenlaengen.html HelpWellenlaenge.html Icon.ico Info.html LizenzGPL.html Lizenz.html MitProgrammieren.html PfeilAus.bmp PfeilEin.bmp StandartEinstellungen.ini Version.txt
+~/programs/lazarus/tools/lazres xyz.lrs Donate.html HelpAllgemein.html HelpDiagramm.html HelpExport.html HelplinkeEinstellungen.html HelpLittle.html HelpMehrereWellenlaengen.html HelpWellenlaenge.html Icon.ico Info.html  Lizenz.html MitProgrammieren.html PfeilAus.bmp PfeilEin.bmp StandartEinstellungen.ini Version.txt
 
 cp xyz.lrs ../xyz.lrs

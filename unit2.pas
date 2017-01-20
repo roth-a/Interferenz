@@ -1,3 +1,14 @@
+{-----------------------------------------------------------------------------
+ Author:    Alexander Roth
+ Date:      04-Nov-2006
+    Dieses Programm ist freie Software. Sie können es unter den Bedingungen
+    der GNU General Public License, wie von der Free Software Foundation
+    veröffentlicht, weitergeben und/oder modifizieren, gemäß Version 2 der Lizenz.
+ Description:
+-----------------------------------------------------------------------------}
+
+
+
 unit Unit2; 
 
 {$mode objfpc}{$H+}
@@ -6,7 +17,7 @@ interface
 
 uses
   Classes, SysUtils, LResources, Forms, Controls, Graphics, Dialogs, ExtCtrls,
-  UMyWebViewer, ExpandPanels, StdCtrls, httpsend;
+  USimpleWebViewer, ExpandPanels, StdCtrls, ComCtrls, httpsend;
 
 type
 
@@ -14,33 +25,30 @@ type
 
   TForm2 = class(TForm)
     BCheckUpdate: TButton;
-    ExpandPanels1: TExpandPanels;
     Label4: TLabel;
     Label5: TLabel;
+    LHomepage: TLabel;
     LInternetState: TLabel;
-    MyRollOutHelpExport: TMyRollOut;
-    MyRollOutHelp: TMyRollOut;
-    MyRollOutHelpChart: TMyRollOut;
-    MyRollOutHelpLambda: TMyRollOut;
-    MyRollOutHelpAperture: TMyRollOut;
-    MyRollOutHelpMultiLambda: TMyRollOut;
-    MyWebInformation: TMyWebViewer;
-    MyWebProgrammer: TMyWebViewer;
-    MyWebLizenzbedingungen: TMyWebViewer;
-    MyWebViewerHelpExport: TMyWebViewer;
-    MyWebViewerHelp: TMyWebViewer;
-    MyWebViewerHelpChart: TMyWebViewer;
-    MyWebViewerHelpAperture: TMyWebViewer;
-    MyWebViewerHelpMultiLambda: TMyWebViewer;
-    MyWebViewerHelpLambda: TMyWebViewer;
+    MyWebInformation: TSimpleWebViewer;
+    MyWebLizenzbedingungen: TSimpleWebViewer;
+    SimpleWebViewerHelp: TSimpleWebViewer;
+    SimpleWebViewerHelpAperture: TSimpleWebViewer;
+    SimpleWebViewerHelpChart: TSimpleWebViewer;
+    SimpleWebViewerHelpExport: TSimpleWebViewer;
+    SimpleWebViewerHelpLambda: TSimpleWebViewer;
+    SimpleWebViewerHelpMultiLambda: TSimpleWebViewer;
     Notebook: TNotebook;
-    PageInformation: TPage;
+    PageControl1: TPageControl;
     PageHilfe: TPage;
-    PageLinks: TPage;
+    PageInformation: TPage;
     PageLizenzbedingungen: TPage;
     PageUpdates: TPage;
-    LHomePage:TLabel;
-    ScrollBox1: TScrollBox;
+    TabSheet1: TTabSheet;
+    TabSheet2: TTabSheet;
+    TabSheet3: TTabSheet;
+    TabSheet4: TTabSheet;
+    TabSheet5: TTabSheet;
+    TabSheet6: TTabSheet;
     procedure BCheckUpdateClick(Sender: TObject);
     procedure ExpandPanels1ArrangePanels(Sender: TObject);
     procedure FormActivate(Sender: TObject);
@@ -49,8 +57,10 @@ type
     procedure LHomepageClick(Sender: TObject);
     procedure Label5Click(Sender: TObject);
     procedure MyWebSpendenClick(Sender: TObject);
-    procedure MyWebViewerHelpChartClick(Sender: TObject);
+    procedure SimpleWebViewerHelpChartClick(Sender: TObject);
     procedure NotebookChangeBounds(Sender: TObject);
+    procedure PageHilfeBeforeShow(ASender: TObject; ANewPage: TPage;
+      ANewIndex: Integer);
   private
     { private declarations }
   public
@@ -122,28 +132,17 @@ end;
 
 procedure TForm2.FormCreate(Sender: TObject);
 begin
-  form2.MyWebViewerHelp.LoadFromString(LazarusResources.Find('HelpAllgemein').Value);
-  form2.MyWebViewerHelpChart.LoadFromString(LazarusResources.Find('HelpDiagramm').Value);
-  form2.MyWebViewerHelpAperture.LoadFromString(LazarusResources.Find('HelplinkeEinstellungen').Value);
-  form2.MyWebViewerHelpLambda.LoadFromString(LazarusResources.Find('HelpWellenlaenge').Value);
-  form2.MyWebViewerHelpMultiLambda.LoadFromString(LazarusResources.Find('HelpMehrereWellenlaengen').Value);
-  form2.MyWebViewerHelpExport.LoadFromString(LazarusResources.Find('HelpExport').Value);
+  form2.SimpleWebViewerHelp.LoadFromString(LazarusResources.Find('HelpAllgemein').Value);
+  form2.SimpleWebViewerHelpChart.LoadFromString(LazarusResources.Find('HelpDiagramm').Value);
+  form2.SimpleWebViewerHelpAperture.LoadFromString(LazarusResources.Find('HelplinkeEinstellungen').Value);
+  form2.SimpleWebViewerHelpLambda.LoadFromString(LazarusResources.Find('HelpWellenlaenge').Value);
+  form2.SimpleWebViewerHelpMultiLambda.LoadFromString(LazarusResources.Find('HelpMehrereWellenlaengen').Value);
+  form2.SimpleWebViewerHelpExport.LoadFromString(LazarusResources.Find('HelpExport').Value);
   form2.MyWebLizenzbedingungen.LoadFromString(LazarusResources.Find('Lizenz').Value);
-  form2.MyWebProgrammer.LoadFromString(LazarusResources.Find('MitProgrammieren').Value);
   form2.MyWebInformation.LoadFromString(LazarusResources.Find('Info').Value);
 
 
 
-  MyRollOutHelp.Left:=0;
-  MyRollOutHelp.Width:=PageHilfe.Width;
-
-
-  ExpandPanels1.AddPanel(MyRollOutHelp);
-  ExpandPanels1.AddPanel(MyRollOutHelpChart);
-  ExpandPanels1.AddPanel(MyRollOutHelpAperture);
-  ExpandPanels1.AddPanel(MyRollOutHelpLambda);
-  ExpandPanels1.AddPanel(MyRollOutHelpMultiLambda);
-  ExpandPanels1.AddPanel(MyRollOutHelpExport);
 end;
 
 procedure TForm2.FormShow(Sender: TObject);
@@ -167,12 +166,18 @@ begin
 
 end;
 
-procedure TForm2.MyWebViewerHelpChartClick(Sender: TObject);
+procedure TForm2.SimpleWebViewerHelpChartClick(Sender: TObject);
 begin
 
 end;
 
 procedure TForm2.NotebookChangeBounds(Sender: TObject);
+begin
+
+end;
+
+procedure TForm2.PageHilfeBeforeShow(ASender: TObject; ANewPage: TPage;
+  ANewIndex: Integer);
 begin
 
 end;
