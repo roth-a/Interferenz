@@ -102,6 +102,7 @@ type
     MenuItem14: TMenuItem;
     MenuItem15: TMenuItem;
     MenuItem16: TMenuItem;
+    MenuItem17: TMenuItem;
     MenuItem8: TMenuItem;
     MyRollOutCountPoints: TPanel;
     MyRollOutHelpLittle: TMyRollOut;
@@ -217,6 +218,7 @@ type
     procedure IdleFunc(Sender: TObject; var Done: Boolean);
     procedure Label10Click(Sender: TObject);
     procedure Label5Click(Sender: TObject);
+    procedure MenuItem17Click(Sender: TObject);
     procedure MenuItem1Click(Sender: TObject);
     procedure OptioApertureCollapse(Sender: TObject);
     procedure OptioChartCollapse(Sender: TObject);
@@ -1359,6 +1361,12 @@ end;
 procedure TForm1.Label5Click(Sender: TObject);
 begin
   PExpandVisible(BSlitWidth, not PSlitWidthExpand.Visible);
+end;
+
+procedure TForm1.MenuItem17Click(Sender: TObject);
+begin
+  form2.Notebook.PageIndex:=2;
+  Form2.Show;
 end;
 
 

@@ -130,8 +130,10 @@ object Form1: TForm1
           'clWhite'
           'clWhite'
           'clWhite'
+          'clWhite'
         )
         ItemColors.Strings = (
+          'clBlue'
           'clBlue'
           'clBlue'
           'clBlue'
@@ -1021,8 +1023,10 @@ object Form1: TForm1
             'clWhite'
             'clWhite'
             'clWhite'
+            'clWhite'
           )
           ItemColors.Strings = (
+            'clBlue'
             'clBlue'
             'clBlue'
             'clBlue'
@@ -1069,8 +1073,10 @@ object Form1: TForm1
             'clWhite'
             'clWhite'
             'clWhite'
+            'clWhite'
           )
           ItemColors.Strings = (
+            'clBlue'
             'clBlue'
             'clBlue'
             'clBlue'
@@ -1427,6 +1433,10 @@ object Form1: TForm1
       object MenuItem13: TMenuItem
         Action = ActionVersion
         OnClick = ActionVersionExecute
+      end
+      object MenuItem17: TMenuItem
+        Caption = 'Lizens'
+        OnClick = MenuItem17Click
       end
     end
   end
