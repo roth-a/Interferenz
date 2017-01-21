@@ -15,11 +15,10 @@ and run the binary interferenz
 Make sure the Interferenz.exe and make sure the **glut32.dll** is in the same directory
 
 
-## Contact
-
-You can just write me an e-mail to roth-a@gmx.de  
+## Screenshots
 
 ![](screenshot.jpg)
+
 ![](screenshot2.png)
 
 # Development  Info
