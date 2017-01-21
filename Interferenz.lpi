@@ -84,7 +84,6 @@
         <Filename Value="uanderes.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="Uanderes"/>
-        <IsVisibleTab Value="True"/>
         <EditorIndex Value="1"/>
         <TopLine Value="2865"/>
         <CursorPos X="26" Y="2882"/>
@@ -147,9 +146,10 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="Unit2"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="2"/>
         <TopLine Value="126"/>
-        <CursorPos X="127" Y="130"/>
+        <CursorPos X="90" Y="135"/>
         <UsageCount Value="200"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>

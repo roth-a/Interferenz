@@ -1,4 +1,8 @@
-# Use
+# Interferenz
+
+I created this program to explain the diffraction pattern of an arbitrary tilted grating. With the explanation and this simulation [I was awarded first place](http://www.jugend-forscht.de/projektdatenbank/simulation-der-interferenzbilder-am-n-fach-spalt.html) in the county and state youth science competition Jugend Forscht.
+
+## Binary
 
 #### Linux
 Dependency
