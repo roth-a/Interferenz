@@ -4,15 +4,11 @@ I created this program to explain the diffraction pattern of an arbitrary tilted
 
 ## Binary
 
-#### Linux
-Dependency
-```
-sudo apt install freeglut3-dev  
-```
-and run the binary interferenz
+#### Linux 64 bit
+Just run the binary bin/Interferenz
 
-#### Windows 
-Make sure the Interferenz.exe and make sure the **glut32.dll** is in the same directory
+#### Windows 64 bit
+Just run the binary bin/Interferenz.exe 
 
 
 ## Screenshots
@@ -29,6 +25,10 @@ Synapse:  http://www.ararat.cz/synapse
   When you're in the Interferenz directory do:
   svn checkout https://svn.code.sf.net/p/synalist/code/trunk synapse
 
+nxPascal:  https://github.com/Zaflis/nxpascal
+  When you're in the Interferenz directory do:
+  git clone https://github.com/Zaflis/nxpascal.git
+
 Expandpanels:   http://wiki.lazarus.freepascal.org/TMyRollOut_and_ExpandPanel  
   Download and install the component into Lazarus
   git clone https://github.com/roth-a/expandpanels.git
@@ -41,9 +41,6 @@ SimpleWebViewer: https://github.com/roth-a/SimpleWebViewer Download and install 
       
 GroupHeader:  https://github.com/roth-a/GroupHeader    Download and install the component into Lazarus
 	  git clone https://github.com/roth-a/GroupHeader.git
-
-freeglut3-dev  :  sudo apt install freeglut3-dev
-
 
 
 ### Install FPC and Lazarus 
