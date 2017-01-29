@@ -60,7 +60,7 @@ Lazarus  > 1.6
 fpc
 
 ```
-sudo apt-get install fp-compiler fp-units-base fp-units-fcl fp-units-gtk fp-units-rtl fpc-abi-2.2 libc6 libgdk-pixbuf-dev libgdk-pixbuf2 libglib1.2ldbl libgtk1.2 libgtk1.2-dev libx11-6 libxext6 libxi6 fp-units-db fp-units-gfx fp-units-gnome1 fp-units-misc fp-units-net fpc-source fp-utils libglib1.2-dev libgdk-pixbuf2 libgdk-pixbuf-dev libgtk1.2 libgtk1.2-common libgtk1.2-dev
+sudo apt-get install fp-compiler fp-units-base fp-units-fcl fp-units-gtk2 fp-units-rtl libc6 libglib2.0-dev  libx11-6 libxext6 libxi6 fp-units-db fp-units-gfx fp-units-misc fp-units-net fpc-source fp-utils libglib2.0-dev libgdk-pixbuf2.0-dev  libgtk2.0-dev 
 ```
 
 
