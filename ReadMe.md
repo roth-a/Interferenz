@@ -47,6 +47,7 @@ GroupHeader:  https://github.com/roth-a/GroupHeader    Download and install the 
 
 #### Windows 
 Just download and install lazarus and fpc from:	http://www.lazarus-ide.org/
+
 You can download the daily snapshot from here:	http://snapshots.lazarus.shikami.org/lazarus/
 
 #### Linux 
