@@ -675,7 +675,7 @@ begin
 
   gradient:=TGradientBackgroundChart.Create(box);
 
-  box.OnResize:=@self.Onresize;
+  //box.OnResize:=@self.Onresize;
 
   OldChart.ZoomMin:=self.box.LSAxis.Koor.Min;
   OldChart.ZoomMax:=self.box.LSaxis.Koor.Max;
@@ -755,7 +755,7 @@ begin
   OldChart.ZoomMin:=self.box.xAxis.Koor.Min;
   OldChart.ZoomMax:=self.box.xAxis.Koor.Max;
   OldChart.OldQuality:=Quality;
-  SaS.box.Update;
+  //SaS.box.Update;
 
   if Form1.ProgrammerInfo then
     begin
@@ -1088,7 +1088,7 @@ end;
 -----------------------------------------------------------------------------}
 procedure TSaSArray.ChangeAllColor(acolor,agridcolor:Tcolor);
 begin
-  box.Color:=acolor;
+  //box.Color:=acolor;
   with box do
     begin
     header.Color:=acolor;
@@ -2415,7 +2415,7 @@ begin
   FuncImage:=getImageFunc(ImageAxisType);
 
   ValuesMaxMin.Clear;
-  ChartMinMax.Font.Color:=self.Chart.Color;
+  //ChartMinMax.Font.Color:= self.Chart.Color;
   
   if CalcMaxima then
     begin
@@ -4289,7 +4289,7 @@ begin
     case xAxis of
       xangle:
         begin
-        Dimension:=KorrectUmlaut('°');
+        Dimension:=(*KorrectUmlaut*)('°');
         DimensionDescription:='Horizontaler Winkel';
         end;
       xmeter:
@@ -4321,7 +4321,7 @@ begin
       LSIntensity:
         begin
         Dimension:='';
-        DimensionDescription:='Intensit'+KorrectUmlaut('ä')+'t';
+        DimensionDescription:='Intensit'+(*KorrectUmlaut*)('ä')+'t';
         end;
     end;
   with Box.LSAxis do
@@ -4336,7 +4336,7 @@ begin
     case ImageAxis of
       ImageAngle:
         begin
-        Dimension:=KorrectUmlaut('°');
+        Dimension:=(*(*KorrectUmlaut*)*)('°');
         DimensionDescription:='Vertikaler Winkel';
         end;
       ImageMeter:
@@ -4354,9 +4354,9 @@ begin
 
   s:=Box.LSAxis.DimensionDescription;
   case xAxis of
-    xangle:  s:=s+' '+KorrectUmlaut('ü')+'ber dem Winkel';
-    xmeter:  s:=s+' '+KorrectUmlaut('ü')+'ber der x-Koordinate';
-    xlambda:  s:=s+' '+KorrectUmlaut('ü')+'ber dem Gangunterschied';
+    xangle:  s:=s+' '+(*(*KorrectUmlaut*)*)('ü')+'ber dem Winkel';
+    xmeter:  s:=s+' '+(*(*KorrectUmlaut*)*)('ü')+'ber der x-Koordinate';
+    xlambda:  s:=s+' '+(*(*KorrectUmlaut*)*)('ü')+'ber dem Gangunterschied';
   end;
 
   box.Header.Text:=s;

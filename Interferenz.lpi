@@ -59,7 +59,7 @@
         <MinVersion Valid="True"/>
       </Item6>
     </RequiredPackages>
-    <Units Count="130">
+    <Units Count="136">
       <Unit0>
         <Filename Value="Interferenz.lpr"/>
         <IsPartOfProject Value="True"/>
@@ -74,8 +74,9 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="Unit1"/>
-        <TopLine Value="1944"/>
-        <CursorPos X="30" Y="1955"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="1901"/>
+        <CursorPos Y="1921"/>
         <UsageCount Value="200"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
@@ -84,20 +85,18 @@
         <Filename Value="uanderes.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="Uanderes"/>
-        <EditorIndex Value="3"/>
-        <TopLine Value="51"/>
-        <CursorPos X="5" Y="62"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="534"/>
+        <CursorPos Y="548"/>
         <UsageCount Value="200"/>
-        <Loaded Value="True"/>
       </Unit2>
       <Unit3>
         <Filename Value="uchart.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="UChart"/>
-        <IsVisibleTab Value="True"/>
         <EditorIndex Value="1"/>
-        <TopLine Value="845"/>
-        <CursorPos X="64" Y="855"/>
+        <TopLine Value="532"/>
+        <CursorPos X="3" Y="542"/>
         <UsageCount Value="201"/>
         <Loaded Value="True"/>
       </Unit3>
@@ -105,9 +104,9 @@
         <Filename Value="uapparatus.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="Uapparatus"/>
-        <EditorIndex Value="4"/>
-        <TopLine Value="3627"/>
-        <CursorPos X="3" Y="3629"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="1079"/>
+        <CursorPos X="14" Y="1091"/>
         <UsageCount Value="205"/>
         <Bookmarks Count="1">
           <Item0 X="43" Y="2127" ID="8"/>
@@ -171,248 +170,248 @@
         <UnitName Value="ExpandPanels"/>
         <TopLine Value="68"/>
         <CursorPos X="34" Y="65"/>
-        <UsageCount Value="9"/>
+        <UsageCount Value="8"/>
       </Unit10>
       <Unit11>
         <Filename Value="/usr/share/fpcsrc/packages/extra/opengl/glu.pp"/>
         <UnitName Value="GLu"/>
         <TopLine Value="107"/>
         <CursorPos X="32" Y="124"/>
-        <UsageCount Value="5"/>
+        <UsageCount Value="4"/>
       </Unit11>
       <Unit12>
         <Filename Value="unit1.lfm"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="238"/>
         <CursorPos X="30" Y="255"/>
-        <UsageCount Value="10"/>
+        <UsageCount Value="9"/>
         <DefaultSyntaxHighlighter Value="LFM"/>
       </Unit12>
       <Unit13>
         <Filename Value="../../meine-Installierten-Programme/lazarus/lcl/include/application.inc"/>
         <TopLine Value="1741"/>
         <CursorPos Y="1758"/>
-        <UsageCount Value="5"/>
+        <UsageCount Value="4"/>
       </Unit13>
       <Unit14>
         <Filename Value="../../meine-Installierten-Programme/lazarus/components/opengl/glgtkglxcontext.pas"/>
         <UnitName Value="GLGtkGlxContext"/>
         <TopLine Value="744"/>
         <CursorPos Y="761"/>
-        <UsageCount Value="5"/>
+        <UsageCount Value="4"/>
       </Unit14>
       <Unit15>
         <Filename Value="/usr/share/fpcsrc/rtl/unix/sysutils.pp"/>
-        <UsageCount Value="10"/>
+        <UsageCount Value="9"/>
       </Unit15>
       <Unit16>
         <Filename Value="../../meine-Installierten-Programme/lazarus/components/TextSuite_0.0.0_linux_source/source/TextSuite.pas"/>
         <TopLine Value="385"/>
         <CursorPos X="13" Y="402"/>
-        <UsageCount Value="9"/>
+        <UsageCount Value="8"/>
       </Unit16>
       <Unit17>
         <Filename Value="../../../Komponenten/MyWebViewer/umywebviewer.pas"/>
         <UnitName Value="UMyWebViewer"/>
         <TopLine Value="31"/>
-        <UsageCount Value="9"/>
+        <UsageCount Value="8"/>
       </Unit17>
       <Unit18>
         <Filename Value="/usr/share/fpcsrc/rtl/inc/varianth.inc"/>
         <TopLine Value="438"/>
         <CursorPos X="10" Y="455"/>
-        <UsageCount Value="2"/>
+        <UsageCount Value="1"/>
       </Unit18>
       <Unit19>
         <Filename Value="/usr/share/fpcsrc/rtl/inc/variant.inc"/>
         <TopLine Value="1010"/>
         <CursorPos X="5" Y="1041"/>
-        <UsageCount Value="2"/>
+        <UsageCount Value="1"/>
       </Unit19>
       <Unit20>
         <Filename Value="../../meine-Installierten-Programme/lazarus/lcl/include/customform.inc"/>
         <TopLine Value="2122"/>
         <CursorPos Y="2139"/>
-        <UsageCount Value="5"/>
+        <UsageCount Value="4"/>
       </Unit20>
       <Unit21>
         <Filename Value="../../meine-Installierten-Programme/lazarus/lcl/interfaces/gtk/gtkproc.inc"/>
         <TopLine Value="7002"/>
         <CursorPos Y="7019"/>
-        <UsageCount Value="5"/>
+        <UsageCount Value="4"/>
       </Unit21>
       <Unit22>
         <Filename Value="../../meine-Installierten-Programme/lazarus/lcl/include/scrollingwincontrol.inc"/>
         <TopLine Value="55"/>
         <CursorPos Y="72"/>
-        <UsageCount Value="5"/>
+        <UsageCount Value="4"/>
       </Unit22>
       <Unit23>
         <Filename Value="../../meine-Installierten-Programme/lazarus/lcl/interfaces/gtk/gtkcallback.inc"/>
         <TopLine Value="268"/>
         <CursorPos Y="285"/>
-        <UsageCount Value="5"/>
+        <UsageCount Value="4"/>
       </Unit23>
       <Unit24>
         <Filename Value="/Komponenten/expandpanels/expandpanels.pas"/>
         <UnitName Value="ExpandPanels"/>
         <TopLine Value="81"/>
         <CursorPos X="20" Y="95"/>
-        <UsageCount Value="5"/>
+        <UsageCount Value="4"/>
       </Unit24>
       <Unit25>
         <Filename Value="../../Programme/lazarus/lcl/interfaces/gtk/gtkwidgetset.inc"/>
         <TopLine Value="1145"/>
         <CursorPos Y="1162"/>
-        <UsageCount Value="10"/>
+        <UsageCount Value="9"/>
       </Unit25>
       <Unit26>
         <Filename Value="../../Programme/lazarus/lcl/stdctrls.pp"/>
         <UnitName Value="StdCtrls"/>
         <TopLine Value="1055"/>
         <CursorPos X="16" Y="1072"/>
-        <UsageCount Value="5"/>
+        <UsageCount Value="4"/>
       </Unit26>
       <Unit27>
         <Filename Value="../../Programme/lazarus/lcl/controls.pp"/>
         <UnitName Value="Controls"/>
         <TopLine Value="853"/>
         <CursorPos X="14" Y="870"/>
-        <UsageCount Value="5"/>
+        <UsageCount Value="4"/>
       </Unit27>
       <Unit28>
         <Filename Value="../../Programme/lazarus/lcl/extctrls.pp"/>
         <UnitName Value="ExtCtrls"/>
         <TopLine Value="900"/>
         <CursorPos X="17" Y="917"/>
-        <UsageCount Value="2"/>
+        <UsageCount Value="1"/>
       </Unit28>
       <Unit29>
         <Filename Value="/usr/share/fpcsrc/rtl/objpas/math.pp"/>
         <TopLine Value="136"/>
         <CursorPos X="10" Y="153"/>
-        <UsageCount Value="10"/>
+        <UsageCount Value="9"/>
       </Unit29>
       <Unit30>
         <Filename Value="../../Programme/lazarus/lcl/include/customedit.inc"/>
         <TopLine Value="422"/>
         <CursorPos Y="439"/>
-        <UsageCount Value="10"/>
+        <UsageCount Value="9"/>
       </Unit30>
       <Unit31>
         <Filename Value="../../Programme/lazarus/lcl/include/trackbar.inc"/>
         <TopLine Value="298"/>
         <CursorPos Y="315"/>
-        <UsageCount Value="10"/>
+        <UsageCount Value="9"/>
       </Unit31>
       <Unit32>
         <Filename Value="../../Programme/lazarus/components/opengl/openglcontext.pas"/>
         <UnitName Value="OpenGLContext"/>
         <TopLine Value="138"/>
         <CursorPos X="10" Y="138"/>
-        <UsageCount Value="10"/>
+        <UsageCount Value="9"/>
       </Unit32>
       <Unit33>
         <Filename Value="../../Programme/lazarus/lcl/include/spinedit.inc"/>
         <TopLine Value="40"/>
         <CursorPos Y="57"/>
-        <UsageCount Value="10"/>
+        <UsageCount Value="9"/>
       </Unit33>
       <Unit34>
         <Filename Value="../../Programme/lazarus/lcl/include/control.inc"/>
         <TopLine Value="1194"/>
         <CursorPos X="32" Y="1197"/>
-        <UsageCount Value="5"/>
+        <UsageCount Value="4"/>
       </Unit34>
       <Unit35>
         <Filename Value="../../Programme/lazarus/lcl/include/wincontrol.inc"/>
         <TopLine Value="7002"/>
         <CursorPos X="16" Y="7004"/>
-        <UsageCount Value="5"/>
+        <UsageCount Value="4"/>
       </Unit35>
       <Unit36>
         <Filename Value="../../Programme/lazarus/lcl/interfaces/gtk/gtkcallback.inc"/>
         <TopLine Value="440"/>
         <CursorPos Y="457"/>
-        <UsageCount Value="10"/>
+        <UsageCount Value="9"/>
       </Unit36>
       <Unit37>
         <Filename Value="../../Programme/lazarus/lcl/include/lclintfh.inc"/>
         <TopLine Value="53"/>
         <CursorPos X="11" Y="70"/>
-        <UsageCount Value="2"/>
+        <UsageCount Value="1"/>
       </Unit37>
       <Unit38>
         <Filename Value="../../Programme/lazarus/lcl/include/intfbaselcl.inc"/>
         <TopLine Value="184"/>
         <CursorPos X="3" Y="190"/>
-        <UsageCount Value="2"/>
+        <UsageCount Value="1"/>
       </Unit38>
       <Unit39>
         <Filename Value="../../Programme/lazarus/lcl/menus.pp"/>
         <UnitName Value="Menus"/>
         <TopLine Value="352"/>
         <CursorPos X="14" Y="369"/>
-        <UsageCount Value="2"/>
+        <UsageCount Value="1"/>
       </Unit39>
       <Unit40>
         <Filename Value="../../Programme/lazarus/lcl/include/popupmenu.inc"/>
         <TopLine Value="47"/>
         <CursorPos X="14" Y="53"/>
-        <UsageCount Value="2"/>
+        <UsageCount Value="1"/>
       </Unit40>
       <Unit41>
         <Filename Value="../../Programme/lazarus/components/opengl/glgtkglxcontext.pas"/>
         <UnitName Value="GLGtkGlxContext"/>
         <TopLine Value="464"/>
         <CursorPos Y="481"/>
-        <UsageCount Value="2"/>
+        <UsageCount Value="1"/>
       </Unit41>
       <Unit42>
         <Filename Value="/home/alexander/Programme/lazarus/lcl/lconvencoding.pas"/>
         <UnitName Value="LConvEncoding"/>
         <TopLine Value="11"/>
         <CursorPos X="28" Y="28"/>
-        <UsageCount Value="7"/>
+        <UsageCount Value="6"/>
       </Unit42>
       <Unit43>
         <Filename Value="/home/alexander/Programme/lazarus/lcl/lclmemmanager.pas"/>
         <UnitName Value="LCLMemManager"/>
         <TopLine Value="82"/>
         <CursorPos X="11" Y="99"/>
-        <UsageCount Value="7"/>
+        <UsageCount Value="6"/>
       </Unit43>
       <Unit44>
         <Filename Value="/home/alexander/Programme/lazarus/lcl/include/customform.inc"/>
         <TopLine Value="1262"/>
         <CursorPos Y="1279"/>
-        <UsageCount Value="2"/>
+        <UsageCount Value="1"/>
       </Unit44>
       <Unit45>
         <Filename Value="../../../../Komponenten/GroupHeader/ugroupheader.pas"/>
         <UnitName Value="UGroupHeader"/>
         <CursorPos X="35" Y="7"/>
-        <UsageCount Value="10"/>
+        <UsageCount Value="9"/>
       </Unit45>
       <Unit46>
         <Filename Value="/home/alexander/Programme/lazarus/components/turbopower_ipro/iputils.pas"/>
         <UnitName Value="IpUtils"/>
         <TopLine Value="559"/>
         <CursorPos X="41" Y="576"/>
-        <UsageCount Value="7"/>
+        <UsageCount Value="6"/>
       </Unit46>
       <Unit47>
         <Filename Value="/home/alexander/Programme/lazarus/components/opengl/glgtkglxcontext.pas"/>
         <UnitName Value="GLGtkGlxContext"/>
         <TopLine Value="407"/>
         <CursorPos X="42" Y="424"/>
-        <UsageCount Value="7"/>
+        <UsageCount Value="6"/>
       </Unit47>
       <Unit48>
         <Filename Value="/usr/share/fpcsrc/2.2.2/rtl/inc/mathh.inc"/>
         <TopLine Value="48"/>
         <CursorPos X="14" Y="65"/>
-        <UsageCount Value="10"/>
+        <UsageCount Value="9"/>
       </Unit48>
       <Unit49>
         <Filename Value="uvector.pas"/>
@@ -427,7 +426,7 @@
         <Filename Value="/usr/share/fpcsrc/2.2.2/rtl/objpas/math.pp"/>
         <TopLine Value="691"/>
         <CursorPos X="14" Y="694"/>
-        <UsageCount Value="10"/>
+        <UsageCount Value="9"/>
       </Unit50>
       <Unit51>
         <Filename Value="/home/alexander/Programme/lazarus/ide/exttooleditdlg.pas"/>
@@ -437,319 +436,319 @@
         <UnitName Value="ExtToolEditDlg"/>
         <TopLine Value="249"/>
         <CursorPos X="34" Y="266"/>
-        <UsageCount Value="7"/>
+        <UsageCount Value="6"/>
       </Unit51>
       <Unit52>
         <Filename Value="/home/alexander/Programme/lazarus/lcl/buttons.pp"/>
         <UnitName Value="Buttons"/>
         <TopLine Value="149"/>
         <CursorPos X="15" Y="166"/>
-        <UsageCount Value="7"/>
+        <UsageCount Value="6"/>
       </Unit52>
       <Unit53>
         <Filename Value="/home/alexander/Programme/lazarus/components/opengl/openglcontext.pas"/>
         <UnitName Value="OpenGLContext"/>
         <TopLine Value="103"/>
         <CursorPos X="14" Y="120"/>
-        <UsageCount Value="8"/>
+        <UsageCount Value="7"/>
       </Unit53>
       <Unit54>
         <Filename Value="/usr/share/fpcsrc/2.2.2/rtl/objpas/classes/classesh.inc"/>
         <TopLine Value="86"/>
         <CursorPos X="4" Y="108"/>
-        <UsageCount Value="2"/>
+        <UsageCount Value="1"/>
       </Unit54>
       <Unit55>
         <Filename Value="/home/alexander/Programme/lazarus/lcl/controls.pp"/>
         <UnitName Value="Controls"/>
         <TopLine Value="906"/>
         <CursorPos X="15" Y="917"/>
-        <UsageCount Value="10"/>
+        <UsageCount Value="9"/>
       </Unit55>
       <Unit56>
         <Filename Value="/home/alexander/Programme/lazarus/lcl/include/control.inc"/>
         <TopLine Value="3737"/>
         <CursorPos X="3" Y="3742"/>
-        <UsageCount Value="10"/>
+        <UsageCount Value="9"/>
       </Unit56>
       <Unit57>
         <Filename Value="/home/alexander/Programme/lazarus/lcl/include/wincontrol.inc"/>
         <TopLine Value="6353"/>
         <CursorPos X="3" Y="6362"/>
-        <UsageCount Value="8"/>
+        <UsageCount Value="7"/>
       </Unit57>
       <Unit58>
         <Filename Value="/home/alexander/Programme/lazarus/ide/project.pp"/>
         <UnitName Value="Project"/>
         <TopLine Value="1847"/>
         <CursorPos X="8" Y="1884"/>
-        <UsageCount Value="2"/>
+        <UsageCount Value="1"/>
       </Unit58>
       <Unit59>
         <Filename Value="/home/alexander/Programme/lazarus/lcl/include/trackbar.inc"/>
         <TopLine Value="299"/>
         <CursorPos Y="316"/>
-        <UsageCount Value="2"/>
+        <UsageCount Value="1"/>
       </Unit59>
       <Unit60>
         <Filename Value="/home/alexander/Programme/lazarus/lcl/interfaces/gtk/gtkproc.inc"/>
         <TopLine Value="3538"/>
         <CursorPos Y="3555"/>
-        <UsageCount Value="5"/>
+        <UsageCount Value="4"/>
       </Unit60>
       <Unit61>
         <Filename Value="/home/alexander/Programme/lazarus/lcl/interfaces/gtk/gtkcallback.inc"/>
         <TopLine Value="2096"/>
         <CursorPos Y="2113"/>
-        <UsageCount Value="2"/>
+        <UsageCount Value="1"/>
       </Unit61>
       <Unit62>
         <Filename Value="/home/alexander/Programme/lazarus/lcl/interfaces/gtk2/gtk2wscomctrls.pp"/>
         <UnitName Value="Gtk2WSComCtrls"/>
         <TopLine Value="350"/>
         <CursorPos X="54" Y="375"/>
-        <UsageCount Value="2"/>
+        <UsageCount Value="1"/>
       </Unit62>
       <Unit63>
         <Filename Value="/home/alexander/Programme/lazarus/lcl/spin.pp"/>
         <UnitName Value="Spin"/>
         <TopLine Value="122"/>
         <CursorPos X="15" Y="133"/>
-        <UsageCount Value="10"/>
+        <UsageCount Value="9"/>
       </Unit63>
       <Unit64>
         <Filename Value="../../../../Komponenten/expandpanels/expandpanels.pas"/>
         <UnitName Value="ExpandPanels"/>
         <TopLine Value="17"/>
         <CursorPos Y="23"/>
-        <UsageCount Value="9"/>
+        <UsageCount Value="8"/>
       </Unit64>
       <Unit65>
         <Filename Value="/home/alexander/Programme/lazarus/ide/keymapping.pp"/>
         <UnitName Value="KeyMapping"/>
         <TopLine Value="361"/>
         <CursorPos X="20" Y="373"/>
-        <UsageCount Value="5"/>
+        <UsageCount Value="4"/>
       </Unit65>
       <Unit66>
         <Filename Value="/home/alexander/Programme/lazarus/lcl/interfaces/gtk2/gtk2callback.inc"/>
         <TopLine Value="118"/>
         <CursorPos Y="151"/>
-        <UsageCount Value="5"/>
+        <UsageCount Value="4"/>
       </Unit66>
       <Unit67>
         <Filename Value="/home/alexander/Programme/lazarus/lcl/interfaces/gtk/gtkwidgetset.inc"/>
         <TopLine Value="1170"/>
         <CursorPos X="15" Y="1176"/>
-        <UsageCount Value="5"/>
+        <UsageCount Value="4"/>
       </Unit67>
       <Unit68>
         <Filename Value="/hdc5/back/Programme/lazarus/lcl/extctrls.pp"/>
         <UnitName Value="ExtCtrls"/>
         <TopLine Value="1060"/>
         <CursorPos X="16" Y="1080"/>
-        <UsageCount Value="5"/>
+        <UsageCount Value="4"/>
       </Unit68>
       <Unit69>
         <Filename Value="/hdc5/back/Programme/lazarus/lcl/include/custompanel.inc"/>
         <TopLine Value="121"/>
         <CursorPos X="3" Y="106"/>
-        <UsageCount Value="5"/>
+        <UsageCount Value="4"/>
       </Unit69>
       <Unit70>
         <Filename Value="/hdc5/back/Programme/lazarus/lcl/controls.pp"/>
         <UnitName Value="Controls"/>
         <TopLine Value="1558"/>
         <CursorPos X="15" Y="1575"/>
-        <UsageCount Value="5"/>
+        <UsageCount Value="4"/>
       </Unit70>
       <Unit71>
         <Filename Value="/hdc5/back/Programme/lazarus/lcl/include/control.inc"/>
         <TopLine Value="3325"/>
         <CursorPos X="39" Y="3342"/>
-        <UsageCount Value="5"/>
+        <UsageCount Value="4"/>
       </Unit71>
       <Unit72>
         <Filename Value="/hdc5/back/Programme/lazarus/lcl/include/customform.inc"/>
         <TopLine Value="1262"/>
         <CursorPos Y="1279"/>
-        <UsageCount Value="5"/>
+        <UsageCount Value="4"/>
       </Unit72>
       <Unit73>
         <Filename Value="/hdc5/back/Programme/lazarus/lcl/include/wincontrol.inc"/>
         <TopLine Value="2857"/>
         <CursorPos Y="2884"/>
-        <UsageCount Value="5"/>
+        <UsageCount Value="4"/>
       </Unit73>
       <Unit74>
         <Filename Value="/hdc5/back/Programme/lazarus/lcl/include/winapih.inc"/>
         <TopLine Value="223"/>
         <CursorPos X="10" Y="240"/>
-        <UsageCount Value="5"/>
+        <UsageCount Value="4"/>
       </Unit74>
       <Unit75>
         <Filename Value="/hdc5/back/Programme/lazarus/lcl/include/intfbasewinapi.inc"/>
         <TopLine Value="1496"/>
         <CursorPos X="3" Y="1522"/>
-        <UsageCount Value="5"/>
+        <UsageCount Value="4"/>
       </Unit75>
       <Unit76>
         <Filename Value="/sda5/LinuxPrograms/lazarus/lcl/include/wincontrol.inc"/>
         <TopLine Value="2872"/>
         <CursorPos Y="2889"/>
-        <UsageCount Value="5"/>
+        <UsageCount Value="4"/>
       </Unit76>
       <Unit77>
         <Filename Value="/sda5/LinuxPrograms/lazarus/lcl/interfaces/gtk/gtkproc.inc"/>
         <TopLine Value="3954"/>
         <CursorPos Y="3971"/>
-        <UsageCount Value="5"/>
+        <UsageCount Value="4"/>
       </Unit77>
       <Unit78>
         <Filename Value="/sda5/LinuxPrograms/lazarus/lcl/interfaces/gtk/gtkint.pp"/>
         <UnitName Value="GtkInt"/>
         <TopLine Value="16"/>
         <CursorPos X="47" Y="34"/>
-        <UsageCount Value="5"/>
+        <UsageCount Value="4"/>
       </Unit78>
       <Unit79>
         <Filename Value="/sda5/LinuxPrograms/lazarus/lcl/interfaces/gtk/gtkwidgetset.inc"/>
         <TopLine Value="103"/>
         <CursorPos Y="120"/>
-        <UsageCount Value="5"/>
+        <UsageCount Value="4"/>
       </Unit79>
       <Unit80>
         <Filename Value="/sda5/LinuxPrograms/fpc/rtl/inc/objpash.inc"/>
         <TopLine Value="158"/>
         <CursorPos X="23" Y="175"/>
-        <UsageCount Value="5"/>
+        <UsageCount Value="4"/>
       </Unit80>
       <Unit81>
         <Filename Value="/sda5/LinuxPrograms/fpc/rtl/inc/objpas.inc"/>
         <TopLine Value="133"/>
         <CursorPos X="9" Y="138"/>
-        <UsageCount Value="5"/>
+        <UsageCount Value="4"/>
       </Unit81>
       <Unit82>
         <Filename Value="/sda5/LinuxPrograms/lazarus/lcl/controls.pp"/>
         <UnitName Value="Controls"/>
         <TopLine Value="1017"/>
         <CursorPos X="15" Y="1034"/>
-        <UsageCount Value="6"/>
+        <UsageCount Value="5"/>
       </Unit82>
       <Unit83>
         <Filename Value="/sda5/LinuxPrograms/lazarus/lcl/include/control.inc"/>
         <TopLine Value="3006"/>
         <CursorPos Y="3023"/>
-        <UsageCount Value="8"/>
+        <UsageCount Value="7"/>
       </Unit83>
       <Unit84>
         <Filename Value="/sda5/LinuxPrograms/fpc/rtl/objpas/classes/classesh.inc"/>
         <TopLine Value="1467"/>
         <CursorPos X="3" Y="1484"/>
-        <UsageCount Value="8"/>
+        <UsageCount Value="7"/>
       </Unit84>
       <Unit85>
         <Filename Value="/sda5/LinuxPrograms/lazarus/lcl/interfaces/gtk/gtkwsbuttons.pp"/>
         <UnitName Value="GtkWSButtons"/>
         <TopLine Value="90"/>
         <CursorPos Y="107"/>
-        <UsageCount Value="7"/>
+        <UsageCount Value="6"/>
       </Unit85>
       <Unit86>
         <Filename Value="/sda5/LinuxPrograms/lazarus/lcl/stdctrls.pp"/>
         <UnitName Value="StdCtrls"/>
         <TopLine Value="748"/>
         <CursorPos X="3" Y="765"/>
-        <UsageCount Value="8"/>
+        <UsageCount Value="7"/>
       </Unit86>
       <Unit87>
         <Filename Value="/sda5/LinuxPrograms/lazarus/lcl/extctrls.pp"/>
         <UnitName Value="ExtCtrls"/>
         <TopLine Value="1020"/>
         <CursorPos X="37" Y="1037"/>
-        <UsageCount Value="8"/>
+        <UsageCount Value="7"/>
       </Unit87>
       <Unit88>
         <Filename Value="/home/alexander/Programme/lazarus/lcl/extctrls.pp"/>
         <UnitName Value="ExtCtrls"/>
         <TopLine Value="1014"/>
         <CursorPos X="19" Y="1030"/>
-        <UsageCount Value="8"/>
+        <UsageCount Value="7"/>
       </Unit88>
       <Unit89>
         <Filename Value="/home/alexander/Programme/lazarus/lcl/include/customcontrol.inc"/>
         <TopLine Value="71"/>
         <CursorPos X="3" Y="80"/>
-        <UsageCount Value="8"/>
+        <UsageCount Value="7"/>
       </Unit89>
       <Unit90>
         <Filename Value="/home/alexander/Programme/lazarus/lcl/include/custompanel.inc"/>
         <TopLine Value="125"/>
         <CursorPos X="44" Y="135"/>
-        <UsageCount Value="8"/>
+        <UsageCount Value="7"/>
       </Unit90>
       <Unit91>
         <Filename Value="../../../../Komponenten/RothPanel/rothpanel.pas"/>
         <UnitName Value="RothPanel"/>
-        <UsageCount Value="8"/>
+        <UsageCount Value="7"/>
       </Unit91>
       <Unit92>
         <Filename Value="../../../../Komponenten/RothPanel/rothpanel1.pas"/>
         <UnitName Value="RothPanel1"/>
         <CursorPos Y="21"/>
-        <UsageCount Value="8"/>
+        <UsageCount Value="7"/>
       </Unit92>
       <Unit93>
         <Filename Value="/home/alexander/Programme/lazarus/ide/compoptsmodes.pas"/>
         <UnitName Value="CompOptsModes"/>
         <TopLine Value="35"/>
         <CursorPos X="81" Y="44"/>
-        <UsageCount Value="8"/>
+        <UsageCount Value="7"/>
       </Unit93>
       <Unit94>
         <Filename Value="/usr/share/fpcsrc/2.3.1/packages/fcl-base/src/inifiles.pp"/>
         <UnitName Value="IniFiles"/>
         <TopLine Value="504"/>
         <CursorPos X="18" Y="507"/>
-        <UsageCount Value="9"/>
+        <UsageCount Value="8"/>
       </Unit94>
       <Unit95>
         <Filename Value="/usr/share/fpcsrc/2.3.1/rtl/objpas/sysutils/sysstrh.inc"/>
         <TopLine Value="177"/>
         <CursorPos X="10" Y="189"/>
-        <UsageCount Value="9"/>
+        <UsageCount Value="8"/>
       </Unit95>
       <Unit96>
         <Filename Value="/usr/share/fpcsrc/2.3.1/rtl/objpas/sysutils/sysstr.inc"/>
         <TopLine Value="1075"/>
         <CursorPos X="45" Y="1082"/>
-        <UsageCount Value="9"/>
+        <UsageCount Value="8"/>
       </Unit96>
       <Unit97>
         <Filename Value="/usr/share/fpcsrc/2.3.1/rtl/inc/systemh.inc"/>
         <TopLine Value="742"/>
         <CursorPos X="11" Y="754"/>
-        <UsageCount Value="9"/>
+        <UsageCount Value="8"/>
       </Unit97>
       <Unit98>
         <Filename Value="/usr/share/fpcsrc/2.3.1/rtl/unix/classes.pp"/>
         <UnitName Value="Classes"/>
-        <UsageCount Value="8"/>
+        <UsageCount Value="7"/>
       </Unit98>
       <Unit99>
         <Filename Value="/home/alexander/Programme/lazarus/lcl/lresources.pp"/>
         <UnitName Value="LResources"/>
         <TopLine Value="1377"/>
         <CursorPos Y="1389"/>
-        <UsageCount Value="9"/>
+        <UsageCount Value="8"/>
       </Unit99>
       <Unit100>
         <Filename Value="/usr/share/fpcsrc/2.3.1/packages/opengl/src/glu.pp"/>
         <UnitName Value="GLu"/>
         <TopLine Value="128"/>
         <CursorPos X="74" Y="140"/>
-        <UsageCount Value="10"/>
+        <UsageCount Value="9"/>
       </Unit100>
       <Unit101>
         <Filename Value="/home/alexander/Programme/lazarus/ide/compoptcondpropsdlg.pas"/>
@@ -759,95 +758,95 @@
         <UnitName Value="CompOptCondPropsDlg"/>
         <TopLine Value="79"/>
         <CursorPos X="37" Y="91"/>
-        <UsageCount Value="10"/>
+        <UsageCount Value="9"/>
       </Unit101>
       <Unit102>
         <Filename Value="/home/alexander/Programme/lazarus/lcl/stdctrls.pp"/>
         <UnitName Value="StdCtrls"/>
         <TopLine Value="725"/>
         <CursorPos X="17" Y="745"/>
-        <UsageCount Value="10"/>
+        <UsageCount Value="9"/>
       </Unit102>
       <Unit103>
         <Filename Value="/home/alexander/Programme/lazarus/lcl/include/spinedit.inc"/>
         <TopLine Value="219"/>
         <CursorPos X="3" Y="230"/>
-        <UsageCount Value="10"/>
+        <UsageCount Value="9"/>
       </Unit103>
       <Unit104>
         <Filename Value="/home/alexander/Programme/lazarus/lcl/include/customedit.inc"/>
         <TopLine Value="460"/>
         <CursorPos Y="472"/>
-        <UsageCount Value="10"/>
+        <UsageCount Value="9"/>
       </Unit104>
       <Unit105>
         <Filename Value="/sda5/LinuxPrograms/lazarus/lcl/dialogs.pp"/>
         <UnitName Value="Dialogs"/>
         <TopLine Value="22"/>
         <CursorPos X="13" Y="43"/>
-        <UsageCount Value="10"/>
+        <UsageCount Value="9"/>
       </Unit105>
       <Unit106>
         <Filename Value="/sda5/LinuxPrograms/fpc/rtl/objpas/math.pp"/>
         <TopLine Value="2116"/>
         <CursorPos Y="2120"/>
-        <UsageCount Value="10"/>
+        <UsageCount Value="9"/>
       </Unit106>
       <Unit107>
         <Filename Value="/sda5/LinuxPrograms/lazarus/components/opengl/openglcontext.pas"/>
         <UnitName Value="OpenGLContext"/>
         <TopLine Value="27"/>
         <CursorPos X="14" Y="46"/>
-        <UsageCount Value="10"/>
+        <UsageCount Value="9"/>
       </Unit107>
       <Unit108>
         <Filename Value="/sda5/LinuxPrograms/lazarus/lcl/menus.pp"/>
         <UnitName Value="Menus"/>
         <TopLine Value="196"/>
         <CursorPos X="15" Y="213"/>
-        <UsageCount Value="10"/>
+        <UsageCount Value="9"/>
       </Unit108>
       <Unit109>
         <Filename Value="/sda5/LinuxPrograms/fpc/rtl/inc/systemh.inc"/>
         <TopLine Value="858"/>
         <CursorPos X="11" Y="875"/>
-        <UsageCount Value="10"/>
+        <UsageCount Value="9"/>
       </Unit109>
       <Unit110>
         <Filename Value="/sda5/LinuxPrograms/fpc/rtl/unix/sysdir.inc"/>
         <TopLine Value="21"/>
         <CursorPos Y="32"/>
-        <UsageCount Value="10"/>
+        <UsageCount Value="9"/>
       </Unit110>
       <Unit111>
         <Filename Value="/sda5/LinuxPrograms/lazarus/lcl/forms.pp"/>
         <UnitName Value="Forms"/>
         <TopLine Value="673"/>
         <CursorPos X="17" Y="690"/>
-        <UsageCount Value="10"/>
+        <UsageCount Value="9"/>
       </Unit111>
       <Unit112>
         <Filename Value="/sda5/LinuxPrograms/lazarus/lcl/include/customform.inc"/>
         <TopLine Value="1279"/>
         <CursorPos X="3" Y="1287"/>
-        <UsageCount Value="10"/>
+        <UsageCount Value="9"/>
       </Unit112>
       <Unit113>
         <Filename Value="synapse/clamsend.pas"/>
         <EditorIndex Value="-1"/>
-        <UsageCount Value="10"/>
+        <UsageCount Value="9"/>
       </Unit113>
       <Unit114>
         <Filename Value="synapse/httpsend.pas"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="372"/>
         <CursorPos X="42" Y="406"/>
-        <UsageCount Value="20"/>
+        <UsageCount Value="19"/>
       </Unit114>
       <Unit115>
         <Filename Value="unit2.lfm"/>
         <EditorIndex Value="-1"/>
-        <UsageCount Value="10"/>
+        <UsageCount Value="9"/>
         <DefaultSyntaxHighlighter Value="LFM"/>
       </Unit115>
       <Unit116>
@@ -856,7 +855,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="38"/>
         <CursorPos X="3" Y="48"/>
-        <UsageCount Value="10"/>
+        <UsageCount Value="9"/>
       </Unit116>
       <Unit117>
         <Filename Value="/usr/share/fpcsrc/3.1.1/packages/opengl/src/glut.pp"/>
@@ -864,7 +863,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="139"/>
         <CursorPos X="34" Y="11"/>
-        <UsageCount Value="10"/>
+        <UsageCount Value="9"/>
       </Unit117>
       <Unit118>
         <Filename Value="/home/alexander/programs/lazarus/lcl/menus.pp"/>
@@ -872,80 +871,84 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="222"/>
         <CursorPos X="49" Y="222"/>
-        <UsageCount Value="10"/>
+        <UsageCount Value="9"/>
       </Unit118>
       <Unit119>
         <Filename Value="/usr/share/fpcsrc/3.1.1/rtl/inc/objpash.inc"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="196"/>
-        <CursorPos X="23" Y="205"/>
+        <EditorIndex Value="9"/>
+        <TopLine Value="185"/>
+        <CursorPos X="8" Y="200"/>
         <UsageCount Value="10"/>
+        <Loaded Value="True"/>
       </Unit119>
       <Unit120>
         <Filename Value="/usr/share/fpcsrc/3.1.1/rtl/inc/objpas.inc"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="323"/>
         <CursorPos X="9" Y="325"/>
-        <UsageCount Value="10"/>
+        <UsageCount Value="9"/>
       </Unit120>
       <Unit121>
         <Filename Value="/home/alexander/programs/lazarus/lcl/include/control.inc"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="5434"/>
-        <CursorPos X="46" Y="5447"/>
+        <EditorIndex Value="10"/>
+        <TopLine Value="4268"/>
+        <CursorPos X="3" Y="4277"/>
         <UsageCount Value="10"/>
+        <Loaded Value="True"/>
       </Unit121>
       <Unit122>
         <Filename Value="/home/alexander/programs/lazarus/lcl/include/scrollingwincontrol.inc"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="49"/>
         <CursorPos Y="68"/>
-        <UsageCount Value="10"/>
+        <UsageCount Value="9"/>
       </Unit122>
       <Unit123>
         <Filename Value="/home/alexander/programs/lazarus/lcl/include/wincontrol.inc"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="7456"/>
-        <CursorPos X="62" Y="7471"/>
-        <UsageCount Value="11"/>
+        <CursorPos Y="7468"/>
+        <UsageCount Value="10"/>
       </Unit123>
       <Unit124>
         <Filename Value="/home/alexander/programs/lazarus/lcl/include/customcontrol.inc"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="62"/>
         <CursorPos Y="74"/>
-        <UsageCount Value="10"/>
+        <UsageCount Value="9"/>
       </Unit124>
       <Unit125>
         <Filename Value="/home/alexander/programs/lazarus/components/opengl/openglcontext.pas"/>
         <UnitName Value="OpenGLContext"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="60"/>
-        <CursorPos X="4" Y="71"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="158"/>
+        <CursorPos X="3" Y="119"/>
         <UsageCount Value="10"/>
+        <Loaded Value="True"/>
       </Unit125>
       <Unit126>
         <Filename Value="nxpascal/src/nxGL.pas"/>
-        <EditorIndex Value="2"/>
-        <TopLine Value="2183"/>
-        <CursorPos X="20" Y="2203"/>
-        <UsageCount Value="13"/>
+        <EditorIndex Value="11"/>
+        <TopLine Value="902"/>
+        <CursorPos X="27" Y="914"/>
+        <UsageCount Value="14"/>
         <Loaded Value="True"/>
       </Unit126>
       <Unit127>
         <Filename Value="/home/alexander/programs/lazarus/lcl/extctrls.pp"/>
         <UnitName Value="ExtCtrls"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="1116"/>
-        <CursorPos X="19" Y="1127"/>
+        <EditorIndex Value="13"/>
+        <TopLine Value="1014"/>
+        <CursorPos X="3" Y="1026"/>
         <UsageCount Value="11"/>
+        <Loaded Value="True"/>
       </Unit127>
       <Unit128>
         <Filename Value="/usr/share/fpcsrc/3.1.1/packages/opengl/src/gl.pp"/>
         <UnitName Value="GL"/>
         <EditorIndex Value="-1"/>
-        <TopLine Value="1273"/>
-        <CursorPos X="3" Y="1285"/>
+        <TopLine Value="1305"/>
+        <CursorPos X="3" Y="1317"/>
         <UsageCount Value="10"/>
       </Unit128>
       <Unit129>
@@ -955,52 +958,178 @@
         <CursorPos X="3" Y="14453"/>
         <UsageCount Value="11"/>
       </Unit129>
+      <Unit130>
+        <Filename Value="nxpascal/src/nxGraph.pas"/>
+        <EditorIndex Value="12"/>
+        <TopLine Value="141"/>
+        <CursorPos X="3" Y="135"/>
+        <UsageCount Value="12"/>
+        <Loaded Value="True"/>
+      </Unit130>
+      <Unit131>
+        <Filename Value="/home/alexander/programs/lazarus/lcl/controls.pp"/>
+        <UnitName Value="Controls"/>
+        <EditorIndex Value="4"/>
+        <TopLine Value="1373"/>
+        <CursorPos X="47" Y="1391"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit131>
+      <Unit132>
+        <Filename Value="/home/alexander/programs/lazarus/lcl/include/winapih.inc"/>
+        <EditorIndex Value="5"/>
+        <TopLine Value="238"/>
+        <CursorPos X="10" Y="249"/>
+        <UsageCount Value="11"/>
+        <Loaded Value="True"/>
+      </Unit132>
+      <Unit133>
+        <Filename Value="/home/alexander/programs/lazarus/lcl/lclclasses.pp"/>
+        <UnitName Value="LCLClasses"/>
+        <EditorIndex Value="7"/>
+        <TopLine Value="30"/>
+        <CursorPos X="3" Y="42"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit133>
+      <Unit134>
+        <Filename Value="/usr/share/fpcsrc/3.1.1/rtl/objpas/classes/classesh.inc"/>
+        <EditorIndex Value="8"/>
+        <TopLine Value="1771"/>
+        <CursorPos X="13" Y="1783"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit134>
+      <Unit135>
+        <Filename Value="/home/alexander/programs/lazarus/lcl/include/intfbasewinapi.inc"/>
+        <EditorIndex Value="6"/>
+        <TopLine Value="2029"/>
+        <CursorPos X="3" Y="2031"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit135>
     </Units>
-    <JumpHistory Count="11" HistoryIndex="10">
+    <JumpHistory Count="30" HistoryIndex="29">
       <Position1>
-        <Filename Value="uchart.pas"/>
-        <Caret Line="248" Column="20" TopLine="230"/>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="1164" TopLine="1153"/>
       </Position1>
       <Position2>
-        <Filename Value="uchart.pas"/>
-        <Caret Line="514" TopLine="510"/>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="1171" TopLine="1152"/>
       </Position2>
       <Position3>
-        <Filename Value="uchart.pas"/>
-        <Caret Line="523" Column="17" TopLine="520"/>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="1177" Column="14" TopLine="1165"/>
       </Position3>
       <Position4>
-        <Filename Value="uchart.pas"/>
-        <Caret Line="1506" Column="12" TopLine="1494"/>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="1197" Column="34" TopLine="1185"/>
       </Position4>
       <Position5>
         <Filename Value="uchart.pas"/>
-        <Caret Line="2481" Column="3" TopLine="2508"/>
+        <Caret Line="1779" Column="13" TopLine="1764"/>
       </Position5>
       <Position6>
         <Filename Value="uchart.pas"/>
-        <Caret Line="2519" Column="11" TopLine="2500"/>
+        <Caret Line="364" Column="15" TopLine="343"/>
       </Position6>
       <Position7>
         <Filename Value="uchart.pas"/>
-        <Caret Line="2334" Column="3" TopLine="2330"/>
+        <Caret Line="547" Column="30" TopLine="532"/>
       </Position7>
       <Position8>
         <Filename Value="uchart.pas"/>
-        <Caret Line="2279" Column="3" TopLine="2306"/>
+        <Caret Line="546" Column="27" TopLine="532"/>
       </Position8>
       <Position9>
         <Filename Value="uchart.pas"/>
-        <Caret Line="2269" Column="26" TopLine="2257"/>
+        <Caret Line="268" Column="14" TopLine="258"/>
       </Position9>
       <Position10>
         <Filename Value="uchart.pas"/>
-        <Caret Line="2270" Column="32" TopLine="2259"/>
+        <Caret Line="1161" Column="112" TopLine="1155"/>
       </Position10>
       <Position11>
         <Filename Value="uchart.pas"/>
-        <Caret Line="530" Column="73" TopLine="510"/>
+        <Caret Line="1165" Column="3" TopLine="1152"/>
       </Position11>
+      <Position12>
+        <Filename Value="uchart.pas"/>
+        <Caret Line="547" Column="27" TopLine="535"/>
+      </Position12>
+      <Position13>
+        <Filename Value="uchart.pas"/>
+        <Caret Line="269" Column="27" TopLine="259"/>
+      </Position13>
+      <Position14>
+        <Filename Value="uchart.pas"/>
+        <Caret Line="1198" Column="48" TopLine="1198"/>
+      </Position14>
+      <Position15>
+        <Filename Value="uchart.pas"/>
+        <Caret Line="867" Column="34" TopLine="855"/>
+      </Position15>
+      <Position16>
+        <Filename Value="uchart.pas"/>
+        <Caret Line="870" Column="8" TopLine="857"/>
+      </Position16>
+      <Position17>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="278" Column="15" TopLine="206"/>
+      </Position17>
+      <Position18>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="1176" Column="20" TopLine="1156"/>
+      </Position18>
+      <Position19>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="1936" TopLine="1950"/>
+      </Position19>
+      <Position20>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="1937" Column="11" TopLine="1926"/>
+      </Position20>
+      <Position21>
+        <Filename Value="/home/alexander/programs/lazarus/lcl/controls.pp"/>
+        <Caret Line="1360" Column="15" TopLine="1338"/>
+      </Position21>
+      <Position22>
+        <Filename Value="/home/alexander/programs/lazarus/lcl/controls.pp"/>
+        <Caret Line="1380" Column="21" TopLine="1361"/>
+      </Position22>
+      <Position23>
+        <Filename Value="/home/alexander/programs/lazarus/lcl/controls.pp"/>
+        <Caret Line="1391" Column="34" TopLine="1373"/>
+      </Position23>
+      <Position24>
+        <Filename Value="uchart.pas"/>
+        <Caret Line="300" Column="24" TopLine="302"/>
+      </Position24>
+      <Position25>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="1164" Column="26" TopLine="1152"/>
+      </Position25>
+      <Position26>
+        <Filename Value="uchart.pas"/>
+        <Caret Line="890" Column="15" TopLine="878"/>
+      </Position26>
+      <Position27>
+        <Filename Value="uchart.pas"/>
+        <Caret Line="899" Column="12" TopLine="885"/>
+      </Position27>
+      <Position28>
+        <Filename Value="uchart.pas"/>
+        <Caret Line="905" Column="15" TopLine="893"/>
+      </Position28>
+      <Position29>
+        <Filename Value="uchart.pas"/>
+        <Caret Line="1027" Column="37" TopLine="1015"/>
+      </Position29>
+      <Position30>
+        <Filename Value="uchart.pas"/>
+        <Caret Line="265" Column="15" TopLine="265"/>
+      </Position30>
     </JumpHistory>
   </ProjectOptions>
   <CompilerOptions>

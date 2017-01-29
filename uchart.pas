@@ -90,9 +90,7 @@ type
 
     function TextLenght:real;
     function TextHeight:real;
-    procedure glWrite(Text: String; Font_index:integer=0);
   public
-    Font:TFont;
     pos:TKoor3;
     Enabled:boolean;
     Color:TColor;
@@ -205,7 +203,7 @@ type
     OGLRectZoom:TOGLRect;
     DepthOverlay:TKoor1;
     StoredIdleDraw:boolean;
-    
+
     FShowCross:boolean;
     OGLReality:TR2Rect;
     FIsPaning,
@@ -311,6 +309,7 @@ type
 
     HelpBoxZoom:TOGlLabelBackground;
 
+
     property QuotientLS2Image:real read FQuotientLS2Image write WriteQuotientLS2Image;
     property IsPaning:boolean read FIsPaning;
     property IsZoomingRect:boolean read FIsZoomingRect;
@@ -319,6 +318,7 @@ type
     function KoorIsVisible(x,y,z:real; tolerance:real=0.02):boolean;
 
 
+    procedure glWrite(textstr: String; Font_index:integer=0);
     procedure Resize; override;
 
     procedure WriteFShowCross(ShowCross:boolean);
@@ -405,12 +405,10 @@ type
   TChart = class(TComponent)
   private
     procedure OGLColor(aColor: TColor);
-    procedure glWrite(X, Y: GLfloat; Text: String; Font_index: integer=0);
   public
     Visible:boolean;
     Color:TColor;
     Box:TOGlBox;
-    Font:TFont;
     Pen:TPen;
     UseIntensityColor:Boolean;
     IntensityColorFactor:real;
@@ -538,7 +536,9 @@ end;
 procedure TOGlBox.Initnx;
 begin
   nx.CreateGlWindow(self);
-  nx.CreateFont('Courier',11,256);
+  nx.CreateFont('Courier',Font.Size,256);
+
+
 
 
   if nx.LastError<>'' then showmessage(nx.LastError);
@@ -546,9 +546,10 @@ end;
 
 procedure TOGlBox.Enable2D;
 begin
-  nx.Enable2D;
+  nx.Enable2D(false);
   glMatrixMode(GL_PROJECTION);    { prepare for and then }
   glLoadIdentity ();               { define the projection }
+  //glOrtho(OGLReality.Left, OGLReality.Right, OGLReality.Bottom, OGLReality.Top,  znear,  zfar);
   glOrtho(OGLReality.Left, OGLReality.Right, OGLReality.Bottom, OGLReality.Top,  znear,  zfar);
   glMatrixMode (GL_MODELVIEW);  { back to modelview matrix }
   //glViewport(0,0, Width, Height);         { define the viewport }
@@ -556,6 +557,7 @@ begin
   glDepthFunc(GL_LESS);
   //glLoadIdentity;
   nx.rs.CullBack:=False;
+  nx.rs.CullFront:=False;
 end;
 
 procedure TOGlBox.Disable2D;
@@ -719,6 +721,17 @@ end;
 function TOGlBox.TransDeltaPixel2Koor(akoor:TKoor1; ReturnKoorKind:TKoorKind): TKoor1;
 begin
   result:=  TransDeltaOGLReality2Koor(TransDeltaPixel2OGLReality(akoor),ReturnKoorKind);
+end;
+
+procedure TOGlBox.glWrite(textstr: String; Font_index: integer);
+begin
+  tex.Enable;
+    glPushMatrix;
+    glScalef(1,-1,1);
+    nx.SetFont(Font_index);
+    nx.Font[Font_index].Draw(0, -nx.Font[0].height div 2, textstr);
+    glPopMatrix;
+  tex.Disable;
 end;
 
 
@@ -1700,17 +1713,11 @@ begin
 
 
   OGLReality:=TR2Rect.Create;
-  OGLReality.R2Rect(-self.Width/2, -self.Height/2, self.Width, self.Height);
 
   QuotientLS2Image:=1/15;
-
+  Font.Size:=10;
   RectPen:=TPen.Create;
 
-  //tsContextCreate(@gContextID);
-  //tsContextBind(gContextID);
-  //TSCheckError;
-  //tsSetParameteri(TS_RENDERER, TS_RENDERER_OPENGL);
-  //TSCheckError;
 
   xAxis:=TAxis.Create(XAxisKind);
   xAxis.KoorKind:=kkx;
@@ -1786,18 +1793,6 @@ begin
 end;
 
 
-procedure TChart.glWrite(X, Y: GLfloat; Text: String; Font_index: integer=0);
-begin
-  glRasterPos2f(X, Y);
-
-     
-  //nx.Enable2D;
-  tex.Enable;
-  nx.SetFont(Font_index);
-  nx.Font[Font_index].Draw(0,0,Text);
-  tex.Disable;
-  //nx.Disable2D;
-end;
 
 
 constructor TChart.Create(OGLBox:TOGlBox; aValuePointer:TChartValueArray);
@@ -1810,8 +1805,6 @@ begin
   IntensityColorFactor:=1;
   Box:=OGLBox;
   ValuePointer:=aValuePointer;
-  Font:=TFont.Create;
-  Font.Color:=Color;
   Pen:=TPen.Create;
   WhatIsXValue:=xyzkX;
   WhatIsYValue:=xyzkY;
@@ -1820,7 +1813,6 @@ end;
 
 destructor TChart.Destroy;
 begin
-  Font.Free;
   Pen.Free;
 
   inherited;
@@ -1982,8 +1974,10 @@ begin
       
       if ValuePointer[i].TitleEnabled then
         begin
-        Box.OGLColor(Font.Color);
-        glWrite(-Length(ValuePointer[i].Title)/2*5 ,radius*1.5,  ValuePointer[i].Title);
+        glPushMatrix;
+        glTranslatef(-Length(ValuePointer[i].Title)/2*5 ,radius*1.5,0);
+        Box.glWrite(ValuePointer[i].Title);
+        glPopMatrix;
         end;
     glPopMatrix;
     end;
@@ -2019,6 +2013,8 @@ begin
   //WriteLn(floattostr(Result.Min.v)+'        '+KoorKind2Str(Result.Min.Kind));
   //WriteLn(floattostr(Result.Max.v)+'        '+KoorKind2Str(Result.Max.Kind));
 end;
+
+
 
 
 procedure TAxis.writeAxisPosition(value: TAxisPosition);
@@ -2084,7 +2080,8 @@ end;
 
 
 
-procedure TAxis.DrawArrows(Pos1,Pos2:TKoor3;  bold:real; ArrowSize:real;  BeginningPeak, EndingPeak:boolean);
+procedure TAxis.DrawArrows(Pos1, Pos2: TKoor3; bold: real; ArrowSize: real;
+  BeginningPeak: boolean; EndingPeak: boolean);
 
 
   procedure DrawArrowPeak(Pos1,Pos2:TKoor3);
@@ -2254,15 +2251,13 @@ var
         pos:=koor3(VerschiebeLabel(text).x.v+Pos2.x.v, aPos1Value+i*PrettyIncre +VerschiebeLabel(text).y.v,Depth.v, Pos1.x.Kind, Pos1.y.Kind, Depth.Kind);
     end;
 
+    tex.Enable;
     glPushMatrix;
     //OGLBox.OGLTranslate3f(pos.x,pos.y,Koor1(Depth.v+1, Depth.Kind));
     OGLBox.OGLTranslate3f(pos);
-
-    tex.Enable;
-    nx.SetFont(0);
-    nx.Font[0].Draw(0,0,text);
-    tex.Disable;
+    OGLBox.glWrite(text);
     glPopMatrix;
+    tex.Disable;
   end;
 
 
@@ -2624,7 +2619,7 @@ begin
   for i:=0 to DividedStrings.Count-1 do
     len:=max(len,Length(DividedStrings[i]));
 
-  result:=OGLBox.TransDelta2OGLReality(Koor1( Font.Size*len/1.83 , kkPixelx)).v;
+  result:=OGLBox.TransDelta2OGLReality(Koor1(OGLBox.Font.Size*len/1.4 , kkPixelx)).v;
 end;
 
 procedure TOGlLabel.setFText(const AValue: string);
@@ -2643,16 +2638,10 @@ end;
 
 function TOGlLabel.TextHeight: real;
 begin
-  result:=OGLBox.TransDelta2OGLReality(Koor1( Font.Size*0.6, kkPixely)).v;
+  result:=OGLBox.TransDelta2OGLReality(Koor1( OGLBox.Font.Size*0.4, kkPixely)).v;
 end;
 
-procedure TOGlLabel.glWrite(Text: String; Font_index:integer=0);
-begin
-  tex.Enable;
-  nx.SetFont(Font_index);
-  nx.Font[Font_index].Draw(0,0,Text);
-  tex.Disable;
-end;
+
 
 
 
@@ -2680,7 +2669,7 @@ begin
       begin
       glTranslatef(0, -TextHeight*i*2, 0);
   //    glScalef(Font.Size/10,Font.Size/10, 1);
-      glWrite(DividedStrings[i]);
+      OGLBox.glWrite(DividedStrings[i]);
       end;
 
   glPopMatrix;
@@ -2692,11 +2681,6 @@ begin
   
   Enabled:=true;
   pos:=koor3(0,0,0, kkx, kkLS, kkz);
-  Font:=TFont.Create;
-  Font.Color:=clWhite;
-  Color:=clWhite;
-  Font.Size:=12;
-  Font.Name:='Arial';
   DividedStrings:=TStringList.Create;
   FText:='';
 
@@ -2707,7 +2691,6 @@ end;
 
 destructor TOGlLabel.Destroy;
 begin
-  Font.Free;
   DividedStrings.Free;
 
   inherited Destroy;

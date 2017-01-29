@@ -365,23 +365,6 @@ uses unit2,uapparatus, utxt, unit4, unit3, umathe;
 
 
 
-procedure glutInitPascal(ParseCmdLine: Boolean);
-var
-  Cmd: array of PChar;
-  CmdCount, I: Integer;
-begin
-  if ParseCmdLine then
-    CmdCount := ParamCount + 1
-  else
-    CmdCount := 1;
-  SetLength(Cmd, CmdCount);
-  for I := 0 to CmdCount - 1 do
-    Cmd[I] := PChar(ParamStr(I));
-  glutInit(@CmdCount, @Cmd);
-end;
-
-
-
 
 
 
@@ -1935,9 +1918,6 @@ procedure TForm1.FormCreate(Sender: TObject);
 begin
   DecimalSeparator:=',';
   NowVisible:=false;
-  //glutInitPascal(True);
-  //
-  //glutInitDisplayMode(GLUT_DOUBLE or GLUT_RGB or GLUT_DEPTH);
 
 
 
