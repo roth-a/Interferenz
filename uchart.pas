@@ -519,8 +519,8 @@ begin
   DrawAllCharts;
   DrawAxis;
   Header.Draw;
-  if Form1.CheckViewLittleHelp2.Checked then
-    HelpBoxZoom.Draw;
+  //if Form1.CheckViewLittleHelp2.Checked then
+  //  HelpBoxZoom.Draw;
 
   if IsZoomingRect then
     DrawRect;

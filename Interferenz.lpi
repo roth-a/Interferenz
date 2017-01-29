@@ -95,8 +95,8 @@
         <UnitName Value="UChart"/>
         <IsVisibleTab Value="True"/>
         <EditorIndex Value="1"/>
-        <TopLine Value="2801"/>
-        <CursorPos X="70" Y="2810"/>
+        <TopLine Value="518"/>
+        <CursorPos X="16" Y="523"/>
         <UsageCount Value="201"/>
         <Loaded Value="True"/>
       </Unit3>
@@ -928,7 +928,7 @@
         <EditorIndex Value="2"/>
         <TopLine Value="771"/>
         <CursorPos X="21" Y="777"/>
-        <UsageCount Value="16"/>
+        <UsageCount Value="17"/>
         <Loaded Value="True"/>
       </Unit126>
       <Unit127>
