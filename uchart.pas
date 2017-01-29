@@ -318,7 +318,7 @@ type
     function KoorIsVisible(x,y,z:real; tolerance:real=0.02):boolean;
 
 
-    procedure glWrite(textstr: String; Font_index:integer=0);
+    procedure glWrite(textstr: String; Font_index:integer=0; Centering:boolean=False);
     procedure Resize; override;
 
     procedure WriteFShowCross(ShowCross:boolean);
@@ -488,7 +488,7 @@ type
   
 
 const
-  znear=0;
+  znear=-100000;
   zfar=1000000;
 var
   OGLBox:TOGlBox;
@@ -511,7 +511,7 @@ begin
   nx.Clear(true,true);
 
   Enable2D;
-  //nx.rs.AddBlend:=true;
+  nx.rs.AddBlend:=true;
 
   glTranslatef(0,0, -1000);
 
@@ -726,14 +726,17 @@ begin
   result:=  TransDeltaOGLReality2Koor(TransDeltaPixel2OGLReality(akoor),ReturnKoorKind);
 end;
 
-procedure TOGlBox.glWrite(textstr: String; Font_index: integer);
+procedure TOGlBox.glWrite(textstr: String; Font_index: integer; Centering:boolean=False);
 begin
   tex.Enable;
     glPushMatrix;
     glScalef(1,-1,1);
-    glScalef(10/Font.Size,10/Font.Size,1);
+    //glScalef(10/Font.,10/Font.Size,1);
     nx.SetFont(Font_index);
-    nx.Font[Font_index].Draw(0, -nx.Font[0].height div 2, textstr);
+    if Centering then
+      nx.Font[Font_index].DrawC(0, -nx.Font[0].height div 2, textstr)
+    else
+      nx.Font[Font_index].Draw(0, -nx.Font[0].height div 2, textstr);
     glPopMatrix;
   tex.Disable;
 end;
@@ -1865,9 +1868,8 @@ begin
 
   glPushMatrix;
   //linie
-  glDisable(GL_DEPTH_TEST);
-  glEnable(GL_BLEND);
-  glBlendFunc(GL_ONE, GL_ONE);
+  //glDisable(GL_DEPTH_TEST);
+  //glBlendFunc(GL_ONE, GL_ONE);
 
   glBegin(GL_Quad_STRIP);
 
@@ -1885,8 +1887,7 @@ begin
       end;
   glEnd;
 
-  glDisable(GL_BLEND);
-  glEnable(GL_DEPTH_TEST);
+  //glEnable(GL_DEPTH_TEST);
   glPopMatrix;
 end;
 
@@ -2548,7 +2549,7 @@ begin
 
   BigTickPositions:=TRealArray.Create;
   Visible:=true;
-  Depth:=Koor1(0,kkz);
+  Depth:=Koor1(10,kkz);
   AxisKind:=aAxisKind;
   case aAxisKind of
     YAxisKind:
@@ -2715,8 +2716,8 @@ begin
     exit;
 
   //linie
-  glEnable(GL_BLEND);
-  glBlendFunc(GL_SRC_ALPHA,GL_ONE_MINUS_SRC_ALPHA);
+  //glEnable(GL_BLEND);
+  //glBlendFunc(GL_SRC_ALPHA,GL_ONE_MINUS_SRC_ALPHA);
 
   glBegin(GL_LINE_LOOP);
     glColor4f(red(Pen.Color),Green(Pen.Color),Blue(Pen.Color),PenAlpha);
@@ -2729,14 +2730,14 @@ begin
 
   glEnd;
 
-  glDisable(GL_BLEND);
+  //glDisable(GL_BLEND);
 
 
   if Filled then
     begin
     //linie
-    glEnable(GL_BLEND);
-    glBlendFunc(GL_SRC_ALPHA,GL_ONE);
+    //glEnable(GL_BLEND);
+    //glBlendFunc(GL_SRC_ALPHA,GL_ONE);
 
     glBegin(GL_QUADS);
       glColor4f(red(Pen.Color),Green(Pen.Color),Blue(Pen.Color),BrushAlpha);
@@ -2748,7 +2749,7 @@ begin
       
     glEnd;
 
-    glDisable(GL_BLEND);
+    //glDisable(GL_BLEND);
     end;
 end;
 
@@ -2784,17 +2785,19 @@ const VerschX=-2;
       Zeilenabstandsfaktor=1.3;
 var d: TR2Vec;
     rand:TR2Vec;
+    temp:boolean;
 begin
-  inherited;
-
   if not Enabled then
     exit;
 
+  temp:=nx.rs.AddBlend;
+  nx.rs.AddBlend:=false;
+
   rand:=R2Vec(5,5);
 
+
+
   glPushMatrix;
-    glEnable(GL_BLEND);
-    glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
 
 
     d:=R2Vec(0,0);
@@ -2804,7 +2807,7 @@ begin
       d.y:=-TextHeight;
 
     glColor4f(Red(BackgroundColor),Green(BackgroundColor),Blue(BackgroundColor), BackgroundAlpha);
-    glTranslatef(pos.x.v+d.x+VerschX, pos.y.v+d.y+VerschY, pos.z.v-0.001);
+    glTranslatef(pos.x.v+d.x+VerschX, pos.y.v+d.y+VerschY, pos.z.v-0.1);
 
 
     glBegin(GL_QUADS);
@@ -2817,8 +2820,10 @@ begin
     glEnd;
 
 
-    glDisable(GL_BLEND);
+    //glDisable(GL_BLEND);
   glPopMatrix;
+  nx.rs.AddBlend:=temp;
+  inherited;
 end;
 
 constructor TOGlLabelBackground.Create;
@@ -2826,7 +2831,7 @@ begin
   inherited;
   
   BackgroundColor:=clBlack;
-  BackgroundAlpha:=0.5;
+  BackgroundAlpha:=0.8;
 end;
 
 destructor TOGlLabelBackground.Destroy;
@@ -2849,9 +2854,9 @@ begin
 
   glPushMatrix;
   //linie
-  glDisable(GL_DEPTH_TEST);
-  glEnable(GL_BLEND);
-  glBlendFunc(GL_ONE, GL_ONE);
+  //glDisable(GL_DEPTH_TEST);
+  //glEnable(GL_BLEND);
+  //glBlendFunc(GL_ONE, GL_ONE);
 
   //glBegin(GL_LINE_STRIP);
 
@@ -2871,8 +2876,8 @@ begin
       Box.OGLVertex3f(ValuePointer.GetRightValue(i, WhatIsXValue), ValuePointer.GetRightValue(i, WhatIsYValue), Depth.v, ValuePointer.GetRightKoor(i, WhatIsXValue).Kind, ValuePointer.GetRightKoor(i, WhatIsYValue).Kind, Depth.Kind);
   glEnd;
 
-  glDisable(GL_BLEND);
-  glEnable(GL_DEPTH_TEST);
+  //glDisable(GL_BLEND);
+  //glEnable(GL_DEPTH_TEST);
   glPopMatrix;
 end;
 
