@@ -59,12 +59,12 @@
         <MinVersion Valid="True"/>
       </Item6>
     </RequiredPackages>
-    <Units Count="126">
+    <Units Count="130">
       <Unit0>
         <Filename Value="Interferenz.lpr"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="-1"/>
-        <CursorPos X="26"/>
+        <CursorPos Y="21"/>
         <UsageCount Value="200"/>
       </Unit0>
       <Unit1>
@@ -74,8 +74,8 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="Unit1"/>
-        <TopLine Value="1366"/>
-        <CursorPos X="104" Y="1377"/>
+        <TopLine Value="1944"/>
+        <CursorPos X="30" Y="1955"/>
         <UsageCount Value="200"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
@@ -84,9 +84,9 @@
         <Filename Value="uanderes.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="Uanderes"/>
-        <EditorIndex Value="1"/>
-        <TopLine Value="2865"/>
-        <CursorPos X="26" Y="2882"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="51"/>
+        <CursorPos X="5" Y="62"/>
         <UsageCount Value="200"/>
         <Loaded Value="True"/>
       </Unit2>
@@ -94,21 +94,25 @@
         <Filename Value="uchart.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="UChart"/>
-        <EditorIndex Value="-1"/>
-        <CursorPos X="11" Y="5"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="845"/>
+        <CursorPos X="64" Y="855"/>
         <UsageCount Value="201"/>
+        <Loaded Value="True"/>
       </Unit3>
       <Unit4>
         <Filename Value="uapparatus.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="Uapparatus"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="4181"/>
-        <CursorPos X="12" Y="4189"/>
+        <EditorIndex Value="4"/>
+        <TopLine Value="3627"/>
+        <CursorPos X="3" Y="3629"/>
         <UsageCount Value="205"/>
         <Bookmarks Count="1">
           <Item0 X="43" Y="2127" ID="8"/>
         </Bookmarks>
+        <Loaded Value="True"/>
       </Unit4>
       <Unit5>
         <Filename Value="umathe.pas"/>
@@ -146,13 +150,10 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="Unit2"/>
-        <IsVisibleTab Value="True"/>
-        <EditorIndex Value="2"/>
+        <EditorIndex Value="-1"/>
         <TopLine Value="126"/>
         <CursorPos X="90" Y="135"/>
         <UsageCount Value="200"/>
-        <Loaded Value="True"/>
-        <LoadedDesigner Value="True"/>
       </Unit8>
       <Unit9>
         <Filename Value="unit3.pas"/>
@@ -904,9 +905,9 @@
       <Unit123>
         <Filename Value="/home/alexander/programs/lazarus/lcl/include/wincontrol.inc"/>
         <EditorIndex Value="-1"/>
-        <TopLine Value="3547"/>
-        <CursorPos Y="3566"/>
-        <UsageCount Value="10"/>
+        <TopLine Value="7456"/>
+        <CursorPos X="62" Y="7471"/>
+        <UsageCount Value="11"/>
       </Unit123>
       <Unit124>
         <Filename Value="/home/alexander/programs/lazarus/lcl/include/customcontrol.inc"/>
@@ -923,65 +924,93 @@
         <CursorPos X="4" Y="71"/>
         <UsageCount Value="10"/>
       </Unit125>
+      <Unit126>
+        <Filename Value="nxpascal/src/nxGL.pas"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="2183"/>
+        <CursorPos X="20" Y="2203"/>
+        <UsageCount Value="13"/>
+        <Loaded Value="True"/>
+      </Unit126>
+      <Unit127>
+        <Filename Value="/home/alexander/programs/lazarus/lcl/extctrls.pp"/>
+        <UnitName Value="ExtCtrls"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="1116"/>
+        <CursorPos X="19" Y="1127"/>
+        <UsageCount Value="11"/>
+      </Unit127>
+      <Unit128>
+        <Filename Value="/usr/share/fpcsrc/3.1.1/packages/opengl/src/gl.pp"/>
+        <UnitName Value="GL"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="1273"/>
+        <CursorPos X="3" Y="1285"/>
+        <UsageCount Value="10"/>
+      </Unit128>
+      <Unit129>
+        <Filename Value="nxpascal/src/dglOpenGL.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="14441"/>
+        <CursorPos X="3" Y="14453"/>
+        <UsageCount Value="11"/>
+      </Unit129>
     </Units>
-    <JumpHistory Count="12" HistoryIndex="11">
+    <JumpHistory Count="11" HistoryIndex="10">
       <Position1>
-        <Filename Value="unit1.pas"/>
-        <Caret Line="1677" Column="36" TopLine="1659"/>
+        <Filename Value="uchart.pas"/>
+        <Caret Line="248" Column="20" TopLine="230"/>
       </Position1>
       <Position2>
-        <Filename Value="unit1.pas"/>
-        <Caret Line="1696" Column="60" TopLine="1694"/>
+        <Filename Value="uchart.pas"/>
+        <Caret Line="514" TopLine="510"/>
       </Position2>
       <Position3>
-        <Filename Value="unit1.pas"/>
-        <Caret Line="1640" Column="37" TopLine="1631"/>
+        <Filename Value="uchart.pas"/>
+        <Caret Line="523" Column="17" TopLine="520"/>
       </Position3>
       <Position4>
-        <Filename Value="unit1.pas"/>
-        <Caret Line="180" Column="34" TopLine="169"/>
+        <Filename Value="uchart.pas"/>
+        <Caret Line="1506" Column="12" TopLine="1494"/>
       </Position4>
       <Position5>
-        <Filename Value="unit1.pas"/>
-        <Caret Line="1640" Column="37" TopLine="1617"/>
+        <Filename Value="uchart.pas"/>
+        <Caret Line="2481" Column="3" TopLine="2508"/>
       </Position5>
       <Position6>
-        <Filename Value="unit1.pas"/>
-        <Caret Line="1641" Column="37" TopLine="1618"/>
+        <Filename Value="uchart.pas"/>
+        <Caret Line="2519" Column="11" TopLine="2500"/>
       </Position6>
       <Position7>
-        <Filename Value="unit1.pas"/>
-        <Caret Line="1640" Column="37" TopLine="1617"/>
+        <Filename Value="uchart.pas"/>
+        <Caret Line="2334" Column="3" TopLine="2330"/>
       </Position7>
       <Position8>
-        <Filename Value="unit1.pas"/>
-        <Caret Line="1647" Column="37" TopLine="1624"/>
+        <Filename Value="uchart.pas"/>
+        <Caret Line="2279" Column="3" TopLine="2306"/>
       </Position8>
       <Position9>
-        <Filename Value="unit1.pas"/>
-        <Caret Line="1370" Column="18" TopLine="1366"/>
+        <Filename Value="uchart.pas"/>
+        <Caret Line="2269" Column="26" TopLine="2257"/>
       </Position9>
       <Position10>
-        <Filename Value="unit1.pas"/>
-        <Caret Line="1368" Column="3" TopLine="1363"/>
+        <Filename Value="uchart.pas"/>
+        <Caret Line="2270" Column="32" TopLine="2259"/>
       </Position10>
       <Position11>
-        <Filename Value="unit1.pas"/>
-        <Caret Line="1686" TopLine="1684"/>
+        <Filename Value="uchart.pas"/>
+        <Caret Line="530" Column="73" TopLine="510"/>
       </Position11>
-      <Position12>
-        <Filename Value="unit1.pas"/>
-        <Caret Line="1377" Column="104" TopLine="1366"/>
-      </Position12>
     </JumpHistory>
   </ProjectOptions>
   <CompilerOptions>
     <Version Value="11"/>
+    <Target>
+      <Filename Value="bin/Interferenz"/>
+    </Target>
     <SearchPaths>
-      <IncludeFiles Value="synapse"/>
-      <Libraries Value="synapse"/>
-      <OtherUnitFiles Value="$(LazarusDir)/components/synapse;$(LazarusDir)/components;$(LazarusDir)/components/TextSuite_0.0.0_linux_source/source;synapse"/>
-      <SrcPath Value="synapse"/>
+      <OtherUnitFiles Value="synapse;nxpascal/src"/>
+      <UnitOutputDirectory Value="lib"/>
     </SearchPaths>
     <Parsing>
       <SyntaxOptions>

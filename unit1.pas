@@ -1935,16 +1935,10 @@ procedure TForm1.FormCreate(Sender: TObject);
 begin
   DecimalSeparator:=',';
   NowVisible:=false;
-  glutInitPascal(True);
+  //glutInitPascal(True);
+  //
+  //glutInitDisplayMode(GLUT_DOUBLE or GLUT_RGB or GLUT_DEPTH);
 
-  glutInitDisplayMode(GLUT_DOUBLE or GLUT_RGB or GLUT_DEPTH);
-
-
-  //if not InitTextSuite then
-    //begin
-    //ShowMessage('Textsuite konnte nicht initalisiert werden. Bitte Programmierer anschreiben');
-    //halt;
-    //end;
 
 
   Randomize;
@@ -1964,6 +1958,7 @@ begin
     Parent:=Self.PanelOGLBox;
     Name:='TheOGLBox';
     Align:=alClient;
+    Initnx;
     Resize;
     OnMouseMove:=@OGLBoxMouseMove;
     OnMouseWheel:=@oglBoxMouseWheel;
@@ -2038,6 +2033,7 @@ end;
 
 procedure TForm1.FormPaint(Sender: TObject);
 begin
+  //CalcAndDrawOGL;
   OGLBox.DrawOGL;
 end;
 

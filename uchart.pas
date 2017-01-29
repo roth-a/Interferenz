@@ -26,7 +26,7 @@ Die folgenden Charts sind auf z= nChart
 uses
   Classes, OpenGLContext,  SysUtils,uanderes,lcltype, graphics, math, Messages,
   LResources, Forms, Controls, Dialogs, Interfaces,
-  StdCtrls,  ExtCtrls, LCLIntf,gl,glu,glut,  utxt,UVector;
+  StdCtrls,  ExtCtrls, LCLIntf,gl,glu, nxGL, nxTypes,  utxt,UVector;
   
 type
   TAxisKind=(YAxisKind,XAxisKind);
@@ -90,7 +90,7 @@ type
 
     function TextLenght:real;
     function TextHeight:real;
-    procedure glWrite(aFont: Pointer; Text: String);
+    procedure glWrite(Text: String; Font_index:integer=0);
   public
     Font:TFont;
     pos:TKoor3;
@@ -198,7 +198,7 @@ type
 
   { TOGlBox }
 
-  TOGlBox = class(TOpenGLControl)
+  TOGlBox = class(TPanel)
   private
     FQuotientLS2Image: real;
   	//gContextID: tsContextID;
@@ -360,6 +360,11 @@ type
 
     procedure DrawOGL;
 
+    procedure Initnx;
+    procedure Enable2D;
+    procedure Disable2D;
+    procedure DrawTestTriangle;
+
     constructor Create(TheOwner: TComponent); override;
     destructor Destroy; override;
   published
@@ -400,7 +405,7 @@ type
   TChart = class(TComponent)
   private
     procedure OGLColor(aColor: TColor);
-    procedure glWrite(X, Y: GLfloat; Font: Pointer; Text: String);
+    procedure glWrite(X, Y: GLfloat; Text: String; Font_index: integer=0);
   public
     Visible:boolean;
     Color:TColor;
@@ -498,58 +503,83 @@ uses unit1,Uapparatus;
 
 
 
-//function InitTextSuite:boolean;
-//begin
-  //result:=true;
-  //if not (tsInit(TS_INIT_TEXTSUITE) = TS_TRUE) then
-    //result:=false;
-
-  //if not (tsInit(TS_INIT_OPENGL) = TS_TRUE) then
-    //result:=false;
-
-  //if not (tsInit(TS_INIT_SDL_TTF) = TS_TRUE) then
-    //result:=false;
-//end;
-
-
-//procedure TSCheckError;
-//var
-  //Error: tsError;
-//begin
-  //Error := tsGetError;
-  //if Error <> TS_NO_ERROR then
-    //ShowMessage('TSError');
-//end;
-
-
 
 
 { TOGlBox }
 
 procedure TOGlBox.DrawOGL;
 begin
-//  if not Form1.Active then   //damit nicht über andere Fenster gezeichnet wird
-//    exit;
-  glClearColor(0,0,0,0);
-  glClear(GL_COLOR_BUFFER_BIT or GL_DEPTH_BUFFER_BIT);
-  glLoadIdentity;             { clear the matrix }
+  if not nx.AllOK then exit;
+  nx.Clear(true,true);
+
+  Enable2D;
 
   glTranslatef(0,0, -1000);
+
 //  glTranslatef(PanPoint.X, PanPoint.Y, -1000);
 //  glScalef(ZoomScale.x, ZoomScale.y, 1);
+
 
   DrawAllCharts;
   DrawAxis;
   Header.Draw;
-  //if Form1.CheckViewLittleHelp2.Checked then
-    //HelpBoxZoom.Draw;
+  if Form1.CheckViewLittleHelp2.Checked then
+    HelpBoxZoom.Draw;
 
   if IsZoomingRect then
     DrawRect;
 
   MiniSlit.DrawOGL;
 
-  self.SwapBuffers;
+  Disable2D;
+  nx.Flip;
+end;
+
+procedure TOGlBox.Initnx;
+begin
+  nx.CreateGlWindow(self);
+  nx.CreateFont('Courier',11,256);
+
+
+  if nx.LastError<>'' then showmessage(nx.LastError);
+end;
+
+procedure TOGlBox.Enable2D;
+begin
+  nx.Enable2D;
+  glMatrixMode(GL_PROJECTION);    { prepare for and then }
+  glLoadIdentity ();               { define the projection }
+  glOrtho(OGLReality.Left, OGLReality.Right, OGLReality.Bottom, OGLReality.Top,  znear,  zfar);
+  glMatrixMode (GL_MODELVIEW);  { back to modelview matrix }
+  //glViewport(0,0, Width, Height);         { define the viewport }
+  glEnable(GL_DEPTH_TEST);
+  glDepthFunc(GL_LESS);
+  //glLoadIdentity;
+  nx.rs.CullBack:=False;
+end;
+
+procedure TOGlBox.Disable2D;
+begin
+  nx.Disable2D;
+end;
+
+procedure TOGlBox.DrawTestTriangle;
+begin
+    //paint test triangle
+  glPushMatrix;
+  glTranslatef(0,0,0);
+  glScalef(100,100,0);
+  glBegin(GL_TRIANGLES);
+    glColor3f(1, 0, 0);
+    glVertex3f(-1, -1, 0);
+
+    glColor3f(0, 1, 0);
+    glVertex3f(1, -1, 0);
+
+    glColor3f(0, 0, 1);
+    glVertex3f(0, 1, 0);
+  glEnd;
+  glPopMatrix;
 end;
 
 
@@ -821,18 +851,9 @@ begin
   if Parent=nil then
     exit;
 
+
   OGLReality.R2Rect(-self.Width/2, -self.Height/2, self.Width, self.Height);
-  if self.MakeCurrent then
-    begin
-    glMatrixMode(GL_PROJECTION);    { prepare for and then }
-    glLoadIdentity ();               { define the projection }
-    glOrtho(OGLReality.Left, OGLReality.Right, OGLReality.Bottom, OGLReality.Top,  znear,  zfar);
-    glMatrixMode (GL_MODELVIEW);  { back to modelview matrix }
-    glViewport (0,0, Width, Height);         { define the viewport }
-    glEnable(GL_DEPTH_TEST);
-    glDepthFunc(GL_LESS);
-    //glLoadIdentity;
-    end;
+
   Header.pos.y.v:= OGLReality.Top-OGLReality.Height/50;
   Header.pos.y.Kind:=kkOGLy;
   Header.pos.x.v:= OGLReality.Left+OGLReality.Width/2 - Length(Header.Text)/2*5;
@@ -1676,7 +1697,7 @@ begin
   //Top:=10;
   //Height:=TheOwner.Height-10-TheOwner.GroupBoxLambda.Height;
   //Width:=200;
-  
+
 
   OGLReality:=TR2Rect.Create;
   OGLReality.R2Rect(-self.Width/2, -self.Height/2, self.Width, self.Height);
@@ -1741,6 +1762,7 @@ end;
 
 destructor TOGlBox.Destroy;
 begin
+  nx.KillGLWindow;
   xAxis.Free;
   LSAxis.Free;
   ImageAxis.Free;
@@ -1764,13 +1786,17 @@ begin
 end;
 
 
-procedure TChart.glWrite(X, Y: GLfloat; Font: Pointer; Text: String);
-var
-  I: Integer;
+procedure TChart.glWrite(X, Y: GLfloat; Text: String; Font_index: integer=0);
 begin
   glRasterPos2f(X, Y);
-  for I := 1 to Length(Text) do
-    glutBitmapCharacter(Font, Integer(Text[I]));
+
+     
+  //nx.Enable2D;
+  tex.Enable;
+  nx.SetFont(Font_index);
+  nx.Font[Font_index].Draw(0,0,Text);
+  tex.Disable;
+  //nx.Disable2D;
 end;
 
 
@@ -1807,7 +1833,10 @@ var i:integer;
 begin
   if not Visible then
     exit;
-    
+
+
+
+
 
   glPushMatrix;
   //linie
@@ -1954,7 +1983,7 @@ begin
       if ValuePointer[i].TitleEnabled then
         begin
         Box.OGLColor(Font.Color);
-        glWrite(-Length(ValuePointer[i].Title)/2*5 ,radius*1.5, GLUT_BITMAP_HELVETICA_12, ValuePointer[i].Title);
+        glWrite(-Length(ValuePointer[i].Title)/2*5 ,radius*1.5,  ValuePointer[i].Title);
         end;
     glPopMatrix;
     end;
@@ -2225,10 +2254,15 @@ var
         pos:=koor3(VerschiebeLabel(text).x.v+Pos2.x.v, aPos1Value+i*PrettyIncre +VerschiebeLabel(text).y.v,Depth.v, Pos1.x.Kind, Pos1.y.Kind, Depth.Kind);
     end;
 
-    OGLBox.OGLRasterPos3f(pos.x,pos.y,Koor1(Depth.v+1, Depth.Kind));
+    glPushMatrix;
+    //OGLBox.OGLTranslate3f(pos.x,pos.y,Koor1(Depth.v+1, Depth.Kind));
+    OGLBox.OGLTranslate3f(pos);
 
-    for zaehl := 1 to Length(text) do
-      glutBitmapCharacter(GLUT_BITMAP_HELVETICA_12, Integer(text[zaehl]));
+    tex.Enable;
+    nx.SetFont(0);
+    nx.Font[0].Draw(0,0,text);
+    tex.Disable;
+    glPopMatrix;
   end;
 
 
@@ -2612,13 +2646,12 @@ begin
   result:=OGLBox.TransDelta2OGLReality(Koor1( Font.Size*0.6, kkPixely)).v;
 end;
 
-procedure TOGlLabel.glWrite(aFont: Pointer; Text: String);
-var
-  I: Integer;
+procedure TOGlLabel.glWrite(Text: String; Font_index:integer=0);
 begin
-  glRasterPos3f(0, 0, 0);
-  for I := 1 to Length(text) do
-    glutBitmapCharacter(aFont, Integer(text[I]));
+  tex.Enable;
+  nx.SetFont(Font_index);
+  nx.Font[Font_index].Draw(0,0,Text);
+  tex.Disable;
 end;
 
 
@@ -2647,7 +2680,7 @@ begin
       begin
       glTranslatef(0, -TextHeight*i*2, 0);
   //    glScalef(Font.Size/10,Font.Size/10, 1);
-      glWrite(GLUT_BITMAP_HELVETICA_12, DividedStrings[i]);
+      glWrite(DividedStrings[i]);
       end;
 
   glPopMatrix;
@@ -2870,7 +2903,7 @@ begin
     or(AutoVisible and (beta=0) and (theta=0)) then
     exit;
 
-	gluPerspective(90, 1{OGLBox.OGLReality.width/OGLBox.OGLReality.height}, znear, zfar);  	// Perspektive den neuen Maßen anpassen.
+  gluPerspective(90, 1{OGLBox.OGLReality.width/OGLBox.OGLReality.height}, znear, zfar);  	// Perspektive den neuen Maßen anpassen.
 
 
   glPushMatrix;
@@ -2968,7 +3001,7 @@ begin
     //glEnd;
   glPopMatrix;
 
-  glOrtho(OGLBox.OGLReality.Left, OGLBox.OGLReality.Right, OGLBox.OGLReality.Bottom, OGLBox.OGLReality.Top,  znear,  zfar);
+  //glOrtho(OGLBox.OGLReality.Left, OGLBox.OGLReality.Right, OGLBox.OGLReality.Bottom, OGLBox.OGLReality.Top,  znear,  zfar);
 end;
 
 constructor TOGL3DNSlit.Create(aPos, aSpaceToBorder, aSizes: TKoor3);
