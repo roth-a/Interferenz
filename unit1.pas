@@ -17,7 +17,7 @@ interface
 uses
   Classes, SysUtils, LResources, Forms, Controls, Graphics, Dialogs,
   OpenGLContext,  Uanderes,UChart, StdCtrls, EditBtn,
-  ExtCtrls,LCLIntf, gl,glut,  Menus, ActnList,
+  ExtCtrls,LCLIntf, gl,Menus, ActnList,
   Arrow, ExpandPanels, Spin, ComCtrls, Buttons,  IpHtml, USimpleWebViewer, UGroupHeader, StdActns,UColoredBox, math, Types;
 
 type
@@ -1069,6 +1069,8 @@ begin
   self.GroupMultiSource.Caption:='Mehrere Wellenlängen   Aktuelle Anzahl: '+inttostr(SaS.count);
 
   RelistSources;
+
+
 end;
 
 

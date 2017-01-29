@@ -863,7 +863,7 @@ begin
     self.Screen[i].CalcOnlyVisible(Quality);
     form1.ProgressDraw.Position:=round(i/count*100);
 
-    Application.ProcessMessages;
+    //Application.ProcessMessages;
     if stop then exit;
     end;
   EndCalc;
