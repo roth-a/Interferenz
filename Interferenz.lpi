@@ -1007,7 +1007,7 @@
         <UsageCount Value="10"/>
       </Unit136>
     </Units>
-    <JumpHistory Count="30" HistoryIndex="28">
+    <JumpHistory Count="28" HistoryIndex="26">
       <Position1>
         <Filename Value="uchart.pas"/>
         <Caret Line="2721" Column="22" TopLine="2701"/>
@@ -1070,64 +1070,56 @@
       </Position15>
       <Position16>
         <Filename Value="uchart.pas"/>
-        <Caret Line="2272" Column="3" TopLine="2278"/>
+        <Caret Line="2456" Column="21" TopLine="2444"/>
       </Position16>
       <Position17>
         <Filename Value="uchart.pas"/>
-        <Caret Line="2456" Column="21" TopLine="2444"/>
+        <Caret Line="2499" Column="33" TopLine="2498"/>
       </Position17>
       <Position18>
         <Filename Value="uchart.pas"/>
-        <Caret Line="2499" Column="33" TopLine="2498"/>
+        <Caret Line="2436" Column="3" TopLine="2432"/>
       </Position18>
       <Position19>
         <Filename Value="uchart.pas"/>
-        <Caret Line="2436" Column="3" TopLine="2432"/>
+        <Caret Line="2447" Column="25" TopLine="2439"/>
       </Position19>
       <Position20>
         <Filename Value="uchart.pas"/>
-        <Caret Line="2447" Column="25" TopLine="2439"/>
+        <Caret Line="2793" Column="10" TopLine="2789"/>
       </Position20>
       <Position21>
         <Filename Value="uchart.pas"/>
-        <Caret Line="2793" Column="10" TopLine="2789"/>
+        <Caret Line="514" Column="16" TopLine="511"/>
       </Position21>
       <Position22>
         <Filename Value="uchart.pas"/>
-        <Caret Line="510" Column="3" TopLine="517"/>
+        <Caret Line="563" Column="17" TopLine="543"/>
       </Position22>
       <Position23>
         <Filename Value="uchart.pas"/>
-        <Caret Line="514" Column="16" TopLine="511"/>
+        <Caret Line="2789" Column="3" TopLine="2782"/>
       </Position23>
       <Position24>
         <Filename Value="uchart.pas"/>
-        <Caret Line="563" Column="17" TopLine="543"/>
+        <Caret Line="514" Column="3" TopLine="508"/>
       </Position24>
       <Position25>
-        <Filename Value="uchart.pas"/>
-        <Caret Line="2789" Column="3" TopLine="2782"/>
-      </Position25>
-      <Position26>
-        <Filename Value="uchart.pas"/>
-        <Caret Line="514" Column="3" TopLine="508"/>
-      </Position26>
-      <Position27>
         <Filename Value="nxpascal/src/nxGL.pas"/>
         <Caret Line="370" Column="14" TopLine="359"/>
-      </Position27>
-      <Position28>
+      </Position25>
+      <Position26>
         <Filename Value="nxpascal/src/nxGL.pas"/>
         <Caret Line="765" Column="26" TopLine="759"/>
-      </Position28>
-      <Position29>
+      </Position26>
+      <Position27>
         <Filename Value="uchart.pas"/>
         <Caret Line="2827" TopLine="2816"/>
-      </Position29>
-      <Position30>
+      </Position27>
+      <Position28>
         <Filename Value="uchart.pas"/>
         <Caret Line="2672" Column="48" TopLine="2659"/>
-      </Position30>
+      </Position28>
     </JumpHistory>
   </ProjectOptions>
   <CompilerOptions>
@@ -1146,6 +1138,7 @@
     </Parsing>
     <Linking>
       <Debugging>
+        <GenerateDebugInfo Value="False"/>
         <UseLineInfoUnit Value="False"/>
         <StripSymbols Value="True"/>
       </Debugging>
