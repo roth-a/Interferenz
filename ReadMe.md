@@ -23,24 +23,24 @@ Just run the binary bin/Interferenz.exe
 
 Synapse:  http://www.ararat.cz/synapse
   When you're in the Interferenz directory do:
-  svn checkout https://svn.code.sf.net/p/synalist/code/trunk synapse
+  `svn checkout https://svn.code.sf.net/p/synalist/code/trunk synapse`
 
 nxPascal:  https://github.com/Zaflis/nxpascal
   When you're in the Interferenz directory do:
-  git clone https://github.com/Zaflis/nxpascal.git
+  `git clone https://github.com/Zaflis/nxpascal.git`
 
 Expandpanels:   http://wiki.lazarus.freepascal.org/TMyRollOut_and_ExpandPanel  
   Download and install the component into Lazarus
-  git clone https://github.com/roth-a/expandpanels.git
+  `git clone https://github.com/roth-a/expandpanels.git`
 
 ColoredBox:  https://github.com/roth-a/ColoredBox  Download and install the component into Lazarus
-  git clone https://github.com/roth-a/ColoredBox.git
+  `git clone https://github.com/roth-a/ColoredBox.git`
 
 SimpleWebViewer: https://github.com/roth-a/SimpleWebViewer Download and install the component into Lazarus
-	  git clone https://github.com/roth-a/SimpleWebViewer.git
+  `git clone https://github.com/roth-a/SimpleWebViewer.git`
       
 GroupHeader:  https://github.com/roth-a/GroupHeader    Download and install the component into Lazarus
-	  git clone https://github.com/roth-a/GroupHeader.git
+  `git clone https://github.com/roth-a/GroupHeader.git`
 
 
 ### Install FPC and Lazarus 

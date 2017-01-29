@@ -1,5 +1,7 @@
 synapse/*
 backup/*
+lib/*
+nxpascal/*
 
 
 
