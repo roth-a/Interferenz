@@ -18,7 +18,7 @@ uses
   Classes, SysUtils, LResources, Forms, Controls, Graphics, Dialogs,
   OpenGLContext,  Uanderes,UChart, StdCtrls, EditBtn,
   ExtCtrls,LCLIntf, gl,glut,  Menus, ActnList,
-  Arrow, ExpandPanels, Spin, ComCtrls, Buttons,  IpHtml, USimpleWebViewer, UGroupHeader, StdActns,UColoredBox, math;
+  Arrow, ExpandPanels, Spin, ComCtrls, Buttons,  IpHtml, USimpleWebViewer, UGroupHeader, StdActns,UColoredBox, math, Types;
 
 type
 
@@ -1326,7 +1326,7 @@ begin
     exit;
     end;
 
-  if not EnableIdleDraw or not MouseOverBox then
+  if not EnableIdleDraw  then
     exit;
 
   if amrechnen then
@@ -1445,6 +1445,8 @@ begin
       VertScrollBar.Visible:= showit;
       end;
 end;
+
+
 
 procedure TForm1.RadioReflectionClick(Sender: TObject);
 begin
@@ -1940,10 +1942,10 @@ begin
     Align:=alClient;
     Initnx;
     Resize;
-    OnMouseMove:=@OGLBoxMouseMove;
-    OnMouseWheel:=@oglBoxMouseWheel;
-    OnMouseEnter:=@PanelOGLBoxEnter;
-    OnMouseLeave:=@PanelOGLBoxExit;
+    //OnMouseMove:=@OGLBoxMouseMove;
+    //OnMouseWheel:=@oglBoxMouseWheel;
+    //OnMouseEnter:=@PanelOGLBoxEnter;
+    //OnMouseLeave:=@PanelOGLBoxExit;
     end;
   EnableIdleDraw:=false;
   EnableIdleDraw:=true;

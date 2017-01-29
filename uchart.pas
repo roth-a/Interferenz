@@ -262,11 +262,11 @@ type
     procedure DoBeginZoomRect(Sender: TObject; Shift: TShiftState; rect:TRect);
     procedure DoEndZoomRect(Sender: TObject; Shift: TShiftState; rect:TRect);
 
-    procedure MouseDown(Button: TMouseButton; Shift:TShiftState; X,Y:Integer); override;
-    procedure MouseMove(Shift: TShiftState; X,Y: Integer); override;
-    procedure MouseUp(Button: TMouseButton; Shift:TShiftState; X,Y:Integer); override;
-    function  DoMouseWheel(Shift: TShiftState; WheelDelta: Integer;  MousePos: TPoint): Boolean; override;
-    procedure MouseEnter; override;
+    procedure MouseDown(Sender: TObject; Button: TMouseButton; Shift:TShiftState; X,Y:Integer);
+    procedure MouseMove(Sender: TObject; Shift: TShiftState; X,Y: Integer);
+    procedure MouseUp(Sender: TObject; Button: TMouseButton; Shift:TShiftState; X,Y:Integer);
+    procedure MouseWheel(Sender: TObject; Shift: TShiftState; WheelDelta: Integer;  MousePos: TPoint; var result:Boolean);
+    procedure MouseEnter(Sender: TObject);
 
     procedure DrawAxis;
     procedure DrawAllCharts;
@@ -538,8 +538,11 @@ begin
   nx.CreateGlWindow(self);
   nx.CreateFont('Courier',Font.Size,256);
 
-
-
+  nx.window.OnMouseMove:=@MouseMove;
+  nx.window.OnMouseDown:=@MouseDown;
+  nx.window.OnMouseUp:=@MouseUp;
+  nx.window.OnMouseWheel:=@MouseWheel;
+  nx.window.OnMouseEnter:=@MouseEnter;
 
   if nx.LastError<>'' then showmessage(nx.LastError);
 end;
@@ -1018,7 +1021,7 @@ end;
 
 
 
-procedure TOGlBox.MouseDown(Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
+procedure TOGlBox.MouseDown(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
 var i:integer;
 begin
   inherited MouseDown(Button, Shift, X, Y);
@@ -1077,7 +1080,7 @@ end;
 
 
 
-procedure TOGlBox.MouseMove(Shift: TShiftState; X, Y: Integer);
+procedure TOGlBox.MouseMove(Sender: TObject; Shift: TShiftState; X, Y: Integer);
 begin
   inherited MouseMove(Shift, X, Y);
   
@@ -1113,7 +1116,7 @@ end;
 
 
 
-procedure TOGlBox.MouseUp(Button: TMouseButton; Shift: TShiftState; X,  Y: Integer);
+procedure TOGlBox.MouseUp(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X,  Y: Integer);
 begin
   inherited MouseUp(Button, Shift, X, Y);
   
@@ -1153,7 +1156,7 @@ end;
 
 
 
-function TOGlBox.DoMouseWheel(Shift: TShiftState; WheelDelta: Integer;  MousePos: TPoint): Boolean;
+procedure TOGlBox.MouseWheel(Sender: TObject; Shift: TShiftState; WheelDelta: Integer;  MousePos: TPoint; var result:Boolean);
 var i:integer;
   a:Tpoint;
 begin
@@ -1189,7 +1192,7 @@ begin
       end;
 end;
 
-procedure TOGlBox.MouseEnter;
+procedure TOGlBox.MouseEnter(Sender: TObject);
 begin
   inherited MouseEnter;
 
@@ -2822,7 +2825,7 @@ begin
   inherited;
   
   BackgroundColor:=clBlack;
-  BackgroundAlpha:=0.3;
+  BackgroundAlpha:=0.9;
 end;
 
 destructor TOGlLabelBackground.Destroy;
