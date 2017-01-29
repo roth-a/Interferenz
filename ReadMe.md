@@ -19,8 +19,6 @@ Just run the binary bin/Interferenz.exe
 
 # Development  Info
 
-### Components for Lazarus
-
 Synapse:  http://www.ararat.cz/synapse
   When you're in the Interferenz directory do:
   `svn checkout https://svn.code.sf.net/p/synalist/code/trunk synapse`
@@ -28,6 +26,8 @@ Synapse:  http://www.ararat.cz/synapse
 nxPascal:  https://github.com/Zaflis/nxpascal
   When you're in the Interferenz directory do:
   `git clone https://github.com/Zaflis/nxpascal.git`
+
+### Components for Lazarus
 
 Expandpanels:   http://wiki.lazarus.freepascal.org/TMyRollOut_and_ExpandPanel  
   Download and install the component into Lazarus
