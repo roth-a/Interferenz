@@ -15,10 +15,9 @@ unit Unit1;
 interface
 
 uses
-  Classes, SysUtils, LResources, Forms, Controls, Graphics, Dialogs,
-  OpenGLContext,  Uanderes,UChart, StdCtrls, EditBtn,
-  ExtCtrls,LCLIntf, gl,Menus, ActnList,
-  Arrow, ExpandPanels, Spin, ComCtrls, Buttons,  IpHtml, USimpleWebViewer, UGroupHeader, StdActns,UColoredBox, math, Types;
+  Classes, SysUtils, LResources, Forms, Controls, Graphics, Dialogs, Uanderes,UChart, StdCtrls,
+  ExtCtrls, Menus, ActnList,ExpandPanels, Spin, ComCtrls, Buttons,   USimpleWebViewer,
+  UGroupHeader, StdActns,UColoredBox, math;
 
 type
 

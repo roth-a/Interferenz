@@ -24,9 +24,9 @@ Die folgenden Charts sind auf z= nChart
 }
 
 uses
-  Classes, OpenGLContext,  SysUtils,uanderes,lcltype, graphics, math, Messages,
+  Classes,  SysUtils,uanderes,lcltype, graphics, math, Messages,
   LResources, Forms, Controls, Dialogs, Interfaces,
-  StdCtrls,  ExtCtrls, LCLIntf,gl,glu, nxGL, nxTypes,  utxt,UVector;
+  StdCtrls,  ExtCtrls, gl,glu, nxGL, nxTypes,  utxt,UVector;
   
 type
   TAxisKind=(YAxisKind,XAxisKind);
@@ -511,11 +511,9 @@ begin
   nx.Clear(true,true);
 
   Enable2D;
+  //nx.rs.AddBlend:=true;
 
   glTranslatef(0,0, -1000);
-
-//  glTranslatef(PanPoint.X, PanPoint.Y, -1000);
-//  glScalef(ZoomScale.x, ZoomScale.y, 1);
 
 
   DrawAllCharts;
@@ -537,6 +535,7 @@ procedure TOGlBox.Initnx;
 begin
   nx.CreateGlWindow(self);
   nx.CreateFont('Courier',Font.Size,256);
+  //nx.CreateBasicFont;
 
   nx.window.OnMouseMove:=@MouseMove;
   nx.window.OnMouseDown:=@MouseDown;
@@ -549,18 +548,19 @@ end;
 
 procedure TOGlBox.Enable2D;
 begin
-  nx.Enable2D(false);
+  nx.Enable2D;
   glMatrixMode(GL_PROJECTION);    { prepare for and then }
   glLoadIdentity ();               { define the projection }
   //glOrtho(OGLReality.Left, OGLReality.Right, OGLReality.Bottom, OGLReality.Top,  znear,  zfar);
   glOrtho(OGLReality.Left, OGLReality.Right, OGLReality.Bottom, OGLReality.Top,  znear,  zfar);
-  glMatrixMode (GL_MODELVIEW);  { back to modelview matrix }
+  //glMatrixMode (GL_MODELVIEW);  { back to modelview matrix }
   //glViewport(0,0, Width, Height);         { define the viewport }
   glEnable(GL_DEPTH_TEST);
   glDepthFunc(GL_LESS);
   //glLoadIdentity;
   nx.rs.CullBack:=False;
   nx.rs.CullFront:=False;
+  nx.rs.AddBlend:=True;
 end;
 
 procedure TOGlBox.Disable2D;
@@ -572,8 +572,8 @@ procedure TOGlBox.DrawTestTriangle;
 begin
     //paint test triangle
   glPushMatrix;
-  glTranslatef(0,0,0);
-  glScalef(100,100,0);
+  //glTranslatef(0,0,0);
+  glScalef(100,100,1);
   glBegin(GL_TRIANGLES);
     glColor3f(1, 0, 0);
     glVertex3f(-1, -1, 0);
@@ -731,6 +731,7 @@ begin
   tex.Enable;
     glPushMatrix;
     glScalef(1,-1,1);
+    glScalef(10/Font.Size,10/Font.Size,1);
     nx.SetFont(Font_index);
     nx.Font[Font_index].Draw(0, -nx.Font[0].height div 2, textstr);
     glPopMatrix;
@@ -2622,7 +2623,7 @@ begin
   for i:=0 to DividedStrings.Count-1 do
     len:=max(len,Length(DividedStrings[i]));
 
-  result:=OGLBox.TransDelta2OGLReality(Koor1(OGLBox.Font.Size*len/1.4 , kkPixelx)).v;
+  result:=OGLBox.TransDelta2OGLReality(Koor1(OGLBox.Font.Size*len/1.3 , kkPixelx)).v;
 end;
 
 procedure TOGlLabel.setFText(const AValue: string);
@@ -2825,7 +2826,7 @@ begin
   inherited;
   
   BackgroundColor:=clBlack;
-  BackgroundAlpha:=0.9;
+  BackgroundAlpha:=0.5;
 end;
 
 destructor TOGlLabelBackground.Destroy;
