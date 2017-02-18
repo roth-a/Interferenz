@@ -511,14 +511,13 @@ begin
   nx.Clear(true,true);
 
   Enable2D;
-  nx.rs.AddBlend:=true;
-  glDisable(GL_DEPTH_TEST);
+  //nx.rs.AddBlend:=true;
+  glBlendFunc(GL_One, GL_ONE);
 
 
-//  glBlendFunc(GL_SRC_ALPHA,GL_ONE_MINUS_SRC_ALPHA);
-//  glBlendFunc(GL_ONE,GL_ONE);
 
-  glTranslatef(0,0, -100);
+  //glPushMatrix;
+  //glTranslatef(0,0, -10000);
 
 
   DrawAllCharts;
@@ -526,14 +525,14 @@ begin
   Header.Draw;
   //if Form1.CheckViewLittleHelp2.Checked then
   //  HelpBoxZoom.Draw;
+  //glPopMatrix;
 
   if IsZoomingRect then
     DrawRect;
 
-  //glenable(GL_DEPTH_TEST);
+  Disable2D;
   MiniSlit.DrawOGL;
 
-  Disable2D;
   nx.Flip;
 end;
 
@@ -550,11 +549,12 @@ begin
   nx.window.OnMouseEnter:=@MouseEnter;
 
   if nx.LastError<>'' then showmessage(nx.LastError);
+  glDepthRange(0,-1000000000000);
 end;
 
 procedure TOGlBox.Enable2D;
 begin
-  nx.Enable2D;
+  //nx.Enable2D;
   glMatrixMode(GL_PROJECTION);    { prepare for and then }
   glLoadIdentity ();               { define the projection }
   //glOrtho(OGLReality.Left, OGLReality.Right, OGLReality.Bottom, OGLReality.Top,  znear,  zfar);
@@ -566,12 +566,12 @@ begin
   //glLoadIdentity;
   nx.rs.CullBack:=False;
   nx.rs.CullFront:=False;
-  nx.rs.AddBlend:=True;
+  //nx.rs.AddBlend:=True;
 end;
 
 procedure TOGlBox.Disable2D;
 begin
-  nx.Disable2D;
+  //nx.Disable2D;
 end;
 
 procedure TOGlBox.DrawTestTriangle(scale: integer);
@@ -1756,7 +1756,7 @@ begin
 
   MiniSlit:=TOGL3DNSlit.Create(Koor3(0,0, DepthOverlay.v, kkOGLRealityx, kkOGLRealityy, kkOGLRealityz),
                                Koor3(130,30, -200, kkOGLRealityx, kkOGLRealityy, kkOGLRealityz),
-                               Koor3(100,100,1/15*2, kkOGLRealityx, kkOGLRealityy, kkOGLRealityz));
+                               Koor3(50,50,50, kkOGLRealityx, kkOGLRealityy, kkOGLRealityz));
 
 
   FKeyPan:=[ssLeft];
@@ -2725,7 +2725,7 @@ begin
 
   //linie
   //glEnable(GL_BLEND);
-  //glBlendFunc(GL_SRC_ALPHA,GL_ONE_MINUS_SRC_ALPHA);
+  glBlendFunc(GL_SRC_ALPHA,GL_ONE_MINUS_SRC_ALPHA);
 
   glBegin(GL_LINE_LOOP);
     glColor4f(red(Pen.Color),Green(Pen.Color),Blue(Pen.Color),PenAlpha);
@@ -2759,6 +2759,7 @@ begin
 
     //glDisable(GL_BLEND);
     end;
+  glBlendFunc(GL_SRC_ALPHA,GL_ONE);
 end;
 
 constructor TOGLRect.Create;
@@ -2894,6 +2895,7 @@ end;
 
 procedure TOGL3DNSlit.DrawOGL;
 const gridcount=11;
+      a=0.5;
 var r,g,b:byte;
     q:PGLUquadric;
     i:integer;
@@ -2903,37 +2905,41 @@ begin
   //  or(AutoVisible and (beta=0) and (theta=0)) then
   //  exit;
 
-  nx.Disable2D;
   // set up the projection matrix (the camera)
-  glViewport(0,0, OGLBox.Width, OGLBox.Height);         { define the viewport }
+  glViewport(0,0, OGLBox.width , OGLBox.Height );         { define the viewport }
   glMatrixMode(GL_PROJECTION);
   glLoadIdentity();
-  gluPerspective(70, OGLBox.OGLReality.width/OGLBox.OGLReality.height, 0, 1000);  	// Perspektive den neuen Maßen anpassen.
+  //glTranslatef(0, 0.3, 0);
+  gluPerspective(45, OGLBox.OGLReality.width/OGLBox.OGLReality.height, 0, 100000);  	// Perspektive den neuen Maßen anpassen.
   //glTranslatef(400,400,0);
   // set up the modelview matrix (the objects)
   glMatrixMode(GL_MODELVIEW);
   glLoadIdentity();
+   //glDepthMask(GL_TRUE);
+
 
   //gluLookAt(-200, -200, 100,  0, 0, 0,     0, 1, 0);    //gluLookAt(camera[0], camera[1], camera[2], /* look from camera XYZ */ 0, 0, 0, /* look at the origin */ 0, 1, 0); /* positive Y up vector
-
   //nx.Disable2D;
   //glMatrixMode(GL_PROJECTION);
   //gluPerspective(90, 1{OGLBox.OGLReality.width/OGLBox.OGLReality.height}, znear, zfar);  	// Perspektive den neuen Maßen anpassen.
   //glLoadIdentity();
-  nx.rs.AddBlend:=True;
+  //nx.rs.AddBlend:=False;
+  //glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+  //nx.rs.DepthTest:=True;
   nx.rs.CullBack:=False;
+  glBlendFunc(GL_One, GL_ONE_MINUS_SRC_ALPHA );
+  //glBlendFunc(GL_One, GL_ONE );
+  //nx.rs.CullFront:=False;
+
+
 
   glPushMatrix;
-  glTranslatef(0,0,0);
-  OGLBox.DrawTestTriangle(10);
-  glPopMatrix;
+    glTranslatef(-100* OGLBox.OGLReality.width/OGLBox.OGLReality.height, -200/ OGLBox.OGLReality.width*OGLBox.OGLReality.height, -300);
 
-  //glEnable(GL_DEPTH_TEST);
-  glPushMatrix;
-
-    glTranslatef(Pos.x.v+SpaceToBorder.x.v, Pos.y.v+SpaceToBorder.y.v, -1+SpaceToBorder.z.v-200);
+  //glTranslatef(Pos.x.v+SpaceToBorder.x.v, Pos.y.v+SpaceToBorder.y.v, -1+SpaceToBorder.z.v-600);
     //glTranslatef(Pos.x.v+SpaceToBorder.x.v, Pos.y.v+SpaceToBorder.y.v, 0.1);
-    glScalef(Sizes.x.v, Sizes.y.v, Sizes.z.v);  // das macht das Gitter flach
+    glScalef(Sizes.x.v, Sizes.y.v, Sizes.z.v);
+
 
 
     //zeichne LaserStrahl
@@ -2944,12 +2950,13 @@ begin
       glTranslatef(LaserPunkt.x2,LaserPunkt.x3, LaserPunkt.x1);
 
       ColorValues(clRed, r,g,b);
-      glColor3f(r/255,g/255,b/255);
+      glColor4f(r/255,g/255,b/255, a);
 
       q:=gluNewQuadric();
       gluCylinder(q, 0.02, 0.02, 2, 12, 1);
       gluDeleteQuadric(q);
     glPopMatrix;
+
 
 
 
@@ -2962,7 +2969,7 @@ begin
     glPushMatrix;
       glScalef(0.8,0.8,0.8);
       ColorValues(clBlue, r,g,b);
-      glColor3f(r/255,g/255,b/255);
+      glColor4f(r/255,g/255,b/255, a);
 
       q:=gluNewQuadric();
       gluPartialDisk(q, 0, 1, 10, 1, 0, BogtoRad(beta));
@@ -2979,7 +2986,7 @@ begin
       glRotatef((90), 1,0,0);  //rotiere wieder zurück
       glScalef(0.8,0.8,0.8);      // das macht das Gitter flach
       ColorValues(clGreen, r,g,b);
-      glColor3f(r/255,g/255,b/255);
+      glColor4f(r/255,g/255,b/255,a);
 
       q:=gluNewQuadric();
       gluPartialDisk(q, 0, 1, 10, 1, 0, -BogtoRad(theta));
@@ -2987,14 +2994,8 @@ begin
     glPopMatrix;
 
 
-    glScalef(0.1,1,1);      // das macht das Gitter flach
 
-
-//    q:=gluNewQuadric();
-//    gluCylinder(q, 0.1, 0.1, 5, 12, 1);
-//    gluDeleteQuadric(q);
-
-
+    //draw the grid
     ColorValues(ColorGrid, r,g,b);
     glColor3f(r/255,g/255,b/255);
     glBegin(GL_LINES);
@@ -3005,29 +3006,7 @@ begin
         end;
     glEnd;
 
-
-
-    //ColorValues(ColorTop, r,g,b);
-    //glColor3f(r/255,g/255,b/255);
-    //glBegin(GL_QUADS);
-      //glVertex3f(0,0,1);
-      //glVertex3f(0,1,1);
-      //glVertex3f(1,1,1);
-      //glVertex3f(1,0,1);
-    //glEnd;
-
-    //ColorValues(ColorBottom, r,g,b);
-    //glColor3f(r/255,g/255,b/255);
-    //glBegin(GL_QUADS);
-      //glVertex3f(0,0,0);
-      //glVertex3f(0,1,0);
-      //glVertex3f(1,1,0);
-      //glVertex3f(1,0,0);
-    //glEnd;
   glPopMatrix;
-  nx.Enable2D;
-
-  //glOrtho(OGLBox.OGLReality.Left, OGLBox.OGLReality.Right, OGLBox.OGLReality.Bottom, OGLBox.OGLReality.Top,  znear,  zfar);
 end;
 
 constructor TOGL3DNSlit.Create(aPos, aSpaceToBorder, aSizes: TKoor3);
