@@ -1712,7 +1712,7 @@ end;
 
 procedure TForm1.ActionFullscreenExecute(Sender: TObject);
 begin
-  FullScreen:=not FullScreen;
+  //FullScreen:=not FullScreen;
 end;
 
 procedure TForm1.ActionHelpExecute(Sender: TObject);
@@ -2026,6 +2026,8 @@ begin
   if FullScreen then
     FullScreen:=FullScreen;
   OGLBox.Resize;
+  //OGLBox.SetFocus;
+  //OGLBox.DrawOGL;
 end;
 
 

@@ -133,8 +133,12 @@ object Form1: TForm1
           'clWhite'
           'clWhite'
           'clWhite'
+          'clWhite'
+          'clWhite'
         )
         ItemColors.Strings = (
+          'clBlue'
+          'clBlue'
           'clBlue'
           'clBlue'
           'clBlue'
@@ -1030,8 +1034,12 @@ object Form1: TForm1
             'clWhite'
             'clWhite'
             'clWhite'
+            'clWhite'
+            'clWhite'
           )
           ItemColors.Strings = (
+            'clBlue'
+            'clBlue'
             'clBlue'
             'clBlue'
             'clBlue'
@@ -1084,8 +1092,12 @@ object Form1: TForm1
             'clWhite'
             'clWhite'
             'clWhite'
+            'clWhite'
+            'clWhite'
           )
           ItemColors.Strings = (
+            'clBlue'
+            'clBlue'
             'clBlue'
             'clBlue'
             'clBlue'

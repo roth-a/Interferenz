@@ -886,6 +886,8 @@ begin
   Header.pos.x.Kind:=kkOGLx;
 
   MiniSlit.Pos:=Koor3(OGLReality.Left, OGLReality.Bottom, DepthOverlay.v, kkOGLRealityx, kkOGLRealityy, kkOGLRealityz);
+
+  //nx.window.MakeCurrent();
 end;
 
 
