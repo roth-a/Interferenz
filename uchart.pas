@@ -19,7 +19,7 @@ interface
 
 Die Achsen sind auf z= 0
 Die folgenden Charts sind auf z= nChart
-
+                                            zz
 
 }
 
@@ -363,7 +363,7 @@ type
     procedure Initnx;
     procedure Enable2D;
     procedure Disable2D;
-    procedure DrawTestTriangle;
+    procedure DrawTestTriangle(scale:integer=30);
 
     constructor Create(TheOwner: TComponent); override;
     destructor Destroy; override;
@@ -512,8 +512,13 @@ begin
 
   Enable2D;
   nx.rs.AddBlend:=true;
+  glDisable(GL_DEPTH_TEST);
 
-  glTranslatef(0,0, -1000);
+
+//  glBlendFunc(GL_SRC_ALPHA,GL_ONE_MINUS_SRC_ALPHA);
+//  glBlendFunc(GL_ONE,GL_ONE);
+
+  glTranslatef(0,0, -100);
 
 
   DrawAllCharts;
@@ -525,6 +530,7 @@ begin
   if IsZoomingRect then
     DrawRect;
 
+  //glenable(GL_DEPTH_TEST);
   MiniSlit.DrawOGL;
 
   Disable2D;
@@ -553,9 +559,9 @@ begin
   glLoadIdentity ();               { define the projection }
   //glOrtho(OGLReality.Left, OGLReality.Right, OGLReality.Bottom, OGLReality.Top,  znear,  zfar);
   glOrtho(OGLReality.Left, OGLReality.Right, OGLReality.Bottom, OGLReality.Top,  znear,  zfar);
-  //glMatrixMode (GL_MODELVIEW);  { back to modelview matrix }
-  //glViewport(0,0, Width, Height);         { define the viewport }
-  glEnable(GL_DEPTH_TEST);
+  glMatrixMode (GL_MODELVIEW);  { back to modelview matrix }
+  glViewport(0,0, Width, Height);         { define the viewport }
+  //glEnable(GL_DEPTH_TEST);
   glDepthFunc(GL_LESS);
   //glLoadIdentity;
   nx.rs.CullBack:=False;
@@ -568,12 +574,12 @@ begin
   nx.Disable2D;
 end;
 
-procedure TOGlBox.DrawTestTriangle;
+procedure TOGlBox.DrawTestTriangle(scale: integer);
 begin
     //paint test triangle
   glPushMatrix;
   //glTranslatef(0,0,0);
-  glScalef(100,100,1);
+  glScalef(scale,scale,1);
   glBegin(GL_TRIANGLES);
     glColor3f(1, 0, 0);
     glVertex3f(-1, -1, 0);
@@ -1749,7 +1755,7 @@ begin
 
 
   MiniSlit:=TOGL3DNSlit.Create(Koor3(0,0, DepthOverlay.v, kkOGLRealityx, kkOGLRealityy, kkOGLRealityz),
-                               Koor3(130,30, 0, kkOGLRealityx, kkOGLRealityy, kkOGLRealityz),
+                               Koor3(130,30, -200, kkOGLRealityx, kkOGLRealityy, kkOGLRealityz),
                                Koor3(100,100,1/15*2, kkOGLRealityx, kkOGLRealityy, kkOGLRealityz));
 
 
@@ -1870,6 +1876,8 @@ begin
   //linie
   //glDisable(GL_DEPTH_TEST);
   //glBlendFunc(GL_ONE, GL_ONE);
+  //glBlendFunc(GL_SRC_ALPHA, GL_ONE);
+  //nx.rs.AddBlend:=True;
 
   glBegin(GL_Quad_STRIP);
 
@@ -2891,15 +2899,40 @@ var r,g,b:byte;
     i:integer;
     LaserPunkt:TVec;
 begin
-  if not Visible
-    or(AutoVisible and (beta=0) and (theta=0)) then
-    exit;
+  //if not Visible
+  //  or(AutoVisible and (beta=0) and (theta=0)) then
+  //  exit;
 
-  gluPerspective(90, 1{OGLBox.OGLReality.width/OGLBox.OGLReality.height}, znear, zfar);  	// Perspektive den neuen Maßen anpassen.
+  nx.Disable2D;
+  // set up the projection matrix (the camera)
+  glViewport(0,0, OGLBox.Width, OGLBox.Height);         { define the viewport }
+  glMatrixMode(GL_PROJECTION);
+  glLoadIdentity();
+  gluPerspective(70, OGLBox.OGLReality.width/OGLBox.OGLReality.height, 0, 1000);  	// Perspektive den neuen Maßen anpassen.
+  //glTranslatef(400,400,0);
+  // set up the modelview matrix (the objects)
+  glMatrixMode(GL_MODELVIEW);
+  glLoadIdentity();
 
+  //gluLookAt(-200, -200, 100,  0, 0, 0,     0, 1, 0);    //gluLookAt(camera[0], camera[1], camera[2], /* look from camera XYZ */ 0, 0, 0, /* look at the origin */ 0, 1, 0); /* positive Y up vector
+
+  //nx.Disable2D;
+  //glMatrixMode(GL_PROJECTION);
+  //gluPerspective(90, 1{OGLBox.OGLReality.width/OGLBox.OGLReality.height}, znear, zfar);  	// Perspektive den neuen Maßen anpassen.
+  //glLoadIdentity();
+  nx.rs.AddBlend:=True;
+  nx.rs.CullBack:=False;
 
   glPushMatrix;
-    glTranslatef(Pos.x.v+SpaceToBorder.x.v, Pos.y.v+SpaceToBorder.y.v, -1+SpaceToBorder.z.v);
+  glTranslatef(0,0,0);
+  OGLBox.DrawTestTriangle(10);
+  glPopMatrix;
+
+  //glEnable(GL_DEPTH_TEST);
+  glPushMatrix;
+
+    glTranslatef(Pos.x.v+SpaceToBorder.x.v, Pos.y.v+SpaceToBorder.y.v, -1+SpaceToBorder.z.v-200);
+    //glTranslatef(Pos.x.v+SpaceToBorder.x.v, Pos.y.v+SpaceToBorder.y.v, 0.1);
     glScalef(Sizes.x.v, Sizes.y.v, Sizes.z.v);  // das macht das Gitter flach
 
 
@@ -2992,6 +3025,7 @@ begin
       //glVertex3f(1,0,0);
     //glEnd;
   glPopMatrix;
+  nx.Enable2D;
 
   //glOrtho(OGLBox.OGLReality.Left, OGLBox.OGLReality.Right, OGLBox.OGLReality.Bottom, OGLBox.OGLReality.Top,  znear,  zfar);
 end;
