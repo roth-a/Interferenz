@@ -1094,10 +1094,16 @@ end;
 
 
 
+
+
+
 procedure TOGlBox.MouseMove(Sender: TObject; Shift: TShiftState; X, Y: Integer);
 begin
   inherited MouseMove(Shift, X, Y);
-  
+
+//  Form1.LabelMaxCount.Caption:=vectostr(GetOGLPos(x,y));
+
+
   Shift:=Shift-[ssCaps, ssNum,ssScroll,ssTriple,ssQuad];
   //pan
   if IsPaning {(FKeyPan=Shift)} then
@@ -2896,6 +2902,7 @@ begin
 end;
 
 
+
 { TOGL3DNSlit }
 
 procedure TOGL3DNSlit.DrawOGL;
@@ -2906,12 +2913,15 @@ var r,g,b:byte;
     i:integer;
     LaserPunkt:TVec;
 begin
+  if SaS.count>0 then
+    LaserPunkt:=1/2*SaS.Screen[0].SingleSlit.CalcGzVec; // denn gz liegt ja in der x-Mitte des gezeichneten Gitters                                                                                      //x ist im Koordinatensystem on OpenGL jetzt gemeint
+
   //if not Visible
   //  or(AutoVisible and (beta=0) and (theta=0)) then
   //  exit;
 
   // set up the projection matrix (the camera)
-  glViewport(0,0, OGLBox.width , OGLBox.Height );         { define the viewport }
+  glViewport(0,0, OGLBox.width  div 4 , OGLBox.Height div 4 );         { define the viewport }
   glMatrixMode(GL_PROJECTION);
   glLoadIdentity();
   //glTranslatef(0, 0.3, 0);
@@ -2923,7 +2933,6 @@ begin
    //glDepthMask(GL_TRUE);
 
 
-  //gluLookAt(-200, -200, 100,  0, 0, 0,     0, 1, 0);    //gluLookAt(camera[0], camera[1], camera[2], /* look from camera XYZ */ 0, 0, 0, /* look at the origin */ 0, 1, 0); /* positive Y up vector
   //nx.Disable2D;
   //glMatrixMode(GL_PROJECTION);
   //gluPerspective(90, 1{OGLBox.OGLReality.width/OGLBox.OGLReality.height}, znear, zfar);  	// Perspektive den neuen Maßen anpassen.
@@ -2938,20 +2947,26 @@ begin
 
 
 
+  //glPushMatrix;
+  //glTranslatef(Pos.x.v+SpaceToBorder.x.v,Pos.y.v+SpaceToBorder.y.v,-5);
+  //OGLBox.DrawTestTriangle(100);
+  //glPopMatrix;
+
   glPushMatrix;
-    glTranslatef(-100* OGLBox.OGLReality.width/OGLBox.OGLReality.height, -200/ OGLBox.OGLReality.width*OGLBox.OGLReality.height, -300);
+    gluLookAt(40, 30, 100,  0, 0, 0,     0, 1, 0);    //gluLookAt(camera[0], camera[1], camera[2], /* look from camera XYZ */ 0, 0, 0, /* look at the origin */ 0, 1, 0); /* positive Y up vector
+//  gluLookAt(-round(OGLBox.width*4/5 ), -round(OGLBox.Height*4/5 ), 3,  0, 0, 0,     0, 1, 0);    //gluLookAt(camera[0], camera[1], camera[2], /* look from camera XYZ */ 0, 0, 0, /* look at the origin */ 0, 1, 0); /* positive Y up vector
+  //glTranslatef(-100* OGLBox.OGLReality.width/OGLBox.OGLReality.height, -200/ OGLBox.OGLReality.width*OGLBox.OGLReality.height, -300);
+  //glTranslatef(0, 0, -100);
 
   //glTranslatef(Pos.x.v+SpaceToBorder.x.v, Pos.y.v+SpaceToBorder.y.v, -1+SpaceToBorder.z.v-600);
     //glTranslatef(Pos.x.v+SpaceToBorder.x.v, Pos.y.v+SpaceToBorder.y.v, 0.1);
     glScalef(Sizes.x.v, Sizes.y.v, Sizes.z.v);
 
 
+    glTranslatef(-LaserPunkt.x2,-LaserPunkt.x3, -LaserPunkt.x1);
 
     //zeichne LaserStrahl
     glPushMatrix;
-      if SaS.count>0 then
-        LaserPunkt:=1/2*SaS.Screen[0].SingleSlit.CalcGzVec; // denn gz liegt ja in der x-Mitte des gezeichneten Gitters
-                                                                                      //x ist im Koordinatensystem on OpenGL jetzt gemeint
       glTranslatef(LaserPunkt.x2,LaserPunkt.x3, LaserPunkt.x1);
 
       ColorValues(clRed, r,g,b);
@@ -2988,8 +3003,9 @@ begin
 
     //zeichne theta
     glPushMatrix;
+      glTranslatef(0,0,0.5);  //gehe in die mitte der y -Achse
       glRotatef((90), 1,0,0);  //rotiere wieder zurück
-      glScalef(0.8,0.8,0.8);      // das macht das Gitter flach
+      glScalef(0.6,0.6,0.6);      // das macht das Gitter flach
       ColorValues(clGreen, r,g,b);
       glColor4f(r/255,g/255,b/255,a);
 
