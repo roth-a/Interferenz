@@ -94,8 +94,8 @@
         <UnitName Value="UChart"/>
         <IsVisibleTab Value="True"/>
         <EditorIndex Value="1"/>
-        <TopLine Value="2914"/>
-        <CursorPos X="54" Y="2924"/>
+        <TopLine Value="2809"/>
+        <CursorPos X="86" Y="2816"/>
         <UsageCount Value="201"/>
         <Loaded Value="True"/>
       </Unit3>
@@ -922,31 +922,19 @@
         <UsageCount Value="10"/>
       </Unit123>
     </Units>
-    <JumpHistory Count="6" HistoryIndex="4">
+    <JumpHistory Count="3">
       <Position1>
         <Filename Value="uchart.pas"/>
         <Caret Line="510" Column="3" TopLine="526"/>
       </Position1>
       <Position2>
         <Filename Value="uchart.pas"/>
-        <Caret Line="2933" Column="38" TopLine="2927"/>
+        <Caret Line="515" Column="26" TopLine="504"/>
       </Position2>
       <Position3>
         <Filename Value="uchart.pas"/>
-        <Caret Line="2960" Column="24" TopLine="2943"/>
+        <Caret Line="2922" TopLine="2900"/>
       </Position3>
-      <Position4>
-        <Filename Value="uchart.pas"/>
-        <Caret Line="3006" Column="26" TopLine="2996"/>
-      </Position4>
-      <Position5>
-        <Filename Value="uchart.pas"/>
-        <Caret Line="2935" Column="16" TopLine="2929"/>
-      </Position5>
-      <Position6>
-        <Filename Value="uchart.pas"/>
-        <Caret Line="2927" Column="39" TopLine="2917"/>
-      </Position6>
     </JumpHistory>
   </ProjectOptions>
   <CompilerOptions>

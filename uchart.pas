@@ -2810,15 +2810,14 @@ begin
   if not Enabled then
     exit;
 
-  temp:=nx.rs.AddBlend;
-  nx.rs.AddBlend:=false;
 
   rand:=R2Vec(5,5);
 
+    // the blending is dependent on the alpha values  of the newly drawn object (src)
+  glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);    //src = foreground , dest = background
 
 
   glPushMatrix;
-
 
     d:=R2Vec(0,0);
     if  PosXIs=akRight then
@@ -2840,9 +2839,8 @@ begin
     glEnd;
 
 
-    //glDisable(GL_BLEND);
+    glBlendFunc(GL_ONE, GL_ONE);  // reset to additive blending
   glPopMatrix;
-  nx.rs.AddBlend:=temp;
   inherited;
 end;
 
