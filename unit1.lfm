@@ -136,8 +136,10 @@ object Form1: TForm1
           'clWhite'
           'clWhite'
           'clWhite'
+          'clWhite'
         )
         ItemColors.Strings = (
+          'clBlue'
           'clBlue'
           'clBlue'
           'clBlue'
@@ -626,8 +628,10 @@ object Form1: TForm1
             'clWhite'
             'clWhite'
             'clWhite'
+            'clWhite'
           )
           ItemColors.Strings = (
+            'clBlue'
             'clBlue'
             'clBlue'
             'clBlue'
@@ -686,8 +690,10 @@ object Form1: TForm1
             'clWhite'
             'clWhite'
             'clWhite'
+            'clWhite'
           )
           ItemColors.Strings = (
+            'clBlue'
             'clBlue'
             'clBlue'
             'clBlue'
@@ -732,6 +738,7 @@ object Form1: TForm1
       Button.Color = clSkyBlue
       Button.ColorExpanded = 16287767
       AnimationSpeed = 20
+      Animated = False
       Collapsed = True
       OnPreExpand = OptioRotatePreCollapse
       OnPreCollapse = OptioRotatePreCollapse
