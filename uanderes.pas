@@ -543,7 +543,7 @@ end;
 
 function Koor1(v: real; Kind: TKoorKind): TKoor1;
 begin
-  Result.v:=v;
+   Result.v:=v;
   Result.Kind:=Kind;
 end;
 

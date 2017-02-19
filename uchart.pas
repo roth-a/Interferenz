@@ -888,6 +888,8 @@ begin
   MiniSlit.Pos:=Koor3(OGLReality.Left, OGLReality.Bottom, DepthOverlay.v, kkOGLRealityx, kkOGLRealityy, kkOGLRealityz);
 
   //nx.window.MakeCurrent();
+  //if Form1.Active then
+  //  OGLBox.SetFocus;
 end;
 
 
@@ -1038,10 +1040,10 @@ var i:integer;
 begin
   inherited MouseDown(Button, Shift, X, Y);
   
-  Shift:=Shift-[ssCaps, ssNum,ssScroll,ssTriple,ssQuad, ssAlt];
+  Shift:=Shift-[ssCaps, ssNum,ssScroll,ssTriple,ssQuad, ssAlt, ssMeta];
 
   //pan
-  if (FKeyPan=Shift) and (Button=mbLeft) then
+  if (FKeyPan =Shift) and (Button=mbLeft) then
     begin
     FIsPaning:=true;
 
@@ -1106,6 +1108,7 @@ begin
       begin
       // here do something during pan
       DoPan(Shift, X ,y );
+      //OGLBox;
       end;
     end;
     
