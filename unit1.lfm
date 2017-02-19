@@ -135,8 +135,10 @@ object Form1: TForm1
           'clWhite'
           'clWhite'
           'clWhite'
+          'clWhite'
         )
         ItemColors.Strings = (
+          'clBlue'
           'clBlue'
           'clBlue'
           'clBlue'
@@ -518,22 +520,265 @@ object Form1: TForm1
     Width = 262
     HorzScrollBar.Page = 1
     HorzScrollBar.Visible = False
-    VertScrollBar.Page = 367
+    VertScrollBar.Page = 195
     Anchors = [akTop, akLeft, akBottom]
     ClientHeight = 367
-    ClientWidth = 240
+    ClientWidth = 260
     TabOrder = 4
-    object OptioRotate: TMyRollOut
+    object PProgrammerInfo: TMyRollOut
       Left = 0
+      Height = 27
+      Top = 0
+      Width = 250
+      ClientHeight = 27
+      ClientWidth = 250
+      Enabled = True
+      TabOrder = 0
+      Visible = False
+      CollapseKind = akTop
+      ExpandedSize = 392
+      ButtonPosition = akTop
+      ButtonSize = 27
+      Button.Left = 0
+      Button.Height = 27
+      Button.Top = 0
+      Button.Width = 254
+      Button.Caption = 'Programmers Info'
+      Button.Color = clSkyBlue
+      Button.ColorExpanded = 16287767
+      AnimationSpeed = 20
+      Animated = False
+      Collapsed = True
+      OnPreExpand = OptioRotatePreCollapse
+      OnPreCollapse = OptioRotatePreCollapse
+      object GroupBox10: TGroupBox
+        Left = 1
+        Height = 95
+        Top = 27
+        Width = 248
+        Align = alTop
+        Caption = 'Optionen'
+        ClientHeight = 76
+        ClientWidth = 246
+        TabOrder = 0
+        object CheckExImageIntensity: TCheckBox
+          Left = 3
+          Height = 21
+          Top = 4
+          Width = 221
+          Caption = 'Erweiterte ImageIntesity Anzeige'
+          TabOrder = 0
+        end
+        object CheckExMaximaDraw: TCheckBox
+          Left = 3
+          Height = 21
+          Top = 50
+          Width = 348
+          Caption = 'Wo wurden Maxima detektiert und genau gezeichnet?'
+          Font.Height = -8
+          ParentFont = False
+          TabOrder = 1
+        end
+        object CheckPixelexpandedImageIntesity: TCheckBox
+          Left = 3
+          Height = 21
+          Top = 28
+          Width = 348
+          Caption = 'Welche Punkte wurden bei ImageIntresity gezeichnet?'
+          Font.Height = -8
+          ParentFont = False
+          TabOrder = 2
+        end
+      end
+      object MyRollOutLog: TPanel
+        Left = 0
+        Height = 120
+        Top = 127
+        Width = 258
+        ClientHeight = 120
+        ClientWidth = 258
+        TabOrder = 1
+        object ListLog: TColoredListBox
+          Left = 1
+          Height = 118
+          Top = 1
+          Width = 256
+          Align = alClient
+          ItemHeight = 0
+          ScrollWidth = 254
+          Style = lbOwnerDrawFixed
+          TabOrder = 0
+          TopIndex = -1
+          ItemBackgroundColors.Strings = (
+            'clWhite'
+            'clWhite'
+            'clWhite'
+            'clWhite'
+            'clWhite'
+            'clWhite'
+            'clWhite'
+            'clWhite'
+            'clWhite'
+            'clWhite'
+            'clWhite'
+            'clWhite'
+            'clWhite'
+            'clWhite'
+            'clWhite'
+            'clWhite'
+          )
+          ItemColors.Strings = (
+            'clBlue'
+            'clBlue'
+            'clBlue'
+            'clBlue'
+            'clBlue'
+            'clBlue'
+            'clBlue'
+            'clBlue'
+            'clBlue'
+            'clBlue'
+            'clBlue'
+            'clBlue'
+            'clBlue'
+            'clBlue'
+            'clBlue'
+            'clBlue'
+          )
+          Add2ItemColors = clBlue
+          Add2ItemBackgroundColors = clWhite
+        end
+      end
+      object MyRollOutCountPoints: TPanel
+        Left = 1
+        Height = 142
+        Top = 247
+        Width = 256
+        ClientHeight = 142
+        ClientWidth = 256
+        TabOrder = 2
+        object ListCountPoints: TColoredListBox
+          Left = 1
+          Height = 140
+          Top = 1
+          Width = 254
+          Align = alClient
+          ItemHeight = 0
+          ScrollWidth = 252
+          Style = lbOwnerDrawFixed
+          TabOrder = 0
+          TopIndex = -1
+          ItemBackgroundColors.Strings = (
+            'clWhite'
+            'clWhite'
+            'clWhite'
+            'clWhite'
+            'clWhite'
+            'clWhite'
+            'clWhite'
+            'clWhite'
+            'clWhite'
+            'clWhite'
+            'clWhite'
+            'clWhite'
+            'clWhite'
+            'clWhite'
+            'clWhite'
+            'clWhite'
+            'clWhite'
+          )
+          ItemColors.Strings = (
+            'clBlue'
+            'clBlue'
+            'clBlue'
+            'clBlue'
+            'clBlue'
+            'clBlue'
+            'clBlue'
+            'clBlue'
+            'clBlue'
+            'clBlue'
+            'clBlue'
+            'clBlue'
+            'clBlue'
+            'clBlue'
+            'clBlue'
+            'clBlue'
+            'clBlue'
+          )
+          Add2ItemColors = clBlue
+          Add2ItemBackgroundColors = clWhite
+        end
+      end
+    end
+    object MyRollOutHelpLittle: TMyRollOut
+      Left = 0
+      Height = 27
+      Top = 136
+      Width = 250
+      ClientHeight = 27
+      ClientWidth = 250
+      Enabled = True
+      TabOrder = 1
+      CollapseKind = akTop
+      ExpandedSize = 240
+      ButtonPosition = akTop
+      ButtonSize = 27
+      Button.Left = 0
+      Button.Height = 27
+      Button.Top = 0
+      Button.Width = 254
+      Button.Caption = '1. Hilfe'
+      Button.Color = clSkyBlue
+      Button.ColorExpanded = 16287767
+      AnimationSpeed = 20
+      Collapsed = True
+      OnPreExpand = OptioRotatePreCollapse
+      OnPreCollapse = OptioRotatePreCollapse
+      object SimpleWebViewerHelpLittle: TSimpleWebViewer
+        Left = 1
+        Height = 1
+        Top = 26
+        Width = 248
+        Align = alClient
+        FixedTypeface = 'Courier New'
+        DefaultTypeFace = 'default'
+        DefaultFontSize = 12
+        FlagErrors = False
+        PrintSettings.MarginLeft = 0.5
+        PrintSettings.MarginTop = 0.5
+        PrintSettings.MarginRight = 0.5
+        PrintSettings.MarginBottom = 0.5
+        PrintSettings.Preview.Left = 341
+        PrintSettings.Preview.Top = 192
+        PrintSettings.Preview.Width = 1024
+        PrintSettings.Preview.Height = 576
+        TabOrder = 0
+      end
+      object CheckViewLittleHelp: TCheckBox
+        Left = 1
+        Height = 21
+        Top = 27
+        Width = 248
+        Align = alTop
+        Caption = 'Dieses Hilfepanel zeigen'
+        Checked = True
+        OnChange = CheckViewLittleHelpChange
+        State = cbChecked
+        TabOrder = 1
+      end
+    end
+    object OptioRotate: TMyRollOut
+      Left = 1
       Height = 27
       Top = 168
       Width = 250
       ClientHeight = 27
       ClientWidth = 250
       Enabled = True
-      TabOrder = 0
+      TabOrder = 2
       CollapseKind = akTop
-      ExpandedSize = 416
+      ExpandedSize = 339
       ButtonPosition = akTop
       ButtonSize = 27
       Button.Left = 0
@@ -710,114 +955,17 @@ object Form1: TForm1
         end
       end
     end
-    object OptioExtended: TMyRollOut
-      Left = 0
-      Height = 27
-      Top = 40
-      Width = 250
-      ClientHeight = 27
-      ClientWidth = 250
-      Enabled = True
-      TabOrder = 1
-      CollapseKind = akTop
-      ExpandedSize = 224
-      ButtonPosition = akTop
-      ButtonSize = 27
-      Button.Left = 0
-      Button.Height = 27
-      Button.Top = 0
-      Button.Width = 254
-      Button.Caption = 'Schirm-Abstand'
-      Button.Color = clSkyBlue
-      Button.ColorExpanded = 16287767
-      AnimationSpeed = 20
-      Collapsed = True
-      OnPreExpand = OptioRotatePreCollapse
-      OnPreCollapse = OptioRotatePreCollapse
-      object RadioGroupFormel: TRadioGroup
-        Left = 1
-        Height = 74
-        Top = 27
-        Width = 248
-        Align = alTop
-        AutoFill = True
-        Caption = 'Formel'
-        ChildSizing.LeftRightSpacing = 6
-        ChildSizing.TopBottomSpacing = 6
-        ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
-        ChildSizing.EnlargeVertical = crsHomogenousChildResize
-        ChildSizing.ShrinkHorizontal = crsScaleChilds
-        ChildSizing.ShrinkVertical = crsScaleChilds
-        ChildSizing.Layout = cclLeftToRightThenTopToBottom
-        ChildSizing.ControlsPerLine = 1
-        ClientHeight = 60
-        ClientWidth = 246
-        Font.Height = -9
-        ItemIndex = 0
-        Items.Strings = (
-          'Normal:  Abstand (Schirm-Spalt) >>g'
-          'Genau:  Abstand (Schirm-Spalt) >g'
-        )
-        OnClick = RadioGroupFormelClick
-        ParentFont = False
-        TabOrder = 0
-      end
-      object GroupBox2: TGroupBox
-        Left = 1
-        Height = 1
-        Top = 26
-        Width = 248
-        Align = alClient
-        Caption = 'Abstand Schirm-Spalt'
-        ClientHeight = 1
-        ClientWidth = 246
-        TabOrder = 1
-        object Label15: TLabel
-          Left = 181
-          Height = 18
-          Top = 17
-          Width = 12
-          Caption = 'm'
-          ParentColor = False
-        end
-        object EditDistScreenSlit: TEdit
-          Left = 101
-          Height = 24
-          Top = 14
-          Width = 80
-          OnChange = AllEditChange
-          OnKeyDown = EditDistScreenSlitKeyDown
-          TabOrder = 0
-          Text = '6E-6'
-        end
-        object TrackBarDistScreenSlit: TTrackBar
-          Left = -1
-          Height = 42
-          Top = 35
-          Width = 246
-          Max = 120000
-          Min = 2000
-          OnChange = AllTrackChange
-          Position = 20000
-          ScalePos = trRight
-          TickStyle = tsNone
-          Anchors = [akTop, akLeft, akRight]
-          Constraints.MaxHeight = 38
-          TabOrder = 1
-        end
-      end
-    end
     object OptioScreen: TMyRollOut
-      Left = 0
+      Left = 8
       Height = 27
-      Top = 104
+      Top = 96
       Width = 250
       ClientHeight = 27
       ClientWidth = 250
       Enabled = True
-      TabOrder = 2
+      TabOrder = 3
       CollapseKind = akTop
-      ExpandedSize = 376
+      ExpandedSize = 352
       ButtonPosition = akTop
       ButtonSize = 27
       Button.Left = 0
@@ -936,199 +1084,17 @@ object Form1: TForm1
         TabOrder = 3
       end
     end
-    object PProgrammerInfo: TMyRollOut
-      Left = 0
-      Height = 27
-      Top = 0
-      Width = 250
-      ClientHeight = 27
-      ClientWidth = 250
-      Enabled = True
-      TabOrder = 3
-      Visible = False
-      CollapseKind = akTop
-      ExpandedSize = 392
-      ButtonPosition = akTop
-      ButtonSize = 27
-      Button.Left = 0
-      Button.Height = 27
-      Button.Top = 0
-      Button.Width = 254
-      Button.Caption = 'Programmers Info'
-      Button.Color = clSkyBlue
-      Button.ColorExpanded = 16287767
-      AnimationSpeed = 20
-      Animated = False
-      Collapsed = True
-      OnPreExpand = OptioRotatePreCollapse
-      OnPreCollapse = OptioRotatePreCollapse
-      object GroupBox10: TGroupBox
-        Left = 1
-        Height = 95
-        Top = 27
-        Width = 248
-        Align = alTop
-        Caption = 'Optionen'
-        ClientHeight = 76
-        ClientWidth = 246
-        TabOrder = 0
-        object CheckExImageIntensity: TCheckBox
-          Left = 3
-          Height = 21
-          Top = 4
-          Width = 221
-          Caption = 'Erweiterte ImageIntesity Anzeige'
-          TabOrder = 0
-        end
-        object CheckExMaximaDraw: TCheckBox
-          Left = 3
-          Height = 21
-          Top = 50
-          Width = 348
-          Caption = 'Wo wurden Maxima detektiert und genau gezeichnet?'
-          Font.Height = -8
-          ParentFont = False
-          TabOrder = 1
-        end
-        object CheckPixelexpandedImageIntesity: TCheckBox
-          Left = 3
-          Height = 21
-          Top = 28
-          Width = 348
-          Caption = 'Welche Punkte wurden bei ImageIntresity gezeichnet?'
-          Font.Height = -8
-          ParentFont = False
-          TabOrder = 2
-        end
-      end
-      object MyRollOutLog: TPanel
-        Left = 0
-        Height = 120
-        Top = 127
-        Width = 258
-        ClientHeight = 120
-        ClientWidth = 258
-        TabOrder = 1
-        object ListLog: TColoredListBox
-          Left = 1
-          Height = 118
-          Top = 1
-          Width = 256
-          Align = alClient
-          ItemHeight = 0
-          ScrollWidth = 254
-          Style = lbOwnerDrawFixed
-          TabOrder = 0
-          TopIndex = -1
-          ItemBackgroundColors.Strings = (
-            'clWhite'
-            'clWhite'
-            'clWhite'
-            'clWhite'
-            'clWhite'
-            'clWhite'
-            'clWhite'
-            'clWhite'
-            'clWhite'
-            'clWhite'
-            'clWhite'
-            'clWhite'
-            'clWhite'
-            'clWhite'
-            'clWhite'
-          )
-          ItemColors.Strings = (
-            'clBlue'
-            'clBlue'
-            'clBlue'
-            'clBlue'
-            'clBlue'
-            'clBlue'
-            'clBlue'
-            'clBlue'
-            'clBlue'
-            'clBlue'
-            'clBlue'
-            'clBlue'
-            'clBlue'
-            'clBlue'
-            'clBlue'
-          )
-          Add2ItemColors = clBlue
-          Add2ItemBackgroundColors = clWhite
-        end
-      end
-      object MyRollOutCountPoints: TPanel
-        Left = 1
-        Height = 142
-        Top = 247
-        Width = 256
-        ClientHeight = 142
-        ClientWidth = 256
-        TabOrder = 2
-        object ListCountPoints: TColoredListBox
-          Left = 1
-          Height = 140
-          Top = 1
-          Width = 254
-          Align = alClient
-          ItemHeight = 0
-          ScrollWidth = 252
-          Style = lbOwnerDrawFixed
-          TabOrder = 0
-          TopIndex = -1
-          ItemBackgroundColors.Strings = (
-            'clWhite'
-            'clWhite'
-            'clWhite'
-            'clWhite'
-            'clWhite'
-            'clWhite'
-            'clWhite'
-            'clWhite'
-            'clWhite'
-            'clWhite'
-            'clWhite'
-            'clWhite'
-            'clWhite'
-            'clWhite'
-            'clWhite'
-            'clWhite'
-          )
-          ItemColors.Strings = (
-            'clBlue'
-            'clBlue'
-            'clBlue'
-            'clBlue'
-            'clBlue'
-            'clBlue'
-            'clBlue'
-            'clBlue'
-            'clBlue'
-            'clBlue'
-            'clBlue'
-            'clBlue'
-            'clBlue'
-            'clBlue'
-            'clBlue'
-            'clBlue'
-          )
-          Add2ItemColors = clBlue
-          Add2ItemBackgroundColors = clWhite
-        end
-      end
-    end
     object OptioAperture: TMyRollOut
       Left = 0
       Height = 27
-      Top = 72
+      Top = 64
       Width = 250
       ClientHeight = 27
       ClientWidth = 250
       Enabled = True
       TabOrder = 4
       CollapseKind = akTop
-      ExpandedSize = 280
+      ExpandedSize = 264
       ButtonPosition = akTop
       ButtonSize = 27
       Button.Left = 0
@@ -1283,60 +1249,101 @@ object Form1: TForm1
         TabOrder = 3
       end
     end
-    object MyRollOutHelpLittle: TMyRollOut
+    object OptioExtended: TMyRollOut
       Left = 0
-      Height = 240
-      Top = 136
+      Height = 27
+      Top = 32
       Width = 250
-      ClientHeight = 240
+      ClientHeight = 27
       ClientWidth = 250
       Enabled = True
       TabOrder = 5
       CollapseKind = akTop
-      ExpandedSize = 240
+      ExpandedSize = 200
       ButtonPosition = akTop
       ButtonSize = 27
       Button.Left = 0
       Button.Height = 27
       Button.Top = 0
       Button.Width = 254
-      Button.Caption = '1. Hilfe'
+      Button.Caption = 'Schirm-Abstand'
       Button.Color = clSkyBlue
       Button.ColorExpanded = 16287767
       AnimationSpeed = 20
+      Collapsed = True
       OnPreExpand = OptioRotatePreCollapse
       OnPreCollapse = OptioRotatePreCollapse
-      object SimpleWebViewerHelpLittle: TSimpleWebViewer
+      object RadioGroupFormel: TRadioGroup
         Left = 1
-        Height = 190
-        Top = 49
-        Width = 248
-        Align = alClient
-        FixedTypeface = 'Courier New'
-        DefaultTypeFace = 'default'
-        DefaultFontSize = 12
-        FlagErrors = False
-        PrintSettings.MarginLeft = 0.5
-        PrintSettings.MarginTop = 0.5
-        PrintSettings.MarginRight = 0.5
-        PrintSettings.MarginBottom = 0.5
-        PrintSettings.Preview.Left = 341
-        PrintSettings.Preview.Top = 192
-        PrintSettings.Preview.Width = 1024
-        PrintSettings.Preview.Height = 576
-        TabOrder = 0
-      end
-      object CheckViewLittleHelp: TCheckBox
-        Left = 1
-        Height = 21
-        Top = 28
+        Height = 74
+        Top = 27
         Width = 248
         Align = alTop
-        Caption = 'Dieses Hilfepanel zeigen'
-        Checked = True
-        OnChange = CheckViewLittleHelpChange
-        State = cbChecked
+        AutoFill = True
+        Caption = 'Formel'
+        ChildSizing.LeftRightSpacing = 6
+        ChildSizing.TopBottomSpacing = 6
+        ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+        ChildSizing.EnlargeVertical = crsHomogenousChildResize
+        ChildSizing.ShrinkHorizontal = crsScaleChilds
+        ChildSizing.ShrinkVertical = crsScaleChilds
+        ChildSizing.Layout = cclLeftToRightThenTopToBottom
+        ChildSizing.ControlsPerLine = 1
+        ClientHeight = 60
+        ClientWidth = 246
+        Font.Height = -9
+        ItemIndex = 0
+        Items.Strings = (
+          'Normal:  Abstand (Schirm-Spalt) >>g'
+          'Genau:  Abstand (Schirm-Spalt) >g'
+        )
+        OnClick = RadioGroupFormelClick
+        ParentFont = False
+        TabOrder = 0
+      end
+      object GroupBox2: TGroupBox
+        Left = 1
+        Height = 1
+        Top = 26
+        Width = 248
+        Align = alClient
+        Caption = 'Abstand Schirm-Spalt'
+        ClientHeight = 1
+        ClientWidth = 246
         TabOrder = 1
+        object Label15: TLabel
+          Left = 181
+          Height = 18
+          Top = 17
+          Width = 12
+          Caption = 'm'
+          ParentColor = False
+        end
+        object EditDistScreenSlit: TEdit
+          Left = 101
+          Height = 24
+          Top = 14
+          Width = 80
+          OnChange = AllEditChange
+          OnKeyDown = EditDistScreenSlitKeyDown
+          TabOrder = 0
+          Text = '6E-6'
+        end
+        object TrackBarDistScreenSlit: TTrackBar
+          Left = -1
+          Height = 42
+          Top = 35
+          Width = 246
+          Max = 120000
+          Min = 2000
+          OnChange = AllTrackChange
+          Position = 20000
+          ScalePos = trRight
+          TickStyle = tsNone
+          Anchors = [akTop, akLeft, akRight]
+          Constraints.MaxHeight = 38
+          TabOrder = 1
+        end
       end
     end
   end
