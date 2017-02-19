@@ -2916,9 +2916,9 @@ begin
   if SaS.count>0 then
     LaserPunkt:=1/2*SaS.Screen[0].SingleSlit.CalcGzVec; // denn gz liegt ja in der x-Mitte des gezeichneten Gitters                                                                                      //x ist im Koordinatensystem on OpenGL jetzt gemeint
 
-  //if not Visible
-  //  or(AutoVisible and (beta=0) and (theta=0)) then
-  //  exit;
+  if not Visible
+    or(AutoVisible and (beta=0) and (theta=0)) then
+    exit;
 
   // set up the projection matrix (the camera)
   glViewport(0,0, OGLBox.width  div 4 , OGLBox.Height div 4 );         { define the viewport }
@@ -2987,7 +2987,7 @@ begin
 
     //zeichne beta
     glPushMatrix;
-      glScalef(0.8,0.8,0.8);
+      glScalef(0.6,0.6,0.6);
       ColorValues(clBlue, r,g,b);
       glColor4f(r/255,g/255,b/255, a);
 

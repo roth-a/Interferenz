@@ -94,8 +94,8 @@
         <UnitName Value="UChart"/>
         <IsVisibleTab Value="True"/>
         <EditorIndex Value="1"/>
-        <TopLine Value="2911"/>
-        <CursorPos X="60" Y="2924"/>
+        <TopLine Value="2914"/>
+        <CursorPos X="54" Y="2924"/>
         <UsageCount Value="201"/>
         <Loaded Value="True"/>
       </Unit3>
@@ -965,6 +965,7 @@
     </Parsing>
     <Linking>
       <Debugging>
+        <GenerateDebugInfo Value="False"/>
         <UseLineInfoUnit Value="False"/>
         <StripSymbols Value="True"/>
       </Debugging>
