@@ -2589,8 +2589,8 @@ var funcLS,funcx,{funcAntiX,}funcImage:TFunctionVecType;
 
       r:=funcLS(s);
       values.Add(Koor3(funcx(s),funcImage(s),r, kkx,kkImage, kkLS), Chart.Color);
-      countPoints:=round(100*r); // bestimme Anzahl der Punkte nach der Helligkeit
-      korrigiere(countPoints,5,100);
+      countPoints:=abs(round(500*r*Quality)); // bestimme Anzahl der Punkte nach der Helligkeit
+      korrigiere(countPoints,10,round(300*Quality));
 
       r:=Max(xMax-area/2,mini);
       s:=CalcAngleDeflectionVec(r);
@@ -2808,8 +2808,8 @@ begin
     tick:=GetTickCount;
   {$ENDIF}
 
-  if UseMaxMin then
-    if (checkMaxMin.Checked) then
+//  if UseMaxMin then   //always calciulate the min max for plotting
+  //  if (checkMaxMin.Checked) then
       CalcMinMax(xAxisType,LSAxisType,ImageAxisType);
 
 //  getAllspecifications;
@@ -2832,8 +2832,8 @@ begin
   if Quality=0 then
     Quality:=1;
 
-  MaxStep:=(maxi-Mini)/1200/Quality*5.5;
-  MinStep:=(maxi-Mini)/3000/Quality*5.5;
+  MaxStep:=(maxi-Mini)/1200/Quality*20;
+  MinStep:=(maxi-Mini)/3000/Quality*20;
 
 {  with self.Parent.BottomAxis do
     anzpixel:=(AxisToPixel(funcx(maxi))-AxisToPixel(funcx(r)))/Quality;}

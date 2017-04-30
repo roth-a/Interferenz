@@ -59,7 +59,7 @@
         <MinVersion Valid="True"/>
       </Item6>
     </RequiredPackages>
-    <Units Count="124">
+    <Units Count="125">
       <Unit0>
         <Filename Value="Interferenz.lpr"/>
         <IsPartOfProject Value="True"/>
@@ -74,9 +74,8 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="Unit1"/>
-        <IsVisibleTab Value="True"/>
-        <TopLine Value="1920"/>
-        <CursorPos X="3" Y="1922"/>
+        <TopLine Value="1228"/>
+        <CursorPos X="21" Y="1246"/>
         <UsageCount Value="200"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
@@ -85,18 +84,19 @@
         <Filename Value="uanderes.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="Uanderes"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="534"/>
-        <CursorPos X="2" Y="546"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="263"/>
+        <CursorPos X="13" Y="274"/>
         <UsageCount Value="200"/>
+        <Loaded Value="True"/>
       </Unit2>
       <Unit3>
         <Filename Value="uchart.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="UChart"/>
         <EditorIndex Value="1"/>
-        <TopLine Value="2809"/>
-        <CursorPos X="86" Y="2816"/>
+        <TopLine Value="427"/>
+        <CursorPos X="21" Y="431"/>
         <UsageCount Value="201"/>
         <Loaded Value="True"/>
       </Unit3>
@@ -104,13 +104,15 @@
         <Filename Value="uapparatus.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="Uapparatus"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="874"/>
-        <CursorPos Y="877"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="2582"/>
+        <CursorPos X="52" Y="2593"/>
         <UsageCount Value="205"/>
         <Bookmarks Count="1">
           <Item0 X="43" Y="2127" ID="8"/>
         </Bookmarks>
+        <Loaded Value="True"/>
       </Unit4>
       <Unit5>
         <Filename Value="umathe.pas"/>
@@ -922,127 +924,134 @@
         <CursorPos X="14" Y="408"/>
         <UsageCount Value="10"/>
       </Unit123>
+      <Unit124>
+        <Filename Value="/usr/share/fpcsrc/3.1.1/rtl/inc/mathh.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="87"/>
+        <CursorPos X="14" Y="98"/>
+        <UsageCount Value="10"/>
+      </Unit124>
     </Units>
-    <JumpHistory Count="30" HistoryIndex="29">
+    <JumpHistory Count="30" HistoryIndex="28">
       <Position1>
         <Filename Value="unit1.pas"/>
-        <Caret Line="2017" Column="3" TopLine="2009"/>
+        <Caret Line="1840" Column="18" TopLine="1829"/>
       </Position1>
       <Position2>
         <Filename Value="unit1.pas"/>
-        <Caret Line="2016" Column="3" TopLine="2008"/>
+        <Caret Line="295" Column="14" TopLine="286"/>
       </Position2>
       <Position3>
         <Filename Value="unit1.pas"/>
-        <Caret Line="2028" Column="3" TopLine="2020"/>
+        <Caret Line="1840" Column="18" TopLine="1830"/>
       </Position3>
       <Position4>
         <Filename Value="unit1.pas"/>
-        <Caret Line="2027" Column="3" TopLine="2019"/>
+        <Caret Line="1845" Column="12" TopLine="1830"/>
       </Position4>
       <Position5>
         <Filename Value="unit1.pas"/>
-        <Caret Line="2026" Column="3" TopLine="2018"/>
+        <Caret Line="1851" Column="17" TopLine="1832"/>
       </Position5>
       <Position6>
         <Filename Value="unit1.pas"/>
-        <Caret Line="2025" Column="3" TopLine="2017"/>
+        <Caret Line="1859" Column="14" TopLine="1840"/>
       </Position6>
       <Position7>
         <Filename Value="unit1.pas"/>
-        <Caret Line="2024" Column="3" TopLine="2016"/>
+        <Caret Line="1865" Column="17" TopLine="1846"/>
       </Position7>
       <Position8>
         <Filename Value="unit1.pas"/>
-        <Caret Line="2023" Column="3" TopLine="2015"/>
+        <Caret Line="1872" Column="17" TopLine="1853"/>
       </Position8>
       <Position9>
         <Filename Value="unit1.pas"/>
-        <Caret Line="2022" Column="3" TopLine="2014"/>
+        <Caret Line="1881" Column="17" TopLine="1862"/>
       </Position9>
       <Position10>
         <Filename Value="unit1.pas"/>
-        <Caret Line="2021" Column="3" TopLine="2013"/>
+        <Caret Line="295" Column="24" TopLine="286"/>
       </Position10>
       <Position11>
         <Filename Value="unit1.pas"/>
-        <Caret Line="2020" Column="3" TopLine="2012"/>
+        <Caret Line="1840" Column="18" TopLine="1830"/>
       </Position11>
       <Position12>
         <Filename Value="unit1.pas"/>
-        <Caret Line="2019" Column="3" TopLine="2011"/>
+        <Caret Line="1846" Column="9" TopLine="1829"/>
       </Position12>
       <Position13>
         <Filename Value="unit1.pas"/>
-        <Caret Line="2018" Column="3" TopLine="2010"/>
+        <Caret Line="295" Column="29" TopLine="286"/>
       </Position13>
       <Position14>
-        <Filename Value="unit1.pas"/>
-        <Caret Line="2017" Column="3" TopLine="2009"/>
+        <Filename Value="uapparatus.pas"/>
+        <Caret Line="2806" Column="3" TopLine="2803"/>
       </Position14>
       <Position15>
-        <Filename Value="unit1.pas"/>
-        <Caret Line="2016" Column="3" TopLine="2008"/>
+        <Filename Value="uapparatus.pas"/>
+        <Caret Line="2410" Column="3" TopLine="2544"/>
       </Position15>
       <Position16>
-        <Filename Value="unit1.pas"/>
-        <Caret Line="2028" Column="3" TopLine="2020"/>
+        <Filename Value="uapparatus.pas"/>
+        <Caret Line="2587" TopLine="2578"/>
       </Position16>
       <Position17>
-        <Filename Value="unit1.pas"/>
-        <Caret Line="2027" Column="3" TopLine="2019"/>
+        <Filename Value="uapparatus.pas"/>
+        <Caret Line="2588" TopLine="2578"/>
       </Position17>
       <Position18>
-        <Filename Value="unit1.pas"/>
-        <Caret Line="2026" Column="3" TopLine="2018"/>
+        <Filename Value="uapparatus.pas"/>
+        <Caret Line="2590" TopLine="2578"/>
       </Position18>
       <Position19>
-        <Filename Value="unit1.pas"/>
-        <Caret Line="2025" Column="3" TopLine="2017"/>
+        <Filename Value="uapparatus.pas"/>
+        <Caret Line="2607" Column="36" TopLine="2581"/>
       </Position19>
       <Position20>
-        <Filename Value="unit1.pas"/>
-        <Caret Line="2024" Column="3" TopLine="2016"/>
+        <Filename Value="uapparatus.pas"/>
+        <Caret Line="2587" TopLine="2581"/>
       </Position20>
       <Position21>
-        <Filename Value="unit1.pas"/>
-        <Caret Line="2023" Column="3" TopLine="2015"/>
+        <Filename Value="uapparatus.pas"/>
+        <Caret Line="2588" TopLine="2581"/>
       </Position21>
       <Position22>
-        <Filename Value="unit1.pas"/>
-        <Caret Line="2022" Column="3" TopLine="2014"/>
+        <Filename Value="uapparatus.pas"/>
+        <Caret Line="2590" TopLine="2581"/>
       </Position22>
       <Position23>
-        <Filename Value="unit1.pas"/>
-        <Caret Line="2028" Column="3" TopLine="2020"/>
+        <Filename Value="uapparatus.pas"/>
+        <Caret Line="2591" TopLine="2581"/>
       </Position23>
       <Position24>
-        <Filename Value="unit1.pas"/>
-        <Caret Line="2027" Column="3" TopLine="2019"/>
+        <Filename Value="uapparatus.pas"/>
+        <Caret Line="2592" TopLine="2581"/>
       </Position24>
       <Position25>
-        <Filename Value="unit1.pas"/>
-        <Caret Line="2026" Column="3" TopLine="2018"/>
+        <Filename Value="uapparatus.pas"/>
+        <Caret Line="2593" TopLine="2581"/>
       </Position25>
       <Position26>
-        <Filename Value="unit1.pas"/>
-        <Caret Line="2025" Column="3" TopLine="2017"/>
+        <Filename Value="uapparatus.pas"/>
+        <Caret Line="2595" TopLine="2581"/>
       </Position26>
       <Position27>
-        <Filename Value="unit1.pas"/>
-        <Caret Line="2024" Column="3" TopLine="2016"/>
+        <Filename Value="uapparatus.pas"/>
+        <Caret Line="2596" TopLine="2581"/>
       </Position27>
       <Position28>
-        <Filename Value="unit1.pas"/>
-        <Caret Line="2023" Column="3" TopLine="2015"/>
+        <Filename Value="uapparatus.pas"/>
+        <Caret Line="2597" TopLine="2581"/>
       </Position28>
       <Position29>
-        <Filename Value="unit1.pas"/>
-        <Caret Line="2022" Column="3" TopLine="2014"/>
+        <Filename Value="uapparatus.pas"/>
+        <Caret Line="2593" Column="43" TopLine="2582"/>
       </Position29>
       <Position30>
-        <Filename Value="unit1.pas"/>
-        <Caret Line="2028" Column="3" TopLine="2020"/>
+        <Filename Value="uanderes.pas"/>
+        <Caret Line="274" Column="13" TopLine="263"/>
       </Position30>
     </JumpHistory>
   </ProjectOptions>
