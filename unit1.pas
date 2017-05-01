@@ -60,7 +60,7 @@ type
     ComboSource: TColoredListBox;
     EditDistScreenSlit: TEdit;
     EditHorizontalAngle: TEdit;
-    EditSlitCount: TSpinEdit;
+    EditSlitCount: TEdit;
     EditSlitDistance: TEdit;
     EditSlitWidth: TEdit;
     EditAngle2: TEdit;
@@ -102,6 +102,7 @@ type
     MenuItem15: TMenuItem;
     MenuItem16: TMenuItem;
     MenuItem17: TMenuItem;
+    ShowProgrammerInfo: TMenuItem;
     MenuItem8: TMenuItem;
     MyRollOutCountPoints: TPanel;
     MyRollOutHelpLittle: TMyRollOut;
@@ -218,6 +219,7 @@ type
     procedure Label10Click(Sender: TObject);
     procedure Label5Click(Sender: TObject);
     procedure MenuItem17Click(Sender: TObject);
+    procedure ShowProgrammerInfoClick(Sender: TObject);
     procedure MenuItem1Click(Sender: TObject);
     procedure OptioApertureCollapse(Sender: TObject);
     procedure OptioChartCollapse(Sender: TObject);
@@ -666,7 +668,9 @@ begin
 
       if comp.Name = 'EditSlitCount'  then
         begin
-        aperture.slit.count:=round(strtofloat(self.EditSlitCount.Text));
+        if ( self.EditSlitCount.Text='') or ( self.EditSlitCount.Text='0') then
+          self.EditSlitCount.Text := '1';
+        aperture.slit.count:= abs(round(strtofloat(self.EditSlitCount.Text)));
         if not ReadTxtInputMode then
           self.TrackBarCountSlit.Position:=round(sqrt(aperture.slit.count)*10);
 
@@ -681,6 +685,8 @@ begin
         RatioSlitWidthDist:=aperture.slit.width/aperture.slit.distance;
 
         aperture.slit.distance:=strtofloat(self.EditSlitDistance.Text)*1E-6;
+        if aperture.slit.distance > 1000e-6 then
+          ;  // here you can disable the min max chart.. its getting slow
         if not ReadTxtInputMode then
           begin
           self.TrackSlitDistance.Position:=round(aperture.slit.distance *1E7 {für track});
@@ -1351,6 +1357,11 @@ procedure TForm1.MenuItem17Click(Sender: TObject);
 begin
   form2.Notebook.PageIndex:=2;
   Form2.Show;
+end;
+
+procedure TForm1.ShowProgrammerInfoClick(Sender: TObject);
+begin
+  ProgrammerInfo:=not ProgrammerInfo;
 end;
 
 

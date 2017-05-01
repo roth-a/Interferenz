@@ -138,10 +138,10 @@ type
       function readFarr(idx:integer):Integer;
       procedure writeFarr(idx:integer; value:Integer);
     public
-      function count:word;
-      procedure delete(idx:word);
+      function count:integer;
+      procedure delete(idx:integer);
       procedure add(value:Integer);
-      procedure insert(idx:word; value:Integer);
+      procedure insert(idx:integer; value:Integer);
       function LastItem:integer;
       procedure DelDubbleValues(const SourceArray:TIntegerArray; const ExcludeIdxHere:TsetofInteger=[]; const ExcludeIdxSource:TsetofInteger=[]); //das Scource Array wird nicht verändert
 
@@ -161,11 +161,11 @@ type
       function readFarr(idx:integer):real;
       procedure writeFarr(idx:integer; value:real);
     public
-      function count:word;
-      procedure delete(idx:word);
+      function count:integer;
+      procedure delete(idx:integer);
       procedure clear;
       procedure add(value:real);
-      procedure insert(idx:word; value:real);
+      procedure insert(idx:integer; value:real);
       function LastItem:real;
       procedure DelDubbleValues(const SourceArray:TRealArray; const ExcludeIdxHere:TsetofInteger=[]; const ExcludeIdxSource:TsetofInteger=[]); //das Scource Array wird nicht verändert
 
@@ -190,8 +190,8 @@ type
       function readFarr(idx:integer):TChartValue;
       procedure writeFarr(idx:integer; value:TChartValue);
     public
-      function count:word;
-      procedure delete(idx:word);
+      function count:integer;
+      procedure delete(idx:integer);
       procedure add(value:TChartValue);    overload;
       procedure add(x, y, z:TKoor1; Color:Tcolor); overload;
       procedure add(pos:TKoor3; Color:Tcolor); overload;
@@ -199,7 +199,7 @@ type
       procedure add(pos:TKoor3; Title:string; Color:Tcolor); overload;
       procedure add(pos:TKoor3; Title:string; Color:Tcolor; Tag:longint); overload;
       procedure clear;
-      procedure insert(idx:word; value:TChartValue);
+      procedure insert(idx:integer; value:TChartValue);
       function LastItem:TChartValue;
 
 
@@ -237,15 +237,15 @@ type
     procedure writeFarr(idx:integer; value:TObject);
   public
     count:integer;
-    function countFast:word;
-    procedure delete(idx:word);
-    procedure deleteAndFree(idx:word);
+    function countFast:integer;
+    procedure delete(idx:integer);
+    procedure deleteAndFree(idx:integer);
     function add(value:TObject):integer;
-//    procedure add(CBrushColor,CBorderColor:Tcolor; Cposition:TR3Vec;  Cradius:TR2Vec; CcountPoints:word; Ctransparency:byte); overload;
-    procedure insert(idx:word; value:TObject);
+//    procedure add(CBrushColor,CBorderColor:Tcolor; Cposition:TR3Vec;  Cradius:TR2Vec; CcountPoints:integer; Ctransparency:byte); overload;
+    procedure insert(idx:integer; value:TObject);
     function LastItem:TObject;
     function FirstItem:TObject;
-    procedure SwapIdx(idx1,idx2:word);
+    procedure SwapIdx(idx1,idx2:integer);
 
     property arr[idx:integer]: TObject read readFarr write writeFarr; default;
 
@@ -270,7 +270,6 @@ type
   procedure korrigiere(var edit:Tedit; const zeichen:Tsetofchar=['0'..'9','-',',']); overload;
   procedure korrigiere(var r:real;  min,max:real);         overload;
   procedure korrigiere(var e:extended;  min,max:extended);         overload;
-  procedure korrigiere(var w:word;  min,max:word);         overload;
   procedure korrigiere(var w:integer;  min,max:integer);         overload;
 
   function Asign(wert:real):shortint; overload;
@@ -281,13 +280,13 @@ type
   function PrettyFormatFloatWithMinMax(value:extended; ExponentWhenScientific:integer; Min,Max:extended; ExtraPrecisionDigits:byte=1):string; overload;
   function PrettyFormatFloatWithMinMax(value:extended; ExponentWhenScientific:integer; MinMax:TRealRange; ExtraPrecisionDigits:byte=1):string; overload;
 
-  function Aroundto(zahl:real; Vielfaches:word; Aufrunden:boolean):integer;
+  function Aroundto(zahl:real; Vielfaches:integer; Aufrunden:boolean):integer;
 
   procedure timetohhmmss(const r:real; var hh,mm,ss:byte); overload;
   function timetohhmmss(r:real):string;                    overload;
   procedure timetohhmm(const r:real; var hh,mm:byte);    overload;
   function timetohhmm(r:real):string;                      overload;
-  function hhmmsstotime(hh,mm,ss:real; msec:word):real;    overload;
+  function hhmmsstotime(hh,mm,ss:real; msec:integer):real;    overload;
   function hhmmsstotime(hh,mm,ss:real):real; overload;
   function hhmmsstotime(hh,mm:real):real;   overload;
 
@@ -315,8 +314,8 @@ type
 
   function schaltjahr(year:longint):boolean;
   function monatslaenge(mon:byte; year:integer):integer;
-  function gregtojul(time:real; day,mon,year:word):extended;overload;
-  function gregtojul(hour,min,sec,day,mon,year:word):extended;overload;
+  function gregtojul(time:real; day,mon,year:integer):extended;overload;
+  function gregtojul(hour,min,sec,day,mon,year:integer):extended;overload;
   procedure jultogreg(var day,mon,year:integer; const juldatum:real);
 
   function ChooseNearest(zahl:extended; ar:TRealArray):extended;
@@ -696,11 +695,11 @@ end;
 {-----------------------------------------------------------------------------
   Description:
   Procedure:    delete
-  Arguments:    idx:word
+  Arguments:    idx:integer
   Result:       None
   Detailed description:
 -----------------------------------------------------------------------------}
-procedure TIntegerArray.delete(idx:word);
+procedure TIntegerArray.delete(idx:integer);
 var i:integer;
 begin
   if idx>high(Farr) then exit;
@@ -728,11 +727,11 @@ end;
 {-----------------------------------------------------------------------------
   Description:
   Procedure:    insert
-  Arguments:    idx:word; value:integer
+  Arguments:    idx:integer; value:integer
   Result:       None
   Detailed description:
 -----------------------------------------------------------------------------}
-procedure TIntegerArray.insert(idx:word; value:integer);
+procedure TIntegerArray.insert(idx:integer; value:integer);
 var i:integer;
 begin
   setlength(Farr,length(Farr)+1);
@@ -765,7 +764,7 @@ end;
   Result:       word
   Detailed description:
 -----------------------------------------------------------------------------}
-function TIntegerArray.count:word;
+function TIntegerArray.count:integer;
 begin
   result:=length(Farr);
 end;
@@ -851,11 +850,11 @@ end;
 {-----------------------------------------------------------------------------
   Description:
   Procedure:    delete
-  Arguments:    idx:word
+  Arguments:    idx:integer
   Result:       None
   Detailed description:
 -----------------------------------------------------------------------------}
-procedure TRealArray.delete(idx:word);
+procedure TRealArray.delete(idx:integer);
 var i:integer;
 begin
   if idx>high(Farr) then exit;
@@ -888,11 +887,11 @@ end;
 {-----------------------------------------------------------------------------
   Description:
   Procedure:    insert
-  Arguments:    idx:word; value:real
+  Arguments:    idx:integer; value:real
   Result:       None
   Detailed description:
 -----------------------------------------------------------------------------}
-procedure TRealArray.insert(idx:word; value:real);
+procedure TRealArray.insert(idx:integer; value:real);
 var i:integer;
 begin
   setlength(Farr,length(Farr)+1);
@@ -925,7 +924,7 @@ end;
   Result:       word
   Detailed description:
 -----------------------------------------------------------------------------}
-function TRealArray.count:word;
+function TRealArray.count:integer;
 begin
   result:=length(Farr);
 end;
@@ -1085,11 +1084,11 @@ end;
 {-----------------------------------------------------------------------------
   Description:
   Procedure:    delete
-  Arguments:    idx:word
+  Arguments:    idx:integer
   Result:       None
   Detailed description:
 -----------------------------------------------------------------------------}
-procedure TChartValueArray.delete(idx:word);
+procedure TChartValueArray.delete(idx:integer);
 var i:integer;
 begin
   if idx>high(Farr) then exit;
@@ -1158,11 +1157,11 @@ end;
 {-----------------------------------------------------------------------------
   Description:
   Procedure:    insert
-  Arguments:    idx:word; value:TChartValue
+  Arguments:    idx:integer; value:TChartValue
   Result:       None
   Detailed description:
 -----------------------------------------------------------------------------}
-procedure TChartValueArray.insert(idx:word; value:TChartValue);
+procedure TChartValueArray.insert(idx:integer; value:TChartValue);
 var i:integer;
 begin
   setlength(Farr,length(Farr)+1);
@@ -1295,7 +1294,7 @@ end;
   Result:       word
   Detailed description:
 -----------------------------------------------------------------------------}
-function TChartValueArray.count:word;
+function TChartValueArray.count:integer;
 begin
   if Farr<>nil then
     result:=length(Farr)
@@ -1484,11 +1483,11 @@ end;   { End of  TClassArray.writeFarr }
 
 {-----------------------------------------------------------------------------
   Procedure:    delete
-  Arguments:    idx:word
+  Arguments:    idx:integer
   Result:       None
   Detailed description:
 -----------------------------------------------------------------------------}
-procedure TClassArray.delete(idx:word);
+procedure TClassArray.delete(idx:integer);
 var i:integer;
 begin
   if idx>count-1 then exit;
@@ -1511,7 +1510,7 @@ end;
 
 
 
-procedure TClassArray.deleteAndFree(idx: word);
+procedure TClassArray.deleteAndFree(idx:integer);
 begin
   if idx>count-1 then exit;
 
@@ -1531,11 +1530,11 @@ end;
 {-----------------------------------------------------------------------------
   Description:
   Procedure:    add
-  Arguments:    CBrushColor,CBorderColor:Tcolor; Cposition:TR3Vec; Cradius:TChartValue; CcountPoints:word; Ctransparency:byte
+  Arguments:    CBrushColor,CBorderColor:Tcolor; Cposition:TR3Vec; Cradius:TChartValue; CcountPoints:integer; Ctransparency:byte
   Result:       None
   Detailed description:
 -----------------------------------------------------------------------------}
-{procedure TClassArray.add(CBrushColor,CBorderColor:Tcolor; Cposition:TR3Vec;  Cradius:TChartValue; CcountPoints:word; Ctransparency:byte);
+{procedure TClassArray.add(CBrushColor,CBorderColor:Tcolor; Cposition:TR3Vec;  Cradius:TChartValue; CcountPoints:integer; Ctransparency:byte);
 var drop:TObject;
 begin
   drop:=TObject.create(self.count,CBrushColor,CBorderColor,Cposition,Cradius,CcountPoints,Ctransparency);
@@ -1550,11 +1549,11 @@ end;}
 {-----------------------------------------------------------------------------
   Description:
   Procedure:    insert
-  Arguments:    idx:word; value:TObject
+  Arguments:    idx:integer; value:TObject
   Result:       None
   Detailed description:
 -----------------------------------------------------------------------------}
-procedure TClassArray.insert(idx:word; value:TObject);
+procedure TClassArray.insert(idx:integer; value:TObject);
 var i:integer;
 begin
   if assigned(self.Farr) then
@@ -1616,7 +1615,7 @@ end;
 
   Description:
 ==============================================================================}
-procedure TClassArray.SwapIdx(idx1,idx2:word);
+procedure TClassArray.SwapIdx(idx1,idx2:integer);
 var temp:TObject;
 begin
   temp:=Farr[idx1];
@@ -1634,7 +1633,7 @@ end;
   Result:       word
   Detailed description:
 -----------------------------------------------------------------------------}
-function TClassArray.countFast:word;
+function TClassArray.countFast:integer;
 begin
   if assigned(self.Farr) then
     result:=length(Farr)
@@ -1804,24 +1803,7 @@ begin
 end;
 {-----------------------------------------------------------------------------
   Description:  Korrigiere Word Zahl
-  Arguments:    var r:word;  max,min:word
------------------------------------------------------------------------------}
-procedure korrigiere(var w:word;  min,max:word);
-var temp:integer;
-begin
-  if max<min then
-    begin
-    temp:=min;
-    min:=max;
-    max:=temp;
-    end;
-
-  if w<min then w:=min;
-  if w>max then w:=max;
-end;
-{-----------------------------------------------------------------------------
-  Description:  Korrigiere Integer Zahl
-  Arguments:    var r:word;  max,min:Integer
+  Arguments:    var r:integer;  max,min:integer
 -----------------------------------------------------------------------------}
 procedure korrigiere(var w:integer;  min,max:integer);
 var temp:integer;
@@ -1836,6 +1818,8 @@ begin
   if w<min then w:=min;
   if w>max then w:=max;
 end;
+
+
 
 
 
@@ -1939,11 +1923,11 @@ end;
 {-----------------------------------------------------------------------------
   Description:  Rundet auf eine Bestimmte Vorkomma Zahl
   Procedure:    Aroundto
-  Arguments:    zahl:real; Vielfaches:word; Aufrunden:boolean
+  Arguments:    zahl:real; Vielfaches:integer; Aufrunden:boolean
   Result:       cardinal
   Detailed description:
 -----------------------------------------------------------------------------}
-function Aroundto(zahl:real; Vielfaches:word; Aufrunden:boolean):integer;
+function Aroundto(zahl:real; Vielfaches:integer; Aufrunden:boolean):integer;
 begin
   if  Aufrunden then
     result:=(trunc(zahl/Vielfaches)  + 1) * Vielfaches
@@ -2028,11 +2012,11 @@ end;
 {-----------------------------------------------------------------------------
   Description:
   Procedure:    hhmmsstotime
-  Arguments:    hh,mm,ss:byte; msec:word
+  Arguments:    hh,mm,ss:byte; msec:integer
   Result:       real
   Detailed description:
 -----------------------------------------------------------------------------}
-function hhmmsstotime(hh,mm,ss:real; msec:word):real;
+function hhmmsstotime(hh,mm,ss:real; msec:integer):real;
 begin
   result:=hh+mm/60+ss/3600+msec/3600/1000;
 end;
@@ -2278,7 +2262,7 @@ end;
 -----------------------------------------------------------------------------}
 procedure shellsort(var a:array of cardinal);
 var  bis,i,j,k:longint;
-      h:word;
+      h:integer;
 begin
   bis:=high(a);
   k:= bis shr 1;
@@ -2419,7 +2403,7 @@ end;
   Result:       real
   Detailed description:
 -----------------------------------------------------------------------------}
-function gregtojul(time:real; day,mon,year:word):extended;
+function gregtojul(time:real; day,mon,year:integer):extended;
 var y,a,b:real;
 begin
   y:=year+(mon-2.85)/12;
@@ -2431,10 +2415,10 @@ begin
   result:=result+time/24-0.5;  //umrechnung von stunden auf juljaische tagesbruchteile ; tagesbeginn um 12:00 Uhr
 end;
 {-----------------------------------------------------------------------------
-  Arguments:    hour,min,sec,day,mon,year:word
+  Arguments:    hour,min,sec,day,mon,year:integer
   Result:       real
 -----------------------------------------------------------------------------}
-function gregtojul(hour,min,sec,day,mon,year:word):extended;
+function gregtojul(hour,min,sec,day,mon,year:integer):extended;
 begin
   result:=gregtojul(hour+min/60+sec/3600,day,mon,year);
 end;
@@ -2915,7 +2899,7 @@ end;
   Detailed description:
 -----------------------------------------------------------------------------}
 procedure MergeBmp(var merged:TBitmap;  bmp1,bmp2:TBitmap);
-var i,j:word;
+var i,j:integer;
 begin
   merged.Height:=bmp1.Height;
   merged.width:=bmp1.width;

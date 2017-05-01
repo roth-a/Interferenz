@@ -464,13 +464,14 @@ LazarusResources.Add('Info','HTML',[
   +'ert.<BR>Es kann die Interferenzbilder an den'#10'verschiedensten Spalten un'
   +'d Gittern berechnen und darstellen.<BR>F'#195#188'r'#10'eine Weiterverwendu'
   +'ng der Daten k'#195#182'nnen auch alle Werte in eine Excel'#10'Tabelle ausg'
-  +'eben werden.</P>'#10'<P>Kontakt: roth-a@gmx.de</P>'#10'<P>Homepage: </P>'#10
-  +'<P><BR><BR>'#10'</P>'#10'<P>Ich bedanke mich herzlich bei:</P>'#10'<UL>'#10
-  +#9'<LI><P>Bei allen Programmieren von Free Pascal, die eine ungeheuren'#10#9
-  +'guten plattformunabh'#195#164'ngigen Compiler geschrieben haben</P>'#10#9'<'
-  +'LI><P>Bei den Programmieren die LCL und Lazarus geschrieben haben'#10#9'und'
-  +' es weiter verbessern</P>'#10#9'<LI><P>Bei dem Lazarusforum, dass einem mit'
-  +' Rat zur Seite steht</P>'#10'</UL>'#10'</BODY>'#10'</HTML>'#10
+  +'eben werden.</P>'#10'<P>Kontakt: roth-a@gmx.de</P>'#10'<P>Homepage: github.'
+  +'com/roth-a</P>'#10'<P><BR><BR>'#10'</P>'#10'<P>Ich bedanke mich herzlich be'
+  +'i:</P>'#10'<UL>'#10#9'<LI><P>Bei allen Programmieren von Free Pascal, die e'
+  +'ine ungeheuren'#10#9'guten plattformunabh'#195#164'ngigen Compiler geschrie'
+  +'ben haben</P>'#10#9'<LI><P>Bei den Programmieren die LCL und Lazarus geschr'
+  +'ieben haben'#10#9'und es weiter verbessern</P>'#10#9'<LI><P>Bei dem Lazarus'
+  +'forum, dass einem mit Rat zur Seite steht</P>'#10'</UL>'#10'</BODY>'#10'</H'
+  +'TML>'#10
 ]);
 LazarusResources.Add('Lizenz','HTML',[
   '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"'#10'    "http://www'
@@ -1197,43 +1198,43 @@ LazarusResources.Add('PfeilEin','BMP',[
 LazarusResources.Add('StandartEinstellungen','INI',[
   '[ Form1 TEdit]'#10'EditSlitWidth=1.29'#10'EditDistScreenSlit=100E-2'#10'Edit'
   +'SlitDistance=3.5'#10'EditVerticalAngle=0'#10'EditHorizontalAngle=0'#10'Edit'
-  +'Lambda_0=689'#10'EditFrequency_0=435E12'#10#10'[ Form1 TColoredListBox]'#10
-  +'ComboSourceItems.count=1'#10'ComboSourceItemIndex=0'#10'ListLogItems.count='
-  +'0'#10'ListLogItemIndex=-1'#10'ListCountPointsItems.count=0'#10'ListCountPoi'
-  +'ntsItemIndex=-1'#10#10'[ Form1 TMyRollOut]'#10'OptioChart=1'#10'OptioChartO'
-  +'ption2=1'#10'OptioChartOption1=0'#10'OptioExtended=1'#10'MyRollOutHelpLittl'
-  +'e=0'#10'OptioAperture=1'#10'PProgrammerInfo=1'#10'MyRollOutLog=0'#10'MyRoll'
-  +'OutCountPoints=0'#10'OptioScreen=1'#10'OptioRotate=1'#10#10'[ Form1 TCheckB'
-  +'ox]'#10'CheckDrawChart=1'#10'CheckViewLittleHelp2=1'#10'CheckShowXGitternet'
-  +'z=0'#10'CheckShowLSGitternetz=0'#10'CheckViewLittleHelp=1'#10'CheckExImageI'
-  +'ntensity=0'#10'CheckExMaximaDraw=0'#10'CheckPixelexpandedImageIntesity=0'#10
-  +'TSingleSlit_Check_0=1'#10'TSingleSlit_CheckMaxMin_0=0'#10'TRSNSlit_Check_0='
-  +'0'#10'TRSNSlit_CheckMaxMin_0=0'#10'TCombiSlit_Check_0=1'#10'TCombiSlit_Chec'
-  +'kMaxMin_0=0'#10'TImageIntensity_Check_0=1'#10'TImageIntensity_CheckMaxMin_0'
-  +'=1'#10'CheckAskConfirmationreflection=1'#10#10'[ Form1 TRadioGroup]'#10'XAx'
-  +'isPosGroup=1'#10'YAxisPosGroup=0'#10'RadioGroupFormel=0'#10'RadioLSAxis=1'
-  +#10'RadioXAxis=1'#10'RadioImageAxis=1'#10'RadioReflection=0'#10#10'[ Form1 T'
-  +'TrackBar]'#10'TrackQuality=5'#10'TrackBarIntensityFactor=1'#10'TrackBarDist'
-  +'ScreenSlit=10000'#10'TrackBarGB=21'#10'TrackBarCountSlit=32'#10'TrackSlitDi'
-  +'stance=35'#10'TrackSlitWidth=37'#10'TrackVerticalAngle=0'#10'TrackHorizonta'
-  +'lAngle=0'#10'TrackLaserHeight=500'#10'TsourceTrackBar_0=689'#10#10'[ Form1 '
-  +'TSpinEdit]'#10'SpinEditIntensityFactor=1'#10'EditSlitCount=10'#10'SpinTrack'
-  +'LaserHeight=500'#10#10'[ Form1 TExpandPanels]'#10'ExpandPanelsMainOption Us'
-  +'eClientHeight=0'#10'ExpandPanelsMainOption=1'#10'ExpandPanelsChartOption Us'
-  +'eClientHeight=1'#10'ExpandPanelsChartOption=2'#10'ExpandPanelsProgrammerInf'
-  +'o UseClientHeight=1'#10'ExpandPanelsProgrammerInfo=1'#10#10'[ Form1 TOGlBox'
-  +']'#10'TheOGLBox.xAxis.Koor.Min=-90'#10'TheOGLBox.xAxis.Koor.Max=90'#10'TheO'
-  +'GLBox.LSAxis.Koor.Min=-0.4'#10'TheOGLBox.LSAxis.Koor.Max=1.2'#10'TheOGLBox.'
-  +'ImageAxis.Koor.Min=-6.0000000000006'#10'TheOGLBox.ImageAxis.Koor.Max=18.000'
-  +'0000000018'#10'TheOGLBox.QuotientLS2Image=0.06666666666666'#10'TheOGLBox.xA'
-  +'xis.DefaultKoor.Min=-90'#10'TheOGLBox.xAxis.DefaultKoor.Max=90'#10'TheOGLBo'
-  +'x.LSAxis.DefaultKoor.Min=-0.4'#10'TheOGLBox.LSAxis.DefaultKoor.Max=1.2'#10
-  +'TheOGLBox.ImageAxis.DefaultKoor.Min=-0.4'#10'TheOGLBox.ImageAxis.DefaultKoo'
-  +'r.Max=1.2'#10#10'[ Form1 TALED]'#10'TSingleSlit_LED_0=255'#10'TRSNSlit_LED_'
-  +'0=255'#10'TCombiSlit_LED_0=255'#10'TImageIntensity_LED_0=255'#10#10'[ FormS'
-  +'iedeBarOptions TRadioGroup]'#10'RadioGroup1=0'#10#10'[Form1]'#10'WindowStat'
-  +'e=2'#10'FormWidth=1280'#10'FormHeight=978'#10
+  +'Lambda_0=689'#10'EditFrequency_0=435E12'#10'EditSlitCount=10'#10#10'[ Form1'
+  +' TColoredListBox]'#10'ComboSourceItems.count=1'#10'ComboSourceItemIndex=0'
+  +#10'ListLogItems.count=0'#10'ListLogItemIndex=-1'#10'ListCountPointsItems.co'
+  +'unt=0'#10'ListCountPointsItemIndex=-1'#10#10'[ Form1 TMyRollOut]'#10'OptioC'
+  +'hart=1'#10'OptioChartOption2=1'#10'OptioChartOption1=0'#10'OptioExtended=1'
+  +#10'MyRollOutHelpLittle=0'#10'OptioAperture=0'#10'PProgrammerInfo=1'#10'MyRo'
+  +'llOutLog=0'#10'MyRollOutCountPoints=0'#10'OptioScreen=1'#10'OptioRotate=1'
+  +#10#10'[ Form1 TCheckBox]'#10'CheckDrawChart=1'#10'CheckViewLittleHelp2=1'#10
+  +'CheckShowXGitternetz=0'#10'CheckShowLSGitternetz=0'#10'CheckViewLittleHelp='
+  +'1'#10'CheckExImageIntensity=0'#10'CheckExMaximaDraw=0'#10'CheckPixelexpande'
+  +'dImageIntesity=0'#10'TSingleSlit_Check_0=1'#10'TSingleSlit_CheckMaxMin_0=0'
+  +#10'TRSNSlit_Check_0=0'#10'TRSNSlit_CheckMaxMin_0=0'#10'TCombiSlit_Check_0=1'
+  +#10'TCombiSlit_CheckMaxMin_0=0'#10'TImageIntensity_Check_0=1'#10'TImageInten'
+  +'sity_CheckMaxMin_0=1'#10'CheckAskConfirmationreflection=1'#10#10'[ Form1 TR'
+  +'adioGroup]'#10'XAxisPosGroup=1'#10'YAxisPosGroup=0'#10'RadioGroupFormel=0'
+  +#10'RadioLSAxis=1'#10'RadioXAxis=1'#10'RadioImageAxis=1'#10'RadioReflection='
+  +'0'#10#10'[ Form1 TTrackBar]'#10'TrackQuality=5'#10'TrackBarIntensityFactor='
+  +'1'#10'TrackBarDistScreenSlit=10000'#10'TrackBarGB=21'#10'TrackBarCountSlit='
+  +'32'#10'TrackSlitDistance=35'#10'TrackSlitWidth=37'#10'TrackVerticalAngle=0'
+  +#10'TrackHorizontalAngle=0'#10'TrackLaserHeight=500'#10'TsourceTrackBar_0=68'
+  +'9'#10#10'[ Form1 TSpinEdit]'#10'SpinEditIntensityFactor=1'#10'SpinTrackLase'
+  +'rHeight=500'#10#10'[ Form1 TExpandPanels]'#10'ExpandPanelsMainOption UseCli'
+  +'entHeight=0'#10'ExpandPanelsMainOption=1'#10'ExpandPanelsChartOption UseCli'
+  +'entHeight=1'#10'ExpandPanelsChartOption=2'#10'ExpandPanelsProgrammerInfo Us'
+  +'eClientHeight=1'#10'ExpandPanelsProgrammerInfo=1'#10#10'[ Form1 TOGlBox]'#10
+  +'TheOGLBox.xAxis.Koor.Min=-90'#10'TheOGLBox.xAxis.Koor.Max=90'#10'TheOGLBox.'
+  +'LSAxis.Koor.Min=-0.4'#10'TheOGLBox.LSAxis.Koor.Max=1.2'#10'TheOGLBox.ImageA'
+  +'xis.Koor.Min=-6.0000000000006'#10'TheOGLBox.ImageAxis.Koor.Max=18.000000000'
+  +'0018'#10'TheOGLBox.QuotientLS2Image=0.06666666666666'#10'TheOGLBox.xAxis.De'
+  +'faultKoor.Min=-90'#10'TheOGLBox.xAxis.DefaultKoor.Max=90'#10'TheOGLBox.LSAx'
+  +'is.DefaultKoor.Min=-0.4'#10'TheOGLBox.LSAxis.DefaultKoor.Max=1.2'#10'TheOGL'
+  +'Box.ImageAxis.DefaultKoor.Min=-0.4'#10'TheOGLBox.ImageAxis.DefaultKoor.Max='
+  +'1.2'#10#10'[ Form1 TALED]'#10'TSingleSlit_LED_0=255'#10'TRSNSlit_LED_0=255'
+  +#10'TCombiSlit_LED_0=255'#10'TImageIntensity_LED_0=255'#10#10'[ FormSiedeBar'
+  +'Options TRadioGroup]'#10'RadioGroup1=0'#10#10'[Form1]'#10'WindowState=2'#10
+  +'FormWidth=1366'#10'FormHeight=739'#10
 ]);
 LazarusResources.Add('Version','TXT',[
-  '3.0'#10
+  '3.2'#10
 ]);

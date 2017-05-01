@@ -1979,8 +1979,9 @@ var i:integer;
 begin
   if not Visible then
     exit;
-    
-  radius:=4;
+  p := gluNewQuadric();
+
+  radius:=3;
   for i := 0 to ValuePointer.count-1 do
     begin
     //if  not Box.koorIsVisible(ValuePointer[i].Pos.x, ValuePointer[i].Pos.y, Depth) then
@@ -1991,11 +1992,9 @@ begin
       else
         Box.OGLColor(ValuePointer[i].Color);
 
-      p := gluNewQuadric();
       Box.OGLTranslate3f(Koor3(ValuePointer.GetRightKoor(i, WhatIsXValue), ValuePointer.GetRightKoor(i, WhatIsYValue), Depth));
-      gluDisk(p, 0, radius, 10,10);
-      gluDeleteQuadric(p);
-      
+      gluDisk(p, 0, radius, 5,1);   //void gluDisk(    GLUquadric*	 quad,    GLdouble	 inner,    GLdouble	 outer,    GLint	 slices,    GLint	 loops)
+
       if ValuePointer[i].TitleEnabled then
         begin
         glPushMatrix;
@@ -2005,6 +2004,7 @@ begin
         end;
     glPopMatrix;
     end;
+  gluDeleteQuadric(p);
 end;
 
 

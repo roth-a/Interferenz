@@ -19,7 +19,7 @@ object Form1: TForm1
   OnShow = FormShow
   OnWindowStateChange = FormWindowStateChange
   Position = poDesktopCenter
-  LCLVersion = '1.7'
+  LCLVersion = '1.9.0.0'
   object PSlitWidthExpand: TPanel
     Left = 281
     Height = 26
@@ -116,6 +116,7 @@ object Form1: TForm1
         Align = alBottom
         ItemHeight = 0
         OnClick = ComboSourceChange
+        Options = [lboDrawFocusRect]
         ScrollWidth = 308
         Style = lbOwnerDrawFixed
         TabOrder = 2
@@ -138,8 +139,18 @@ object Form1: TForm1
           'clWhite'
           'clWhite'
           'clWhite'
+          'clWhite'
+          'clWhite'
+          'clWhite'
+          'clWhite'
+          'clWhite'
         )
         ItemColors.Strings = (
+          'clBlue'
+          'clBlue'
+          'clBlue'
+          'clBlue'
+          'clBlue'
           'clBlue'
           'clBlue'
           'clBlue'
@@ -244,11 +255,11 @@ object Form1: TForm1
   end
   object OptioChart: TMyRollOut
     Left = 875
-    Height = 399
+    Height = 427
     Top = 0
     Width = 253
     Anchors = [akTop, akRight, akBottom]
-    ClientHeight = 399
+    ClientHeight = 427
     ClientWidth = 253
     Enabled = True
     TabOrder = 3
@@ -257,7 +268,7 @@ object Form1: TForm1
     ButtonPosition = akLeft
     ButtonSize = 27
     Button.Left = 0
-    Button.Height = 403
+    Button.Height = 431
     Button.Top = 0
     Button.Width = 27
     Button.Caption = 'Darstellungs-Einstellungen'
@@ -272,7 +283,7 @@ object Form1: TForm1
     OnPreCollapse = OptioRotatePreCollapse
     object ScrollBox1: TScrollBox
       Left = 28
-      Height = 397
+      Height = 425
       Top = 1
       Width = 224
       HorzScrollBar.Page = 179
@@ -282,7 +293,7 @@ object Form1: TForm1
       VertScrollBar.Range = 800
       Align = alClient
       AutoScroll = False
-      ClientHeight = 395
+      ClientHeight = 423
       ClientWidth = 202
       TabOrder = 0
       object CheckShowLSGitternetz: TCheckBox
@@ -361,10 +372,10 @@ object Form1: TForm1
           Top = 13
           Width = 165
           Frequency = 5
-          Max = 20
-          Min = 1
+          Max = 100
+          Min = 5
           OnChange = AllTrackChange
-          Position = 5
+          Position = 20
           Anchors = [akTop, akLeft, akRight]
           TabOrder = 0
         end
@@ -416,7 +427,7 @@ object Form1: TForm1
       object YAxisPosGroup: TRadioGroup
         Left = 0
         Height = 94
-        Top = 562
+        Top = 447
         Width = 202
         Align = alTop
         AutoFill = True
@@ -456,7 +467,7 @@ object Form1: TForm1
       object XAxisPosGroup: TRadioGroup
         Left = 0
         Height = 94
-        Top = 447
+        Top = 541
         Width = 202
         Align = alTop
         AutoFill = True
@@ -483,7 +494,7 @@ object Form1: TForm1
       object CheckViewLittleHelp2: TCheckBox
         Left = 0
         Height = 21
-        Top = 541
+        Top = 635
         Width = 202
         Align = alTop
         AutoSize = False
@@ -519,14 +530,14 @@ object Form1: TForm1
   end
   object OptioScrollBox: TScrollBox
     Left = 0
-    Height = 369
+    Height = 397
     Top = 24
     Width = 262
     HorzScrollBar.Page = 1
     HorzScrollBar.Visible = False
-    VertScrollBar.Page = 195
+    VertScrollBar.Page = 328
     Anchors = [akTop, akLeft, akBottom]
-    ClientHeight = 367
+    ClientHeight = 395
     ClientWidth = 260
     TabOrder = 4
     object PProgrammerInfo: TMyRollOut
@@ -546,7 +557,7 @@ object Form1: TForm1
       Button.Left = 0
       Button.Height = 27
       Button.Top = 0
-      Button.Width = 254
+      Button.Width = 250
       Button.Caption = 'Programmers Info'
       Button.Color = clSkyBlue
       Button.ColorExpanded = 16287767
@@ -609,6 +620,7 @@ object Form1: TForm1
           Width = 256
           Align = alClient
           ItemHeight = 0
+          Options = [lboDrawFocusRect]
           ScrollWidth = 254
           Style = lbOwnerDrawFixed
           TabOrder = 0
@@ -632,8 +644,18 @@ object Form1: TForm1
             'clWhite'
             'clWhite'
             'clWhite'
+            'clWhite'
+            'clWhite'
+            'clWhite'
+            'clWhite'
+            'clWhite'
           )
           ItemColors.Strings = (
+            'clBlue'
+            'clBlue'
+            'clBlue'
+            'clBlue'
+            'clBlue'
             'clBlue'
             'clBlue'
             'clBlue'
@@ -672,6 +694,7 @@ object Form1: TForm1
           Width = 254
           Align = alClient
           ItemHeight = 0
+          Options = [lboDrawFocusRect]
           ScrollWidth = 252
           Style = lbOwnerDrawFixed
           TabOrder = 0
@@ -696,8 +719,18 @@ object Form1: TForm1
             'clWhite'
             'clWhite'
             'clWhite'
+            'clWhite'
+            'clWhite'
+            'clWhite'
+            'clWhite'
+            'clWhite'
           )
           ItemColors.Strings = (
+            'clBlue'
+            'clBlue'
+            'clBlue'
+            'clBlue'
+            'clBlue'
             'clBlue'
             'clBlue'
             'clBlue'
@@ -739,7 +772,7 @@ object Form1: TForm1
       Button.Left = 0
       Button.Height = 27
       Button.Top = 0
-      Button.Width = 254
+      Button.Width = 250
       Button.Caption = '1. Hilfe'
       Button.Color = clSkyBlue
       Button.ColorExpanded = 16287767
@@ -984,7 +1017,7 @@ object Form1: TForm1
       Button.Left = 0
       Button.Height = 27
       Button.Top = 0
-      Button.Width = 254
+      Button.Width = 250
       Button.Caption = 'Schirm-Einstellungen'
       Button.Color = clSkyBlue
       Button.ColorExpanded = 16287767
@@ -1099,10 +1132,10 @@ object Form1: TForm1
     end
     object OptioAperture: TMyRollOut
       Left = 0
-      Height = 27
+      Height = 264
       Top = 64
       Width = 250
-      ClientHeight = 27
+      ClientHeight = 264
       ClientWidth = 250
       Enabled = True
       TabOrder = 4
@@ -1118,7 +1151,6 @@ object Form1: TForm1
       Button.Color = clSkyBlue
       Button.ColorExpanded = 16287767
       AnimationSpeed = 20
-      Collapsed = True
       OnPreExpand = OptioRotatePreCollapse
       OnCollapse = OptioApertureCollapse
       OnPreCollapse = OptioRotatePreCollapse
@@ -1194,16 +1226,6 @@ object Form1: TForm1
         }
         OnClick = BSlitWidthClick
       end
-      object EditSlitCount: TSpinEdit
-        Left = 181
-        Height = 24
-        Top = 41
-        Width = 58
-        MaxValue = 1000
-        OnChange = EditSlitCountChange
-        TabOrder = 0
-        Value = 1
-      end
       object EditSlitDistance: TEdit
         Left = 119
         Height = 24
@@ -1211,7 +1233,7 @@ object Form1: TForm1
         Width = 80
         OnChange = AllEditChange
         OnKeyDown = EditSlitDistanceKeyDown
-        TabOrder = 1
+        TabOrder = 0
         Text = '1.5'
       end
       object TrackBarCountSlit: TTrackBar
@@ -1226,7 +1248,7 @@ object Form1: TForm1
         ScalePos = trRight
         TickStyle = tsNone
         Anchors = [akTop, akLeft, akRight]
-        TabOrder = 2
+        TabOrder = 1
       end
       object TrackSlitDistance: TTrackBar
         Left = 5
@@ -1240,7 +1262,7 @@ object Form1: TForm1
         ScalePos = trRight
         TickStyle = tsNone
         Anchors = [akTop, akLeft, akRight]
-        TabOrder = 4
+        TabOrder = 3
       end
       object TrackSlitWidth: TTrackBar
         Left = 5
@@ -1259,7 +1281,16 @@ object Form1: TForm1
         OnMouseUp = TrackSlitWidthMouseUp
         ParentShowHint = False
         ShowHint = True
-        TabOrder = 3
+        TabOrder = 2
+      end
+      object EditSlitCount: TEdit
+        Left = 181
+        Height = 24
+        Top = 41
+        Width = 58
+        OnChange = EditSlitCountChange
+        TabOrder = 4
+        Text = '1'
       end
     end
     object OptioExtended: TMyRollOut
@@ -1462,6 +1493,10 @@ object Form1: TForm1
       object MenuItem1: TMenuItem
         Caption = 'Wähle Art der Menüführung aus'
         OnClick = MenuItem1Click
+      end
+      object ShowProgrammerInfo: TMenuItem
+        Caption = 'Show Programmer Info'
+        OnClick = ShowProgrammerInfoClick
       end
     end
     object MenuItem4: TMenuItem

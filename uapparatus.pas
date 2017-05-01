@@ -89,6 +89,7 @@ type
     ShowMaxLabels,
     ShowMinLabels:boolean;
 
+    function MaximaWidth:extended;   virtual;
     procedure WriteFForm(Form:TForm);
     procedure setactive(value:boolean);  virtual;
     procedure setVisible(value:boolean);
@@ -154,7 +155,7 @@ type
     function GammaMeter(s:TVec):extended;
 
     procedure getspecifications;
-    procedure Calc(xAxisType:TxAxisType; LSAxisType:TLSAxisType; ImageAxisType:TImageAxisType; Quality:real=5.5); virtual;
+    procedure Calc(xAxisType:TxAxisType; LSAxisType:TLSAxisType; ImageAxisType:TImageAxisType; Quality:real=20); virtual;
     procedure DrawOGL; virtual;
     procedure RefreshChecked; virtual;
 
@@ -181,6 +182,7 @@ type
 
   TRSNSlit=class(TSingleSlit)
   private                  //alle alphas im bogenmaß; alpha ist der winkel zur optischen achse
+    function MaximaWidth:extended; override;
     procedure writeCaption(var checkbox:TCheckbox);         override;
 
     //function alpha2lambda(alpha:extended):extended; override;
@@ -290,7 +292,7 @@ type
 
     procedure LabelChart(xAxis:TxAxisType; LSaxis:TLSAxisType; ImageAxis:TImageAxisType);   overload;
     procedure LabelChart;                                       overload;
-    procedure Calc(bSingleSlit,bNSlit,bCombiSlit,bImage:boolean; Quality:real=5.5);
+    procedure Calc(bSingleSlit,bNSlit,bCombiSlit,bImage:boolean; Quality:real=20);
     procedure DrawOGL(bSingleSlit,bNSlit,bCombiSlit,bImage:boolean);
     procedure setactive(value:boolean);  override;
   public
@@ -310,8 +312,8 @@ type
     property Color:Tcolor read FColor write FColor;
     property Box:TOGlBox read FBox;
 
-    procedure CalcAll(Quality:real=5.5);
-    procedure CalcOnlyVisible(Quality:real=5.5);
+    procedure CalcAll(Quality:real=20);
+    procedure CalcOnlyVisible(Quality:real=20);
     procedure DrawOGLOnlyVisible;
     procedure deleteAllValues;
 
@@ -667,7 +669,7 @@ begin
   self.Form:=aForm;
   self.box:=OGLBox;
 
-  FQuality:=5.5;
+  FQuality:=20;
   FDrawingEnabled:=true;
   FIntensityColorFactor:=1;
   CalculationTime:=100;
@@ -1626,7 +1628,7 @@ end;
   Detailed description:  brauche ich nicht, da led,check,checkmaxmin zu self.Owner.Owner.groupbox gehören,
                         und deswegen anscheinend von Tform1 zerstört werden
 -----------------------------------------------------------------------------}
-destructor TSingleSlit.destroy;
+destructor TSingleSlit.Destroy;
 begin
   if assigned(Chart) then
     Chart.Free;
@@ -2130,6 +2132,11 @@ begin
   result:=CalcMinMaxAlpha(+1)-0.001;
 end;
 
+function TSingleSlit.MaximaWidth: extended;
+begin
+  result := 1/5* 1/(aperture.slit.distance/200e-6);
+end;
+
 
 // du musst de losptalk anwenden ansonten entstehen polstellen
 function TSingleSlit.CalcAngleDeflectionVec(alpha: extended): TVec;
@@ -2405,7 +2412,7 @@ var funcLS,funcx, FuncImage:TFunctionVecType;
     alpha:extended;
     stopped:boolean;
     s:TVec;
-    str:string;
+    str,postlabel:string;
 begin
   if not UseMaxMin then
     exit;
@@ -2427,8 +2434,17 @@ begin
       case MaxFunc(i +leerstellen, s) of
         mmsMainMax:
           begin
+          if abs(i+leerstellen)>500 then
+            begin
+            inc(i);
+            Continue;
+            end;
+          //if abs(i+leerstellen)<=10 then
+            postlabel :='.Max';
+          //else
+          //  postlabel :='';
           ValuesMaxMin.Add(ChartValue(Koor3(funcx(s), FuncImage(s) , funcLS(s), kkx, kkImage, kkLS),
-                          inttostr(i+leerstellen)+'.Max', ShowMaxLabels, ChartMinMax.Color,
+                          inttostr(i+leerstellen)+postlabel, ShowMaxLabels, ChartMinMax.Color,
                           ord(mmsMainMax), i +leerstellen));
           end;
         mmsNoMinMax, mmsMin:
@@ -2453,8 +2469,16 @@ begin
       case MaxFunc(i -leerstellen, s) of
         mmsMainMax:
           begin
+          if abs(i+leerstellen)>500 then
+            begin
+            dec(i);
+            Continue;
+            end;
+            postlabel :='.Max'    ;
+          //else
+          //  postlabel :='';
           ValuesMaxMin.Add(ChartValue(Koor3(funcx(s), FuncImage(s) , funcLS(s), kkx, kkImage, kkLS),
-                          inttostr(i-leerstellen)+'.Max', ShowMaxLabels,  ChartMinMax.Color,
+                          inttostr(i-leerstellen)+postlabel, ShowMaxLabels,  ChartMinMax.Color,
                           ord(mmsMainMax), i -leerstellen));
           end;
         mmsNoMinMax, mmsMin:
@@ -2482,6 +2506,11 @@ begin
       case MinFunc(i +leerstellen, s) of
         mmsMin:
           begin
+          if abs(i)>500 then
+            begin
+            inc(i);
+            Continue;
+            end;
           ValuesMaxMin.Add(ChartValue(Koor3(funcx(s), FuncImage(s) , funcLS(s), kkx, kkImage, kkLS),
                           inttostr(i)+'.Min', ShowMinLabels, IntensityColor(ChartMinMax.Color, IntensityColor_Minimum),
                           ord(mmsMin), i +leerstellen));
@@ -2508,6 +2537,11 @@ begin
       case MinFunc(i -leerstellen, s) of
         mmsMin:
           begin
+          if abs(i)>500 then
+            begin
+            dec(i);
+            Continue;
+            end;
           ValuesMaxMin.Add(ChartValue(Koor3(funcx(s), FuncImage(s) , funcLS(s), kkx, kkImage, kkLS),
                           inttostr(i)+'.Min', ShowMinLabels, IntensityColor(ChartMinMax.Color, IntensityColor_Minimum),
                           ord(mmsMainMax), i -leerstellen));
@@ -2539,7 +2573,7 @@ end;
   Procedure:    Calc
   Belongs to:   TSingleSlit
 ==============================================================================}
-procedure  TSingleSlit.Calc(xAxisType:TxAxisType; LSAxisType:TLSAxisType;  ImageAxisType:TImageAxisType; Quality:real=5.5);
+procedure  TSingleSlit.Calc(xAxisType:TxAxisType; LSAxisType:TLSAxisType;  ImageAxisType:TImageAxisType; Quality:real=20);
 var funcLS,funcx,{funcAntiX,}funcImage:TFunctionVecType;
     mini,maxi:real;  //grenzen fürs zeichnen
     Verhaeltnis: Real;//  neur Ausschnitt / altem ausschnitt
@@ -2584,32 +2618,35 @@ var funcLS,funcx,{funcAntiX,}funcImage:TFunctionVecType;
         count,countPoints:integer;
         s:TVec;
     begin
-      area:=1/aperture.slit.count;
+      area:=MaximaWidth;
       s:=CalcAngleDeflectionVec(xMax);
 
       r:=funcLS(s);
-      values.Add(Koor3(funcx(s),funcImage(s),r, kkx,kkImage, kkLS), Chart.Color);
+
+      if  xMax<-0.4 then
+                   r:=funcLS(s);
+
       countPoints:=abs(round(500*r*Quality)); // bestimme Anzahl der Punkte nach der Helligkeit
-      korrigiere(countPoints,10,round(300*Quality));
+      korrigiere(countPoints,0,round(50*Quality));
+
+      if countPoints>0 then
+        values.Add(Koor3(funcx(s),funcImage(s),r, kkx,kkImage, kkLS), Chart.Color);
+
 
       r:=Max(xMax-area/2,mini);
-      s:=CalcAngleDeflectionVec(r);
-      values.Add(Koor3(funcx(s),funcImage(s),funcLS(s), kkx, kkImage, kkLS), Chart.Color);
-
-      count:=0;
-      repeat
+      for i := 0 to countPoints-1 do
+      begin
         r:=r+area/countPoints;
         if not IsInRange(r, MinRange, MaxRange) then continue;
         s:=CalcAngleDeflectionVec(r);
         Values.Add(Koor3(funcx(s),funcImage(s),funcLS(s), kkx, kkImage, kkLS), Chart.Color);
         inc(NewCalculatedPoints);
-        inc(count);
-      until r>=Min(xMax+area/2,maxi);
+      end;
       //log
 
-      if Form1.CheckExMaximaDraw.Checked then
+      if Form1.CheckExMaximaDraw.Checked and (countPoints>0) then
         begin
-        form1.AddLog('CalcPointsNearMax bei x= '+FormatFloat('0.0000',funcX(CalcAngleDeflectionVec(xMax)))+'  mit count= '+inttostr(count));
+        form1.AddLog('CalcPointsNearMax bei x= '+FormatFloat('0.0000',funcX(CalcAngleDeflectionVec(xMax)))+'  mit count= '+inttostr(countPoints));
         form1.AddLog('Von xMin= '+FormatFloat('0.0000',funcX(CalcAngleDeflectionVec(xMax-area/2)))+'  bis xMax= '+FormatFloat('0.0000',funcX(CalcAngleDeflectionVec(xMax+area/2))));
         form1.AddLog('');
         Form1.CheckLog;
@@ -2829,6 +2866,9 @@ begin
   maxi:=CalcMaxAlpha;   // nichts zeichnen was beim gedrehten über 90° wäre
   Mini:=CalcMinAlpha;  // nichts zeichnen was beim gedrehten über 90° wäre
 
+  //maxi:=2e-4;   // nichts zeichnen was beim gedrehten über 90° wäre
+  //Mini:=-maxi;  // nichts zeichnen was beim gedrehten über 90° wäre
+
   if Quality=0 then
     Quality:=1;
 
@@ -2935,6 +2975,10 @@ begin
 end;
 
 
+function TRSNSlit.MaximaWidth: extended;
+begin
+  result :=  1/aperture.slit.count/(aperture.slit.distance/200e-6);
+end;
 
 {-----------------------------------------------------------------------------
   Description:
@@ -3651,7 +3695,7 @@ end;
 
   Description:  Hier wird die Zusammenfassende Arebit gemacht, nämlich das zeichnen
 ==============================================================================}
-//procedure TImageIntensity.Calc(xAxisType:TxAxisType; LSAxisType:TLSAxisType; UpdatingType:TUpdatingType;  Quality:real=5.5);
+//procedure TImageIntensity.Calc(xAxisType:TxAxisType; LSAxisType:TLSAxisType; UpdatingType:TUpdatingType;  Quality:real=20);
 //var funcx,funcAntiX:TFunctionVecType;
     //lcut,rcut:integer;
     //ZMin,constFak:real;
@@ -4165,11 +4209,11 @@ end;
   Belongs to:   TScreem
   Result:       None
   Parameters:   
-                  Quality : real  = 5.5  
+                  Quality : real  = 20  
                     
   Description:  
 ==============================================================================}
-procedure TScreem.CalcAll(Quality:real=5.5);
+procedure TScreem.CalcAll(Quality:real=20);
 begin
   Calc(true,true,true,true,Quality);
 end;
@@ -4183,11 +4227,11 @@ end;
   Result:       None
   Parameters:   
                   UpdatingType : TUpdatingType  =   
-                  Quality : real  = 5.5  
+                  Quality : real  = 20  
                     
   Description:  
 ==============================================================================}
-procedure TScreem.CalcOnlyVisible(Quality:real=5.5);
+procedure TScreem.CalcOnlyVisible(Quality:real=20);
 begin
   Calc(self.SingleSlit.Visible,self.NSlit.Visible,self.CombiSlit.Visible,self.ImageIntensity.Visible, Quality);
 end;
@@ -4205,11 +4249,11 @@ end;
                   CombiSlit : boolean  =   
                   Image : boolean  =   
                   UpdatingType : TUpdatingType  =   
-                  Quality : real  = 5.5  
+                  Quality : real  = 20  
                     
   Description:  
 ==============================================================================}
-procedure TScreem.Calc(bSingleSlit,bNSlit,bCombiSlit,bImage:boolean; Quality:real=5.5);
+procedure TScreem.Calc(bSingleSlit,bNSlit,bCombiSlit,bImage:boolean; Quality:real=20);
 begin
   getAllspecifications;
 //  mrs;
