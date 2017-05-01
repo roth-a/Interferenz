@@ -1236,5 +1236,5 @@ LazarusResources.Add('StandartEinstellungen','INI',[
   +'FormWidth=1366'#10'FormHeight=739'#10
 ]);
 LazarusResources.Add('Version','TXT',[
-  '3.2'#10
+  '3.50'#10
 ]);
