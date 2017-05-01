@@ -116,7 +116,6 @@ object Form1: TForm1
         Align = alBottom
         ItemHeight = 0
         OnClick = ComboSourceChange
-        Options = [lboDrawFocusRect]
         ScrollWidth = 308
         Style = lbOwnerDrawFixed
         TabOrder = 2
@@ -620,7 +619,6 @@ object Form1: TForm1
           Width = 256
           Align = alClient
           ItemHeight = 0
-          Options = [lboDrawFocusRect]
           ScrollWidth = 254
           Style = lbOwnerDrawFixed
           TabOrder = 0
@@ -694,7 +692,6 @@ object Form1: TForm1
           Width = 254
           Align = alClient
           ItemHeight = 0
-          Options = [lboDrawFocusRect]
           ScrollWidth = 252
           Style = lbOwnerDrawFixed
           TabOrder = 0
