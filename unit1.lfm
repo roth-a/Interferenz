@@ -143,8 +143,12 @@ object Form1: TForm1
           'clWhite'
           'clWhite'
           'clWhite'
+          'clWhite'
+          'clWhite'
         )
         ItemColors.Strings = (
+          'clBlue'
+          'clBlue'
           'clBlue'
           'clBlue'
           'clBlue'
@@ -254,11 +258,11 @@ object Form1: TForm1
   end
   object OptioChart: TMyRollOut
     Left = 875
-    Height = 427
+    Height = 392
     Top = 0
     Width = 253
     Anchors = [akTop, akRight, akBottom]
-    ClientHeight = 427
+    ClientHeight = 392
     ClientWidth = 253
     Enabled = True
     TabOrder = 3
@@ -267,7 +271,7 @@ object Form1: TForm1
     ButtonPosition = akLeft
     ButtonSize = 27
     Button.Left = 0
-    Button.Height = 431
+    Button.Height = 396
     Button.Top = 0
     Button.Width = 27
     Button.Caption = 'Darstellungs-Einstellungen'
@@ -282,7 +286,7 @@ object Form1: TForm1
     OnPreCollapse = OptioRotatePreCollapse
     object ScrollBox1: TScrollBox
       Left = 28
-      Height = 425
+      Height = 390
       Top = 1
       Width = 224
       HorzScrollBar.Page = 179
@@ -292,7 +296,7 @@ object Form1: TForm1
       VertScrollBar.Range = 800
       Align = alClient
       AutoScroll = False
-      ClientHeight = 423
+      ClientHeight = 388
       ClientWidth = 202
       TabOrder = 0
       object CheckShowLSGitternetz: TCheckBox
@@ -529,14 +533,14 @@ object Form1: TForm1
   end
   object OptioScrollBox: TScrollBox
     Left = 0
-    Height = 397
+    Height = 368
     Top = 24
     Width = 262
     HorzScrollBar.Page = 1
     HorzScrollBar.Visible = False
     VertScrollBar.Page = 328
     Anchors = [akTop, akLeft, akBottom]
-    ClientHeight = 395
+    ClientHeight = 366
     ClientWidth = 260
     TabOrder = 4
     object PProgrammerInfo: TMyRollOut
@@ -556,7 +560,7 @@ object Form1: TForm1
       Button.Left = 0
       Button.Height = 27
       Button.Top = 0
-      Button.Width = 250
+      Button.Width = 254
       Button.Caption = 'Programmers Info'
       Button.Color = clSkyBlue
       Button.ColorExpanded = 16287767
@@ -647,8 +651,12 @@ object Form1: TForm1
             'clWhite'
             'clWhite'
             'clWhite'
+            'clWhite'
+            'clWhite'
           )
           ItemColors.Strings = (
+            'clBlue'
+            'clBlue'
             'clBlue'
             'clBlue'
             'clBlue'
@@ -721,8 +729,12 @@ object Form1: TForm1
             'clWhite'
             'clWhite'
             'clWhite'
+            'clWhite'
+            'clWhite'
           )
           ItemColors.Strings = (
+            'clBlue'
+            'clBlue'
             'clBlue'
             'clBlue'
             'clBlue'
@@ -769,7 +781,7 @@ object Form1: TForm1
       Button.Left = 0
       Button.Height = 27
       Button.Top = 0
-      Button.Width = 250
+      Button.Width = 254
       Button.Caption = '1. Hilfe'
       Button.Color = clSkyBlue
       Button.ColorExpanded = 16287767
@@ -832,6 +844,7 @@ object Form1: TForm1
       Button.Color = clSkyBlue
       Button.ColorExpanded = 16287767
       AnimationSpeed = 20
+      Animated = False
       Collapsed = True
       OnPreExpand = OptioRotatePreCollapse
       OnCollapse = OptioRotateCollapse
@@ -1007,6 +1020,7 @@ object Form1: TForm1
       ClientWidth = 250
       Enabled = True
       TabOrder = 3
+      OnClick = OptioScreenClick
       CollapseKind = akTop
       ExpandedSize = 352
       ButtonPosition = akTop
@@ -1014,11 +1028,12 @@ object Form1: TForm1
       Button.Left = 0
       Button.Height = 27
       Button.Top = 0
-      Button.Width = 250
+      Button.Width = 254
       Button.Caption = 'Schirm-Einstellungen'
       Button.Color = clSkyBlue
       Button.ColorExpanded = 16287767
       AnimationSpeed = 20
+      Animated = False
       Collapsed = True
       OnPreExpand = OptioRotatePreCollapse
       OnPreCollapse = OptioRotatePreCollapse
@@ -1148,6 +1163,7 @@ object Form1: TForm1
       Button.Color = clSkyBlue
       Button.ColorExpanded = 16287767
       AnimationSpeed = 20
+      Animated = False
       OnPreExpand = OptioRotatePreCollapse
       OnCollapse = OptioApertureCollapse
       OnPreCollapse = OptioRotatePreCollapse
@@ -1311,6 +1327,7 @@ object Form1: TForm1
       Button.Color = clSkyBlue
       Button.ColorExpanded = 16287767
       AnimationSpeed = 20
+      Animated = False
       Collapsed = True
       OnPreExpand = OptioRotatePreCollapse
       OnPreCollapse = OptioRotatePreCollapse
@@ -1501,6 +1518,10 @@ object Form1: TForm1
       object MenuItem11: TMenuItem
         Action = ActionHelp
         OnClick = ActionHelpExecute
+      end
+      object MenuHelpLittle: TMenuItem
+        Caption = 'Kleine Hilfe'
+        OnClick = MenuHelpLittleClick
       end
       object MenuItem12: TMenuItem
         Action = ActionAbout

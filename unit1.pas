@@ -102,6 +102,7 @@ type
     MenuItem15: TMenuItem;
     MenuItem16: TMenuItem;
     MenuItem17: TMenuItem;
+    MenuHelpLittle: TMenuItem;
     ShowProgrammerInfo: TMenuItem;
     MenuItem8: TMenuItem;
     MyRollOutCountPoints: TPanel;
@@ -218,7 +219,9 @@ type
     procedure IdleFunc(Sender: TObject; var Done: Boolean);
     procedure Label10Click(Sender: TObject);
     procedure Label5Click(Sender: TObject);
+    procedure MenuHelpLittleClick(Sender: TObject);
     procedure MenuItem17Click(Sender: TObject);
+    procedure OptioScreenClick(Sender: TObject);
     procedure ShowProgrammerInfoClick(Sender: TObject);
     procedure MenuItem1Click(Sender: TObject);
     procedure OptioApertureCollapse(Sender: TObject);
@@ -1353,10 +1356,20 @@ begin
   PExpandVisible(BSlitWidth, not PSlitWidthExpand.Visible);
 end;
 
+procedure TForm1.MenuHelpLittleClick(Sender: TObject);
+begin
+  CheckViewLittleHelp.Checked:=True;
+end;
+
 procedure TForm1.MenuItem17Click(Sender: TObject);
 begin
   form2.Notebook.PageIndex:=2;
   Form2.Show;
+end;
+
+procedure TForm1.OptioScreenClick(Sender: TObject);
+begin
+
 end;
 
 procedure TForm1.ShowProgrammerInfoClick(Sender: TObject);
@@ -2070,7 +2083,7 @@ begin
   //for i:=0 to ComponentCount -1 do
     //if Components[i] is TMyRollOut then
       //TMyRollOut(Components[i]).Animated:=true;
-  OptioChart.Animated:=true;
+//  OptioChart.Animated:=true;
 
   CheckViewLittleHelp.OnChange(self);
 

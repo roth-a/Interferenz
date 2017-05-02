@@ -1567,6 +1567,7 @@ begin
       width:=180;
       top:=24*TScreem(AOwner).CheckNumber;
       writeCaption(TCheckbox(check));
+      Hint:='Press STRG or CTRL and click for changing all wavelengths at the same time.';
       end;
     check.OnMouseDown:=@self.CheckOnMouseDown;//muss am schluss ausgeführt werden damit er nicht vorher zeichnet
     check.OnChange:=@self.CheckChange;//muss am schluss ausgeführt werden damit er nicht vorher zeichnet
